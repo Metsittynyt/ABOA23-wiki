@@ -70,7 +70,7 @@ Yellow - #f1d490
   }
 
   b {
-    color: var(--primary-light)
+    color: var(--secondary-dark)
   }
   
   a {
@@ -1046,7 +1046,10 @@ Yellow - #f1d490
   /*****************************************
                   Team members 
    *****************************************/
-  
+  .team_settings {
+    text-align: center;
+  }
+
   .photogrid {
     display: flex;
     flex-wrap: wrap;
@@ -1086,7 +1089,7 @@ Yellow - #f1d490
     background-position: center !important;
     height: 300px;
     padding: 1em 2em;
-    background: #9DD9D2;
+    background: var(--primary-light);
     border-radius: 50%;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: .5s;
