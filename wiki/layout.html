@@ -1,34 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg"/>
-    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
-    <!-- Bootstrap CSS -->
-    <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
-    <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
-    <title>{% block title %}{% endblock %} | ABOA-Turku - iGEM 2023</title>
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+
+  <title>{% block title %}{% endblock %} | ABOA-Turku - iGEM 2023</title>
 
 </head>
+
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
 
-<!-- Header -->
+  <!-- Header -->
   <header id="banner" class="bg-hero page-banner">
     <div class="banner-overlay-container">
       <div class="banner-overlay">
         <div class="banner-overlay-box">
           <h1 class="display-2 text-white banner-h1">{{ self.title() }}</h1>
         </div>
-        <img class="banner-logo hide-on-mobile " src="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-white-bg.png"
-          alt="Logo" />
+        <img class="banner-logo hide-on-mobile "
+          src="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-white-bg.png" alt="Logo" />
       </div>
     </div>
   </header>
@@ -44,4 +46,5 @@
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 </body>
+
 </html>
