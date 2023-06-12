@@ -11,7 +11,6 @@
         <b>About us</b><br />
         <a href="{{ url_for('pages', page='team') }}">Team members</a><br />
         <a href="{{ url_for('pages', page='attributions') }}">Attributions</a><br />
-        <a href="{{ url_for('pages', page='collaborations') }}">Collaborations</a><br />
         <br>
         <br>
       </div>
@@ -20,8 +19,8 @@
         <a href="{{ url_for('pages', page='overview') }}">Overview</a><br />
         <a href="{{ url_for('pages', page='description') }}">Project Description</a><br />
         <a href="{{ url_for('pages', page='design') }}">Design</a><br />
-        <a href="{{ url_for('pages', page='engineering') }}">Engineering</a><br />
         <a href="{{ url_for('pages', page='contribution') }}">Contribution</a><br />
+        <a href="{{ url_for('pages', page='engineering') }}">Engineering</a><br />
         <a href="{{ url_for('pages', page='implementation') }}">Implementation</a><br />
         <a href="{{ url_for('pages', page='safety') }}">Safety </a><br />
         <a href="{{ url_for('pages', page='notebook') }}">Notebook</a>
@@ -46,13 +45,15 @@
       <div class="col">
         <b>Human practices</b><br />
         <a href="{{ url_for('pages', page='human-practices') }}">Human practices</a><br />
-        <a href="{{ url_for('pages', page='education') }}">Education</a><br />
+        <a href="{{ url_for('pages', page='collaborations') }}">Collaborations</a><br />
         <a href="{{ url_for('pages', page='communication') }}">Communication</a><br />
         <br>
         <br>
       </div>
       <div class="col">
-        <b>Achievements</b><br />
+        <b>Achievements</b><br/>
+        <a href="{{ url_for('pages', page='education') }}">Education</a><br />
+        <a href="{{ url_for('pages', page='plant') }}">Plant Synthetic Biology</a><br />
         <a href="{{ url_for('pages', page='medals') }}">Medal criteria<br /></a>
         <a href="https://old.igem.org/2023_Judging_Form?id=4831">Jugding form</a>
         <br>
@@ -98,12 +99,24 @@
           <img src="https://static.igem.wiki/teams/4831/wiki/logos/utu-logo.jpg" alt="University of Turku logo"
             style="width: 100%;">
         </div>
+        <div class="col-1 sponsor">
+          <img src="https://static.igem.wiki/teams/4831/wiki/logos/turku-amk-eng-logo.png" alt="Turku AMK logo"
+            style="width: 100%;">
+        </div>
         <div class="col-2 sponsor">
           <img src="https://static.igem.wiki/teams/4831/wiki/logos/a-logo.png" alt="University of Turku logo"
             style="width: 100%;">
         </div>
         <div class="col-1 sponsor">
           <img src="https://static.igem.wiki/teams/4831/wiki/logos/orion-logo.jpg" alt="Orion Pharma logo"
+            style="width: 100%;">
+        </div>
+        <div class="col-1 sponsor">
+          <img src="https://static.igem.wiki/teams/4831/wiki/logos/hytest-logo-horizontal-2013.png" alt="HyTest logo"
+            style="width: 100%;">
+        </div>
+        <div class="col-1 sponsor">
+          <img src="https://static.igem.wiki/teams/4831/wiki/logos/tek-logo-rgb-rgb-kaksivarinen.png" alt="Tek logo"
             style="width: 100%;">
         </div>
       </div>
