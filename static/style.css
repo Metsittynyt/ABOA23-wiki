@@ -15,12 +15,11 @@ Yellow - #f1d490
 
 :root {
     --background: #00374e;
-    --primary: #009372;
-    --primary-light:#91e9d0;
-    --primary-dark: #00374e;
-    --secondary: #00374e;
-    --secondary-light: #f1d490;
-    --secondary-dark: #a672ab;
+    --green: #009372;
+    --turquoise:#91e9d0;
+    --darkBlue: #00374e;
+    --yellow: #f1d490;
+    --violet: #a672ab;
     --text: white;
     --text-inverted: black;
   
@@ -51,45 +50,45 @@ Yellow - #f1d490
   }
   
   h1 {
-    color: var(--primary-dark);
+    color: var(--darkBlue);
     font-family: 'hammersmith_oneregular';
     text-transform: uppercase;
   }
   
   h2 {
-    color: var(--primary-light);
+    color: var(--turquoise);
     font-family: 'hammersmith_oneregular';
   }
   
   h3 {
-    color: #392F5A;
+    color: var(--violet);
   }
   
   h4 {
-    color: #E2F4F1;
+    color: white;
   }
 
   b {
-    color: var(--secondary-dark)
+    color: var(--violet)
   }
   
   a {
-    color: var(--primary);
+    color: var(--darkBlue);
     text-decoration: underline;
   }
   
   a:visited {
-    color: var(--primary);
+    color: var(--violet);
     text-decoration: underline;
   }
   
   a:hover {
-    color: var(--primary);
+    color: var(--darkBlue);
     text-decoration: underline;
   }
   
   a:active {
-    color: var(--primary);
+    color: var(--violet);
     text-decoration: underline;
   }
   
@@ -106,18 +105,23 @@ Yellow - #f1d490
   }
   
   .bg-dark {
-    background-color: var(--secondary) !important;
+    background-color: var(--darkBlue) !important;
   }
   
   .bg-hero {
-    background-color: var(--primary);
+    background-color: var(--green);
     height: 550px;
   }
   
   hr {
     height: 1px;
-    background-color: var(--secondary);
+    background-color: var(--yellow);
     border: none;
+  }
+
+  .row {
+    padding: 10px;
+    margin:10px;
   }
   
   /*****************************************
@@ -127,6 +131,8 @@ Yellow - #f1d490
   .stickybar {
     position: -webkit-sticky;
     position: sticky;
+    margin: 0px;
+    padding: 10px;
     top: 200px;
   }
   
@@ -135,16 +141,18 @@ Yellow - #f1d490
   }
   
   .stickybar a {
-    color: var(--primary);
+    color: var(--darkBlue);
     text-decoration: none;
     font-family: 'hammersmith_oneregular';
     font-size: 1.2rem;
   }
   
   .stickybar a:hover {
-    color: var(--primary-light);
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .stickybar a:active {
+    text-decoration: underline;
   }
   
   
@@ -282,133 +290,34 @@ Yellow - #f1d490
     background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-team-members.jpg');
   }
   
-  .experiments-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-experiments.jpg');
-  }
-  
-  .sustainable-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-sustainable-development.jpg');
-  }
-  
-  .description-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-project-description.jpg');
-  }
-  
-  .collaborations-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-collaborations.jpg');
-  }
-  
-  .contribution-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-contribution.jpg');
-  }
-  
-  .safety-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-safety.jpg');
-  }
-  
-  .results-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-results.jpg');
-  }
-  
-  .proofofconcept-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-proof-of-concept.jpg');
-  }
-  
-  .overview-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-overview.jpg');
-  }
-  
-  .notebook-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-notebook.jpg');
-  }
-  
-  .model-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-model.jpg');
-  }
-  
-  .medals-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-medal-criteria.jpg');
-  }
-  
-  .implementation-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-implementation.jpg');
-  }
-  
-  .humanpractices-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-human-practices.jpg');
-  }
-  
-  .engineering-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-engineering.jpg');
-  }
-  
-  .education-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-education.jpg');
-  }
-  
-  .design-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-design.jpg');
-  }
-  
-  .communication-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-communication.jpg');
-  }
-  
-  .attributions-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-attributions.jpg');
-  }
-  
-  .partnership-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-partnership.jpg');
-  }
-  
-  .drylab-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-dry-lab.jpg');
-  }
-  
-  .inclusivity-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-inclusivity.jpg');
-  }
-  
-  .parts-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-parts.jpg');
-  }
-  
-  .partcollection-title {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-part-collection.jpg');
-  }
-  
   /*****************************************
                 Navigation
    *****************************************/
   
   .dropdown-menu {
-    background-color: var(--secondary-light);
+    background-color: var(--turquoise);
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
     border-radius: 0;
-    /* border-color: red;
-    border-width: 1px; */
+    border-color: white;
+    border-width: 1px;
   }
   
   .dropdown-item:hover {
-    background-color: var(--secondary);
+    background-color: var(--violet);
+    color: var(--darkBlue);
   }
   
   @keyframes growDown {
-  
     0% {
-  
       transform: scaleY(0)
     }
   
     80% {
-  
       transform: scaleY(1.1)
     }
   
     100% {
-  
       transform: scaleY(1)
     }
   
@@ -487,561 +396,7 @@ Yellow - #f1d490
     padding: 20px;
     border-radius: 30px;
   }
-  
-  /* /*****************************************
-                  Timeline 
-   *****************************************/
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* .stimeline {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Montserrat';
-    color: black;
-    line-height: 1.5;
-    text-align: center;
-  } */
-  .stimeline {
-    overflow-anchor: none; /* For making scroll work nicer on the notebook page */
-  }
-  
-  .wrapper {
-    /* width: 50vw; */
-    margin: 0 auto;
-  
-    position: relative;
-    /* for position absolute to work*/
-  }
-  
-  .detail-wrapper {
-    width: 100%;
-    margin-bottom: 100px;
-    display: flex;
-  }
-  
-  details {
-    width: 50%;
-  }
-  
-  .detail-wrapper::before {
-    content: "";
-    width: 3px;
-    background-color: black;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  
-  .detail-wrapper::after {
-    font-family: Font Awesome\ 5 Free;
-    content: "";
-    font-size: 40px;
-    width: 30px;
-    height: 30px;
-    line-height: 50px;
-  
-    position: absolute;
-    left: 50%;
-    background: var(--primary);
-  
-    margin-left: -13px;
-    border-radius: 50%;
-    z-index: 999;
-  }
-  
-  .timestamp {
-    margin-bottom: 100px;
-    width: 120px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    background-color: var(--primary);
-    text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    z-index: 19999999;
-  }
-  
-  .timestamp>p{
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1.8rem;
-    color: var(--background)
-  }
-  /* 
-  .timestamp {
-    width: 100%;
-    margin-bottom: 100px;
-    display: flex;
-  }
-  
-  .timestamp::before {
-    content: "";
-    width: 3px;
-    background-color: black;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-  }
-  
-  .timestamp::after {
-    font-family: Font Awesome\ 5 Free;
-    content: "";
-    font-size: 40px;
-    width: 30px;
-    height: 30px;
-    line-height: 50px;
-  
-    position: absolute;
-    left: 50%;
-    background: var(--primary);
-  
-    margin-left: -13px;
-    border-radius: 50%;
-    z-index: 999;
-  } */
-  
-  .wrapper-left {
-  
-    justify-content: left;
-    padding-right: 100px;
-  }
-  
-  .wrapper-right {
-    justify-content: right;
-    padding-left: 100px;
-  }
-  
-  summary {
-    font-size: 22px;
-    font-weight: 600;
-    background-color: var(--secondary-light);
-    color: var(--text);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    text-align: left;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  details[open] summary {
-    margin-bottom: 25px;
-  }
-  details[open] {
-    background-color: white;
-  
-  }
-  
-  
-  
-  /*****************************************
-          Human practices timeline 
-   *****************************************/
-  
-  
-  .timeline *,
-  .timeline *::before,
-  .timeline *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .timeline {
-    /* background-color: #03011f; */
-    font-family: "Source Sans Pro";
-    color: var(--text);
-    width: 100%;
-  }
-  
-  .timeline h1 {
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  .timeline ul {
-    padding: 50px 0;
-  }
-  
-  .timeline ul li {
-    position: relative;
-    list-style-type: none;
-    width: 6px;
-    background-color: black;
-    margin: 0 auto;
-    padding-top: 50px;
-  }
-  
-  .timeline ul li::after {
-    background: black;
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-  }
-  
-  .timeline ul li div {
-    position: relative;
-    width: 400px;
-    padding: 15px;
-    border-radius: 5px;
-    bottom: 0;
-    background: rgba(34, 149, 159, 0.28);
-  }
-  
-  .timeline ul li:nth-child(odd) div {
-    left: 45px;
-  }
-  
-  .timeline ul li:nth-child(even) div {
-    left: -445px;
-  }
-  
-  .timeline time {
-    font-weight: bold;
-    font-size: 18px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
-  }
-  
-  .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
-  }
-  
-  .timeline ul li.show div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .timeline ul li div {
-      width: 250px;
-    }
-  
-    .timeline ul li:nth-child(even) div {
-      left: -289px;
-      /*250+45-6*/
-    }
-  }
-  
-  /* FLIPPING THING WIP */
-  
-  /* flip the pane when clicked */
-  .timeline-flip-container .flipper.flip {
-    transform: rotateY(180deg);
-  }
-  
-  /* .timeline-flip-container, .front, .back {
-    width: 250px;
-    height: 250px;
-  } */
-  
-  /* flip speed */
-  .timeline-flipper {
-    transition: 0.8s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  
-  /* hide back of pane during swap */
-  .timeline-front,
-  .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  /* front pane, placed above back */
-  .timeline-front {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-  
-  /* back, initially hidden pane */
-  .timeline-back {
-    transform: rotateY(180deg);
-    background-color: #fff;
-  }
-  
-  
-  .artist-1 {
-    background: url(http://img.bleacherreport.net/img/images/photos/003/556/940/edab30087cea36c0ca206fc61a4b10fa_crop_north.jpg?w=630&h=420&q=75) center center no-repeat;
-    background-size: cover;
-  }
-  
-  /*****************************************
-                  Main page 
-   *****************************************/
-  
-  /* Sections */
-  
-  .section {
-    background-color: #5bc0de;
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-  
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  
-  .section-last {
-    background-color: #5bc0de;
-    width: 100vw;
-    position: relative;
-    left: calc(-50vw + 50%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: 0;
-    margin-left: 0;
-  
-  }
-  
-  .firstsection {
-    background-color: var(--secondary-light);
-  }
-  
-  .secondsection {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/aboa-etusivu-taustakuva-vilja.jpg');
-  }
-  
-  .thirdsection {
-    background-image: url('https://static.igem.wiki/teams/4207/wiki/wheat-gf6b000df5-1920.jpg');
-  }
-  
-  .fourthsection {
-    background-color: var(--secondary-light);
-  }
-  
-  .fifthsection {
-    background-color: var(--secondary-light);
-  }
-  
-  .sixthsection {
-    background-color: var(--secondary-light);
-  }
-  
-  /* Dots with text in it */
-  
-  .dot {
-    /* height: 800px;
-    width: 800px;
-    background-color: #9dd9d271;
-    border-radius: 50%; */
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-  
-    /* width: auto; */
-    width: 80%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-  
-    background-color: #9dd9d271;
-    margin-left: auto;
-    margin-right: auto;
-    text-overflow: ellipsis;
-    position: relative;
-  }
-  
-  
-  .dot>div {
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    margin-top: 8%;
-    display: flex;
-    text-align: center;
-    /* outline: 2px solid red; */
-  }
-  
-  
-  .dottext {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .dottext>* {
-    text-align: center;
-  }
-  
-  /* .leftdot {
-    
-    margin-left: 150px;
-  }
-  
-  .rightdot {
-    
-    margin-right: 150px;
-    margin-left: auto;
-  } */
-  
-  /* Animated dots */
-  .fadein {
-    position: relative;
-    top: 0px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    aspect-ratio: 1/1;
-    height: auto;
-  }
-  
-  .fadein img {
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-animation-name: fade;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 15s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 15s;
-  }
-  
-  @-webkit-keyframes fade {
-    0% { opacity: 1; }
-    33.3333% { opacity: 1; }
-    43.3333% { opacity: 0; }
-    90% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes fade {
-    0% { opacity: 1; }
-    33.3333% { opacity: 1; }
-    43.3333% { opacity: 0; }
-    90% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  #f2 {
-    animation-delay: -5s;
-  }
-  #f3 {
-    animation-delay: -10s;
-  }
-  
-  
-  
-  
-  .frontext {
-    font-size: max(1rem, 1.9vw);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  
-  .rp {
-    /* height: 500px; */
-    width: auto;
-    width: 75%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    /* background-size: cover; */
-    object-fit: cover;
-    /* display: inline;
-    margin: 0 auto; */
-    /* height: 100%;
-    width: auto; */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  
-  .button {
-    background-color: var(--secondary);
-    border: none;
-    width: max(250px, 40%);
-    color: var(--primary);
-    padding: 15px 32px;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: max(1rem, 1.4vw);
-    border-radius: 20px;
-    transition-duration: 0.4s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .button:hover {
-    background-color: var(--secondary-dark);
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    text-decoration: none;
-  }
-  
-  
-  .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  /* .button-container button p {
-    margin: 0;
-  }  */
-  
-  .video {
-    /* width: 100%; */
-    /* height: auto; */
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* width="560" height="315" */
-  
-  .video>iframe {
-    height: auto;
-    width: 800px;
-    aspect-ratio: 560/315;
-  }
+
   
   /*****************************************
                   Team members 
@@ -1049,7 +404,7 @@ Yellow - #f1d490
   .team_settings {
     text-align: center;
   }
-
+  
   .photogrid {
     display: flex;
     flex-wrap: wrap;
@@ -1089,7 +444,7 @@ Yellow - #f1d490
     background-position: center !important;
     height: 300px;
     padding: 1em 2em;
-    background: var(--primary-light);
+    background: var(--turquoise);
     border-radius: 50%;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: .5s;

@@ -36,12 +36,13 @@
   </header>
 
   <!-- Page Content -->
-  <div class="container">
+  <div>
     {% block page_content %}{% endblock %}
   </div>
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
