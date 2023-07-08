@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://static.igem.wiki/common/icons/favicons/igem-2022.svg" />
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-no-text.png" />
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
   <!-- Bootstrap CSS -->
@@ -23,20 +23,20 @@
   {% include 'menu.html' %}
 
   <!-- Header -->
-  <header id="banner" class="bg-hero page-banner">
+  <header id="banner" class="bg-hero page-banner {{ self.title_class() }}">
     <div class="banner-overlay-container">
       <div class="banner-overlay">
         <div class="banner-overlay-box">
           <h1 class="display-2 text-white banner-h1">{{ self.title() }}</h1>
         </div>
         <img class="banner-logo hide-on-mobile "
-          src="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-white-bg.png" alt="Logo" />
+          src="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-no-text.png" alt="Logo" />
       </div>
     </div>
   </header>
 
   <!-- Page Content -->
-  <div>
+  <div class="container pt-5">
     {% block page_content %}{% endblock %}
   </div>
 
