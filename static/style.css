@@ -96,7 +96,8 @@ a:active {
               Page settings 
    *****************************************/
 
-body, html {
+body,
+html {
   scroll-padding-top: 120px;
   height: 100%;
 }
@@ -111,7 +112,7 @@ body, html {
 
 .bg-hero {
   background-color: var(--green);
-  height: 100%;
+  height: 600px;
   background-size: cover;
 }
 
@@ -204,7 +205,7 @@ li {
    *****************************************/
 
 .banner-overlay-container {
-  height: 30%;
+  height: 20%;
   width: auto;
   position: absolute;
   bottom: 10%;
@@ -215,7 +216,7 @@ li {
 
 .banner-overlay {
   position: relative;
-  height: 50%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -223,7 +224,7 @@ li {
 
 .banner-logo {
   left: auto;
-  height: 90%;
+  height: 100%;
   width: auto;
   flex: 0 0 auto;
   margin-left: -80px;
@@ -273,7 +274,7 @@ li {
 .page-banner {
   position: relative;
   background-size: cover !important;
-  background-position: center;
+  background-position-y: center;
   background-repeat: no-repeat;
 }
 
@@ -287,102 +288,103 @@ li {
 
 .team-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo.jpg');
+  background-position-y: 20%;
 }
 
 .experiments-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-experiments.jpg');
+  /* background-image: url(''); */
 }
 
 .sustainable-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-sustainable-development.jpg');
+  /* background-image: url(''); */
 }
 
 .description-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-project-description.jpg');
+  /* background-image: url(''); */
 }
 
 .collaborations-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-collaborations.jpg');
+  /* background-image: url(''); */
 }
 
 .contribution-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-contribution.jpg');
+  /* background-image: url(''); */
 }
 
 .safety-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-safety.jpg');
+  /* background-image: url(''); */
 }
 
 .results-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-results.jpg');
+  /* background-image: url(''); */
 }
 
 .proofofconcept-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-proof-of-concept.jpg');
+  /* background-image: url(''); */
 }
 
 .overview-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-overview.jpg');
+  /* background-image: url(''); */
 }
 
 .notebook-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-notebook.jpg');
+  /* background-image: url(''); */
 }
 
 .model-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-model.jpg');
+  /* background-image: url(''); */
 }
 
 .medals-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-medal-criteria.jpg');
+  /* background-image: url(''); */
 }
 
 .implementation-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-implementation.jpg');
+  /* background-image: url(''); */
 }
 
 .humanpractices-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-human-practices.jpg');
+  /* background-image: url(''); */
 }
 
 .engineering-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-engineering.jpg');
+  /* background-image: url(''); */
 }
 
 .education-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-education.jpg');
+  /* background-image: url(''); */
 }
 
 .design-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-design.jpg');
+  /* background-image: url(''); */
 }
 
 .communication-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-communication.jpg');
+  /* background-image: url(''); */
 }
 
 .attributions-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-attributions.jpg');
+  /* background-image: url(''); */
 }
 
 .partnership-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-partnership.jpg');
+  /* background-image: url(''); */
 }
 
 .drylab-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-dry-lab.jpg');
+  /* background-image: url(''); */
 }
 
 .inclusivity-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-inclusivity.jpg');
+  /* background-image: url(''); */
 }
 
 .parts-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-parts.jpg');
+  /* background-image: url(''); */
 }
 
 .partcollection-title {
-  background-image: url('https://static.igem.wiki/teams/4207/wiki/compressed-header-part-collection.jpg');
+  /* background-image: url(''); */
 }
 
 
