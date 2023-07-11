@@ -64,3 +64,13 @@ pip install -r dependencies.txt
 ```bash
 python app.py
 ```
+
+#### Fixed installation notes
+```bash
+INSTALL
+py -m venv venv
+venv\Scripts\activate
+pip install -r dependencies.txt
+DEVELOP
+flask --app app.py --debug run
+```
