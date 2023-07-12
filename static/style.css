@@ -47,6 +47,7 @@ Yellow - #f1d490
 
 p {
   color: var(--text-inverted);
+  font-size: larger;
 }
 
 h1 {
