@@ -1,0 +1,1188 @@
+{
+    "december" : {
+        "week48": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [1],
+            "5": [2],
+            "6": [3],
+            "7": [4]
+        },
+        "week49": {
+            "1": [5],
+            "2": [6],
+            "3": [7],
+            "4": [8],
+            "5": [9],
+            "6": [10],
+            "7": [11]
+        },
+        "week50": {
+            "1": [12],
+            "2": [13],
+            "3": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 12 / 2022",
+                "subnav" : [{
+                    "title" : "Kick-off ABOA 2023 meeting",
+                    "description" : "Talked about what iGEM is, what last year’s team did, what are the next steps in this project and then the team members got to know each other a little bit."
+                }]
+            },
+            "4": [15],
+            "5": [16],
+            "6": [17],
+            "7": [18]
+        },
+        "week51": {
+            "1": [19],
+            "2": [20],
+            "3": [21],
+            "4": [22],
+            "5": [23],
+            "6": [24],
+            "7": [25]
+        },
+        "week52": {
+            "1": [26],
+            "2": [27],
+            "3": [28],
+            "4": [29],
+            "5": [30],
+            "6": [31],
+            "7": []
+        }
+    },
+    "january" : {
+        "week52" : {
+            "1" : [],
+            "2" : [],
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : [1]
+        },
+        "week01" : {
+            "1" : [2],
+            "2" : [3],
+            "3" : [4],
+            "4" : [5],
+            "5" : [6],
+            "6" : [7],
+            "7" : [8]
+        },
+        "week02" : {
+            "1" : [9],
+            "2" : [10],
+            "3" : {
+                "id" : "note",
+                "day" : 11,
+                "date" : "11 / 01 / 2023",
+                "subnav" : [{
+                    "title" : "1. team meeting",
+                    "description" : "Held first official team meeting where we selected team leaders, went through some practicalities and started brainstorming."
+                }]
+            },
+            "4" : [12],
+            "5" : [13],
+            "6" : [14],
+            "7" : [15]
+        },
+        "week03" : {
+            "1" : [16],
+            "2" : [17],
+            "3" : [18],
+            "4" : [19],
+            "5" : [20],
+            "6" : [21],
+            "7" : [22]
+        },
+        "week04" : {
+            "1" : [23],
+            "2" : {
+                "id" : "note",
+                "day" : 24,
+                "date" : "24 / 01 / 2023",
+                "subnav" : [{
+                    "title" : "2. team meeting",
+                    "description" : "Text here about the meeting"
+                }]
+            },
+            "3" : [25],
+            "4" : [26],
+            "5" : [27],
+            "6" : [28],
+            "7" : [29]
+        },
+        "week05" : {
+            "1" : [30],
+            "2" : {
+                "id" : "note",
+                "day" : 31,
+                "date" : "31 / 01 / 2023",
+                "subnav" : [{
+                    "title" : "3. team meeting",
+                    "description" : "Text here about the meeting"
+                }]
+            },
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : []
+        }
+    },
+    "february": {
+        "week05" : {
+            "1" : [],
+            "2" : [],
+            "3" : [1],
+            "4" : [2],
+            "5" : [3],
+            "6" : [4],
+            "7" : [5]
+        },
+        "week06": {
+            "1": [6],
+            "2": [7],
+            "3": [8],
+            "4": {
+                "id" : "note",
+                "day" : 9,
+                "date" : "09 / 02 / 2023",
+                "subnav" : [{
+                    "title" : "Instagram post about the new team",
+                    "description" : "First group photo of the team and a caption that says we are excited for this iGEM journey.",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/ig-9-2.jpg"
+                }]
+            },
+            "5": [10],
+            "6": [11],
+            "7": [12]
+        },
+        "week07": {
+            "1": [13],
+            "2": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 02 / 2023",
+                "subnav" : [{
+                    "title" : "4. team meeting",
+                    "description" : "Text here about the meeting"
+                },{
+                    "title" : "1. human practice meeting",
+                    "description" : "Started to vision our team values, talked about Bioteollisuus Forum presentation, looked at the medal criteria and started to plan our education journey"
+                }]
+            },
+            "3": [15],
+            "4": [16],
+            "5": [17],
+            "6": [18],
+            "7": [19]
+        },
+        "week08": {
+            "1": [20],
+            "2": [21],
+            "3": [22],
+            "4": [23],
+            "5": [24],
+            "6": [25],
+            "7": {
+                "id" : "note",
+                "day" : 26,
+                "date" : "26 / 06 / 2023",
+                "subnav" : [{
+                    "title" : " Instagram post about the new logo",
+                    "description" : "Post about our logo with the new team colors that Jesse picked out (team voted which combo is the best). Quote from the caption: We wanted to carry on the tradition where the new ABOA team picks out their own new colors for the team logo!",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/ig-26-2.jpg"
+                }]
+            }
+        },
+        "week09": {
+            "1": [27],
+            "2": {
+                "id" : "note",
+                "day" : 28,
+                "date" : "28 / 02 / 2023",
+                "subnav" : [{
+                    "title" : "5. team meeting",
+                    "description" : "Text here about the meeting"
+                }]
+            },
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": []
+        } 
+    },
+    "march" : {
+        "week9": {
+            "1": [],
+            "2": [],
+            "3": [1],
+            "4": [2],
+            "5": [3],
+            "6": [4],
+            "7": [5]
+        },
+        "week10": {
+            "1": {
+                "id" : "note",
+                "day" : 6,
+                "date" : "06 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Presentation to ÅA students",
+                    "description" : "Mariel and Ami went to present ABOA for 15 min to second-year biochemistry students to promote ABOA, iGEM and recruit new team members."
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 7,
+                "date" : "07 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "6. team meeting",
+                    "description" : ""
+                }]
+            },
+            "3": [8],
+            "4": {
+                "id" : "note",
+                "day" : 9,
+                "date" : " 09/ 03 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Pauli about the project idea",
+                    "description" : "Meeting with our PI to talk about the project topics we have been thinking about. We narrowed down the possible topics to a few of them."
+                }]
+            },
+            "5": {
+                "id" : "note",
+                "day" : 10,
+                "date" : " 10 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "2. fundraising meeting",
+                    "description" : "Planned fundraising strategy, wrote an email base and set responsibilities to each subteam member."
+                }]
+            },
+            "6": {
+                "id" : "note",
+                "day" : 11,
+                "date" : "11 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Team leaders meeting",
+                    "description" : "Sara and Mariel went to have a cup of coffee and tea. We discussed what should be done and when. Basic team administration."
+                }]
+            },
+            "7": [12]
+        },
+        "week11": {
+            "1": {
+                "id" : "note",
+                "day" : 13,
+                "date" : "13 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Presentation to ÅA students",
+                    "description" : "Sara and Saana went to present ABOA for 15 min to third-year students to promote ABOA, iGEM and recruit team members. We got two team members after this!!"
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Photoshoot & hangout",
+                    "description" : "We took our first professional group photos and individual photos at Quantum. After the photoshoot we went to a pub to hangout."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 15,
+                "date" : "15 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "7. team meeting",
+                    "description" : ""
+                }]
+            },
+            "4": [16],
+            "5": [17],
+            "6": [18],
+            "7": [19]
+        },
+        "week12": {
+            "1": [20],
+            "2": {
+                "id" : "note",
+                "day" : 21,
+                "date" : "21 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "8. team meeting",
+                    "description" : ""
+                }]
+            },
+            "3": [22],
+            "4": {
+                "id" : "note",
+                "day" : 23,
+                "date" : "23 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "1. media meeting",
+                    "description" : "Promo video planning, decided how to execute the individual introductions on Instagram and updated our social media accounts."
+                }, {
+                    "title" : "Individual introduction begins on Instagram",
+                    "description" : "We introduced every team member on Instagram: their name, what they study, what sub teams they are part of and favorite things."
+                }]
+            },
+            "5": [24],
+            "6": [25],
+            "7": [26]
+        },
+        "week13": {
+            "1": [27],
+            "2": {
+                "id" : "note",
+                "day" : 28,
+                "date" : "28 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Human practice meeting with Aino (about the kindergarten visit)",
+                    "description" : "We talked with Aino, who is a preschool teacher at Ilpoisten päiväkoti, to talk about how we should teach the children about synthetic biology."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 29,
+                "date" : "29 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Jesper",
+                    "description" : "Satu and Joakim had a meeting with Jasper. They visited the lab, the warehouse and talked about the lab work in general."
+                }, {
+                    "title" : "9. team meeting",
+                    "description" : "Went through what lab teams are doing, what is the budget (750€) and agreed on team values."
+                }]
+            },
+            "4": [30],
+            "5": {
+                "id" : "note",
+                "day" : 31,
+                "date" : "31 / 03 / 2023",
+                "subnav" : [{
+                    "title" : "Collaboration with patras.med",
+                    "description" : "Participated in a World Health Day collaboration that was organized by the Patras Medicine iGEM team. We made and decorated a poster about Joyce Meyer’s quote. We sent a photo of us with the poster to Patras Medicine and they made an Instagram compilation of iGEM teams who participated.",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/ig-31-3.jpg"
+                }]
+            },
+            "6": [],
+            "7": []
+        }
+    },
+    "april" : {
+        "week13": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [1],
+            "7": [2]
+        },
+        "week14": {
+            "1": {
+                "id" : "note",
+                "day" : 3,
+                "date" : "03 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with the vice faculty of UTU",
+                    "description" : "Sara and Ami held a presentation about ABOA and our project. We got a grant from the University of Turku after this meeting."
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 4,
+                "date" : "04 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "10. meeting",
+                    "description" : "",
+                    "image" : ""
+                }, {
+                    "title" : "3. Fundraising meeting",
+                    "description" : "We sent fundraising emails to companies together and applied for grants."
+                }]
+            },
+            "3": [5],
+            "4": [6],
+            "5": [7],
+            "6": [8],
+            "7": [9]
+        },
+        "week15": {
+            "1": [10],
+            "2": {
+                "id" : "note",
+                "day" : 11,
+                "date" : "11 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Kindergarten visit",
+                    "description" : "We visited Ilpoisten päiväkoti and taught 3- to 5-year-old children about lab safety and cell modification."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 12,
+                "date" : "12 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "11. team meeting",
+                    "description" : ""
+                }, {
+                    "title" : "Promo video meeting",
+                    "description" : "We brainstormed promo video ideas and decided the plan and schedule for the execution."
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 13,
+                "date" : "13 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Pauli about the team registration",
+                    "description" : "We discussed how to do the team registration."
+                }]
+            },
+            "5": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Juha Kurkela",
+                    "description" : "Talked overall about Synechocystis, what things need to be considered when growing cyanobacteria, how to monitor cell functions and how to handle mercury in the lab."
+                }]
+            },
+            "6": [15],
+            "7": [16]
+        },
+        "week16": {
+            "1": [17],
+            "2": {
+                "id" : "note",
+                "day" : 18,
+                "date" : "18 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Clean up collab",
+                    "description" : "In honor of Earth Day we participated in a Clean Up collaboration that was organized by the iGEM Bulgaria team. We cleaned up the area near our campuses.",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/ig-18-4.jpg"
+                }, {
+                    "title" : "12. team meeting",
+                    "description" : ""
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 19,
+                "date" : "19 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Bioteollisuus Forum",
+                    "description" : "We had an opportunity to talk about synthetic biology, our project and iGEM in general in the Bioteollisuus Forum that was organized by Finnish Bioindustries. Before our presentation we learn about the current situation of synthetic biology in Finland and the different Finnish companies in this field. After the presentations we had the chance to have eye-opening conversations with the representatives of various bioindustry companies and organizations."
+                }]
+            },
+            "4": [20],
+            "5": [21],
+            "6": [22],
+            "7": [23]
+        },
+        "week17": {
+            "1": [24],
+            "2": {
+                "id" : "note",
+                "day" : 25,
+                "date" : "25 / 04 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Pauli: team registration",
+                    "description" : "Sara and Mariel had a meeting with our PI. They registered the team for the iGEM competition and discussed how to proceed. They also got some very good advice as team leaders from the PI."
+                }]
+            },
+            "3": [26],
+            "4": [27],
+            "5": [28],
+            "6": [29],
+            "7": [30]
+        }
+    },
+    "may" : {
+        "week18": {
+            "1": [1],
+            "2": {
+                "id" : "note",
+                "day" : 2,
+                "date" : "02 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "13. meeting",
+                    "description" : ""
+                }]
+            },
+            "3": [3],
+            "4": {
+                "id" : "note",
+                "day" : 4,
+                "date" : "04 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "2. Media meeting",
+                    "description" : "Discussed the promo video and its schedule, started to plan our education campaign and decided upon our project reveal."
+                }, {
+                    "title" : "Meeting with Jesper",
+                    "description" : "Discussed how to get started with lab, research and what things need to be considered in the different phases of the project."
+                }]
+            },
+            "5": [5],
+            "6": [6],
+            "7": [7]
+        },
+        "week19": {
+            "1": [8],
+            "2": {
+                "id" : "note",
+                "day" : 9,
+                "date" : "09 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Beginning of the post series Synthetic biology with ABOA",
+                    "description" : "We started our educational campaign on Instagram. We explained different synthetic biology terms and topics regarding our projects.",
+                    "image" : ""
+                }, {
+                    "title" : "Meeting with Aalto-Helsinki team",
+                    "description" : "We had a Zoom meeting with the other Finnish team: Aalto-Helsinki. We presented our project ideas and talked about collaboration ideas.",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/aalto-9-5.jpg"
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 10,
+                "date" : "10 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "14. meeting",
+                    "description" : ""
+                }, {
+                    "title" : "4. Human practice meeting",
+                    "description" : "Discussed our interest in Turku’s Comic Festival, decided the plan for Tiedekoulu visit, planned our future events and compiled a list of questions that you help start the conversations with our stakeholders."
+                }]
+            },
+            "4": [11],
+            "5": {
+                "id" : "note",
+                "day" : 12,
+                "date" : "12 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "KSYK visit",
+                    "description" : "Visited an upper secondary school in Helsinki called Kulosaaren yhteiskoulu. We taught them about our project, iGEM and different biology terms especially those regarding genetically modified organisms. To activate the audience and get the conversation following, the students got to brainstorm their own iGEM project and we went through those together in the classroom.",
+                    "image" : ""
+                }]
+            },
+            "6": [13],
+            "7": [14]
+        },
+        "week20": {
+            "1": {
+                "id" : "note",
+                "day" : 15,
+                "date" : "15 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Laboratory orientation",
+                    "description" : "Everyone who wanted to work in the lab during the summer needed to participate in a laboratory orientation which Anniina Lepistö held in order to ensure the safety of us and others. We walked through the different lab facilities, learned protocols regarding autoclave and other devices, learned about the break room etiquette (if you drink coffee, you bring coffee) and said hi to various people working in the lab."
+                }, {
+                    "title" : "Tiedekoulu visit",
+                    "description" :"We visited Turku’s Tiedekoulu (Science school in English) and there we taught the children about cells, microscopes and together we extracted DNA from bananas.",
+                    "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/tiedekoulu-15-5.jpg"
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 16,
+                "date" : "16 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Subteam leaders meeting",
+                    "description" : "We had a meeting with the subteam leaders to check that everything is already for the upcoming summer months."
+                }, {
+                    "title" : "15. meeting",
+                    "description" : ""
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 17,
+                "date" : "17 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Pauli, Ville & Joakim on plasmids",
+                    "description" : "Went over research to decide the genes we would be working with. Then started to design the genes and the construct."
+                }]
+            },
+            "4": [18],
+            "5": [19],
+            "6": [20],
+            "7": [21]
+        },
+        "week21": {
+            "1": {
+                "id" : "note",
+                "day" : 22,
+                "date" : "22 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Lab meeting",
+                    "description" : "Went over what progress has been made and how we should continue."
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 23,
+                "date" : "23 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Heureka meeting",
+                    "description" : "Had a meeting with Aalto-Helsinki and Heureka. We discussed the possible workshops and dates for the education events."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 24,
+                "date" : "24 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "5. Human Practice meeting",
+                    "description" : "We planned our future Human practice work and education journey: we planned how to organize "
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 25,
+                "date" : "25 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Celine",
+                    "description" : "We discussed what are the sources and impacts of mercury in aquatic ecosystems."
+                }, {
+                    "title" : "Meeting with Arja",
+                    "description" : "We discussed forestry, its history and future, how forestry is done on marshlands. We discussed ditching of marshlands and what are its impacts on forests, ecosystems and mercury emissions."
+                }]
+            },
+            "5": [26],
+            "6": [27],
+            "7": [28]
+        },
+        "week22": {
+            "1": {
+                "id" : "note",
+                "day" : 29,
+                "date" : "29 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Antti Kaseva",
+                    "description" : "We discussed water purification technologies, ditching of marshlands, processed waters and the fertilization of marshland forests."
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 30,
+                "date" : "30 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "16. team meeting",
+                    "description" : ""
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 31,
+                "date" : "31 / 05 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Kimmo Kahilainen",
+                    "description" : "We discussed mercury in ecosystems, its impact, Minamata convention and eutrophication of bodies of water. We also got some very good advice concerning scientific research."
+                }]
+            },
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": []
+        }
+    },
+    "june" : {
+        "week22": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": {
+                "id" : "note",
+                "day" : 1,
+                "date" : "01 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting Linda Vuorijoki",
+                    "description" : "Joakim met with Linda Vuorijoki and they discussed about codons and how to harmonize them."
+                }, {
+                    "title" : "Team shirts arrived",
+                    "description" : "Our team shirts arrived which were provided to us by Turku University of Applied Sciences."
+                }]
+            },
+            "5": [2],
+            "6": [3],
+            "7": [4]
+        },
+        "week23": {
+            "1": {
+                "id" : "note",
+                "day" : 5,
+                "date" : "05 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "World Environment Day collab",
+                    "description" : "To celebrate World Environment Day, we published the collaboration video we organized. We asked various iGEM teams to tell us how they are saving this environment. Huge thank you to all the amazing teams that participated: iGEM Thrace, iGEM MIT-MAHE, iGEM Aix-Marseille, iGEM TU Braunschweig, iGEM UniCRETE and iGEM TU Dresden.",
+                    "image" : ""
+                }, {
+                    "title" : "The lab work began ",
+                    "description" : "We began our lab work! Growing E.coli culture for extracting the constructs."
+                }]
+            },
+            "2": [6],
+            "3": [7],
+            "4": {
+                "id" : "note",
+                "day" : 8,
+                "date" : "08 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "IT meeting",
+                    "description" : "Discussed our ideas, the schedule and how are we preceding with the wiki building."
+                }]
+            },
+            "5": [9],
+            "6": [10],
+            "7": [11]
+        },
+        "week24": {
+            "1": [12],
+            "2": {
+                "id" : "note",
+                "day" : 13,
+                "date" : "13 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Impact grant application sent",
+                    "description" : "Sara and Mariel double checked our implication grant application and then sent it."
+                }, {
+                    "title" : "17. meeting",
+                    "description" : ""
+                }, {
+                    "title" : "Village decision done",
+                    "description" : "We filled out the village decision preference form."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Photoshoot with new team shirts",
+                    "description" : "We took group photos and individual photos with our new team shirts. We also filmed a part of the promo video."
+                }, {
+                    "title" : "Project reveal",
+                    "description" : "We posted our project reveal on our social media platforms: Instagram, Facebook, LinkedIn and TikTok."
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 15,
+                "date" : "15 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Filming at a swamp",
+                    "description" : "Promo video team took a trip to a nearby marshland called Pomponrahka. We filmed parts of the promo video."
+                }]
+            },
+            "5": [16],
+            "6": [17],
+            "7": {
+                "id" : "note",
+                "day" : 18,
+                "date" : "18 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Project description ready (for the first deadline)",
+                    "description" : "IT put up our project description on our wiki page."
+                }]
+            }
+        },
+        "week25": {
+            "1": {
+                "id" : "note",
+                "day" : 19,
+                "date" : "19 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Preliminary Safety Form sent",
+                    "description" : "Together with our PI Satu looked over our safety form and sent the preliminary version."
+                }]
+            },
+            "2": [20],
+            "3": [21],
+            "4": [22],
+            "5": [23],
+            "6": [24],
+            "7": [25]
+        },
+        "week26": {
+            "1": [26],
+            "2": {
+                "id" : "note",
+                "day" : 27,
+                "date" : "27 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "18. meeting",
+                    "description" : ""
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 28,
+                "date" : "28 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Team leaders meeting",
+                    "description" : "Discussed what to do, when and who is in charge. We also did team administration."
+                }]
+            },
+            "4": [29],
+            "5": [30],
+            "6": [],
+            "7": []
+        }
+    },
+    "july" : {
+        "week26": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [1],
+            "7": [2]
+        },
+        "week27": {
+            "1": [3],
+            "2": [4],
+            "3": [5],
+            "4": [6],
+            "5": [7],
+            "6": [8],
+            "7": [9]
+        },
+        "week28": {
+            "1": {
+                "id" : "note",
+                "day" : 10,
+                "date" : "10 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Team leaders meeting",
+                    "description" : "Discussed the trip to Paris and came up with team rules to keep up the work. Also some project administration."
+                }]
+            }
+,
+            "2": {
+                "id" : "note",
+                "day" : 11,
+                "date" : "11 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Sub team leaders meeting",
+                    "description" : "Went through what is going on in every subteam and how to proceed. We also agreed on the team rules."
+                }, {
+                    "title" : "19. team meeting",
+                    "description" : ""
+                }]
+            }
+,
+            "3": [12],
+            "4": {
+                "id" : "note",
+                "day" : 13,
+                "date" : "13 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "HS Turku interview",
+                    "description" : "Helsingin Sanomat Turku division came to our lab to interview us about our project and synthetic biology."
+                }]
+            }
+,
+            "5": [14],
+            "6": [15],
+            "7": [16]
+        },
+        "week29": {
+            "1": [17],
+            "2": {
+                "id" : "note",
+                "day" : 18,
+                "date" : "18 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "New gene order",
+                    "description" : "Joakim made new gene order with added cutsites for cloning in pUC-19"
+                }]
+            }
+,
+            "3": [19],
+            "4": {
+                "id" : "note",
+                "day" : 20,
+                "date" : "20 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Implementation meeting",
+                    "description" : "Discussed our implementation and who to contact to discuss our idea."
+                }]
+            }
+,
+            "5": [21],
+            "6": {
+                "id" : "note",
+                "day" : 22,
+                "date" : "22 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Our video was presented in JulyGEM",
+                    "description" : "iGEM Calgary organized an event called JulyGEM in which we participated via recording."
+                }]
+            }
+,
+            "7": [23]
+        },
+        "week30": {
+            "1": {
+                "id" : "note",
+                "day" : 24,
+                "date" : "24 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Aalto-Helsinki meet up",
+                    "description" : "We invited Aalto-Helsinki team to Turku. We went sightseeing, gave them a tour of our lab and campus, ate in our student cafeteria and got to know each other.",
+                    "image" : ""
+                }, {
+                    "title" : "Had a conversation with Ari Savikko from Suomen Kalakirjasto",
+                    "description" : "We had a conversation with a fisherman called Ari Savikko. He helped us understand the current situation of fish and our waters by telling us about artificial lakes Finland has and the way they have affected the environments."
+                }]
+            }
+,
+            "2": {
+                "id" : "note",
+                "day" : 25,
+                "date" : "25 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Had a conversation with Jaakko Ikonen",
+                    "description" : "We had a conversation with a fisherman called Jaakko Ikonen. We discussed the history of mercury, the current situation and how different things affect fish and fishers."
+                }, {
+                    "title" : "20. team meeting",
+                    "description" : ""
+                }]
+            }
+,
+            "3": {
+                "id" : "note",
+                "day" : 26,
+                "date" : "26 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Wet lab meeting",
+                    "description" : "Discussed about gene reorder in vectors and decided on the ordering of primers. Also talked about the next upcoming weeks of the lab."
+                }, {
+                    "title" : "Human Practice meeting",
+                    "description" : "Discussed the Human Practice question upon the iGEM website and the vision about our work"
+                }]
+            }
+,
+            "4": [27],
+            "5": [28],
+            "6": [29],
+            "7": [30]
+        },
+        "week31": {
+            "1": [31],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": []
+        }
+    },
+    "august" : {
+        "week31": {
+            "1": [],
+            "2": [1],
+            "3": [2],
+            "4": [3],
+            "5": [4],
+            "6": [5],
+            "7": [6]
+        },
+        "week32": {
+            "1": [7],
+            "2": [8],
+            "3": [9],
+            "4": [10],
+            "5": [11],
+            "6": [12],
+            "7": [13]
+        },
+        "week33": {
+            "1": [14],
+            "2": [15],
+            "3": [16],
+            "4": [17],
+            "5": [18],
+            "6": [19],
+            "7": [20]
+        },
+        "week34": {
+            "1": [21],
+            "2": [22],
+            "3": [23],
+            "4": [24],
+            "5": [25],
+            "6": [26],
+            "7": [27]
+        },
+        "week35": {
+            "1": [28],
+            "2": [29],
+            "3": [30],
+            "4": [31],
+            "5": [],
+            "6": [],
+            "7": []
+        }
+    },
+    "september" : {
+        "week35": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [1],
+            "6": [2],
+            "7": [3]
+        },
+        "week36": {
+            "1": [4],
+            "2": [5],
+            "3": [6],
+            "4": [7],
+            "5": [8],
+            "6": [9],
+            "7": [10]
+        },
+        "week37": {
+            "1": [11],
+            "2": [12],
+            "3": [13],
+            "4": [14],
+            "5": [15],
+            "6": [16],
+            "7": [17]
+        },
+        "week38": {
+            "1": [18],
+            "2": [19],
+            "3": [20],
+            "4": [21],
+            "5": [22],
+            "6": [23],
+            "7": [24]
+        },
+        "week39": {
+            "1": [25],
+            "2": [26],
+            "3": [27],
+            "4": [28],
+            "5": [29],
+            "6": [30],
+            "7": []
+        }
+    },
+    "october" : {
+        "week39" : {
+            "1" : [],
+            "2" : [],
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : [1]
+        },
+        "week40" : {
+            "1" : [2],
+            "2" : [3],
+            "3" : [4],
+            "4" : [5],
+            "5" : [6],
+            "6" : [7],
+            "7" : [8]
+        },
+        "week41" : {
+            "1" : [9],
+            "2" : [10],
+            "3" : [11],
+            "4" : [12],
+            "5" : [13],
+            "6" : [14],
+            "7" : [15]
+        },
+        "week42" : {
+            "1" : [16],
+            "2" : [17],
+            "3" : [18],
+            "4" : [19],
+            "5" : [20],
+            "6" : [21],
+            "7" : [22]
+        },
+        "week43" : {
+            "1" : [23],
+            "2" : [24],
+            "3" : [25],
+            "4" : [26],
+            "5" : [27],
+            "6" : [28],
+            "7" : [29]
+        },
+        "week44" : {
+            "1" : [30],
+            "2" : [31],
+            "3" : [],
+            "4" : [],
+            "5" : [],
+            "6" : [],
+            "7" : []
+        }
+    },
+    "november" : {
+        "week44" : {
+            "1" : [],
+            "2" : [],
+            "3" : [1],
+            "4" : [2],
+            "5" : [3],
+            "6" : [4],
+            "7" : [5]
+        },
+        "week45": {
+            "1": [6],
+            "2": [7],
+            "3": [8],
+            "4": [9],
+            "5": [10],
+            "6": [11],
+            "7": [12]
+        },
+        "week46": {
+            "1": [13],
+            "2": [14],
+            "3": [15],
+            "4": [16],
+            "5": [17],
+            "6": [18],
+            "7": [19]
+        },
+        "week47": {
+            "1": [20],
+            "2": [21],
+            "3": [22],
+            "4": [23],
+            "5": [24],
+            "6": [25],
+            "7": [26]
+        },
+        "week48": {
+            "1": [27],
+            "2": [28],
+            "3": [29],
+            "4": [30],
+            "5": [],
+            "6": [],
+            "7": []
+        } 
+    }   
+}
