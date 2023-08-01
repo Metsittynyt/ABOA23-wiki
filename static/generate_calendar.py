@@ -70,7 +70,7 @@ def generate_note_cell(note_data, colNum):
         cell_html += f'<button class="subnavbtn">{subnav_item["title"]} <i class="fa fa-caret-down"></i></button>'
         cell_html += '<div class="subnav-content">'
         cell_html += f'<p>{subnav_item["description"]}</p>'
-        # Cjeck if subnav item has an image
+        # Check if subnav item has an image
         if "image" in subnav_item:
                 cell_html += f'<img src="{subnav_item["image"]}" alt="{subnav_item["title"]}" class="subnav-img">'
         cell_html += '</div>'

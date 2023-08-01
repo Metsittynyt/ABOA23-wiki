@@ -459,8 +459,7 @@ caption {
 }
 
 #note hr, .dropdown-content hr {
-  height: 1px;
-  background-color: var(--background);
+  border: 1px solid var(--darkBlue);
 }
 
 .dropdown {
@@ -506,10 +505,10 @@ caption {
 .subnav {
   float: left;
   overflow: hidden;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-bottom: 10px;
-  width: 330px;
+  width: 100%;
 }
 
 /* Subnav button */
@@ -517,7 +516,7 @@ caption {
   font-size: 16px;
   border: none;
   outline: none;
-  width: 330px;
+  width: 100%;
   color: var(--darkBlue);
   text-align: left;
   vertical-align: middle;
