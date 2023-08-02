@@ -292,6 +292,21 @@ li {
   background-position-y: 20%;
 }
 
+@media only screen and (max-width: 800px) {
+  .team-title {
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-position-y: 20%;
+    background-position-x: 20%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .team-title {
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-position-y: center;
+    background-position-x: center;
+  }
+}
+
 .notebook-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/kiekura.png');
   background-position-y: 100px;
@@ -401,12 +416,13 @@ td {
   /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
-td:hover{
+td:hover {
   background-color: var(--violet);
   /* font-weight: bold; */
 }
 
-td, th {
+td,
+th {
   width: 50px;
   height: 30px;
   text-align: center;
@@ -425,17 +441,17 @@ caption {
   color: var(--darkBlue);
 }
 
-#note{
+#note {
   background-color: rgba(145, 233, 208, 0.8);
 }
 
-#note a{
+#note a {
   color: var(--violet);
   text-decoration: none;
   font-size: medium;
 }
 
-#note p{
+#note p {
   color: black;
   font-size: medium;
   margin: 0;
@@ -460,7 +476,8 @@ caption {
   margin-left: -5px;
 }
 
-#note hr, .dropdown-content hr {
+#note hr,
+.dropdown-content hr {
   border: 1px solid var(--darkBlue);
 }
 
@@ -481,7 +498,7 @@ caption {
   max-height: 300px;
   overflow-y: auto;
   overflow-x: hidden;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   /* padding: 5px; */
   margin-left: -350%;
   z-index: 1;
@@ -493,8 +510,10 @@ caption {
 }
 
 .dropdown-content::-webkit-scrollbar-thumb {
-  background-color: var(--yellow); /* Color of the thumb */
-  border-radius: 5px; /* Rounded corners of the thumb */
+  background-color: var(--yellow);
+  /* Color of the thumb */
+  border-radius: 5px;
+  /* Rounded corners of the thumb */
 }
 
 .dropdown:hover .dropdown-content {
@@ -542,7 +561,8 @@ caption {
 }
 
 .subnavbtn:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  content: '\002B';
+  /* Unicode character for "plus" sign (+) */
   font-size: 23px;
   color: var(--darkBlue);
   float: right;
@@ -550,13 +570,17 @@ caption {
 }
 
 .subnav .subnavbtn.active {
-  background-color: rgba(255, 255, 255, 0.8); /* Change background color when active */
-  border: 1px solid var(--darkBlue); /* Add border when active */
-  border-bottom: none;  /* Remove border betwwn content and button */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Change background color when active */
+  border: 1px solid var(--darkBlue);
+  /* Add border when active */
+  border-bottom: none;
+  /* Remove border betwwn content and button */
 }
 
 .active:after {
-  content: "\002D"; /* Unicode character for "minus" sign (-) */
+  content: "\002D";
+  /* Unicode character for "minus" sign (-) */
 }
 
 .dropdownbtn {
