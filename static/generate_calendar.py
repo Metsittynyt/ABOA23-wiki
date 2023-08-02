@@ -45,7 +45,8 @@ def generate_calendar_table(data):
 def generate_note_cell(note_data, colNum):
     cell_html = f'<td id="note">'
     cell_html += '<div class="dropdown">'
-    cell_html += f'<span>{note_data["day"]}</span>'
+    cell_html += f'<button class="dropdownbtn"><span>{note_data["day"]}</span></button>'
+
     # move dropdown content so that it hovers over table
     if colNum == 1 :
         cell_html += '<div class="dropdown-content" style="margin-left: -10px;">'
@@ -59,11 +60,12 @@ def generate_note_cell(note_data, colNum):
         cell_html += '<div class="dropdown-content" style="margin-left: -250px;">'
     elif colNum == 7:
         cell_html += '<div class="dropdown-content" style="margin-left: -295px;">'
-    else :
+    else:
         cell_html += '<div class="dropdown-content">'
+
+    cell_html += f'<button class="closebtn">x</button>'  # Close button
     cell_html += f'<h3>{note_data["date"]}</h3>'
     cell_html += '<hr>'
-
 
     for subnav_item in note_data["subnav"]:
         cell_html += '<div class="subnav">'
@@ -72,15 +74,15 @@ def generate_note_cell(note_data, colNum):
         cell_html += f'<p>{subnav_item["description"]}</p>'
         # Check if subnav item has an image
         if "image" in subnav_item:
-                cell_html += f'<img src="{subnav_item["image"]}" alt="{subnav_item["title"]}" class="subnav-img">'
+            cell_html += f'<img src="{subnav_item["image"]}" alt="{subnav_item["title"]}" class="subnav-img">'
         cell_html += '</div>'
         cell_html += '</div>'
         cell_html += '<hr>'
 
-
     cell_html += '</div>'
     cell_html += '</td>'
     return cell_html
+
 
 
 
@@ -96,7 +98,7 @@ def insert_calendar_into_notebook(data_file_path, notebook_file_path):
         notebook_content = notebook_file.read()
 
     # Find the start and end indices of the block containing old calendars
-    start_marker = '{% block page_content %}'
+    start_marker = '{% block calendar %}'
     end_marker = '{% endblock %}'
     start_index = notebook_content.find(start_marker)
     end_index = notebook_content.find(end_marker, start_index)

@@ -1,5 +1,5 @@
 /*****************************************
-            Fonts and colors 
+            Fonts and colors
  *****************************************/
 
 /* Colors */
@@ -94,7 +94,7 @@ a:active {
 }
 
 /*****************************************
-              Page settings 
+              Page settings
    *****************************************/
 
 body,
@@ -161,7 +161,7 @@ li {
 
 
 /*****************************************
-                  CALLOUT 
+                  CALLOUT
    *****************************************/
 
 .bd-callout {
@@ -202,7 +202,7 @@ li {
 }
 
 /*****************************************
-                  Banners 
+                  Banners
    *****************************************/
 
 .banner-overlay-container {
@@ -449,6 +449,8 @@ caption {
   color: var(--violet);
   margin: 0;
   margin-top: 10px;
+  width: 90%;
+  padding-left: 10%;
 }
 
 #note img {
@@ -466,16 +468,14 @@ caption {
   width: 100%;
   position: relative;
   display: inline-block;
+  display: block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   bottom: 100%;
-  left: 0;
   background-color: var(--turquoise);
-  color: white;
-  font-weight: normal;
   border: 1px solid var(--background);
   width: 350px;
   max-height: 300px;
@@ -483,7 +483,7 @@ caption {
   overflow-x: hidden;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   /* padding: 5px; */
-  margin-left: -155px;
+  margin-left: -350%;
   z-index: 1;
 }
 
@@ -559,6 +559,30 @@ caption {
   content: "\002D"; /* Unicode character for "minus" sign (-) */
 }
 
+.dropdownbtn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--green);
+}
+
+.calendar {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*****************************************
                 Navigation
    *****************************************/
@@ -570,11 +594,6 @@ caption {
   border-radius: 0;
   border-color: white;
   border-width: 1px;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
 }
 
 .dropdown-item:hover {
@@ -610,7 +629,7 @@ caption {
 
 
 /*****************************************
-                  Footer 
+                  Footer
    *****************************************/
 footer a {
   color: var(--text);
@@ -673,7 +692,7 @@ footer a:active {
 
 
 /*****************************************
-                  Team members 
+                  Team members
    *****************************************/
 .team_settings {
   text-align: center;
@@ -744,4 +763,14 @@ footer a:active {
 
 .flip.flip-vertical:hover>.back {
   transform: rotateX(0deg);
+}
+
+/*****************************************
+                  Container
+   *****************************************/
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
 }
