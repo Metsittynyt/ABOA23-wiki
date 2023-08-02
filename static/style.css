@@ -312,6 +312,12 @@ li {
   background-position-y: 100px;
 }
 
+.description-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/description2.png');
+  background-position-y: center;
+  background-position-x: center;
+}
+
 /* .experiments-title {
   background-image: url('');
 }
@@ -320,9 +326,7 @@ li {
   background-image: url('');
 }
 
-.description-title {
-  background-image: url('');
-}
+
 
 .collaborations-title {
   background-image: url('');
