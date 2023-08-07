@@ -32,7 +32,6 @@ for (i = 0; i < subnavButtons.length; i++) {
 
 function toggleDropdownContent(index) {
   var dropdownContent = dropdownContents[index];
-  var dropdownButton = dropdownButtons[index];
   var closeButton = dropdownContent.querySelector(".closebtn");
 
   if (index === currentlyOpenDropdownIndex) {
