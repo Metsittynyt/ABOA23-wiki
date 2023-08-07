@@ -24,7 +24,7 @@ Yellow - #f1d490
   --text-inverted: black;
 
   /* Fonts */
-
+  --font: sans-serif;
 }
 
 @font-face {
@@ -102,6 +102,7 @@ html {
   scroll-padding-top: 120px;
   height: 100%;
 }
+
 
 .left-aligned {
   margin-left: auto;
@@ -299,6 +300,7 @@ li {
     background-position-x: 20%;
   }
 }
+
 @media only screen and (max-width: 550px) {
   .team-title {
     background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
@@ -374,9 +376,7 @@ li {
   background-image: url('');
 }
 
-.education-title {
-  background-image: url('');
-}
+
 
 .design-title {
   background-image: url('');
@@ -802,3 +802,115 @@ footer a:active {
     max-width: 90%;
   }
 }
+
+/*****************************************
+                  Timeline
+   *****************************************/
+
+   .timeline {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #00374e;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+  }
+
+  .timeline::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0px;
+  }
+  
+  .tabs input {
+    visibility: hidden;
+    display: none;
+  }
+  
+  .buttons {
+    position: fixed;
+    right: 50px;
+    bottom: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .buttons label {
+    width: 20px;
+    height: 20px;
+    background-color: #009372;
+    opacity: 0.5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  /* Adjust opacity and width for vertical buttons */
+  .tabs input:nth-child(1):checked~.buttons label:nth-child(1),
+  .tabs input:nth-child(2):checked~.buttons label:nth-child(2),
+  .tabs input:nth-child(3):checked~.buttons label:nth-child(3),
+  .tabs input:nth-child(4):checked~.buttons label:nth-child(4),
+  .tabs input:nth-child(5):checked~.buttons label:nth-child(5) {
+    opacity: 1;
+    height: 50px;
+  }
+  
+  .section {
+    position: relative;
+    width: 100%;
+    height: 800vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  
+  .section .box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 40px;
+    scroll-snap-align: start;
+  }
+  
+  .contentBox {
+    width: 90%;
+  }
+  
+  /* Corrected slide backgrounds */
+  .section .box.slide2 {
+    background: var(--yellow);
+  }
+  
+  .section .box.slide3 {
+    background: var(--turquoise);
+  }
+  
+  .section .box.slide4 {
+    background: var(--violet);
+  }
+  
+  /* Corrected CSS selectors for slide transitions */
+  .tabs input:nth-child(1):checked~.section {
+    top: 0;
+  }
+  
+  .tabs input:nth-child(2):checked~.section {
+    top: -100vh;
+  }
+  
+  .tabs input:nth-child(3):checked~.section {
+    top: -200vh;
+  }
+  .tabs input:nth-child(4):checked~.section {
+    top: -300vh;
+  }
+  .tabs input:nth-child(5):checked~.section {
+    top: -400vh;
+  }
