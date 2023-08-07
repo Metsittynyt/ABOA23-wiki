@@ -21,7 +21,7 @@
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
-
+  {% if self.title() != "Education" %}
   <!-- Header -->
   <header id="banner" class="bg-hero page-banner {{ self.title_class() }}">
     <div class="banner-overlay-container">
@@ -34,20 +34,21 @@
       </div>
     </div>
   </header>
+  {% endif %}
 
   <!-- Page Content -->
-  <div class="container pt-5">
-    {% block page_content %}{% endblock %}
-  </div>
+  {% block page_content %}{% endblock %}
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  {% if self.title() != "Education" %}
   {% include 'footer.html' %}
-
+  {% endif %}
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
-  
-  <script src="{{ url_for('static', filename = 'script.js') }}"></script>
+
+  <script src="{{ url_for('static', filename = 'notebook.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'timeline.js') }}"></script>
 
 </body>
 
