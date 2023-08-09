@@ -107,7 +107,7 @@
                 "date" : "24 / 01 / 2023",
                 "subnav" : [{
                     "title" : "2. team meeting",
-                    "description" : "Text here about the meeting"
+                    "description" : "We discussed office and work spaces, met a new team member and started brainstorming."
                 }]
             },
             "3" : [25],
@@ -124,7 +124,7 @@
                 "date" : "31 / 01 / 2023",
                 "subnav" : [{
                     "title" : "3. team meeting",
-                    "description" : "Text here about the meeting"
+                    "description" : "We decided sub team leaders for human practices, dry lab, wet lab and IT, talked about each group's responsibilities and met yet another new team member."
                 }]
             },
             "3" : [],
@@ -170,7 +170,7 @@
                 "date" : "14 / 02 / 2023",
                 "subnav" : [{
                     "title" : "4. team meeting",
-                    "description" : "Text here about the meeting"
+                    "description" : "We discussed this year’s team logo, making of one-pager and upcoming presentation for Suomen bioteollisuus ry."
                 },{
                     "title" : "1. human practice meeting",
                     "description" : "Started to vision our team values, talked about Bioteollisuus Forum presentation, looked at the medal criteria and started to plan our education journey"
@@ -208,7 +208,7 @@
                 "date" : "28 / 02 / 2023",
                 "subnav" : [{
                     "title" : "5. team meeting",
-                    "description" : "Text here about the meeting"
+                    "description" : "We agreed on future meeting time, what medals we would like to aim for and talked about labs."
                 }]
             },
             "3": [],
@@ -244,7 +244,7 @@
                 "date" : "07 / 03 / 2023",
                 "subnav" : [{
                     "title" : "6. team meeting",
-                    "description" : ""
+                    "description" : "We agreed on time for a team photoshoot and brainstormed for professionals to contact about our project idea."
                 }]
             },
             "3": [8],
@@ -302,7 +302,7 @@
                 "date" : "15 / 03 / 2023",
                 "subnav" : [{
                     "title" : "7. team meeting",
-                    "description" : ""
+                    "description" : "We met our new group members from Åbo Akademi, talked about starting a promotion video and discussed lab status."
                 }]
             },
             "4": [16],
@@ -318,7 +318,7 @@
                 "date" : "21 / 03 / 2023",
                 "subnav" : [{
                     "title" : "8. team meeting",
-                    "description" : ""
+                    "description" : "Talked about fundraising status, future school visits and what researchers have been contacted."
                 }]
             },
             "3": [22],
@@ -402,7 +402,7 @@
                 "date" : "04 / 04 / 2023",
                 "subnav" : [{
                     "title" : "10. meeting",
-                    "description" : "",
+                    "description" : "Talked about fundraising status, future school visits and team shirts.",
                     "image" : ""
                 }, {
                     "title" : "3. Fundraising meeting",
@@ -432,7 +432,7 @@
                 "date" : "12 / 04 / 2023",
                 "subnav" : [{
                     "title" : "11. team meeting",
-                    "description" : ""
+                    "description" : "Talked about collaboration with the Aalto-Helsinki team and arranging a meeting with them. Discussed also about our research plan and team registration."
                 }, {
                     "title" : "Promo video meeting",
                     "description" : "We brainstormed promo video ideas and decided the plan and schedule for the execution."
@@ -471,7 +471,7 @@
                     "image" : "https://static.igem.wiki/teams/4831/wiki/photos/notebook/ig-18-4.jpg"
                 }, {
                     "title" : "12. team meeting",
-                    "description" : ""
+                    "description" : "Went through IT, media and lab statuses, talked about registration and made a plan for summer."
                 }]
             },
             "3": {
@@ -515,7 +515,7 @@
                 "date" : "02 / 05 / 2023",
                 "subnav" : [{
                     "title" : "13. meeting",
-                    "description" : ""
+                    "description" : "Went through our current budget, upcoming events and lab team got everyone up to date on what was happening."
                 }]
             },
             "3": [3],
@@ -557,7 +557,7 @@
                 "date" : "10 / 05 / 2023",
                 "subnav" : [{
                     "title" : "14. meeting",
-                    "description" : ""
+                    "description" : "Talked about upcoming lab orientation, collaboration status with the Aalto-Helsinki team and project status."
                 }, {
                     "title" : "4. Human practice meeting",
                     "description" : "Discussed our interest in Turku’s Comic Festival, decided the plan for Tiedekoulu visit, planned our future events and compiled a list of questions that you help start the conversations with our stakeholders."
@@ -600,7 +600,7 @@
                     "description" : "We had a meeting with the subteam leaders to check that everything is already for the upcoming summer months."
                 }, {
                     "title" : "15. meeting",
-                    "description" : ""
+                    "description" : "Talked about the Biotop meeting, project name and future collaborations and upcoming events."
                 }]
             },
             "3": {
@@ -677,7 +677,7 @@
                 "date" : "30 / 05 / 2023",
                 "subnav" : [{
                     "title" : "16. team meeting",
-                    "description" : ""
+                    "description" : "We went through the budget, talked about making a project reveal video and what was going on with human practises and collaborations."
                 }]
             },
             "3": {
@@ -756,7 +756,7 @@
                     "description" : "Sara and Mariel double checked our implication grant application and then sent it."
                 }, {
                     "title" : "17. meeting",
-                    "description" : ""
+                    "description" : "Talked about the upcoming Turku comic festival, organizing group funding with Kulttuurilahja and contacting press and other media."
                 }, {
                     "title" : "Village decision done",
                     "description" : "We filled out the village decision preference form."
@@ -820,7 +820,7 @@
                 "date" : "27 / 06 / 2023",
                 "subnav" : [{
                     "title" : "18. meeting",
-                    "description" : ""
+                    "description" : "Talked about the upcoming Study in Turku event, Heureka collaboration and Aalto-Helsinki meet up. Lab team got everyone up to speed."
                 }]
             },
             "3": {
@@ -877,7 +877,7 @@
                     "description" : "Went through what is going on in every subteam and how to proceed. We also agreed on the team rules."
                 }, {
                     "title" : "19. team meeting",
-                    "description" : ""
+                    "description" : "Went through group funding status, talked about the upcoming HS Turku interview and how we would like to collaborate with the Edinburgh team."
                 }]
             }
 ,
@@ -956,7 +956,7 @@
                     "description" : "We had a conversation with a fisherman called Jaakko Ikonen. We discussed the history of mercury, the current situation and how different things affect fish and fishers."
                 }, {
                     "title" : "20. team meeting",
-                    "description" : ""
+                    "description" : "Went through our current budget, upcoming events and wiki text status."
                 }]
             }
 ,

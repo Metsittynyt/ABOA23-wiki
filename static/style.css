@@ -129,6 +129,7 @@ hr {
   margin: 10px;
 }
 
+
 /*****************************************
                   Stickybar
    *****************************************/
@@ -287,6 +288,9 @@ li {
 }
 
 /* Bannerikuvat jokaiselle sivulle */
+.home-title {
+  height: 100px;
+}
 
 .team-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo.jpg');
@@ -319,6 +323,7 @@ li {
   background-position-y: center;
   background-position-x: center;
 }
+
 
 /* .experiments-title {
   background-image: url('');
@@ -718,6 +723,98 @@ footer a:active {
   border-radius: 30px;
 }
 
+/*****************************************
+                  Home page
+   *****************************************/
+.responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#merculessLogo {
+  background-color: transparent;
+  margin-top: 50px;
+  filter: brightness(1.5);
+}
+
+#sea {
+  background: linear-gradient(white, var(--darkBlue));
+  margin-top: -10px;
+  margin-bottom: -50px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(var(--darkBlue), var(--turquoise));
+  overflow: hidden;
+}
+
+section .air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://static.igem.wiki/teams/4831/wiki/photos/home-page/wave.png);
+  background-size: 1000px 100px
+}
+
+section .air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
 
 /*****************************************
                   Team members
@@ -803,114 +900,117 @@ footer a:active {
   }
 }
 
+
 /*****************************************
                   Timeline
    *****************************************/
 
-   .timeline {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #00374e;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-  }
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #00374e;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
 
-  .timeline::-webkit-scrollbar {
-    background-color: transparent;
-    width: 0px;
-  }
-  
-  .tabs input {
-    visibility: hidden;
-    display: none;
-  }
-  
-  .buttons {
-    position: fixed;
-    right: 50px;
-    bottom: 30%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
-  }
-  
-  .buttons label {
-    width: 20px;
-    height: 20px;
-    background-color: #009372;
-    opacity: 0.5;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-  /* Adjust opacity and width for vertical buttons */
-  .tabs input:nth-child(1):checked~.buttons label:nth-child(1),
-  .tabs input:nth-child(2):checked~.buttons label:nth-child(2),
-  .tabs input:nth-child(3):checked~.buttons label:nth-child(3),
-  .tabs input:nth-child(4):checked~.buttons label:nth-child(4),
-  .tabs input:nth-child(5):checked~.buttons label:nth-child(5) {
-    opacity: 1;
-    height: 50px;
-  }
-  
-  .section {
-    position: relative;
-    width: 100%;
-    height: 800vh;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s;
-  }
-  
-  .section .box {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    padding: 40px;
-    scroll-snap-align: start;
-  }
-  
-  .contentBox {
-    width: 90%;
-  }
-  
-  /* Corrected slide backgrounds */
-  .section .box.slide2 {
-    background: var(--yellow);
-  }
-  
-  .section .box.slide3 {
-    background: var(--turquoise);
-  }
-  
-  .section .box.slide4 {
-    background: var(--violet);
-  }
-  
-  /* Corrected CSS selectors for slide transitions */
-  .tabs input:nth-child(1):checked~.section {
-    top: 0;
-  }
-  
-  .tabs input:nth-child(2):checked~.section {
-    top: -100vh;
-  }
-  
-  .tabs input:nth-child(3):checked~.section {
-    top: -200vh;
-  }
-  .tabs input:nth-child(4):checked~.section {
-    top: -300vh;
-  }
-  .tabs input:nth-child(5):checked~.section {
-    top: -400vh;
-  }
+.timeline::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+.tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.buttons {
+  position: fixed;
+  right: 50px;
+  bottom: 30%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.buttons label {
+  width: 20px;
+  height: 20px;
+  background-color: #009372;
+  opacity: 0.5;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Adjust opacity and width for vertical buttons */
+.tabs input:nth-child(1):checked~.buttons label:nth-child(1),
+.tabs input:nth-child(2):checked~.buttons label:nth-child(2),
+.tabs input:nth-child(3):checked~.buttons label:nth-child(3),
+.tabs input:nth-child(4):checked~.buttons label:nth-child(4),
+.tabs input:nth-child(5):checked~.buttons label:nth-child(5) {
+  opacity: 1;
+  height: 50px;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 800vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.section .box {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 40px;
+  scroll-snap-align: start;
+}
+
+.contentBox {
+  width: 90%;
+}
+
+/* Corrected slide backgrounds */
+.section .box.slide2 {
+  background: var(--yellow);
+}
+
+.section .box.slide3 {
+  background: var(--turquoise);
+}
+
+.section .box.slide4 {
+  background: var(--violet);
+}
+
+/* Corrected CSS selectors for slide transitions */
+.tabs input:nth-child(1):checked~.section {
+  top: 0;
+}
+
+.tabs input:nth-child(2):checked~.section {
+  top: -100vh;
+}
+
+.tabs input:nth-child(3):checked~.section {
+  top: -200vh;
+}
+
+.tabs input:nth-child(4):checked~.section {
+  top: -300vh;
+}
+
+.tabs input:nth-child(5):checked~.section {
+  top: -400vh;
+}
