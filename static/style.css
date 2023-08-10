@@ -750,7 +750,7 @@ section {
   position: relative;
   width: 100%;
   height: 50vh;
-  background: linear-gradient(var(--darkBlue), var(--turquoise));
+  background: linear-gradient(var(--darkBlue), var(--violet));
   overflow: hidden;
 }
 
@@ -929,7 +929,7 @@ section .air.air4 {
 .buttons {
   position: fixed;
   right: 50px;
-  bottom: 30%;
+  bottom: 10%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -937,22 +937,33 @@ section .air.air4 {
   z-index: 1000;
 }
 
+.buttons button {
+  background: transparent;
+  border: none;
+}
+
 .buttons label {
   width: 20px;
   height: 20px;
-  background-color: #009372;
+  background-color: black;
   opacity: 0.5;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
 
+
 /* Adjust opacity and width for vertical buttons */
 .tabs input:nth-child(1):checked~.buttons label:nth-child(1),
 .tabs input:nth-child(2):checked~.buttons label:nth-child(2),
 .tabs input:nth-child(3):checked~.buttons label:nth-child(3),
 .tabs input:nth-child(4):checked~.buttons label:nth-child(4),
-.tabs input:nth-child(5):checked~.buttons label:nth-child(5) {
+.tabs input:nth-child(5):checked~.buttons label:nth-child(5),
+.tabs input:nth-child(6):checked~.buttons label:nth-child(6),
+.tabs input:nth-child(7):checked~.buttons label:nth-child(7),
+.tabs input:nth-child(8):checked~.buttons label:nth-child(8),
+.tabs input:nth-child(9):checked~.buttons label:nth-child(9),
+.tabs input:nth-child(10):checked~.buttons label:nth-child(10) {
   opacity: 1;
   height: 50px;
 }
@@ -960,7 +971,7 @@ section .air.air4 {
 .section {
   position: relative;
   width: 100%;
-  height: 800vh;
+  height: 1000vh;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -982,7 +993,7 @@ section .air.air4 {
   width: 90%;
 }
 
-/* Corrected slide backgrounds */
+/* Slide backgrounds */
 .section .box.slide2 {
   background: var(--yellow);
 }
@@ -995,7 +1006,27 @@ section .air.air4 {
   background: var(--violet);
 }
 
-/* Corrected CSS selectors for slide transitions */
+.section .box.slide5 {
+  background: var(--green);
+}
+
+.section .box.slide6 {
+  background: var(--yellow);
+}
+
+.section .box.slide7 {
+  background: var(--turquoise);
+}
+
+.section .box.slide8 {
+  background: var(--violet);
+}
+
+.section .box.slide9 {
+  background: var(--green);
+}
+
+/* CSS selectors for slide transitions */
 .tabs input:nth-child(1):checked~.section {
   top: 0;
 }
@@ -1014,4 +1045,21 @@ section .air.air4 {
 
 .tabs input:nth-child(5):checked~.section {
   top: -400vh;
+}
+
+.tabs input:nth-child(6):checked~.section {
+  top: -500vh;
+}
+
+.tabs input:nth-child(7):checked~.section {
+  top: -600vh;
+}
+.tabs input:nth-child(8):checked~.section {
+  top: -700vh;
+}
+.tabs input:nth-child(9):checked~.section {
+  top: -800vh;
+}
+.tabs input:nth-child(10):checked~.section {
+  top: -900vh;
 }
