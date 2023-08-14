@@ -5,6 +5,10 @@
 with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 {% block title_class %}education-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/education.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
 <div class="timeline">
