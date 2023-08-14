@@ -293,13 +293,13 @@ li {
 }
 
 .team-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo.jpg');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo-big.jpg');
   background-position-y: 20%;
 }
 
 @media only screen and (max-width: 800px) {
   .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
     background-position-y: 20%;
     background-position-x: 20%;
   }
@@ -307,7 +307,7 @@ li {
 
 @media only screen and (max-width: 550px) {
   .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
     background-position-y: center;
     background-position-x: center;
   }
@@ -750,7 +750,7 @@ section {
   position: relative;
   width: 100%;
   height: 50vh;
-  background: linear-gradient(var(--darkBlue), var(--violet));
+  background: linear-gradient(var(--darkBlue), var(--yellow));
   overflow: hidden;
 }
 
@@ -820,6 +820,7 @@ section .air.air4 {
 /*****************************************
                   Team members
    *****************************************/
+
 .team_settings {
   text-align: center;
 }
