@@ -293,13 +293,13 @@ li {
 }
 
 .team-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo.jpg');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo-big.jpg');
   background-position-y: 20%;
 }
 
 @media only screen and (max-width: 800px) {
   .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
     background-position-y: 20%;
     background-position-x: 20%;
   }
@@ -307,7 +307,7 @@ li {
 
 @media only screen and (max-width: 550px) {
   .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo3.jpg');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
     background-position-y: center;
     background-position-x: center;
   }
@@ -741,7 +741,7 @@ footer a:active {
 }
 
 #sea {
-  background: linear-gradient(rgba(185,255,255), var(--darkBlue));
+  background: linear-gradient(rgba(185, 255, 255), var(--darkBlue));
   margin-top: -40px;
   margin-bottom: -50px;
 }
@@ -750,7 +750,7 @@ section {
   position: relative;
   width: 100%;
   height: 50vh;
-  background: linear-gradient(var(--darkBlue), var(--turquoise));
+  background: linear-gradient(var(--darkBlue), var(--yellow));
   overflow: hidden;
 }
 
@@ -820,6 +820,7 @@ section .air.air4 {
 /*****************************************
                   Team members
    *****************************************/
+
 .team_settings {
   text-align: center;
 }
@@ -929,30 +930,65 @@ section .air.air4 {
 .buttons {
   position: fixed;
   right: 50px;
-  bottom: 30%;
+  bottom: 0;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   z-index: 1000;
+}
+
+@media (min-height: 500px) {
+  .buttons {
+    bottom: -15%;
+    right: 10px;
+    gap: 20px;
+  }
+}
+
+@media (min-height: 800px) {
+  .buttons {
+    bottom: -10%;
+    right: 30px;
+    gap: 30px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .buttons {
+    bottom: -5%;
+    right: 30px;
+    gap: 40px;
+  }
+}
+
+.buttons button {
+  background: transparent;
+  border: none;
 }
 
 .buttons label {
   width: 20px;
   height: 20px;
-  background-color: #009372;
+  background-color: black;
   opacity: 0.5;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
 
+
 /* Adjust opacity and width for vertical buttons */
 .tabs input:nth-child(1):checked~.buttons label:nth-child(1),
 .tabs input:nth-child(2):checked~.buttons label:nth-child(2),
 .tabs input:nth-child(3):checked~.buttons label:nth-child(3),
 .tabs input:nth-child(4):checked~.buttons label:nth-child(4),
-.tabs input:nth-child(5):checked~.buttons label:nth-child(5) {
+.tabs input:nth-child(5):checked~.buttons label:nth-child(5),
+.tabs input:nth-child(6):checked~.buttons label:nth-child(6),
+.tabs input:nth-child(7):checked~.buttons label:nth-child(7),
+.tabs input:nth-child(8):checked~.buttons label:nth-child(8),
+.tabs input:nth-child(9):checked~.buttons label:nth-child(9),
+.tabs input:nth-child(10):checked~.buttons label:nth-child(10) {
   opacity: 1;
   height: 50px;
 }
@@ -960,7 +996,7 @@ section .air.air4 {
 .section {
   position: relative;
   width: 100%;
-  height: 800vh;
+  height: 1000vh;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -971,18 +1007,19 @@ section .air.air4 {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   user-select: none;
-  padding: 40px;
+  padding: 20px;
   scroll-snap-align: start;
 }
 
 .contentBox {
   width: 90%;
+  margin-top: 20%;
 }
 
-/* Corrected slide backgrounds */
+/* Slide backgrounds */
 .section .box.slide2 {
   background: var(--yellow);
 }
@@ -995,7 +1032,27 @@ section .air.air4 {
   background: var(--violet);
 }
 
-/* Corrected CSS selectors for slide transitions */
+.section .box.slide5 {
+  background: var(--green);
+}
+
+.section .box.slide6 {
+  background: var(--yellow);
+}
+
+.section .box.slide7 {
+  background: var(--turquoise);
+}
+
+.section .box.slide8 {
+  background: var(--violet);
+}
+
+.section .box.slide9 {
+  background: var(--green);
+}
+
+/* CSS selectors for slide transitions */
 .tabs input:nth-child(1):checked~.section {
   top: 0;
 }
@@ -1014,4 +1071,106 @@ section .air.air4 {
 
 .tabs input:nth-child(5):checked~.section {
   top: -400vh;
+}
+
+.tabs input:nth-child(6):checked~.section {
+  top: -500vh;
+}
+
+.tabs input:nth-child(7):checked~.section {
+  top: -600vh;
+}
+
+.tabs input:nth-child(8):checked~.section {
+  top: -700vh;
+}
+
+.tabs input:nth-child(9):checked~.section {
+  top: -800vh;
+}
+
+.tabs input:nth-child(10):checked~.section {
+  top: -900vh;
+}
+
+.imageLink {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: top;
+}
+
+@media (min-width: 300px) {
+  .contentBox {
+    width: 300px;
+  }
+  .linkGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/education/path-1.png');
+    background-size: cover;
+  }
+}
+
+@media (min-width: 600px) {
+  .contentBox {
+    width: 600px;
+    height: 500px;
+  }
+
+  .linkGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 100px;
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/education/path-2.png');
+    background-size: cover;
+  }
+}
+
+@media (min-width: 750px) {
+  .contentBox {
+    width: 600px;
+    height: 500px;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .imageLink {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .linkGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/education/path-3.png');
+    background-size: cover;
+    column-gap: 0;
+  }
+
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .imageLink {
+    height: 150px;
+    width: 150px;
+  }
 }
