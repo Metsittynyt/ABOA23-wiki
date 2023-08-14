@@ -12,7 +12,8 @@
   <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'styles/style.css') }}" rel="stylesheet">
+  {% block additional_css %}{% endblock %}
 
   <title>{% block title %}{% endblock %} | ABOA-Turku - iGEM 2023</title>
 
