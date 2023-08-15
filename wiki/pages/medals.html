@@ -1,13 +1,62 @@
-{% extends 'layout.html' %}
-
-{% block title %} Medal criteria{% endblock %}
-{% block lead%} {%endblock %}
+{% extends "layout.html" %}
+{% block title %}Medal Criteria{% endblock %}
+{% block lead %}{% endblock %}
 {% block title_class %}medals-title{% endblock %}
 
 {% block page_content %}
-  
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+
+<div class="container pt-5">
+  <h2>Let's take a look into the medals and the special prizes that we aim to achieve!<br><br></h2>
+
+  <div class="row">
+    <div class="col">
+      <div class="flip">
+        <div class="front"></div>
+        <div class="back">
+          <h6><br><br><br><br>Competition deliverables #1</h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/attributions">Project Attributions</a></h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/description">Project Description</a></h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/contribution">Contribution</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="flip">
+        <div class="front"></div>
+        <div class="back">
+          <h6><br><br><br><br>Competition deliverables #2</h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/engineering">Engineering Success</a></h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/human-practices">Human Practices</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="flip">
+        <div class="front"></div>
+        <div class="back">
+          <h6><br><br><br><br>Excellence in Synthetic Biology</h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/education">Education</a></h6>
+          <h6><a href="https://2023.igem.wiki/aboa-turku/plant">Plant</a></h6>
+          <h6>New composite</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col">
+      <div class="flip">
+        <div class="front"></div>
+        <div class="back">
+          <h6><br><br><br><br>Awards</h6>
+          <h6>Best Bioremediation Project</a></h6>
+          <h6>Best Project Promotion Video Prize</a></h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm"></div>
+  </div>
 </div>
-  
+
 {% endblock %}
