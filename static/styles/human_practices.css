@@ -1,0 +1,99 @@
+/*****************************************
+                  Human Practices
+   *****************************************/
+
+:root {
+  --background: #00374e;
+  --green: #009372;
+  --turquoise: #91e9d0;
+  --darkBlue: #00374e;
+  --yellow: #f1d490;
+  --violet: #a672ab;
+  --text: white;
+  --text-inverted: black;
+  --font: sans-serif;
+}
+
+/* Timeline Container */
+.timeline {
+  background: transparent;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid var(--darkBlue);
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: var(--turquoise);
+  color: black;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.date {
+  color: var(--darkBlue);
+  position: relative;
+}
+
+/* Timeline dot  */
+.date::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid var(--green);
+}
+
+.who {
+  color: var(--green);
+  font-size: larger;
+}
+
+span {
+  font-size: large;
+  color: black;
+}
+
+.subtitle {
+  font-size: large;
+  color: black;
+  font-weight: 500;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+@media (min-width:300px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0;
+  }
+}
+@media (min-width:800px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

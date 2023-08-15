@@ -3,6 +3,9 @@
 {% block lead%} {%endblock %}
 {% block title_class %}team-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/team.css') }}" rel="stylesheet">
+{% endblock %}
 
 {% block page_content %}
 

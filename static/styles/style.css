@@ -1,0 +1,537 @@
+/*****************************************
+            Fonts and colors
+ *****************************************/
+
+/* Colors */
+
+/*
+COLOR CODES:
+Green - #009372
+Turquoise - #91e9d0
+Dark Blue - #00374e
+Violet - #a672ab
+Yellow - #f1d490
+*/
+
+:root {
+  --background: #00374e;
+  --green: #009372;
+  --turquoise: #91e9d0;
+  --darkBlue: #00374e;
+  --yellow: #f1d490;
+  --violet: #a672ab;
+  --text: white;
+  --text-inverted: black;
+
+  /* Fonts */
+  --font: sans-serif;
+}
+
+@font-face {
+  font-family: 'hammersmith_oneregular';
+  src: url('https://static.igem.wiki/teams/4207/wiki/fonts/hammersmithone-regular-webfont.woff2') format('woff2'),
+    url('https://static.igem.wiki/teams/4207/wiki/fonts/hammersmithone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* On Small to Medium sceens */
+@media (min-width: 768px) {
+  .dotext {
+    font-size: 2rem;
+  }
+}
+
+/* Headings */
+
+p {
+  color: var(--text-inverted);
+  font-size: larger;
+}
+
+h1 {
+  color: var(--darkBlue);
+  font-family: 'hammersmith_oneregular';
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--turquoise);
+  font-family: 'hammersmith_oneregular';
+}
+
+h3 {
+  color: var(--violet);
+}
+
+h4 {
+  color: white;
+}
+
+b {
+  color: var(--violet)
+}
+
+a {
+  color: var(--darkBlue);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--violet);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--darkBlue);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--violet);
+  text-decoration: underline;
+}
+
+/*****************************************
+              Page settings
+   *****************************************/
+
+body,
+html {
+  scroll-padding-top: 120px;
+  height: 100%;
+}
+
+
+.left-aligned {
+  margin-left: auto;
+}
+
+.bg-dark {
+  background-color: var(--darkBlue) !important;
+}
+
+.bg-hero {
+  background-color: var(--green);
+  height: 600px;
+  background-size: cover;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--yellow);
+  border: none;
+}
+
+.row {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/*****************************************
+                  Stickybar
+   *****************************************/
+
+.stickybar {
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0px;
+  padding: 10px;
+  top: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+.stickybar a {
+  color: var(--darkBlue);
+  text-decoration: none;
+  font-family: 'hammersmith_oneregular';
+  font-size: 1.2rem;
+}
+
+.stickybar a:hover {
+  text-decoration: underline;
+}
+
+.stickybar a:active {
+  text-decoration: underline;
+}
+
+
+/*****************************************
+                  CALLOUT
+   *****************************************/
+
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.bd-callout h4 {
+  margin-bottom: 0.25rem;
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bd-callout code {
+  border-radius: 0.25rem;
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -0.25rem;
+}
+
+.bd-callout-info {
+  border-left-color: #5bc0de;
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f;
+}
+
+/*****************************************
+                  Banners
+   *****************************************/
+
+.banner-overlay-container {
+  height: 20%;
+  width: auto;
+  position: absolute;
+  bottom: 10%;
+  right: clamp(50px, 10%, 200px);
+  left: 0;
+  top: auto;
+}
+
+.banner-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-logo {
+  left: auto;
+  height: 100%;
+  width: auto;
+  flex: 0 0 auto;
+  margin-left: -80px;
+  align-self: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .banner-overlay-container {
+    right: 0;
+  }
+
+  .banner-h1 {
+    width: 100% !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+  }
+
+  details {
+    width: 200% !important;
+  }
+
+  .detail-wrapper::after {
+    background-color: transparent !important;
+  }
+}
+
+.banner-overlay-box {
+  background-color: hsla(172, 85%, 68%, 0.8);
+  width: 50%;
+  align-self: center;
+  flex: 1;
+  height: 80%;
+  display: flex;
+  padding-right: 3em;
+}
+
+.page-banner {
+  position: relative;
+  background-size: cover !important;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+.banner-h1 {
+  align-self: center;
+  justify-self: center;
+  padding-left: 3rem;
+}
+
+/* Bannerikuvat jokaiselle sivulle */
+.home-title {
+  height: 100px;
+}
+
+.team-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo-big.jpg');
+  background-position-y: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+  .team-title {
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
+    background-position-y: 20%;
+    background-position-x: 20%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .team-title {
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
+    background-position-y: center;
+    background-position-x: center;
+  }
+}
+
+.notebook-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/kiekura.png');
+  background-position-y: 100px;
+}
+
+.description-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/description2.png');
+  background-position-y: center;
+  background-position-x: center;
+}
+
+
+/* .experiments-title {
+  background-image: url('');
+}
+
+.sustainable-title {
+  background-image: url('');
+}
+
+
+
+.collaborations-title {
+  background-image: url('');
+}
+
+.contribution-title {
+  background-image: url('');
+}
+
+.safety-title {
+  background-image: url('');
+}
+
+.results-title {
+  background-image: url('');
+}
+
+.proofofconcept-title {
+  background-image: url('');
+}
+
+.overview-title {
+  background-image: url('');
+}
+
+
+
+.model-title {
+  background-image: url('');
+}
+
+.medals-title {
+  background-image: url('');
+}
+
+.implementation-title {
+  background-image: url('');
+}
+
+.humanpractices-title {
+  background-image: url('');
+}
+
+.engineering-title {
+  background-image: url('');
+}
+
+
+
+.design-title {
+  background-image: url('');
+}
+
+.communication-title {
+  background-image: url('');
+}
+
+.attributions-title {
+  background-image: url('');
+}
+
+.partnership-title {
+  background-image: url('');
+}
+
+.drylab-title {
+  background-image: url('');
+}
+
+.inclusivity-title {
+  background-image: url('');
+}
+
+.parts-title {
+  background-image: url('');
+}
+
+.partcollection-title {
+  background-image: url('');
+} */
+
+
+
+
+/*****************************************
+                Navigation
+   *****************************************/
+
+.dropdown-menu {
+  background-color: var(--turquoise);
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+  border-radius: 0;
+  border-color: white;
+  border-width: 1px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--violet);
+  color: var(--darkBlue);
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+
+  80% {
+    transform: scaleY(1.1)
+  }
+
+  100% {
+    transform: scaleY(1)
+  }
+
+}
+
+/* Navigation bar */
+.nav-link {
+  color: var(--text) !important;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+
+/*****************************************
+                  Footer
+   *****************************************/
+footer a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text);
+  text-decoration: underline !important;
+}
+
+footer a:active {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.underline {
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
+.some-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.some-logos svg {
+  width: 50px;
+  height: 50px;
+  color: var(--text);
+}
+
+.sponsor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sponsor {
+  flex: 1;
+  min-width: 100px;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.sponsor-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+
+/*****************************************
+                  Container
+   *****************************************/
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
