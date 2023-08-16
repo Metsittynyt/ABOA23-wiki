@@ -33,14 +33,14 @@ h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
-  font-size: 48px;
+  font-size: xx-large;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  font-size: 14px;
-  color: #333333;
+  font-size: larger;
+  color: black;
 }
 
 #merculessLogo {
@@ -50,7 +50,6 @@ p {
 .header {
   position: relative;
   text-align: center;
-  /* background: linear-gradient(var(--darkBlue), var(--yellow)); */
   color: white;
 }
 
@@ -63,6 +62,7 @@ p {
   background-size: contain;
   background-position: 0px 10px;
   background-repeat: repeat-x;
+  z-index: 1;
 }
 
 .flex {
@@ -80,6 +80,7 @@ p {
   min-height: 100px;
   max-height: 150px;
   background-color: burlywood;
+  z-index: 1;
 }
 
 /* Animation */
@@ -158,6 +159,7 @@ p {
   background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  z-index: -10;
 }
 
 @keyframes sunRising {
@@ -389,10 +391,6 @@ p {
     height: 30vh;
   }
 
-  h1 {
-    font-size: 24px;
-  }
-
   #merculessLogo {
     height: 50%;
   }
@@ -461,9 +459,5 @@ p {
   .waves {
     height: 40px;
     min-height: 40px;
-  }
-
-  h1 {
-    font-size: 24px;
   }
 }
