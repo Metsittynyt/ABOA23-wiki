@@ -1,225 +1,463 @@
 /*****************************************
                   Home page
    *****************************************/
-   .responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  #merculessLogo {
-    background-color: transparent;
-    margin-top: 50px;
-    filter: brightness(1.5);
-  }
-  
-  #sea {
-    background: linear-gradient(rgba(185, 255, 255), var(--darkBlue));
-    margin-top: -40px;
-    margin-bottom: -50px;
-  }
-  
-  section {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    background: linear-gradient(var(--darkBlue), var(--yellow));
-    overflow: hidden;
-  }
-  
-  section .air {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(https://static.igem.wiki/teams/4831/wiki/photos/home-page/wave.png);
-    filter: sepia(100%) hue-rotate(150deg) saturate(900%);
-    background-size: 1000px 100px
-  }
-  
-  section .air.air1 {
-    animation: wave 30s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
-  }
-  
-  section .air.air2 {
-    animation: wave2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
-  }
-  
-  section .air.air3 {
-    animation: wave 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15px;
-  }
-  
-  section .air.air4 {
-    animation: wave2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20px;
-  }
-  
-  @keyframes wave2 {
-    0% {
-      background-position-x: 0px;
-    }
-  
-    100% {
-      background-position-x: 1000px;
-    }
-  }
-  
-  @keyframes wave {
-    0% {
-      background-position-x: 0px;
-    }
-  
-    100% {
-      background-position-x: -1000px;
-    }
+
+:root {
+  --background: #00374e;
+  --green: #009372;
+  --turquoise: #91e9d0;
+  --darkBlue: #00374e;
+  --yellow: #f1d490;
+  --violet: #a672ab;
+  --text: white;
+  --text-inverted: black;
+
+  /* Fonts */
+  --font: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: black;
+  animation: bgChange 20s forwards;
+  animation-direction: alternate;
+  /* Chrome, Safari, Opera */
+  -webkit-animation: bgChange 20s forwards;
+  -webkit-animation-delay: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: xx-large;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: larger;
+  color: black;
+}
+
+#merculessLogo {
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.inner-header {
+  height: 30vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree.png');
+  background-size: contain;
+  background-position: 0px 10px;
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  min-height: 100px;
+  max-height: 150px;
+  background-color: burlywood;
+  z-index: 1;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
   }
 
-  #main {
-    margin: 0;
-    padding: 0;
-    text-align: center; 
-    background:var(--darkBlue);
-    animation:bgChange 20s infinite;
-    animation-direction: alternate;
-    /* Chrome, Safari, Opera */
-    -webkit-animation:bgChange 20s infinite;
-    -webkit-animation-delay: 0s;
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
-  
-  /* Standard syntax */
-  @keyframes bgChange{
-    0% {background:var(--darkBlue);}
-    50% {background:skyblue;}
-    100% {background:var(--darkBlue);}
+}
+
+/* Standard syntax */
+@keyframes bgChange {
+  0% {
+    background: var(--darkBlue);
   }
-  
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes bgChange{
-    0% {background:black;}
-    25% {background:skyblue;}
-    50% {background:deepskyblue;}
-    75% {background:skyblue;}
-    100% {background:black;}
+
+  100% {
+    background: skyblue;
   }
-  ​
-  #container{
-   position:relative;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgChange {
+  0% {
+    background: var(--darkBlue);
   }
-  
+
+  100% {
+    background: skyblue;
+  }
+}
+
+​ #sky {
+  position: relative;
+  height: 30vh;
+  animation: bgChange 20s forwards;
+}
+
+.theSun {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: sunRising 20s forwards;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  /* Safari and Chrome */
+  -webkit-animation: sunRising 20s forwards;
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  z-index: -10;
+}
+
+@keyframes sunRising {
+  0% {
+    top: 70%;
+    left: -10%;
+  }
+
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes sunRising {
+  0% {
+    top: 70%;
+    left: -10%;
+  }
+
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: white;
+  position: relative;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+.c1 {
+  margin-top: 100px;
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.c2 {
+  margin-top: 30px;
+  -webkit-animation: moveclouds 22s linear infinite;
+  -moz-animation: moveclouds 22s linear infinite;
+  -o-animation: moveclouds 22s linear infinite;
+  animation-delay: -2s;
+  -webkit-animation-delay: -2s;
+  /* Safari and Chrome */
+  -moz-animation-delay: -2s
+    /* Firefox */
+}
+
+@keyframes moveclouds {
+  0% {
+    left: 100%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+#sea {
+  background: linear-gradient(rgba(185, 255, 255), var(--darkBlue));
+  margin-top: -20px;
+  margin-bottom: -50px;
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
   .theSun {
-    width:50px;
-    height:50px;
-    position:absolute;
-    animation:sunRising 20s infinite;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    background-position-y: -1000;
-    /* Safari and Chrome */
-    -webkit-animation:sunRising 20s infinite;
-    background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
-    background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
-    background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+    width: 50px;
+    height: 50px;
   }
-  
-  @keyframes sunRising
-  {
-    0%   {top:70%;left:-10%;}
-    25%  {top:30%;left:25%;}
-    50%  {top:5%;left:50%;}
-    75%  {top:30%;left:75%;}
-    100% {top:70%;left:110%;}
+
+  .cloud {
+    width: 150px;
+    height: 45px;
+    background: white;
+    position: relative;
+    border-radius: 150px;
   }
-  
-  @-webkit-keyframes sunRising /* Safari and Chrome */{
-    0%   {top:70%;left:-10%;}
-    25%  {top:30%;left:25%;}
-    50%  {top:5%;left:50%;}
-    75%  {top:30%;left:75%;}
-    100% {top:70%;left:110%;}
-  }
-  
-  .cloud{
-    width:200px;
-    height:60px;
-    background:white;
-    position:relative;
-    border-radius:200px;
-    -webkit-border-radius:200px;
-    -moz-border-radius:200px;
-  }
-  
-  .cloud:before, .cloud:after{
-    content:'';
-    background:white;
-    position:absolute;
-    width:100px;
-    height:80px;
-    top:-15px;
-    left:10px;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-  }
-  
+
+  .cloud:before,
   .cloud:after {
-    width: 120px; height: 120px;
-    top: -55px; left: auto; right: 15px;
+    content: '';
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    top: -10px;
+    left: 5px;
+    border-radius: 75px;
+    transform: rotate(30deg);
   }
-  
+
+  .cloud:after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    left: auto;
+    right: 7.5px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  .inner-header {
+    height: 30vh;
+  }
+
+  #merculessLogo {
+    height: 50%;
+  }
+
+}
+
+/*Shrinking for mobile*/
+@media (max-height: 768px) {
+
+  .content {
+    height: 30vh;
+  }
+
+  #sky {
+    height: 30vh;
+  }
+
+  .inner-header {
+    height: 30vh;
+  }
+
+  .theSun {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cloud {
+    width: 150px;
+    height: 45px;
+    background: white;
+    position: relative;
+    border-radius: 150px;
+  }
+
+  .cloud:before,
+  .cloud:after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    top: -10px;
+    left: 5px;
+    border-radius: 75px;
+    transform: rotate(30deg);
+  }
+
+  .cloud:after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    left: auto;
+    right: 7.5px;
+  }
   .c1 {
-    margin-top:100px;
-    -webkit-animation: moveclouds 20s linear infinite;
-    -moz-animation: moveclouds 20s linear infinite;
-    -o-animation: moveclouds 20s linear infinite;
+    margin-top: 30px;
   }
   .c2 {
-    margin-top:30px;
-    -webkit-animation: moveclouds 22s linear infinite;
-    -moz-animation: moveclouds 22s linear infinite;
-    -o-animation: moveclouds 22s linear infinite;
-    animation-delay:-2s;
-    -webkit-animation-delay:-2s; /* Safari and Chrome */ 
-    -moz-animation-delay: -2s /* Firefox */
+    margin-top: 10px;
   }
-  @-webkit-keyframes moveclouds {
-    0% {left: 110%;opacity:0.8}
-    50% {opacity:0.7;}
-    75% {opacity:0.6;}
-    85% {opacity:0;}
-    100% {left: -10%;opacity:0;}
+
+  #merculessLogo {
+    height: 100%;
   }
-  @-moz-keyframes moveclouds {
-    0% {left: 110%;opacity:0.8}
-    50% {opacity:0.7;}
-    75% {opacity:0.6;}
-    85% {opacity:0;}
-    100% {left: -10%;opacity:0;}
+
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
-  @-o-keyframes moveclouds {
-    0% {left: 110%;opacity:0.8}
-    50% {opacity:0.7;}
-    75% {opacity:0.6;}
-    85% {opacity:0;}
-    100% {left: -10%;opacity:0;}
-  }
+}

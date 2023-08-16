@@ -10,28 +10,39 @@
 
 {% block page_content %}
 
-<section id="main">
-  <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <!-- <div id="container">
-        ​<div class="theSun"></div>
-        <div class="cloud c1"></div>
-        <div class="cloud c2"></div>
-      </div> -->
-      <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png"
-        class="responsive">
-    </div>
+<div class="header">
+  <!-- Sky -->
+  <div id="sky">
+    ​<div class="theSun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
   </div>
+  <!--Content before waves-->
+  <div class="inner-header flex">
+    <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png">
+  </div>
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(185, 255, 255,0.9" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(185, 255, 255,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 255, 255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)"  />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
 
-  <div class='air air1'></div>
-  <div class='air air2'></div>
-  <div class='air air3'></div>
-  <div class='air air4'></div>
-</section>
+</div>
+<!--Header ends-->
 
+<!--Content starts-->
 <div id="sea">
-  <div class="row mt-4">
+  <div class="row">
     <div class="col" style="text-align: center">
       <h1>Shortly about our project</h1>
       <p>Our main goal is to promote the quality and safety of Finland's waterways, especially around marsh areas. Heavy
@@ -46,7 +57,7 @@
 
   <hr style="border: 2px solid var(--darkBlue);">
 
-  <div class="row mt-4">
+  <div class="row">
     <div class="col" style="text-align: center">
       <h1>How you can help us</h1>
       <p>We put up a Kulttuurilahja crowdfunding! You can show your support towards young scientists, the environment
@@ -69,7 +80,7 @@
 
   <hr style="border: 2px solid var(--darkBlue);">
 
-  <div class="row mt-4">
+  <div class="row">
     <div class="col-md-12 col-lg-4">
       <img src="https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png" alt="Construction">
     </div>
