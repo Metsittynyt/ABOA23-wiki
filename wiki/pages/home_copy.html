@@ -5,17 +5,30 @@
 {% block title_class %}home-title{% endblock %}
 
 {% block additional_css %}
-<link href="{{ url_for('static', filename = 'styles/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/bird.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/skyAndWaves.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block page_content %}
-
 <div class="header">
   <!-- Sky -->
   <div id="sky">
     ​<div class="theSun"></div>
-    <div class="cloud c1"></div>
-    <div class="cloud c2"></div>
+    <!-- <div class="cloud c1"></div> -->
+    <div class="bird-container bird-container-one">
+      <div class="bird bird-one"></div>
+    </div>
+    <div class="bird-container bird-container-two">
+      <div class="bird bird-two"></div>
+    </div>
+    <div class="bird-container bird-container-three">
+      <div class="bird bird-three"></div>
+    </div>
+    <div class="bird-container bird-container-four">
+      <div class="bird bird-four"></div>
+    </div>
+    <!-- <div class="cloud c2"></div> -->
   </div>
   <!--Content before waves-->
   <div class="inner-header flex">
@@ -36,7 +49,6 @@
     </svg>
   </div>
   <!--Waves end-->
-
 </div>
 <!--Header ends-->
 
@@ -52,9 +64,10 @@
       <h3>Why is mercury bad?</h3>
       <div class="row" id="sectionRow">
         <div class="col-sm-8 col-lg-8" style="text-align: center">
-          <p>Mercury is a heavy metal that occurs in different forms in nature and of these forms, methylmercury, is the
-            most toxic and dangerous. Methylmercury accumulates vigorously through the food chain resulting in organisms
-            near the top of the chain having high concentrations of this toxic compound.
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo consequuntur autem vel reiciendis
+            dignissimos obcaecati et, incidunt recusandae, tempore saepe, amet ducimus dolorum non. Voluptates
+            perferendis quis commodi architecto!
           </p>
         </div>
         <div class="col-sm-4 col-lg-4">
@@ -66,7 +79,8 @@
       <div class="row" id="factBox">
         <div class="col-lg-4">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo culpa similique a ullam tenetur, rerum
-            aperiam adipisci animi nostrum accusamus ipsum molestiae dolore repellendus quae cupiditate mollitia saepe.
+            aperiam adipisci animi nostrum accusamus ipsum molestiae dolore repellendus quae cupiditate mollitia
+            saepe.
             Debitis!</p>
         </div>
         <div class="col-lg-4">
@@ -89,7 +103,8 @@
         </div>
         <div class="col-sm-8 col-lg-8" style="text-align: center">
           <h3>Solution #1</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi quas a facere perspiciatis, in
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi quas a facere perspiciatis,
+            in
             alias impedit quis ex itaque ipsa pariatur laboriosam! Fugiat reprehenderit harum sit suscipit beatae
             consequatur?</p>
           <br>
@@ -113,8 +128,10 @@
   </div>
   <div class="row" id="sectionRow">
     <div class="col-sm-8 col-lg-8" style="text-align: center">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam reprehenderit blanditiis ipsam ipsum laboriosam
-        consequuntur rem quod perspiciatis, quam molestiae accusantium nobis dolorum veritatis officia atque, iste modi
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam reprehenderit blanditiis ipsam ipsum
+        laboriosam
+        consequuntur rem quod perspiciatis, quam molestiae accusantium nobis dolorum veritatis officia atque, iste
+        modi
         laudantium id!</p>
     </div>
     <div class="col-sm-4 col-lg-4">
@@ -135,7 +152,8 @@
   </div>
   <div class="row" id="sectionRow">
     <div class="col-sm-8 col-lg-6" style="text-align: center">
-      <p>After the reaction mercury is still in its ionic 2+ form. Another gene called merA is needed for the production
+      <p>After the reaction mercury is still in its ionic 2+ form. Another gene called merA is needed for the
+        production
         of MerA. MerA is a reductase that catalyses the reduction of mercury 2+ ion to elemental mercury.
       </p>
     </div>
@@ -150,7 +168,8 @@
     </div>
     <div class="col-sm-8 col-lg-8" style="text-align: center">
       <p>
-        To enhance and control the expression of these MerB and MerA proteins we will use a strong promoter that we can
+        To enhance and control the expression of these MerB and MerA proteins we will use a strong promoter that we
+        can
         control with IPTG. Elemental mercury leaves the cell due to diffusion and it’s then gathered up.
       </p>
     </div>
@@ -165,7 +184,8 @@
     <div class="col" style="text-align: center">
       <h1>Our Goals</h1>
       <p>We, team ABOA, are tackling this mercury problem to ensure clean and safe habitat for organisms, to protect
-        ecosystems and secure safe use of fish and other food sources. Read more on these by clicking banners below!</p>
+        ecosystems and secure safe use of fish and other food sources. Read more on these by clicking banners below!
+      </p>
       <div class="row">
         <div class="col">
           <div class="flip">
@@ -213,4 +233,5 @@
   <!-- Project video here -->
 
 </div>
+
 {% endblock %}
