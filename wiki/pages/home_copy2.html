@@ -1,0 +1,245 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+{% block lead%} {%endblock %}
+{% block title_class %}home-title{% endblock %}
+
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/home/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/bird.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/waves.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/sun_and_clouds.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+<div id="page_content">
+  <div id="sky">
+    <!-- Sun -->
+    ​<div class="theSun"></div>
+    <!-- Sun end -->
+
+    <!-- Cloud 1 -->
+    <div class="cloud c2"></div>
+    <!-- Cloud 1 end -->
+
+    <!-- Birds -->
+    <div class="bird-container bird-container-one">
+      <div class="bird bird-one"></div>
+    </div>
+    <div class="bird-container bird-container-two">
+      <div class="bird bird-two"></div>
+    </div>
+    <div class="bird-container bird-container-three">
+      <div class="bird bird-three"></div>
+    </div>
+    <div class="bird-container bird-container-four">
+      <div class="bird bird-four"></div>
+    </div>
+    <!-- Birds end -->
+
+    <!-- Cloud 2 -->
+    <div class="cloud c2"></div>
+    <!-- Cloud 2 end -->
+  </div>
+  <!--Content before waves-->
+  <div class="inner-header flex">
+    <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png">
+  </div>
+  <!--Content before waves end-->
+  <!--Waves Container-->
+  <div>
+    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(185, 255, 255,0.9" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(185, 255, 255,0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 255, 255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+  <div id="sea">
+    <div id="orkki_line"></div>
+    <!-- Problem -->
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h1>Problem</h1>
+        <h3>Why is mercury bad?</h3>
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-sm-8 col-lg-8" style="text-align: center">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo consequuntur autem vel reiciendis
+          dignissimos obcaecati et, incidunt recusandae, tempore saepe, amet ducimus dolorum non. Voluptates
+          perferendis quis commodi architecto!
+        </p>
+      </div>
+      <div class="col-sm-4 col-lg-4">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-1.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h3>Numbers about mercury</h3>
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo culpa similique a ullam tenetur, rerum
+          aperiam adipisci animi nostrum accusamus ipsum molestiae dolore repellendus quae cupiditate mollitia
+          saepe.
+          Debitis!</p>
+      </div>
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ea voluptatibus alias iure aut placeat
+          perspiciatis animi illo rerum minus necessitatibus magni aliquid rem dolorum voluptatum distinctio quia
+          eligendi voluptates.</p>
+      </div>
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis explicabo accusantium doloribus quos
+          dolorem aliquam quidem dicta impedit, itaque inventore pariatur tenetur asperiores, fuga libero fugiat?
+          Voluptatibus fugit magnam veritatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h3>Current solutions</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-9.png">
+        <br>
+      </div>
+      <div class="col-sm-12 col-lg-8" style="text-align: center">
+        <h3>Solution #1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, animi quas a facere perspiciatis,
+          in
+          alias impedit quis ex itaque ipsa pariatur laboriosam! Fugiat reprehenderit harum sit suscipit beatae
+          consequatur?</p>
+        <br>
+        <h3>Solution #2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ex alias labore dolore incidunt eligendi
+          odit? Eveniet velit quos quo ex, laborum iure ab molestias voluptatibus dolorem commodi, atque quia.</p>
+      </div>
+    </div>
+
+    <hr style="border: 2px solid var(--yellow);">
+
+    <!-- Our Solution -->
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h1>Our solution</h1>
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-sm-8 col-lg-8" style="text-align: center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam reprehenderit blanditiis ipsam ipsum
+          laboriosam
+          consequuntur rem quod perspiciatis, quam molestiae accusantium nobis dolorum veritatis officia atque, iste
+          modi
+          laudantium id!</p>
+      </div>
+      <div class="col-sm-4 col-lg-4">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-2.png">
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-sm-4 col-lg-6">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-4.png">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-5.png">
+      </div>
+      <div class="col-sm-8 col-lg-6" style="text-align: center">
+        <p>
+          In order to use Synechocystis to fight methylmercury, it needs gene called merB. merB codes for MerB protein
+          which is a organomercury lyase. It catalyses the protonolysis of the bond between methyl’s carbon and mercury.
+        </p>
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-sm-8 col-lg-6" style="text-align: center">
+        <p>After the reaction mercury is still in its ionic 2+ form. Another gene called merA is needed for the
+          production
+          of MerA. MerA is a reductase that catalyses the reduction of mercury 2+ ion to elemental mercury.
+        </p>
+      </div>
+      <div class="col-sm-4 col-lg-6">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-5.png">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-6.png">
+      </div>
+    </div>
+    <div class="row" id="sectionRow">
+      <div class="col-sm-4 col-lg-4">
+        <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-7.png">
+      </div>
+      <div class="col-sm-8 col-lg-8" style="text-align: center">
+        <p>
+          To enhance and control the expression of these MerB and MerA proteins we will use a strong promoter that we
+          can
+          control with IPTG. Elemental mercury leaves the cell due to diffusion and it’s then gathered up.
+        </p>
+      </div>
+    </div>
+
+
+
+    <hr style="border: 2px solid var(--yellow);">
+
+    <!-- Our Goals -->
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h1>Our Goals</h1>
+        <p>We, team ABOA, are tackling this mercury problem to ensure clean and safe habitat for organisms, to protect
+          ecosystems and secure safe use of fish and other food sources. Read more on these by clicking banners below!
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="flip">
+              <div class="front"
+                style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/ecosystem.png');">
+              </div>
+              <div class="back">
+                <h3>Ecosystem</h3>
+                <p>The wellbeing and safety of organisms has a direct influence on entire ecosystems: every organism has
+                  its own role and harming just one can have major effects on the whole system. Also by protecting
+                  ecosystems we preserve biodiversity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="flip">
+              <div class="front"
+                style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/food-security-1.png');">
+              </div>
+              <div class="back">
+                <h3>Food Security</h3>
+                <p>We know that the future holds threats to food security therefore it’s important to ensure that our
+                  waters are clean from mercury so that we can use fish and other seafoods safely.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="flip">
+              <div class="front"
+                style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/safe-habitat-1.png'); background-size: contain;">
+              </div>
+              <div class="back">
+                <h3>Safe Habitat</h3>
+                <p>Animals, wildlife and humans, suffer from mercury. Methylmercury accumulates to various tissues and
+                  interferes with the metabolic activities causing necrosis and degeneration in them</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project video here -->
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,340 @@
+/**************** Sun ****************/
+.theSun {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: sunRising 20s forwards;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  /* Safari and Chrome */
+  -webkit-animation: sunRising 20s forwards;
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+}
+
+@keyframes sunRising {
+  0% {
+    top: 70%;
+    left: -10%;
+  }
+
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes sunRising {
+  0% {
+    top: 70%;
+    left: -10%;
+  }
+
+  100% {
+    top: 5%;
+    left: 50%;
+  }
+}
+
+/* Standard syntax */
+@keyframes bgChange {
+  0% {
+    background: var(--darkBlue);
+  }
+
+  100% {
+    background: skyblue;
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bgChange {
+  0% {
+    background: var(--darkBlue);
+  }
+
+  100% {
+    background: skyblue;
+  }
+}
+
+/**************** Sun end ****************/
+
+/**************** Clouds ****************/
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: white;
+  position: relative;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  z-index: 1;
+}
+
+.cloud:before,
+.cloud:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+.c1 {
+  margin-top: 100px;
+  -webkit-animation: moveclouds 20s linear infinite;
+  -moz-animation: moveclouds 20s linear infinite;
+  -o-animation: moveclouds 20s linear infinite;
+}
+
+.c2 {
+  margin-top: 30px;
+  -webkit-animation: moveclouds 22s linear infinite;
+  -moz-animation: moveclouds 22s linear infinite;
+  -o-animation: moveclouds 22s linear infinite;
+  animation-delay: -2s;
+  -webkit-animation-delay: -2s;
+  /* Safari and Chrome */
+  -moz-animation-delay: -2s
+    /* Firefox */
+}
+
+@keyframes moveclouds {
+  0% {
+    left: 100%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes moveclouds {
+  0% {
+    left: 110%;
+    opacity: 0.8
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0.6;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    left: -10%;
+    opacity: 0;
+  }
+}
+
+/**************** Clouds end ****************/
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+
+  .theSun {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cloud {
+    width: 150px;
+    height: 45px;
+    background: white;
+    position: relative;
+    border-radius: 150px;
+  }
+
+  .cloud:before,
+  .cloud:after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    top: -10px;
+    left: 5px;
+    border-radius: 75px;
+    transform: rotate(30deg);
+  }
+
+  .cloud:after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    left: auto;
+    right: 7.5px;
+  }
+
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+
+  .theSun {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cloud {
+    width: 150px;
+    height: 45px;
+    background: white;
+    position: relative;
+    border-radius: 150px;
+  }
+
+  .cloud:before,
+  .cloud:after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    top: -10px;
+    left: 5px;
+    border-radius: 75px;
+    transform: rotate(30deg);
+  }
+
+  .cloud:after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    left: auto;
+    right: 7.5px;
+  }
+}
+
+@media (max-height: 768px) {
+
+  .theSun {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cloud {
+    width: 150px;
+    height: 45px;
+    background: white;
+    position: relative;
+    border-radius: 150px;
+  }
+
+  .cloud:before,
+  .cloud:after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    top: -10px;
+    left: 5px;
+    border-radius: 75px;
+    transform: rotate(30deg);
+  }
+
+  .cloud:after {
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    left: auto;
+    right: 7.5px;
+  }
+
+  .c1 {
+    margin-top: 30px;
+  }
+
+  .c2 {
+    margin-top: 10px;
+  }
+}
