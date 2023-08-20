@@ -5,22 +5,47 @@
 {% block title_class %}home-title{% endblock %}
 
 {% block additional_css %}
-<link href="{{ url_for('static', filename = 'styles/home/skyAndWaves.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/home.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/bird.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/waves.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/home/sun_and_clouds.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block page_content %}
-
-<div class="header">
-  <!-- Sky -->
+<div id="page_content">
   <div id="sky">
+    <!-- Sun -->
     ​<div class="theSun"></div>
-    <div class="cloud c1"></div>
+    <!-- Sun end -->
+
+    <!-- Cloud 1 -->
     <div class="cloud c2"></div>
+    <!-- Cloud 1 end -->
+
+    <!-- Birds -->
+    <div class="bird-container bird-container-one">
+      <div class="bird bird-one"></div>
+    </div>
+    <div class="bird-container bird-container-two">
+      <div class="bird bird-two"></div>
+    </div>
+    <div class="bird-container bird-container-three">
+      <div class="bird bird-three"></div>
+    </div>
+    <div class="bird-container bird-container-four">
+      <div class="bird bird-four"></div>
+    </div>
+    <!-- Birds end -->
+
+    <!-- Cloud 2 -->
+    <div class="cloud c2"></div>
+    <!-- Cloud 2 end -->
   </div>
   <!--Content before waves-->
   <div class="inner-header flex">
     <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png">
   </div>
+  <!--Content before waves end-->
   <!--Waves Container-->
   <div>
     <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -31,72 +56,71 @@
         <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(185, 255, 255,0.9" />
         <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(185, 255, 255,0.7)" />
         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 255, 255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)"  />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)" />
       </g>
     </svg>
   </div>
   <!--Waves end-->
 
+  <!--Content starts-->
+  <div id="sea">
+    <div id="orkki_line"></div>
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h1>Shortly about our project</h1>
+        <p>Our main goal is to promote the quality and safety of Finland's waterways, especially around marsh areas.
+          Heavy
+          metals accumulate in slowly forming bogs, from which, especially due to drainage, they are released into the
+          environment along with runoff. Our goal is to research and come up with a solution for how water could be
+          purified
+          from toxic mercury using the cyanobacterium Synechocystis sp. PCC6803 carries.
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <hr style="border: 2px solid var(--darkBlue);">
+
+    <div class="row">
+      <div class="col" style="text-align: center">
+        <h1>How you can help us</h1>
+        <p>We put up a Kulttuurilahja crowdfunding! You can show your support towards young scientists, the environment
+          and the whole synthetic biology community by helping us raise funds for the project. The lab and competition
+          expenses are sizeable so therefore every single donation means a lot!
+        </p>
+        <br>
+        <p>
+          Kansan sivistysrahasto foundation helps our project by adding a 20 % extra bonus of the amount we raise on
+          top.
+          So
+          let’s get everyone helping!
+        </p>
+        <br>
+        <h1>Link to support us <a
+            href="https://kulttuurilahja.fi/hanke/raskasmetallit-pois-vesistoista-opiskelijoiden-kansainvalinen-igem-kilpailuprojekti/">here!</a>
+        </h1>
+        <br>
+      </div>
+    </div>
+
+    <hr style="border: 2px solid var(--darkBlue);">
+
+    <div class="row">
+      <div class="col-md-12 col-lg-4">
+        <img src="https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png" alt="Construction">
+      </div>
+      <div class="col-md-12 col-lg-8" style="text-align: center">
+        <h2 style="margin-top: 30px;">This page is still under construction.</h2>
+        <br>
+        <h2 style="margin-top: 30px;">While we are working on this, you can</h2>
+        <h2>check out our project description
+          <a href="https://2023.igem.wiki/aboa-turku/description">here</a> &
+        </h2>
+        <h2>meet our team
+          <a href="https://2023.igem.wiki/aboa-turku/team">here</a>
+        </h2>
+      </div>
+    </div>
+  </div>
 </div>
-<!--Header ends-->
-
-<!--Content starts-->
-<div id="sea">
-  <div class="row">
-    <div class="col" style="text-align: center">
-      <h1>Shortly about our project</h1>
-      <p>Our main goal is to promote the quality and safety of Finland's waterways, especially around marsh areas. Heavy
-        metals accumulate in slowly forming bogs, from which, especially due to drainage, they are released into the
-        environment along with runoff. Our goal is to research and come up with a solution for how water could be
-        purified
-        from toxic mercury using the cyanobacterium Synechocystis sp. PCC6803 carries.
-      </p>
-      <br>
-    </div>
-  </div>
-
-  <hr style="border: 2px solid var(--darkBlue);">
-
-  <div class="row">
-    <div class="col" style="text-align: center">
-      <h1>How you can help us</h1>
-      <p>We put up a Kulttuurilahja crowdfunding! You can show your support towards young scientists, the environment
-        and the whole synthetic biology community by helping us raise funds for the project. The lab and competition
-        expenses are sizeable so therefore every single donation means a lot!
-      </p>
-      <br>
-      <p>
-        Kansan sivistysrahasto foundation helps our project by adding a 20 % extra bonus of the amount we raise on top.
-        So
-        let’s get everyone helping!
-      </p>
-      <br>
-      <h1>Link to support us <a
-          href="https://kulttuurilahja.fi/hanke/raskasmetallit-pois-vesistoista-opiskelijoiden-kansainvalinen-igem-kilpailuprojekti/">here!</a>
-      </h1>
-      <br>
-    </div>
-  </div>
-
-  <hr style="border: 2px solid var(--darkBlue);">
-
-  <div class="row">
-    <div class="col-md-12 col-lg-4">
-      <img src="https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png" alt="Construction">
-    </div>
-    <div class="col-md-12 col-lg-8" style="text-align: center">
-      <h2 style="margin-top: 30px;">This page is still under construction.</h2>
-      <br>
-      <h2 style="margin-top: 30px;">While we are working on this, you can</h2>
-      <h2>check out our project description
-        <a href="https://2023.igem.wiki/aboa-turku/description">here</a> &
-      </h2>
-      <h2>meet our team
-        <a href="https://2023.igem.wiki/aboa-turku/team">here</a>
-      </h2>
-    </div>
-  </div>
-  <hr style="border: 2px solid var(--yellow);">
-</div>
-
 {% endblock %}
