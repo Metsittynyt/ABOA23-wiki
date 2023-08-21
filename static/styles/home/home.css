@@ -78,7 +78,18 @@
   display: inline-block;
   margin: 10px 10px;
   min-width: 300px;
-  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .flip {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1270px) {
+  .flip {
+    min-width: 400px;
+  }
 }
 
 .flip>.front {
