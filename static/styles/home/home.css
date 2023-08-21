@@ -18,27 +18,30 @@
 
 #sky {
   position: relative;
-  height: 20vh;
+  height: 25vh;
   animation: bgChange 20s forwards;
 }
 
 /**************** Trees and logo ****************/
 
 .inner-header {
-  height: 30vh;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-1.png');
-  background-size: contain;
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  z-index: 1;
 }
 
 #merculessLogo {
-  max-height: 100%;
+  height: 30vh;
   max-width: 100%;
+  z-index: 10;
+}
+
+#forest {
+  height: 20vh;
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-2.png');
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
   z-index: 10;
 }
 
@@ -73,8 +76,9 @@
 .flip {
   position: relative;
   display: inline-block;
-  margin: 25px 25px;
-  width: 400px;
+  margin: 10px 10px;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .flip>.front {
@@ -103,8 +107,7 @@
   background-size: cover !important;
   background-position: center !important;
   height: 300px;
-  padding: 1em 2em;
-  /* border-radius: 10%; */
+  padding: 5px;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: .5s;
   transition-property: transform, opacity;
