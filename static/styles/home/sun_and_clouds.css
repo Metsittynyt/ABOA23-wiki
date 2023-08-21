@@ -11,16 +11,17 @@
   background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  z-index: 0;
 }
 
 @keyframes sunRising {
   0% {
-    top: 70%;
+    top: 70vh;
     left: -10%;
   }
 
   100% {
-    top: 5%;
+    top: 20vh;
     left: 50%;
   }
 }
@@ -28,12 +29,12 @@
 /* Safari and Chrome */
 @-webkit-keyframes sunRising {
   0% {
-    top: 70%;
-    left: -10%;
+    top: 70vh;
+    left: 50%;
   }
 
   100% {
-    top: 5%;
+    top: 20vh;
     left: 50%;
   }
 }
