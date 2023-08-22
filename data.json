@@ -726,12 +726,28 @@
                     "description" : "To celebrate World Environment Day, we published the collaboration video we organized. We asked various iGEM teams to tell us how they are saving this environment. Huge thank you to all the amazing teams that participated: iGEM Thrace, iGEM MIT-MAHE, iGEM Aix-Marseille, iGEM TU Braunschweig, iGEM UniCRETE and iGEM TU Dresden.",
                     "image" : ""
                 }, {
-                    "title" : "The lab work began ",
-                    "description" : "We began our lab work! Growing E.coli culture for extracting the constructs."
+                    "title" : "Labday 1",
+                    "description" : "We began our lab work! We started growing Escherichia coli (E. coli) culture to extract constructs. We prepared samples for P0, P1, P23S, P24S and P6."
                 }]
             },
-            "2": [6],
-            "3": [7],
+            "2": {
+                "id" : "note",
+                "day" : 6,
+                "date" : "06 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 2",
+                    "description" : "We prepared glycerol samples of P0, P1, P23S, P24S and P6. We also performed plasmid minipreps on the above-mentioned E. coli cultures."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 7,
+                "date" : "07 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 3",
+                    "description" : "We prepared BG-11 medium for cyanobacteria."
+                }]
+            },
             "4": {
                 "id" : "note",
                 "day" : 8,
@@ -741,12 +757,28 @@
                     "description" : "Discussed our ideas, the schedule and how are we preceding with the wiki building."
                 }]
             },
-            "5": [9],
+            "5": {
+                "id" : "note",
+                "day" : 9,
+                "date" : "09 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 4",
+                    "description" : "We made our first liquid culture of cyanobacteria."
+                }]
+            },
             "6": [10],
             "7": [11]
         },
         "week24": {
-            "1": [12],
+            "1": {
+                "id" : "note",
+                "day" : 12,
+                "date" : "12 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 5",
+                    "description" : "We made Synechocystis PCC803 glycerol preps. We also grew more E. coli culture."
+                }]
+            },
             "2": {
                 "id" : "note",
                 "day" : 13,
@@ -760,6 +792,9 @@
                 }, {
                     "title" : "Village decision done",
                     "description" : "We filled out the village decision preference form."
+                }, {
+                    "title": "Labday 6",
+                    "description": "We made more E. coli minipreps. We also had a meeting with our primary assistant professor Pauli Kallio."
                 }]
             },
             "3": {
@@ -772,6 +807,9 @@
                 }, {
                     "title" : "Project reveal",
                     "description" : "We posted our project reveal on our social media platforms: Instagram, Facebook, LinkedIn and TikTok."
+                }, {
+                    "title": "Labday 7",
+                    "description": "We had a research day when we planned our next experiments."
                 }]
             },
             "4": {
@@ -781,6 +819,9 @@
                 "subnav" : [{
                     "title" : "Filming at a swamp",
                     "description" : "Promo video team took a trip to a nearby marshland called Pomponrahka. We filmed parts of the promo video."
+                }, {
+                    "title": "Labday 8",
+                    "description": "We prepared competent E. coli cells for transformation."
                 }]
             },
             "5": [16],
@@ -803,17 +844,52 @@
                 "subnav" : [{
                     "title" : "Preliminary Safety Form sent",
                     "description" : "Together with our PI Satu looked over our safety form and sent the preliminary version."
+                }, {
+                    "title": "Labday 9",
+                    "description": "We prepared antibiotic-free BG-11 growth plates with Synechocystis PCC803. We had our weekly lab meeting, too."
                 }]
             },
-            "2": [20],
-            "3": [21],
-            "4": [22],
+            "2": {
+                "id" : "note",
+                "day" : 20,
+                "date" : "20 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 10",
+                    "description" : "We prepared our genes (P3 sYFP2 and P4 RBS S4) and then performed heat-shock transformation to competent E. coli cells."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 21,
+                "date" : "21 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 11",
+                    "description" : "We made glycerol preps and minipreps of the transformed E. coli cultures (P3 sYFP2 and P4 RBS S4)."
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 22,
+                "date" : "22 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 12",
+                    "description" : "We measured the DNA concentrations in our E. coli (P3 sYFP2 and P4 RBS S4) miniprep samples using NanoDrop."
+                }]
+            },
             "5": [23],
             "6": [24],
             "7": [25]
         },
         "week26": {
-            "1": [26],
+            "1": {
+                "id" : "note",
+                "day" : 26,
+                "date" : "26 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 13",
+                    "description" : "Weekly lab meeting."
+                }]
+            },
             "2": {
                 "id" : "note",
                 "day" : 27,
@@ -821,6 +897,9 @@
                 "subnav" : [{
                     "title" : "18. meeting",
                     "description" : "Talked about the upcoming Study in Turku event, Heureka collaboration and Aalto-Helsinki meet up. Lab team got everyone up to speed."
+                }, {
+                    "title": "Labday 14",
+                    "description" : "We prepared LB and LBA media and grew E. coli cultures for P1, RBS S5 and EFE. Additionally, we had a meeting with our primary assistant professor Pauli Kallio."
                 }]
             },
             "3": {
@@ -830,9 +909,20 @@
                 "subnav" : [{
                     "title" : "Team leaders meeting",
                     "description" : "Discussed what to do, when and who is in charge. We also did team administration."
+                }, {
+                    "title": "Labday 15",
+                    "description" : "We made glycerol preps and minipreps of EFE, sYFP2, RBS S4, RBS S5 and P1 E. coli cultures."
                 }]
             },
-            "4": [29],
+            "4": {
+                "id" : "note",
+                "day" : 29,
+                "date" : "29 / 06 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 16",
+                    "description" : "We had a meeting with our primary assistant professor Pauli Kallio."
+                }]
+            },
             "5": [30],
             "6": [],
             "7": []
@@ -849,11 +939,51 @@
             "7": [2]
         },
         "week27": {
-            "1": [3],
-            "2": [4],
-            "3": [5],
-            "4": [6],
-            "5": [7],
+            "1": {
+                "id" : "note",
+                "day" : 3,
+                "date" : "03 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 17",
+                    "description" : "Weekly lab meeting."
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 4,
+                "date" : "04 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 18",
+                    "description" : "We started growing P0, P1 and RBS S4 E. coli cultures."
+                }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 5,
+                "date" : "05 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 19",
+                    "description" : "We made glycerol preps and minipreps of P0, P1 and RBS S4 E. coli cultures and measured their DNA concentrations. We also made Synechocystis PCC803 preculture and E. coli cultures for P4 RBS S5, sYFP2, P2 RBS S3, P4 RBS S3 and P6 TT."
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 6,
+                "date" : "06 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 20",
+                    "description" : "We performed minipreps of P4 RBS S5, sYFP2, P2 RBS S3, P4 RBS S3 and P6 TT E. coli cultures. We also performed midipreps of promoter and backbone."
+                }]
+            },
+            "5": {
+                "id" : "note",
+                "day" : 7,
+                "date" : "07 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 21",
+                    "description" : "We concentrated our DNA fragments by centrifugation."
+                }]
+            },
             "6": [8],
             "7": [9]
         },
@@ -865,6 +995,9 @@
                 "subnav" : [{
                     "title" : "Team leaders meeting",
                     "description" : "Discussed the trip to Paris and came up with team rules to keep up the work. Also some project administration."
+                }, {
+                    "title" : "Labday 22",
+                    "description" : "We performed an assembly reaction for sYFP2/EFE and merA/merB."
                 }]
             }
 ,
@@ -878,10 +1011,21 @@
                 }, {
                     "title" : "19. team meeting",
                     "description" : "Went through group funding status, talked about the upcoming HS Turku interview and how we would like to collaborate with the Edinburgh team."
+                }, {
+                    "title" : "Labday 23",
+                    "description" : "We performed a heat-shock transformation (sYFP2/EFE and merA/merB) to E. coli."
                 }]
             }
 ,
-            "3": [12],
+            "3": {
+                "id" : "note",
+                "day" : 12,
+                "date" : "12 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 24",
+                    "description" : "We prepared an E. coli liquid culture and performed a colony PCR."
+                }]
+            },
             "4": {
                 "id" : "note",
                 "day" : 13,
@@ -889,15 +1033,42 @@
                 "subnav" : [{
                     "title" : "HS Turku interview",
                     "description" : "Helsingin Sanomat Turku division came to our lab to interview us about our project and synthetic biology."
+                }, {
+                    "title" : "Labday 25",
+                    "description" : "We performed an assembly reaction for sYFP2/EFE and merA/merB."
                 }]
             }
 ,
-            "5": [14],
-            "6": [15],
+            "5": {
+                "id" : "note",
+                "day" : 14,
+                "date" : "14 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 26",
+                    "description" : "We performed a heat-shock transformation to E. coli and prepared agar plates."
+                }]
+            },
+            "6": {
+                "id" : "note",
+                "day" : 15,
+                "date" : "15 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 27",
+                    "description" : "We made secondary E. coli cultures."
+                }]
+            },
             "7": [16]
         },
         "week29": {
-            "1": [17],
+            "1": {
+                "id" : "note",
+                "day" : 17,
+                "date" : "17 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 28",
+                    "description" : "We made new colonies and prepared colonies for a PCR reaction."
+                }]
+            },
             "2": {
                 "id" : "note",
                 "day" : 18,
@@ -905,10 +1076,21 @@
                 "subnav" : [{
                     "title" : "New gene order",
                     "description" : "Joakim made new gene order with added cutsites for cloning in pUC-19"
+                }, {
+                    "title": "Labday 29",
+                    "description": "We ran electrophoresis to analyze the results of PCR."
                 }]
             }
 ,
-            "3": [19],
+            "3": {
+                "id" : "note",
+                "day" : 19,
+                "date" : "19 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 30",
+                    "description" : "We concentrated our DNA and ran a construct (P1, P2 RBS S3, P4 RBS S5  and P6 TT) assembly reaction."
+                }]
+            },
             "4": {
                 "id" : "note",
                 "day" : 20,
@@ -916,10 +1098,21 @@
                 "subnav" : [{
                     "title" : "Implementation meeting",
                     "description" : "Discussed our implementation and who to contact to discuss our idea."
+                }, {
+                    "title": "Labday 31",
+                    "description": "We performed a RecBCD reaction and transformation to competent E. coli cells."
                 }]
             }
 ,
-            "5": [21],
+            "5": {
+                "id" : "note",
+                "day" : 21,
+                "date" : "21 / 07 / 2023",
+                "subnav" : [{
+                    "title" : "Labday 32",
+                    "description" : "We made secondary E. coli cultures for PCR."
+                }]
+            },
             "6": {
                 "id" : "note",
                 "day" : 22,
@@ -944,6 +1137,9 @@
                 }, {
                     "title" : "Had a conversation with Ari Savikko from Suomen Kalakirjasto",
                     "description" : "We had a conversation with a fisherman called Ari Savikko. He helped us understand the current situation of fish and our waters by telling us about artificial lakes Finland has and the way they have affected the environments."
+                }, {
+                    "title": "Labday 33",
+                    "description": "We performed a PCR reaction."
                 }]
             }
 ,
@@ -957,6 +1153,9 @@
                 }, {
                     "title" : "20. team meeting",
                     "description" : "Went through our current budget, upcoming events and wiki text status."
+                }, {
+                    "title": "Labday 34",
+                    "description": "We ran electrophoresis to analyze the results of PCR."
                 }]
             }
 ,
@@ -970,6 +1169,9 @@
                 }, {
                     "title" : "Human Practice meeting",
                     "description" : "Discussed the Human Practice question upon the iGEM website and the vision about our work"
+                }, {
+                    "title": "Labday 35",
+                    "description": "We had a lab meeting where we discussed gene reorder in vectors and ordering of primers. We also planned the next upcoming weeks in the lab."
                 }]
             }
 ,

@@ -43,7 +43,14 @@ def generate_calendar_table(data):
     return tables_html
 
 def generate_note_cell(note_data, colNum):
-    cell_html = f'<td id="note">'
+    cell_html = '<td'
+    
+    # Check if any sub-navigation title contains "Labday"
+    if any("Labday" in subnav_item["title"] for subnav_item in note_data["subnav"]):
+        cell_html += ' class="note labday"'
+    else : cell_html += ' class="note notes"'
+
+    cell_html += '>'
     cell_html += '<div class="dropdown">'
     cell_html += f'<button class="dropdownbtn"><span>{note_data["day"]}</span></button>'
 
