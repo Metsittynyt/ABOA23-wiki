@@ -6,40 +6,58 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  background: black;
-  animation: bgChange 20s forwards;
-  animation-direction: alternate;
+  background: skyblue;
   /* Chrome, Safari, Opera */
-  -webkit-animation: bgChange 20s forwards;
-  -webkit-animation-delay: 0;
   overflow-x: hidden;
   margin-bottom: -60px;
 }
 
 #sky {
   position: relative;
-  height: 20vh;
-  animation: bgChange 20s forwards;
+  height: 25vh;
 }
 
 /**************** Trees and logo ****************/
 
 .inner-header {
-  height: 30vh;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-1.png');
-  background-size: contain;
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  z-index: 1;
+  z-index: 6;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #merculessLogo {
-  max-height: 100%;
+  height: 30vh;
   max-width: 100%;
   z-index: 10;
+  /* filter: drop-shadow(4px 4px 4px white); */
+}
+
+#forest {
+  height: 20vh;
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-2.png');
+  background-size: contain;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  z-index: 5;
+}
+
+#trees {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-2.png');
+  background-size: contain;
+  background-position: -10px 0px;
+  background-repeat: repeat-x;
+  z-index: 10;
+  height: 100%;
+  filter: drop-shadow(4px 4px 5px black);
 }
 
 /**************** Trees and logo end ****************/
@@ -50,9 +68,16 @@
   background: linear-gradient(rgba(185, 255, 255), var(--darkBlue));
 }
 
+#fishy {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/fish.png');
+  background-size: contain;
+  background-repeat: repeat-x;
+  height: 20px;
+}
+
 #orkki_line {
   height: 100px;
-  background-image: url(https://static.igem.wiki/teams/4831/wiki/photos/characters/ukkelit.png);
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/ukkelit.png');
   background-size: contain;
   background-repeat: repeat-x;
 }
@@ -73,8 +98,20 @@
 .flip {
   position: relative;
   display: inline-block;
-  margin: 25px 25px;
-  width: 400px;
+  margin: 10px 10px;
+  min-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .flip {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1288px) {
+  .flip {
+    min-width: 400px;
+  }
 }
 
 .flip>.front {
@@ -103,8 +140,7 @@
   background-size: cover !important;
   background-position: center !important;
   height: 300px;
-  padding: 1em 2em;
-  /* border-radius: 10%; */
+  padding: 5px;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-duration: .5s;
   transition-property: transform, opacity;

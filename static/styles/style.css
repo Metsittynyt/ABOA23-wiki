@@ -313,17 +313,21 @@ li {
   }
 }
 
-.notebook-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/kiekura.png');
-  background-position-y: 100px;
+.overview-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/overview2.png');
+  background-position: center;
 }
 
 .description-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/description2.png');
-  background-position-y: center;
+  background-position-y: top;
   background-position-x: center;
 }
 
+.notebook-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/kiekura.png');
+  background-position-y: 100px;
+}
 
 /* .experiments-title {
   background-image: url('');
@@ -332,8 +336,6 @@ li {
 .sustainable-title {
   background-image: url('');
 }
-
-
 
 .collaborations-title {
   background-image: url('');
@@ -352,10 +354,6 @@ li {
 }
 
 .proofofconcept-title {
-  background-image: url('');
-}
-
-.overview-title {
   background-image: url('');
 }
 
@@ -380,8 +378,6 @@ li {
 .engineering-title {
   background-image: url('');
 }
-
-
 
 .design-title {
   background-image: url('');

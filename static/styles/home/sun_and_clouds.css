@@ -3,56 +3,20 @@
   width: 100px;
   height: 100px;
   position: absolute;
-  animation: sunRising 20s forwards;
+  left: 50%;
   border-radius: 50%;
   -moz-border-radius: 50%;
   /* Safari and Chrome */
-  -webkit-animation: sunRising 20s forwards;
   background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
-}
-
-@keyframes sunRising {
-  0% {
-    top: 70%;
-    left: -10%;
-  }
-
-  100% {
-    top: 5%;
-    left: 50%;
-  }
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes sunRising {
-  0% {
-    top: 70%;
-    left: -10%;
-  }
-
-  100% {
-    top: 5%;
-    left: 50%;
-  }
+  z-index: 0;
 }
 
 /* Standard syntax */
 @keyframes bgChange {
   0% {
-    background: var(--darkBlue);
-  }
-
-  100% {
     background: skyblue;
-  }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes bgChange {
-  0% {
-    background: var(--darkBlue);
   }
 
   100% {

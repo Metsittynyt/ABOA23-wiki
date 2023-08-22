@@ -1,13 +1,135 @@
-/**************** Waves ****************/
-
-.flex {
-  /*Flexbox for containers*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/**************** Fish ****************/
+.fish_jump {
+  height: 10vh;
+  background-color: rgba(185, 255, 255);
 }
 
+.fish {
+  position: relative;
+  animation: moveFish 4s linear infinite;
+}
+
+.body {
+  width: 50px;
+  height: 20px;
+  background-color: #FFD700; /* body color */
+  border-radius: 90% 10% 50% 40% / 60% 60% 40% 40%; /* Body shape */
+  position: absolute;
+  z-index: 5;
+}
+
+.tail {
+  width: 0;
+  height: 0;
+  border-left: 10px solid orangered;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  left: -5px;
+  top: -10px;
+  z-index: 1;
+}
+
+.fin-upper-front{
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid orangered; /* Gold color */
+  border-top: 10px solid transparent;
+  transform: scaleX(-1);
+  left: 25px;
+  top: -8px;
+  z-index: 1;
+}
+
+.fin-upper-back{
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid orangered; /* Gold color */
+  border-top: 10px solid transparent;
+  transform: scaleX(-1);
+  left: 5px;
+  top: -0px;
+  z-index: 1;
+}
+
+.fin-bottom-front{
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; /* Gold color */
+  border-bottom: 10px solid orangered;
+  transform: scaleY(-1);
+  left: 25px;
+  top: 15px;
+  z-index: 5;
+}
+
+.fin-bottom-back{
+  position: absolute;
+  border-left: 2.5px solid transparent;
+  border-right: 2.5px solid transparent; /* Gold color */
+  border-bottom: 5px solid orangered;
+  transform: scaleY(-1);
+  left: 8px;
+  top: 16px;
+  z-index: 5;
+}
+
+.eye {
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF; /* White eye color */
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 35px;
+  z-index: 5;
+}
+
+.eye::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #000000; /* Black pupil color */
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+
+@keyframes moveFish {
+  0% {
+    left: 40%;
+    bottom: 0%;
+    opacity: 0;
+  }
+  20% {
+    bottom: 40%;
+    opacity: 1;
+  }
+  40% {
+    bottom: 50%;
+    opacity: 1;
+    filter: drop-shadow(4px 4px 5px black);
+  }
+  60% {
+    bottom: 40%;
+    opacity: 1;
+  }
+  80% {
+    bottom: 0%;
+    left: 60%;
+    opacity: 0;
+  }
+  100% {
+    left: 40%;
+    bottom: 0%;
+    opacity: 0;
+  }
+}
+
+/**************** Fish ends ****************/
+
+/**************** Waves ****************/
 .waves {
   position: relative;
   width: 100%;
