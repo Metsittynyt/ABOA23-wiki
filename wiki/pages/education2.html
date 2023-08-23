@@ -1,0 +1,305 @@
+{% extends "layout.html" %}
+
+{% block title %}Education{% endblock %}
+{% block lead %}{% endblock %}
+
+{% block title_class %}education-title{% endblock %}
+
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/education2.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+
+<div class="container pt-5" style="text-align: justify;">
+  <div class="row">
+    <div class="col">
+      <p>Usually when we think about the word education we start reminiscing about our school days. While schools and
+        universities are a major part of our education, we believe the journey shouldn’t stop there. Thus in our iGEM
+        journey we wanted to include the full scale of ages: children, preschoolers, high schoolers, adults and elderly.
+        We know that education is a lifelong journey and this is how we approached this special prize.
+      </p>
+      <br>
+      <p>
+        Every day we have to make decisions and lack of knowledge can make us choose the wrong path. Education can
+        change this: education brings knowledge and so it brings trust. With trust we can work together and as united we
+        can change this world.
+      </p>
+      <br>
+      <p>
+        Read about our education journey by scrolling down or pressing the images of our events. We also made some
+        exercises so reading this page can be part of your education journey!
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row" id="title" style="background-color: white; top: 100px;">
+    <h1 class="title">Path of contents</h1>
+    <div id="linkGrid">
+      <div class="card">
+        <a href="#kindergarden"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/pre-school.jpg"
+            class="imageLink">
+        </a>Kindergarten
+      </div>
+      <div class="card">
+        <a href="#elementary"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/elementary.jpg"
+            class="imageLink">
+        </a>Elementary
+      </div>
+      <div class="card">
+        <a href="#upper secondary"><img
+            src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" class="imageLink">
+        </a>Upper secondary
+      </div>
+      <div class="card">
+        <a href="#young adults"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/young-adults.jpg"
+            class="imageLink">
+        </a>Young adults
+      </div>
+      <div class="card">
+        <a href="#working age"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/working-age.jpg"
+            class="imageLink">
+        </a>Working age
+      </div>
+      <div class="card">
+        <a href="#seniors"><img src="https://static.igem.wiki/teams/4831/wiki/photos/pallero.jpg" class="imageLink">
+        </a>Seniors
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="kindergarden">Kindergarten</h1>
+    <h3 class="title">Ilpoinen kindergarten visit</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>We started our journey with 2 to 5 year olds. We met with Aino Kiviniemi, a local pre-school teacher, to discuss
+      children’s learning abilities and concentration skills. We learned that children are captivated more easily if a
+      story is included in the tasks they are doing. Also colors and working with their own hands helps them to
+      concentrate and understand different concepts.
+    </p>
+    <br>
+    <div class="col-lg-7" id="text">
+      <p>
+        After we learned, it was the children's turn to learn. To introduce synthetic biology in simpler terms we
+        organized a cell building workshop: the children got to decorate styrofoam balls, the cells, in order to learn
+        about modifying cell’s functions. We listened to Aino’s advice and told the children that Doctor Dolphin needs
+        their help to decorate the dull empty balls into colorful working cells. We asked the children what kind of
+        cells
+        they built and we got a lot of creative answers: some cells could jump to space, others could create balloons
+        and
+        some live under the table.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-1.png" style="width: 100%;">
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <!-- Comic -->
+    <hr style="background-color: transparent; height: 50px;">
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-2.png" style="width: 100%;">
+    </div>
+    <div class="col-lg-7" id="text">
+      <p>
+        According to Aino the kids can be quite messy sometimes and that got us thinking about the importance of
+        cleanliness in lab work. Therefore the second workshop we organized for the children was about lab safety and
+        working without making a mess. We first talked about the rules of the lab and explained them with pictures. Then
+        to give them a taste of lab work: the children got to perform a simple experiment with baking soda and vinegar
+        that was dyed with food dye.
+      </p>
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <h3 class="title">
+      Do you know what you should do in the lab and what not?
+    </h3>
+    <p style="text-align: center;">
+      Think about your answer and then click the photo to reveal
+      the right one!
+    </p>
+    <br>
+    <!-- Flip images -->
+    <br>
+  </div>
+
+  <div id="labRules">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/washing-hands.png" alt="Washing hands" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/touching-your-face.png" alt="Touching your face" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/running.png" alt="Running" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/safety-equipment.png" alt="Safety equipment" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/eating.png" alt="Eating" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/drinking.png" alt="Drinking" id="flipImage">
+        </div>
+        <div class="flip-card-back">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="elementary">Elementary</h1>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
+      distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
+      tempora!
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="upper secondary">Upper secondary</h1>
+    <h3 class="title">KSYK - Kulosaari upper secondary school</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      Then our journey takes a turn down a memory lane: we visited Sara’s and Mariel’s old upper secondary school
+      called
+      Kulosaaren Yhteiskoulu.
+    </p>
+    <br>
+    <div class="col-lg-7" id="text">
+      <p>
+        The class we taught have their matriculation exams coming up in Autumn and part of the biology exam is about
+        the
+        applications of biology which includes gene modification, synthetic biology and the different techniques. To
+        help
+        the students we explained some gene modification terms and went over different techniques and requirements
+        they
+        hold. In addition we know how tiring it is to stare at the same text book images over and over again, so we
+        made
+        an educational comic for them about the basis of gene modification.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" style="width: 100%;">
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <h3 class="title">Can you fill in the different phases of the gene modification comic?</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <!-- Comic -->
+    <br>
+    <p>
+      Besides the exams and studying we wanted to encourage innovative thinking and together talk about the
+      possibilities that university, synthetic biology and iGEM brings. At the end of our presentation about our
+      project
+      and iGEM we asked the students to brainstorm their own iGEM project ideas in small groups. Various great project
+      ideas came up such as fighting malaria with synthetic biology tools, inventing a protein that detoxifies blood
+      and
+      many more. It was wonderful to see how the students really got to thinking and hear that some even talked about
+      their idea when leaving the class to recess.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="young adults">Young adults</h1>
+    <h3 class="title">Today in Synthetic Biology with ABOA- educational campaign</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      To reach young adults we knew to turn to the social media department. We made an educational campaign on
+      Instagram
+      about synthetic biology, different terms regarding it and our project. Scientific communication is often quite
+      challenging because you have to keep things simple and interesting but at the same time have the facts correct.
+      To
+      help with this we looked through what other iGEM teams have done in the past and tried to learn from them. We
+      decided to go with a news inspired campaign which was called Today in Synthetic Biology with ABOA and we posted
+      these on Instagram.
+    </p>
+    <hr style="background-color: transparent; height: 50px;">
+    <div class="row">
+
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <h3 class="title">Can you finish the different definitions? </h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <!-- Image grid -->
+    <br>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="working age">Working age</h1>
+    <h3 class="title">Bioindustries conference</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      We were invited to the Bioindustries conference on the 19th of April. There experts from various organizations
+      and
+      companies held presentations. We learned a lot for example about the recent developments, struggles and
+      solutions
+      the bioindustry has right now. Although the experts have traveled a longer educational journey than we have, we
+      believe we taught them something too. We held a presentation about iGEM, our project and how we, young
+      scientists,
+      are entering this diverse field. After the presentations there was reserved time for casual conversations. We
+      got
+      to talk, ask and answer questions from these experts and also the 2022 Aalto-Helsinki team.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="seniors">Seniors</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
+      distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
+      tempora!
+    </p>
+  </div>
+</div>
+
+{% endblock %}
