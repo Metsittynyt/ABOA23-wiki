@@ -6,7 +6,9 @@
 {% block title_class %}education-title{% endblock %}
 
 {% block additional_css %}
-<link href="{{ url_for('static', filename = 'styles/education2.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/education2.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/DNA_extraction.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/DNA_RNA_amino.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block page_content %}
@@ -14,6 +16,7 @@
 <div class="container pt-5" style="text-align: justify;">
   <div class="row">
     <div class="col">
+      <h3>Note! This page is still under construction.</h3>
       <p>Usually when we think about the word education we start reminiscing about our school days. While schools and
         universities are a major part of our education, we believe the journey shouldn’t stop there. Thus in our iGEM
         journey we wanted to include the full scale of ages: children, preschoolers, high schoolers, adults and elderly.
@@ -113,23 +116,22 @@
       </p>
     </div>
     <hr style="background-color: transparent; height: 50px;">
-    <h3 class="title">
-      Do you know what you should do in the lab and what not?
-    </h3>
-    <p style="text-align: center;">
-      Think about your answer and then click the photo to reveal
-      the right one!
-    </p>
-    <br>
-    <!-- Flip images -->
-    <br>
+    <hr>
   </div>
 
   <div id="labRules">
+    <h3 class="title quide_title">
+      Do you know what you should do in the lab and what not?
+    </h3>
+    <p class="quide_text" style="text-align: center;">
+      Think about your answer and then click the photo to reveal
+      the right one!
+    </p>
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/washing-hands.png" alt="Washing hands" id="flipImage">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/washing-hands.png" alt="Washing hands"
+            id="flipImage">
         </div>
         <div class="flip-card-back">
           <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
@@ -139,7 +141,8 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/touching-your-face.png" alt="Touching your face" id="flipImage">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/touching-your-face.png"
+            alt="Touching your face" id="flipImage">
         </div>
         <div class="flip-card-back">
           <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
@@ -159,7 +162,8 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/safety-equipment.png" alt="Safety equipment" id="flipImage">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/safety-equipment.png"
+            alt="Safety equipment" id="flipImage">
         </div>
         <div class="flip-card-back">
           <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
@@ -179,7 +183,8 @@
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/drinking.png" alt="Drinking" id="flipImage">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/drinking.png" alt="Drinking"
+            id="flipImage">
         </div>
         <div class="flip-card-back">
           <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
@@ -192,11 +197,223 @@
 
   <div class="row">
     <h1 class="title" id="elementary">Elementary</h1>
+    <h3 class="title">Turun tiedekoulu</h3>
     <hr style="background-color: transparent; height: 50px;">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
       distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
       tempora!
     </p>
+  </div>
+
+  <hr style="background-color: transparent; height: 50px;">
+  <hr>
+
+  <div class="row" id="DNA_extraction">
+    <h3 class="title">Can you put these different work steps in the right order?</h3>
+    <p style="text-align: center;">
+      Place steps to the right order and click check button to see how you did!
+    </p>
+    <hr style="background-color: transparent; height: 50px;">
+    <div class="col-sm-6 col-lg-6">
+      <h3 class="title">Work steps</h3>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_6" width="88" height="31">
+          Transport the mixture in to test tube and pour ethanol or isopropyl carefully along the edge of the tube.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_8" width="88" height="31">
+          Clean up your working area and wash your hands.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_1" width="88" height="31">
+          Peel the banana and place it into a sealable bag.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_3" width="88" height="31">
+          Close the bag and squeeze the bag until banana is a mush. Try to avoid foam.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_4" width="88" height="31">
+          Prepare the filter system by placing a filter paper into a funnel under a glass.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_7" width="88" height="31">
+          Admire the extracted banana's DNA that is between the filtered mix and alcohol.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_2" width="88" height="31">
+          Add i decilitre of water and little bit of soap.
+        </p>
+      </div>
+      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p draggable="true" ondragstart="drag(event)" id="step_5" width="88" height="31">
+          Pour the banana mix into the filter system and lit it drop for 20 minutes.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-6">
+      <h3 class="title">Work order</h3>
+      <p id="stepNumber">1.</p>
+      <div id="order_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">2.</p>
+      <div id="order_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">3.</p>
+      <div id="order_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">4.</p>
+      <div id="order_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">5.</p>
+      <div id="order_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">6.</p>
+      <div id="order_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">7.</p>
+      <div id="order_7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="stepNumber">8.</p>
+      <div id="order_8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <button id="resetButton">Reset</button>
+    <button id="checkButton">Check</button>
+
+  </div>
+  <hr>
+
+  <hr style="background-color: transparent; height: 50px;">
+
+  <div class="row">
+    <h3 class="title">Heureka</h3>
+    <hr style="background-color: transparent; height: 50px;">
+  </div>
+
+  <!-- DNA -->
+  <div id="DNA-match-game">
+    <div class="row">
+      <h3 class="title">First the DNA strain needs its complementary strain. Can you build it according to the existing
+        strain?</h3>
+      <div id="letters">
+        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
+            G
+          </p>
+        </div>
+        <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="T" width="88" height="31">
+            T
+          </p>
+        </div>
+        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
+            C
+          </p>
+        </div>
+        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="C2" width="88" height="31">
+            C
+          </p>
+        </div>
+        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
+            A
+          </p>
+        </div>
+        <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="T2" width="88" height="31">
+            T
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="DNA-match">
+          <h3 id="DNA">DNA</h3>
+          <p id="letter_C">C</p>
+          <div id="DNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_A">A</p>
+          <div id="DNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_G">G</p>
+          <div id="DNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_G">G</p>
+          <div id="DNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_T">T</p>
+          <div id="DNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_A">A</p>
+          <div id="DNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button id="checkDNAButton">Check DNA</button>
+    </div>
+  </div>
+
+  <hr style="background-color: transparent; height: 50px;">
+
+  <!-- RNA -->
+  <div id="DNA-match-game">
+    <div class="row">
+      <h3 class="title">Now when our DNA is complete we need RNA. Can you build the RNA according to the DNA strain you
+        just built?</h3>
+      <div id="letters">
+        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
+            C
+          </p>
+        </div>
+        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
+            A
+          </p>
+        </div>
+        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
+            G
+          </p>
+        </div>
+        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="G2" width="88" height="31">
+            G
+          </p>
+        </div>
+        <div id="letter_U" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="U" width="88" height="31">
+            U
+          </p>
+        </div>
+        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="A2" width="88" height="31">
+            A
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="RNA-match">
+          <h3 id="RNA">RNA</h3>
+          <div id="RNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_G">G</p>
+          <div id="RNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_T">T</p>
+          <div id="RNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_C">C</p>
+          <div id="RNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_C">C</p>
+          <div id="RNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_A">A</p>
+          <div id="RNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <p id="letter_T">T</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button id="checkRNAButton">Check RNA</button>
+    </div>
   </div>
 
   <hr>
