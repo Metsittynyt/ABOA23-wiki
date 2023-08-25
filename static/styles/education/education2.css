@@ -12,6 +12,7 @@
 .quide_title {
     grid-column: 1 / 4;
 }
+
 .quide_text {
     grid-column: 1 / 4;
 }
@@ -30,10 +31,16 @@
     align-items: center;
 }
 
-#text{
+#text {
     text-align: justify;
     align-items: center;
     justify-content: center;
+}
+
+#exercise {
+    background-color: var(--yellow);
+    padding: 10px;
+    height: 70vh;
 }
 
 #labRules {
@@ -44,20 +51,19 @@
     place-items: center;
     row-gap: 10px;
     column-gap: 10px;
-    background-color: var(--yellow);
-    padding: 10px;
+    height: 50vh;
 }
 
 #flipImage {
-    height: 300px;
-    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10%;
 }
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     perspective: 1000px;
 }
 
@@ -99,18 +105,15 @@
 }
 
 @media (max-width: 767px) {
+    p {font-size: medium;}
+    h3 {font-size: large;}
+
     #linkGrid {
         grid-template-columns: repeat(2, auto);
     }
-    .quide_title {
-        grid-column: 1 / 2;
-    }
-    .quide_text {
-        grid-column: 1 / 2;
-    }
 
     #labRules {
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(2, auto);
     }
 }
 
@@ -120,12 +123,6 @@
     }
 
     #labRules {
-        grid-template-columns: repeat(2, auto);
-    }
-    .quide_title {
-        grid-column: 1 / 3;
-    }
-    .quide_text {
-        grid-column: 1 / 3;
+        grid-template-columns: repeat(3, auto);
     }
 }
