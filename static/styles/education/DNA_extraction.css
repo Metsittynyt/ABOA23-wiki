@@ -1,0 +1,50 @@
+#DNA_extraction {
+    background-color: var(--yellow);
+}
+
+#step{
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#step p {
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+#stepNumber {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+#order_1, #order_2, #order_3, #order_4, #order_5, #order_6, #order_7, #order_8  {
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+    background-color: white;
+}
+
+#checkButton,
+#resetButton {
+    height: 50px;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--violet);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
