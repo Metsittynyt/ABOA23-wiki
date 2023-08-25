@@ -52,9 +52,9 @@ function checkDNA() {
 }
 
 // Handle RNA check
-document.getElementById("checkRNAButton").addEventListener("click", checkDNA);
+document.getElementById("checkRNAButton").addEventListener("click", checkRNA);
 
-function checkDNA() {
+function checkRNA() {
     const expectedLetters = ["C", "A", "G", "G", "U", "A"];
 
     for (let i = 1; i <= 6; i++) {
