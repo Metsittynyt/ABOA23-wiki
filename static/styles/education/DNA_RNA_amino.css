@@ -1,41 +1,44 @@
-#DNA-match-game {
+#exercise03, #exercise04 {
     background-color: var(--yellow);
     min-height: 500px;
 }
 
-#letters {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    place-items: center;
-}
-
-#DNA, #RNA {
-    grid-column: 1 / 3;
-}
-
 #DNA-match {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 10px;
-    row-gap: 5px;
-    place-items: center;
+    width: 200px;
     border-left: 10px solid var(--turquoise);
     border-right: 10px solid var(--green);
-    width: 200px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 50px;
 }
+
 #RNA-match {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 10px;
-    row-gap: 5px;
-    place-items: center;
+    width: 200px;
     border-left: 10px solid var(--violet);
     border-right: 10px solid var(--green);
-    width: 200px;
-    margin-left: auto;
+    margin-left: 50px;
     margin-right: auto;
+}
+
+#DNA-match, #RNA-match th{
+    text-align: center;
+}
+
+#DNA-match, #RNA-match td{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+#DNA_letters {
+    text-align: center;
+    width: 50px;
+    margin-right: auto;
+}
+
+#RNA_letters {
+    text-align: center;
+    width: 50px;
+    margin-left: auto;
 }
 
 #letter_A, #letter_C, #letter_G, #letter_T, #letter_U {
@@ -47,6 +50,7 @@
     border: 1px solid black;
     text-align: center;
 }
+
 #letter p {
     font-size: medium;
     padding: 0;
@@ -84,10 +88,4 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-}
-
-@media (max-width:763px) {
-    #letters {
-        grid-template-columns: repeat(3, auto);
-    }
 }
