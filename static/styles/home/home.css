@@ -14,7 +14,7 @@
 
 #sky {
   position: relative;
-  height: 25vh;
+  height: 20vh;
 }
 
 /**************** Trees and logo ****************/
@@ -89,10 +89,67 @@
 }
 
 #characterImage {
+  max-width: 100%;
   max-height: 300px;
 }
 
+#bold {
+  font-weight: bold;
+}
+
+#big {
+  font-size: x-large;
+}
+
 /**************** Sea ends ****************/
+
+/**************** Info boxes ****************/
+#infoRow {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+  margin: 0;
+}
+
+#info_1,
+#info_2,
+#info_3,
+#info_4,
+#info_5 {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--green);
+  text-align: center;
+  vertical-align: middle;
+  /* background-image: radial-gradient(circle, var(--green), var(--yellow), var(--violet)); */
+}
+
+#info_1 {
+  background-color: var(--green);
+}
+
+#info_2 {
+  background-color: var(--violet);
+}
+
+#info_3 {
+  background-color: var(--darkBlue);
+}
+
+#info_3 p {
+  color: white;
+}
+
+#info_4 {
+  background-color: var(--yellow);
+}
+
+#info_5 {
+  background-color: var(--turquoise);
+}
+
+/**************** Info boxes end ****************/
 
 /**************** Goal banners ****************/
 .flip {
@@ -102,17 +159,7 @@
   min-width: 300px;
 }
 
-@media (min-width: 768px) {
-  .flip {
-    min-width: 300px;
-  }
-}
 
-@media (min-width: 1288px) {
-  .flip {
-    min-width: 400px;
-  }
-}
 
 .flip>.front {
   transform: rotateY(0deg);
@@ -168,3 +215,29 @@
 }
 
 /**************** Goal banners end ****************/
+
+/**************** Media change ****************/
+@media (min-width: 768px) {
+  #infoRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #info_1, #info_5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  #infoRow {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #info_1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #info_5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
+}
