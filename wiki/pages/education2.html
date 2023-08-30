@@ -9,6 +9,7 @@
 <link href="{{ url_for('static', filename = 'styles/education/education2.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'styles/education/DNA_extraction.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'styles/education/DNA_RNA_amino.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/imageGallery.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block page_content %}
@@ -647,8 +648,6 @@
       <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" style="width: 100%;">
     </div>
     <hr style="background-color: transparent; height: 50px;">
-    <h3 class="title">Can you fill in the different phases of the gene modification comic?</h3>
-    <hr style="background-color: transparent; height: 50px;">
     <!-- Comic -->
     <br>
     <p>
@@ -680,14 +679,179 @@
       these on Instagram.
     </p>
     <hr style="background-color: transparent; height: 50px;">
-    <div class="row">
+  </div>
 
-    </div>
-    <hr style="background-color: transparent; height: 50px;">
+  <!-- Image grid -->
+  <div id="exercise">
     <h3 class="title">Can you finish the different definitions? </h3>
     <hr style="background-color: transparent; height: 50px;">
-    <!-- Image grid -->
-    <br>
+    <div class="imageGallery">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-3.png" style="width:100%">
+        </div>
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-6.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-7.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-8.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-9.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-3.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-4.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-5.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-6.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-3.png" style="width:100%">
+        </div>
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-3.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-4.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-5.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-6.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-7.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-8.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-9.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-3.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-4.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-5.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-6.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-7.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+      </div>
+    </div>
   </div>
 
   <hr>
@@ -720,5 +884,4 @@
     </p>
   </div>
 </div>
-
 {% endblock %}
