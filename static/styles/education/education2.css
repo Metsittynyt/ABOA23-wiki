@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(2, auto);
 }
 
 .quide_title {
@@ -40,18 +40,18 @@
 #exercise {
     background-color: var(--yellow);
     padding: 10px;
-    height: 70vh;
 }
 
 #labRules {
+    position: relative;
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     place-items: center;
     row-gap: 10px;
     column-gap: 10px;
-    height: 50vh;
+    height: 100vh;
 }
 
 #flipImage {
@@ -104,25 +104,28 @@
     transform: rotateY(180deg);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
     p {font-size: medium;}
     h3 {font-size: large;}
 
     #linkGrid {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
     }
 
     #labRules {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
     }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 1024px) {
+    p {font-size: large;}
+    h3 {font-size: x-large;}
     #linkGrid {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(6, auto);
     }
 
     #labRules {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(6, auto);
+        height: 25vh;
     }
 }
