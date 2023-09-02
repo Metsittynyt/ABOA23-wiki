@@ -1,14 +1,887 @@
 {% extends "layout.html" %}
 
 {% block title %}Education{% endblock %}
-{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
-with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+{% block lead %}{% endblock %}
+
 {% block title_class %}education-title{% endblock %}
+
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/education/education2.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/DNA_extraction.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/DNA_RNA_amino.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/imageGallery.css') }}" rel="stylesheet">
+{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
-</div>
+<div class="container pt-5" style="text-align: justify;">
+  <div class="row">
+    <div class="col">
+      <h3>Note! This page is still under construction.</h3>
+      <p>Usually when we think about the word education we start reminiscing about our school days. While schools and
+        universities are a major part of our education, we believe the journey shouldn’t stop there. Thus in our iGEM
+        journey we wanted to include the full scale of ages: children, preschoolers, high schoolers, adults and elderly.
+        We know that education is a lifelong journey and this is how we approached this special prize.
+      </p>
+      <br>
+      <p>
+        Every day we have to make decisions and lack of knowledge can make us choose the wrong path. Education can
+        change this: education brings knowledge and so it brings trust. With trust we can work together and as united we
+        can change this world.
+      </p>
+      <br>
+      <p>
+        Read about our education journey by scrolling down or pressing the images of our events. We also made some
+        exercises so reading this page can be part of your education journey!
+      </p>
+    </div>
+  </div>
 
+  <hr>
+
+  <div class="row" id="title" style="background-color: white; top: 100px;">
+    <h1 class="title">Path of contents</h1>
+    <div id="linkGrid">
+      <div class="card">
+        <a href="#kindergarden"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/pre-school.jpg"
+            class="imageLink">
+        </a>Kindergarten
+      </div>
+      <div class="card">
+        <a href="#elementary"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/elementary.jpg"
+            class="imageLink">
+        </a>Elementary
+      </div>
+      <div class="card">
+        <a href="#upper secondary"><img
+            src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" class="imageLink">
+        </a>Upper secondary
+      </div>
+      <div class="card">
+        <a href="#young adults"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/young-adults.jpg"
+            class="imageLink">
+        </a>Young adults
+      </div>
+      <div class="card">
+        <a href="#working age"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/working-age.jpg"
+            class="imageLink">
+        </a>Working age
+      </div>
+      <div class="card">
+        <a href="#seniors"><img src="https://static.igem.wiki/teams/4831/wiki/photos/pallero.jpg" class="imageLink">
+        </a>Seniors
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="kindergarden">Kindergarten</h1>
+    <h3 class="title">Ilpoinen kindergarten visit</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>We started our journey with 2 to 5 year olds. We met with Aino Kiviniemi, a local pre-school teacher, to discuss
+      children’s learning abilities and concentration skills. We learned that children are captivated more easily if a
+      story is included in the tasks they are doing. Also colors and working with their own hands helps them to
+      concentrate and understand different concepts.
+    </p>
+    <br>
+    <div class="col-lg-7" id="text">
+      <p>
+        After we learned, it was the children's turn to learn. To introduce synthetic biology in simpler terms we
+        organized a cell building workshop: the children got to decorate styrofoam balls, the cells, in order to learn
+        about modifying cell’s functions. We listened to Aino’s advice and told the children that Doctor Dolphin needs
+        their help to decorate the dull empty balls into colorful working cells. We asked the children what kind of
+        cells
+        they built and we got a lot of creative answers: some cells could jump to space, others could create balloons
+        and
+        some live under the table.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-1.png" style="width: 100%;">
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <!-- Comic -->
+    <hr style="background-color: transparent; height: 50px;">
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-2.png" style="width: 100%;">
+    </div>
+    <div class="col-lg-7" id="text">
+      <p>
+        According to Aino the kids can be quite messy sometimes and that got us thinking about the importance of
+        cleanliness in lab work. Therefore the second workshop we organized for the children was about lab safety and
+        working without making a mess. We first talked about the rules of the lab and explained them with pictures. Then
+        to give them a taste of lab work: the children got to perform a simple experiment with baking soda and vinegar
+        that was dyed with food dye.
+      </p>
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <hr>
+  </div>
+
+  <div id="exercise">
+    <h3 class="title">
+      Do you know what you should do in the lab and what not?
+    </h3>
+    <p style="text-align: center;">
+      Think about your answer and then click the photo to reveal
+      the right one!
+    </p>
+    <div id="labRules">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/washing-hands.png" alt="Washing hands"
+              id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/touching-your-face.png"
+              alt="Touching your face" id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/running.png" alt="Running"
+              id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/safety-equipment.png"
+              alt="Safety equipment" id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/yes.png" alt="yes" id="flipImage">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/eating.png" alt="Eating" id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/drinking.png" alt="Drinking"
+              id="flipImage">
+          </div>
+          <div class="flip-card-back">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/no.png" alt="no" id="flipImage">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="elementary">Elementary</h1>
+    <h3 class="title">Turun tiedekoulu</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
+      distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
+      tempora!
+    </p>
+  </div>
+
+  <hr style="background-color: transparent; height: 50px;">
+  <hr>
+
+  <div id="exercise02" class="row">
+    <h3 class="title">Can you put these different work steps in the right order?</h3>
+    <p style="text-align: center;">
+      Place steps to the right order and click check button to see how you did!
+    </p>
+    <hr style="background-color: transparent; height: 10px;">
+    <table id="DNA_extraction">
+      <thead>
+        <tr>
+          <th>Work steps</th>
+          <th></th>
+          <th>Work order</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_6" width="88" height="31">
+                Transport the mixture in to test tube and pour ethanol or isopropyl carefully along the edge of the
+                tube.
+              </p>
+            </div>
+          </td>
+          <td id="number">1.</td>
+          <td>
+            <div id="order_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_8" width="88" height="31">
+                Clean up your working area and wash your hands.
+              </p>
+            </div>
+          </td>
+          <td id="number">2.</td>
+          <td>
+            <div id="order_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_1" width="88" height="31">
+                Peel the banana and place it into a sealable bag.
+              </p>
+            </div>
+          </td>
+          <td id="number">3.</td>
+          <td>
+            <div id="order_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_3" width="88" height="31">
+                Close the bag and squeeze the bag until banana is a mush. Try to avoid foam.
+              </p>
+            </div>
+          </td>
+          <td id="number">4</td>
+          <td>
+            <div id="order_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_4" width="88" height="31">
+                Prepare the filter system by placing a filter paper into a funnel under a glass.
+              </p>
+            </div>
+          </td>
+          <td id="number">5.</td>
+          <td>
+            <div id="order_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_7" width="88" height="31">
+                Admire the extracted banana's DNA that is between the filtered mix and alcohol.
+              </p>
+            </div>
+          </td>
+          <td id="number">6.</td>
+          <td>
+            <div id="order_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_2" width="88" height="31">
+                Add i decilitre of water and little bit of soap.
+              </p>
+            </div>
+          </td>
+          <td id="number">7.</td>
+          <td>
+            <div id="order_7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <p draggable="true" ondragstart="drag(event)" id="step_5" width="88" height="31">
+                Pour the banana mix into the filter system and lit it drop for 20 minutes.
+              </p>
+            </div>
+          </td>
+          <td id="number">8.</td>
+          <td>
+            <div id="order_8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="resetButton">Reset</button>
+    <button id="checkButton">Check</button>
+
+  </div>
+  <hr>
+
+  <hr style="background-color: transparent; height: 50px;">
+
+  <div class="row">
+    <h3 class="title">Heureka</h3>
+    <hr style="background-color: transparent; height: 50px;">
+  </div>
+
+  <!-- DNA -->
+  <div id="exercise03">
+    <div class="row">
+      <h3 class="title">First the DNA strain needs its complementary strain. Can you build it according to the existing
+        strain?</h3>
+      <table id="DNA-match">
+        <thead>
+          <tr>
+            <th colspan="2">DNA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p id="letter_C">C</p>
+            </td>
+            <td>
+              <div id="DNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="letter_A">A</p>
+            </td>
+            <td>
+              <div id="DNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="letter_G">G</p>
+            </td>
+            <td>
+              <div id="DNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="letter_G">G</p>
+            </td>
+            <td>
+              <div id="DNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="letter_T">T</p>
+            </td>
+            <td>
+              <div id="DNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p id="letter_A">A</p>
+            </td>
+            <td>
+              <div id="DNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="DNA_letters">
+        <thead>
+          <tr>
+            <th>Letters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
+                  G
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="T" width="88" height="31">
+                  T
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
+                  C
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="C2" width="88" height="31">
+                  C
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
+                  A
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="T2" width="88" height="31">
+                  T
+                </p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <button id="checkDNAButton">Check DNA</button>
+    </div>
+  </div>
+
+  <hr style="background-color: transparent; height: 50px;">
+
+  <!-- RNA -->
+  <div id="exercise04">
+    <div class="row">
+      <h3 class="title">Now when our DNA is complete we need RNA. Can you build the RNA according to the DNA strain you
+        just built?</h3>
+      <table id="RNA_letters">
+        <thead>
+          <tr>
+            <th>Letters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
+                  C
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
+                  A
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
+                  G
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="G2" width="88" height="31">
+                  G
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_U" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="U" width="88" height="31">
+                  U
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="A2" width="88" height="31">
+                  A
+                </p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="RNA-match">
+        <thead>
+          <tr>
+            <th colspan="2">RNA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div id="RNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_G">G</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="RNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_T">T</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="RNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_C">C</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="RNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_C">C</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="RNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_A">A</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="RNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </td>
+            <td>
+              <p id="letter_T">T</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="row">
+      <button id="checkRNAButton">Check RNA</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="upper secondary">Upper secondary</h1>
+    <h3 class="title">KSYK - Kulosaari upper secondary school</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      Then our journey takes a turn down a memory lane: we visited Sara’s and Mariel’s old upper secondary school
+      called
+      Kulosaaren Yhteiskoulu.
+    </p>
+    <br>
+    <div class="col-lg-7" id="text">
+      <p>
+        The class we taught have their matriculation exams coming up in Autumn and part of the biology exam is about
+        the
+        applications of biology which includes gene modification, synthetic biology and the different techniques. To
+        help
+        the students we explained some gene modification terms and went over different techniques and requirements
+        they
+        hold. In addition we know how tiring it is to stare at the same text book images over and over again, so we
+        made
+        an educational comic for them about the basis of gene modification.
+      </p>
+    </div>
+    <div class="col-lg-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" style="width: 100%;">
+    </div>
+    <hr style="background-color: transparent; height: 50px;">
+    <!-- Comic -->
+    <br>
+    <p>
+      Besides the exams and studying we wanted to encourage innovative thinking and together talk about the
+      possibilities that university, synthetic biology and iGEM brings. At the end of our presentation about our
+      project
+      and iGEM we asked the students to brainstorm their own iGEM project ideas in small groups. Various great project
+      ideas came up such as fighting malaria with synthetic biology tools, inventing a protein that detoxifies blood
+      and
+      many more. It was wonderful to see how the students really got to thinking and hear that some even talked about
+      their idea when leaving the class to recess.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="young adults">Young adults</h1>
+    <h3 class="title">Today in Synthetic Biology with ABOA- educational campaign</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      To reach young adults we knew to turn to the social media department. We made an educational campaign on
+      Instagram
+      about synthetic biology, different terms regarding it and our project. Scientific communication is often quite
+      challenging because you have to keep things simple and interesting but at the same time have the facts correct.
+      To
+      help with this we looked through what other iGEM teams have done in the past and tried to learn from them. We
+      decided to go with a news inspired campaign which was called Today in Synthetic Biology with ABOA and we posted
+      these on Instagram.
+    </p>
+    <hr style="background-color: transparent; height: 50px;">
+  </div>
+
+  <!-- Image grid -->
+  <div id="exercise">
+    <h3 class="title">Can you finish the different definitions? </h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <div class="imageGallery">
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-3.png" style="width:100%">
+        </div>
+        <div class="mySlides1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/1-4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-6.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-7.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-8.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/2-9.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-3.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-4.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-5.png" style="width:100%">
+        </div>
+        <div class="mySlides3">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-6.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-3.png" style="width:100%">
+        </div>
+        <div class="mySlides4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/4-4.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-3.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-4.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-5.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-6.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-7.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-8.png" style="width:100%">
+        </div>
+        <div class="mySlides5">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/5-9.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-3.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-4.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-5.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-6.png" style="width:100%">
+        </div>
+        <div class="mySlides6">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/6-7.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="working age">Working age</h1>
+    <h3 class="title">Bioindustries conference</h3>
+    <hr style="background-color: transparent; height: 50px;">
+    <p>
+      We were invited to the Bioindustries conference on the 19th of April. There experts from various organizations
+      and
+      companies held presentations. We learned a lot for example about the recent developments, struggles and
+      solutions
+      the bioindustry has right now. Although the experts have traveled a longer educational journey than we have, we
+      believe we taught them something too. We held a presentation about iGEM, our project and how we, young
+      scientists,
+      are entering this diverse field. After the presentations there was reserved time for casual conversations. We
+      got
+      to talk, ask and answer questions from these experts and also the 2022 Aalto-Helsinki team.
+    </p>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <h1 class="title" id="seniors">Seniors</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
+      distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
+      tempora!
+    </p>
+  </div>
+</div>
 {% endblock %}
