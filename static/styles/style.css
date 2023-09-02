@@ -329,6 +329,14 @@ li {
   background-position-y: 100px;
 }
 
+.contribution-title {
+  height: 106px;
+}
+
+.education-title {
+  height: 106px;
+}
+
 /* .experiments-title {
   background-image: url('');
 }
@@ -338,10 +346,6 @@ li {
 }
 
 .collaborations-title {
-  background-image: url('');
-}
-
-.contribution-title {
   background-image: url('');
 }
 
@@ -356,8 +360,6 @@ li {
 .proofofconcept-title {
   background-image: url('');
 }
-
-
 
 .model-title {
   background-image: url('');
