@@ -133,7 +133,7 @@
 #infoRow {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 5px;
+  column-gap: 10px;
   row-gap: 5px;
   margin: 0;
 }
@@ -148,6 +148,7 @@
   text-align: center;
   background-color: var(--turquoise);
   place-content: center;
+  filter: drop-shadow(4px 4px 4px var(--darkBlue));
 }
 
 /**************** Info boxes end ****************/
