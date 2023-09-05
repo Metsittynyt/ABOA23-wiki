@@ -288,11 +288,17 @@ li {
 }
 
 /* Bannerikuvat jokaiselle sivulle */
-.home-title {
-  height: 100px;
+.home-title,
+.team-title,
+.contribution-title,
+.education-title,
+.notebook-title,
+.description-title,
+.overview-title {
+  height: 106px;
 }
 
-.team-title {
+/* .team-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo-big.jpg');
   background-position-y: 20%;
 }
@@ -311,31 +317,9 @@ li {
     background-position-y: center;
     background-position-x: center;
   }
-}
+} */
 
-.overview-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/overview2.png');
-  background-position: center;
-}
 
-.description-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/description2.png');
-  background-position-y: top;
-  background-position-x: center;
-}
-
-.notebook-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/kiekura.png');
-  background-position-y: 100px;
-}
-
-.contribution-title {
-  height: 106px;
-}
-
-.education-title {
-  height: 106px;
-}
 
 /* .experiments-title {
   background-image: url('');
