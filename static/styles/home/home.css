@@ -43,7 +43,7 @@
 
 #forest {
   height: 20vh;
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-2.png');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/trees-dark.png');
   background-size: contain;
   background-position: 0px 0px;
   background-repeat: repeat-x;
@@ -51,7 +51,7 @@
 }
 
 #trees {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/tree-2.png');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/trees-light.png');
   background-size: contain;
   background-position: -10px 0px;
   background-repeat: repeat-x;
