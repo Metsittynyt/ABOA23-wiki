@@ -294,7 +294,8 @@ li {
 .education-title,
 .notebook-title,
 .description-title,
-.overview-title {
+.overview-title,
+.SDG-title {
   height: 106px;
 }
 
