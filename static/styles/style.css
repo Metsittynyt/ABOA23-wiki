@@ -287,7 +287,8 @@ li {
   padding-left: 3rem;
 }
 
-/* Bannerikuvat jokaiselle sivulle */
+/* Bannerikuvat jokaiselle sivulle? NOPE */
+
 .home-title,
 .team-title,
 .contribution-title,
@@ -295,17 +296,13 @@ li {
 .notebook-title,
 .description-title,
 .overview-title,
+.safety-title,
 .collaborations-title,
 .SDG-title {
   height: 106px;
 }
 
 /* .experiments-title {
-  background-image: url('');
-}
-
-
-.safety-title {
   background-image: url('');
 }
 
