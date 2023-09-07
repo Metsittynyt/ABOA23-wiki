@@ -295,44 +295,15 @@ li {
 .notebook-title,
 .description-title,
 .overview-title,
+.collaborations-title,
 .SDG-title {
   height: 106px;
 }
-
-/* .team-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo-big.jpg');
-  background-position-y: 20%;
-}
-
-@media only screen and (max-width: 800px) {
-  .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
-    background-position-y: 20%;
-    background-position-x: 20%;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .team-title {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/team-members/team-photo.jpg');
-    background-position-y: center;
-    background-position-x: center;
-  }
-} */
-
-
 
 /* .experiments-title {
   background-image: url('');
 }
 
-.sustainable-title {
-  background-image: url('');
-}
-
-.collaborations-title {
-  background-image: url('');
-}
 
 .safety-title {
   background-image: url('');
