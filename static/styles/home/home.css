@@ -45,7 +45,7 @@
   height: 20vh;
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/trees-dark.png');
   background-size: contain;
-  background-position: 0px 0px;
+  background-position: bottom 0px left 0px;
   background-repeat: repeat-x;
   z-index: 5;
 }
@@ -53,11 +53,16 @@
 #trees {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/trees-light.png');
   background-size: contain;
-  background-position: -10px 0px;
+  background-position: bottom 0px left -10px;
   background-repeat: repeat-x;
   z-index: 10;
   height: 100%;
-  filter: drop-shadow(4px 4px 5px black);
+  filter: drop-shadow(4px 0px 5px black);
+}
+
+.forest_floor {
+  height: 20px;
+  background: rgb(166, 120, 60); 
 }
 
 /**************** Trees and logo end ****************/
