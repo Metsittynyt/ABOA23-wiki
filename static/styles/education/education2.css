@@ -42,6 +42,12 @@
     padding: 10px;
 }
 
+.exercise05 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+}
+
 #labRules {
     position: relative;
     margin: 0;
@@ -105,8 +111,13 @@
 }
 
 @media (min-width: 768px) {
-    p {font-size: medium;}
-    h3 {font-size: large;}
+    p {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: large;
+    }
 
     #linkGrid {
         grid-template-columns: repeat(3, auto);
@@ -115,11 +126,25 @@
     #labRules {
         grid-template-columns: repeat(3, auto);
     }
+
+    .exercise05 {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .exercise05_text {
+        grid-column: 1 / 3;
+    }
 }
 
 @media (min-width: 1024px) {
-    p {font-size: large;}
-    h3 {font-size: x-large;}
+    p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
     #linkGrid {
         grid-template-columns: repeat(6, auto);
     }
