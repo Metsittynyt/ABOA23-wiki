@@ -3,15 +3,27 @@
 {% block lead %}{% endblock %}
 {% block title_class %}medals-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/medals.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
-<div class="container pt-5">
-  <h2>Let's take a look into the medals and the special prizes that we aim to achieve!<br><br></h2>
+<header>
+  <div style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/overview.png');
+  background-repeat: repeat-x; background-size: contain; height: 200px;"></div>
+  <h1 style="text-align: center; height: 100px;">Medal Criteria</h1>
+</header>
 
-  <div class="row">
-    <div class="col">
+<div class="container pt-5">
+  <h3 style="text-align: center;">Let's take a look into the medals and the special prizes that we aim to achieve!</h3>
+  <hr style="height: 50px; background-color: transparent;">
+
+  <div class="row" id="medals">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="flip">
-        <div class="front"></div>
+        <div class="front" id="bronze">
+        </div>
         <div class="back">
           <h6><br><br><br><br>Competition deliverables #1</h6>
           <h6><a href="https://2023.igem.wiki/aboa-turku/attributions">Project Attributions</a></h6>
@@ -20,9 +32,10 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="flip">
-        <div class="front"></div>
+        <div class="front" id="silver">
+        </div>
         <div class="back">
           <h6><br><br><br><br>Competition deliverables #2</h6>
           <h6><a href="https://2023.igem.wiki/aboa-turku/engineering">Engineering Success</a></h6>
@@ -30,9 +43,10 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="flip">
-        <div class="front"></div>
+        <div class="front" id="gold">
+        </div>
         <div class="back">
           <h6><br><br><br><br>Excellence in Synthetic Biology</h6>
           <h6><a href="https://2023.igem.wiki/aboa-turku/education">Education</a></h6>
@@ -40,23 +54,26 @@
           <h6>New composite</h6>
         </div>
       </div>
+      
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-sm"></div>
-    <div class="col">
+    <div class="col-12 col-md-6 col-lg-12">
       <div class="flip">
-        <div class="front"></div>
+        <div class="front" id="awards">
+          <h1 style="text-align: center;"><br><br>Awards</h1>
+        </div>
         <div class="back">
-          <h6><br><br><br><br>Awards</h6>
+          <h6><br><br><br><br>Special awards</h6>
           <h6>Best Bioremediation Project</a></h6>
           <h6>Best Project Promotion Video Prize</a></h6>
         </div>
       </div>
     </div>
-    <div class="col-sm"></div>
+
   </div>
+
+
+
 </div>
 
 {% endblock %}
