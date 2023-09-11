@@ -16,7 +16,6 @@
 
         <!---- HOME ---->
         <li class="nav-item">
-          <!-- <a class="nav-link" href="{{ url_for('home') }}">Home</a> -->
           <a class="nav-link" href="{{ url_for('pages', page='home') }}">Home</a>
         </li>
 
@@ -84,26 +83,12 @@
             <li>
               <a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a>
             </li>
-            <li>
-              <a class="dropdown-item" href="{{ url_for('pages', page='dry-lab') }}">Dry lab</a>
-            </li>
           </ul>
         </li>
 
         <!---- PARTS ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Parts
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="{{ url_for('pages', page='part-collection') }}">Part Collection</a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('pages', page='parts') }}">Parts</a>
         </li>
 
         <!---- HUMAN PRACTICES ---->
