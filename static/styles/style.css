@@ -298,7 +298,8 @@ li {
 .overview-title,
 .safety-title,
 .collaborations-title,
-.SDG-title {
+.SDG-title,
+.medals-title {
   height: 106px;
 }
 
