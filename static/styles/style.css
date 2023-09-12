@@ -287,86 +287,79 @@ li {
   padding-left: 3rem;
 }
 
-/* Bannerikuvat jokaiselle sivulle? NOPE */
+/* Header images for every page */
+.title {
+  background-repeat: repeat-x;
+  background-size: contain;
+  min-height: 200px;
+}
 
-.home-title,
-.team-title,
-.contribution-title,
-.education-title,
-.notebook-title,
+.title-name {
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.team-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/team-photos/team-photo2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+@media (max-width: 800px) {
+  .team-title {
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .team-title {
+    height: 200px;
+  }
+}
+
 .description-title,
-.overview-title,
-.safety-title,
-.collaborations-title,
-.SDG-title,
-.medals-title {
-  height: 106px;
-}
-
-/* .experiments-title {
-  background-image: url('');
-}
-
-.results-title {
-  background-image: url('');
-}
-
-.proofofconcept-title {
-  background-image: url('');
-}
-
-.model-title {
-  background-image: url('');
-}
-
-.medals-title {
-  background-image: url('');
-}
-
 .implementation-title {
-  background-image: url('');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/description.png');
 }
 
-.humanpractices-title {
-  background-image: url('');
+.contribution-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/contribution.png');
 }
 
+.design-title,
 .engineering-title {
-  background-image: url('');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
 }
 
-.design-title {
-  background-image: url('');
+.safety-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/safety.png');
 }
 
-.communication-title {
-  background-image: url('');
-}
-
-.attributions-title {
-  background-image: url('');
-}
-
-.partnership-title {
-  background-image: url('');
-}
-
-.drylab-title {
-  background-image: url('');
-}
-
-.inclusivity-title {
-  background-image: url('');
-}
-
+.notebook-title,
+.experiments-title,
+.results-title,
 .parts-title {
-  background-image: url('');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/notebook.png');
 }
 
-.partcollection-title {
-  background-image: url('');
-} */
+.human-practices-title,
+.collaborations-title,
+.communication-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
+}
 
+.education-title,
+.plant-title,
+.medals-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
+}
+
+.sustainable-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/sdg.png')
+}
 
 
 

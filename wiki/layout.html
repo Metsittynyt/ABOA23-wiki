@@ -22,18 +22,18 @@
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
+
   <!-- Header -->
-  <header id="banner" class="bg-hero page-banner {{ self.title_class() }}">
-    <div class="banner-overlay-container">
-      <div class="banner-overlay">
-        <div class="banner-overlay-box">
-          <h1 class="display-2 text-white banner-h1">{{ self.title() }}</h1>
-        </div>
-        <img class="banner-logo hide-on-mobile "
-          src="https://static.igem.wiki/teams/4831/wiki/logos/aboa-logo-no-text.png" alt="Logo" />
-      </div>
-    </div>
+  {% if self.title() != "Home" %}
+  <header style="margin-top: 106px;">
+    <div class="title {{ self.title_class() }}"></div>
+    <h1 class="title-name">{{ self.title() }}</h1>
   </header>
+  {% endif %}
+
+  {% if self.title() == "Home" %}
+  <div style="margin-top: 106px;"></div>
+  {% endif %}
 
   <!-- Page Content -->
   {% block page_content %}{% endblock %}
@@ -45,7 +45,6 @@
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
   <script src="{{ url_for('static', filename = 'javaScript/notebook.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'javaScript/timeline.js') }}"></script>
   <script src="{{ url_for('static', filename = 'javaScript/exercise03.js') }}"></script>
   <script src="{{ url_for('static', filename = 'javaScript/exercise02.js') }}"></script>
   <script src="{{ url_for('static', filename = 'javaScript/imageGallery.js') }}"></script>
