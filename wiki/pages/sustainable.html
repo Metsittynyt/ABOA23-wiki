@@ -1,23 +1,14 @@
 {% extends 'layout.html' %}
 
-{% block title %} SDG {% endblock %}
+{% block title %} Sustainable development goals of MercuLess {% endblock %}
 {% block lead%} {%endblock %}
-{% block title_class %}SDG-title{% endblock %}
-
-{% block page_content %}
+{% block title_class %}sustainable-title{% endblock %}
 
 {% block additional_css %}
 <link href="{{ url_for('static', filename = 'styles/SDG.css') }}" rel="stylesheet">
 {% endblock %}
 
-<header>
-    <hr style="height: 20px; background-color: transparent;">
-    <div style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/sdg/sdg.png');
-    background-repeat: repeat-x; background-size: contain; height: 200px;"></div>
-    <hr style="height: 50px; background-color: transparent;">
-    <h1 style="text-align: center; height: 100px;">Sustainable development goals of MercuLess</h1>
-    <hr style="height: 50px; background-color: transparent;">
-</header>
+{% block page_content %}
 
 <div class="page_content" style="text-align: justify;">
     <div class="row">
