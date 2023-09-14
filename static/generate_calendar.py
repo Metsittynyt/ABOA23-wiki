@@ -126,6 +126,6 @@ def insert_calendar_into_notebook(data_file_path, notebook_file_path):
         updated_notebook_file.write(updated_content)
 
 if __name__ == "__main__":
-    data_file_path = os.path.join(os.path.pardir, 'data.json')
+    data_file_path = os.path.join(os.path.pardir, 'notebook_data.json')
     notebook_file_path = 'notebook.html'
     insert_calendar_into_notebook(data_file_path, notebook_file_path)
