@@ -1195,14 +1195,34 @@
             "1": [],
             "2": [1],
             "3": [2],
-            "4": [3],
+            "4": {
+                "id" : "note",
+                "day" : 4,
+                "date" : "04 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Feedback conversation",
+                    "description" : "We discussed and went over feedback we had about team members."
+                }]
+            },
             "5": [4],
             "6": [5],
             "7": [6]
         },
         "week32": {
             "1": [7],
-            "2": [8],
+            "2": {
+                "id" : "note",
+                "day" : 8,
+                "date" : "08 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "21. team meeting",
+                    "description" : "We talked about who is going to Paris and booked our tickets!"
+                },
+                {
+                    "title" : "7. Human practice meeting",
+                    "description" : "Discussed the contribution, values and a possible field trip to a local lake and swamp area with an expert"
+                }]  
+            },
             "3": [9],
             "4": [10],
             "5": [11],
@@ -1211,16 +1231,56 @@
         },
         "week33": {
             "1": [14],
-            "2": [15],
-            "3": [16],
+            "2": {
+                "id" : "note",
+                "day" : 15,
+                "date" : "15 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "22. team meeting",
+                    "description" : "We planned a workshop and wiki home page"
+                },
+                {
+                    "title" : "1. presentation video meeting",
+                    "description" : "Talked about what the presentation video is, the schedule and the division of the workload"
+                }]  
+            },
+            "3": {
+                "id" : "note",
+                "day" : 16,
+                "date" : "16 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Elisa Männistö about swamps",
+                    "description" : "We had a conversation with Elisa Männistö about swamps, ecology and the role they have in our ecosystems. We gain a lot from the conversation. "
+                }]
+            },
             "4": [17],
-            "5": [18],
+            "5": {
+                "id" : "note",
+                "day" : 18,
+                "date" : "18 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Laura Höijer about Baltic Sea Action Group and the Baltic Sea in genera",
+                    "description" : "We met with Laura to discuss the protection of the Baltic Sea, what things to consider in these types of projects and how our project can have a continuous impact on our waters. We received a lot of great points and questions we need to find answers to. "
+                }]
+            },
             "6": [19],
             "7": [20]
         },
         "week34": {
             "1": [21],
-            "2": [22],
+            "2": {
+                "id" : "note",
+                "day" : 22,
+                "date" : "22 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with about Heureka & Science Basement",
+                    "description" : "We planned the Heureka workshops and Science Basement talk we are doing as a collaboration with Aalto-Helsinki. Unfortunately Aalto-Helsinki could not make it to the meeting but we got a lot of work done and sent our ideas to them. "
+                },
+            {
+                "title" : "23. group meeting",
+                "description" : "Went through our project budget and collaboration plans."
+            }]
+            },
             "3": [23],
             "4": [24],
             "5": [25],
@@ -1228,10 +1288,46 @@
             "7": [27]
         },
         "week35": {
-            "1": [28],
-            "2": [29],
-            "3": [30],
-            "4": [31],
+            "1": {
+                "id" : "note",
+                "day" : 28,
+                "date" : "28 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Lab meeting about mercury measurement",
+                    "description" : "The lab team researched, planned and contacted experts about mercury and how to handle it responsibly.  "
+                }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 29,
+                "date" : "29 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Visit to Kakolanmäki Wastewater Treatment Plant ",
+                    "description" : "We visited a local underground wastewater treatment plant. We took a tour of their facilities, learned about their work and had a meeting with an expert to discuss biological purification and what to consider in wastewater treatment. "
+                },
+            {
+                "title" : "24. group meeting",
+                "description" : "Talked about future events and went through every subteams status."
+            }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 30,
+                "date" : "30 / 08 / 2023",
+                "subnav" : [{
+                    "title" : "Study In Turku fair",
+                    "description" : "We had a stand about our team, project and synthetic biology at the fair for new students of Turku. We met numerous new students, guided them with pipetting and got to answer and ask interesting questions. "
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 31,
+                "date" : "31 / 08 / 2023",
+                "subnav" : [{
+                    "title" : " 2. meeting with iGEM Edinburgh about our cyanobacteria collaboration",
+                    "description" : "We had a Zoom meeting about our collaboration and decided to do a report about cyanobacteria and biosafety. Also we discussed our projects and shared feelings about the slow growth rate of Synechocystis."
+                }]
+            },
             "5": [],
             "6": [],
             "7": []
@@ -1244,25 +1340,97 @@
             "3": [],
             "4": [],
             "5": [1],
-            "6": [2],
+            "6": {
+                "id" : "note",
+                "day" : 2,
+                "date" : "02 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Heureka collaboration with Aalto-Helsinki",
+                    "description" : "We organized a DNA, RNA & Protein workshop in Heureka, a science center in Vantaa, with the Aalto-Helsinki team. In the workshop the visitors learned about the power trio of life and got to build DNA & RNA themselves."
+                }]
+            },
             "7": [3]
         },
         "week36": {
             "1": [4],
-            "2": [5],
-            "3": [6],
-            "4": [7],
-            "5": [8],
+            "2": {
+                "id" : "note",
+                "day" : 5,
+                "date" : "05 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Katja Rytkönen from Turun pursiseura (Turku’s yacht club)",
+                    "description" : "We talked about what Katja and the Turun pursiseura does, the insights Turun pursiseura has regarding sailing and the Baltic Sea and then how we should consider them in our project. "
+                },
+            {
+                "title" : "25. team meeting",
+                "description" : "Went through collaborations and lab stuff."
+            }]
+            },
+            "3": {
+                "id" : "note",
+                "day" : 6,
+                "date" : "06 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with PI about implementation",
+                    "description" : "We met our PI Pauli Kallio and discussed our implementation text and how to present our ideas the best way with visual aids."
+                }]
+            },
+            "4": {
+                "id" : "note",
+                "day" : 2,
+                "date" : "07 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Team Leader meeting",
+                    "description" : "The Team Leaders discussed what has to be done and with what urgency. We did a delegation and planned the next steps of our project."
+                }]
+            },
+            "5": {
+                "id" : "note",
+                "day" : 2,
+                "date" : "08 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Meeting with Risto Sulkava from Hiilipörssi (Carbon Market)",
+                    "description" : "We talked about the restoration of peatlands, what Hiilipörssi does and what things we should take into consideration regarding restoration in our project. "
+                }]
+            },
             "6": [9],
             "7": [10]
         },
         "week37": {
-            "1": [11],
-            "2": [12],
+            "1": {
+                "id" : "note",
+                "day" : 2,
+                "date" : "11 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Advisor meeting about lab wiki texts",
+                    "description" : "We went over the first versions of our lab wiki texts with our advisors. They gave us really good comments and insights. We will take these points under consideration."
+                },
+            {
+                "title" : "Advisor meeting about Human Practice and other texts",
+                "description" : "We went over the first versions of our Human Practice and other wiki texts with our advisors. They gave us really good comments and insights. We will take these points under consideration."
+            }]
+            },
+            "2": {
+                "id" : "note",
+                "day" : 12,
+                "date" : "12 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "26. team meeting",
+                    "description" : ""
+                }]
+            },
             "3": [13],
             "4": [14],
             "5": [15],
-            "6": [16],
+            "6": {
+                "id" : "note",
+                "day" : 16,
+                "date" : "16 / 09 / 2023",
+                "subnav" : [{
+                    "title" : "Heureka collaboration with Aalto-Helsinki",
+                    "description" : "We organized a DNA, RNA & Protein workshop in Heureka, a science center in Vantaa, with the Aalto-Helsinki team. In the workshop the visitors learned about the power trio of life and got to build DNA & RNA themselves. The second time we added pipetting to the workshop in order to be more interactive and exciting."
+                }]
+            },
             "7": [17]
         },
         "week38": {
