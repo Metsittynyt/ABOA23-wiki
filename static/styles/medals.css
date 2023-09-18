@@ -3,23 +3,25 @@
 }
 
 #awards {
-    text-align: center;
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/medals/awards.png');
+    background-size: contain;
+    background-color: transparent;
 }
 
 #bronze {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/igem-mitalit-bronze.png');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/medals/bronze.png');
     background-size: contain;
     background-color: transparent;
 }
 
 #silver {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/igem-mitalit-silver.png');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/medals/silver.png');
     background-size: contain;
     background-color: transparent;
 }
 
 #gold {
-    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/igem-mitalit-gold.png');
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/medals/gold.png');
     background-size: contain;
     background-color: transparent;
 }
