@@ -320,26 +320,40 @@ li {
   }
 }
 
-.description-title,
-.implementation-title {
+.attributions-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/attribution.png');
+}
+
+.description-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/description.png');
+}
+
+.design-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/design.png');
+}
+
+.engineering-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
 }
 
 .contribution-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/contribution.png');
 }
 
-.design-title,
-.engineering-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
+.implementation-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/implementation.png');
 }
 
 .safety-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/safety.png');
 }
 
+.experiments-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/experiments.png');
+}
+
 .notebook-title,
-.experiments-title,
+
 .results-title,
 .parts-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/notebook.png');
