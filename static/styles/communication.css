@@ -1,4 +1,5 @@
-.social-info-box {
+.social-info-box,
+.news-box {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -7,11 +8,17 @@
     border-radius: 30px;
     min-width: 250px;
     max-width: 800px;
+    text-align: center;
 }
 
-.social-info-box h3 {
+.social-info-box h3,
+.news-box  h3{
     color: var(--darkBlue);
     font-size: xx-large;
+}
+
+.news-box  a {
+    color: var(--darkBlue);
 }
 
 .socials-box {
