@@ -124,9 +124,39 @@ hr {
   border: none;
 }
 
+#gap20 {
+  height: 20px;
+  background-color: transparent;
+}
+
+#gap50 {
+  height: 50px;
+  background-color: transparent;
+}
+
+#gap100 {
+  height: 100px;
+  background-color: transparent;
+}
+
 .row {
   padding: 10px;
   margin: 10px;
+}
+
+.no_mar_or_pad {
+  margin: 0px;
+  padding: 0px;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.section-title,
+.subtitle {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -135,11 +165,10 @@ hr {
    *****************************************/
 
 .stickybar {
-  position: -webkit-sticky;
   position: sticky;
   margin: 0px;
   padding: 10px;
-  top: 200px;
+  top: 110px;
 }
 
 li {
@@ -314,6 +343,7 @@ li {
     height: 300px;
   }
 }
+
 @media (max-width: 600px) {
   .team-title {
     height: 200px;
