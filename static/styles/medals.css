@@ -1,5 +1,22 @@
 #medals {
+    display: grid;
     place-content: center;
+    grid-template-columns: repeat(1, auto);
+}
+
+@media (min-width: 768px) {
+    #medals {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 1024px) {
+    #medals {
+        grid-template-columns: repeat(3, auto);
+    }
+    #item_4 {
+        grid-column-start: 2;
+    }
 }
 
 #awards {
@@ -7,6 +24,8 @@
     background-size: contain;
     background-color: transparent;
 }
+
+
 
 #bronze {
     background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/medals/bronze.png');
