@@ -5,11 +5,11 @@
     background-color: var(--turquoise);
     border: 2px solid black;
     border-radius: 30px;
-    min-width: 400px;
+    min-width: 250px;
     max-width: 800px;
 }
 
-.social-info-box h3{
+.social-info-box h3 {
     color: var(--darkBlue);
     font-size: xx-large;
 }
@@ -19,6 +19,12 @@
     grid-template-columns: repeat(4, auto);
     place-content: center;
     padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .socials-box {
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 .socials-box a {
