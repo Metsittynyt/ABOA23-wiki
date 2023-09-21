@@ -10,210 +10,243 @@
 <div class="page_content">
 
   <div class="row">
-    <div class="col" style="text-align: center">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: center">
       <img src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png" style="width: 300px;">
       <hr id="gap100">
       <h3>
-        MercuLess - a cyanobacteria-based bioremediation tool for purifying mercury-contaminated waters in short
+        MercuLess - a cyanobacteria-based bioremediation tool for purifying mercury-contaminated waters
       </h3>
       <hr id="gap100">
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-12 col-md-3 col-lg-2">
-      <ul class="stickybar">
-        <h3>Contents</h3>
-        <br>
-        <li><a href="#summary">Summary</a></li>
-        <br>
-        <li><a href="#problem">Problem</a></li>
-        <br>
-        <li><a href="#background and inspiration">Background and inspiration</a></li>
-        <br>
-        <li><a href="#solution">Our solution</a></li>
-        <br>
-        <li><a href="#references">References</a></li>
-      </ul>
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" id="table-of-contents">
+      <div class="accordion" id="Description">
+        <div class="accordion-item" id="table of contents">
+          <h2 class="accordion-header" id="headingContents">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+              Table of contents
+            </button>
+          </h2>
+          <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+            data-bs-parent="#Description">
+            <div class="accordion-body">
+              <div class="row no_mar_or_pad" id="content-links">
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#summary" onclick="toggleAccordion()">SUMMARY</a></li>
+                  <li><a href="#problem" onclick="toggleAccordion()">Problem</a></li>
+                  <li><a href="#background and inspiration" onclick="toggleAccordion()">Background and inspiration</a>
+                  </li>
+                  <li><a href="#solution" onclick="toggleAccordion()">Our solution</a></li>
+                  <li><a href="#references" onclick="toggleAccordion()">References</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
     </div>
 
-    <div class="col-xs-12 col-md-9 col-lg-10" style="text-align: justify;">
+    <hr id="gap100">
 
-      <h1 id="summary" class="center_text section-title">Summary</h1>
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+      <div class="row" id="summary">
+        <h1 class="center_text section-title">Summary</h1>
 
-      <div class="image-w-caption">
-        <img src="https://static.igem.wiki/teams/4831/wiki/photos/overview/overview-img-1.png" style="width: 100%;">
-        <figcaption style="text-align: justify;">
-          Figure 1. Visual overview of the project. Methylmercury (MeHg) accumulates in bodies of water and causes
-          damage
-          to
-          the environment and organisms. By using modified cyanobacteria (Synechocystis sp. PCC6803), our team aims in
-          developing a water purification system to help mercury contaminated ecosystems. The cyanobacteria is modified
-          by
-          adding two genes, merA and merB, that can convert extremely toxic methylmercury into elemental mercury (Hg)
-          which
-          is much less harmful to organisms. Figure has been created with BioRender.
-        </figcaption>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/overview/overview-img-1.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            Figure 1. Visual overview of the project. Methylmercury (MeHg) accumulates in bodies of water and causes
+            damage
+            to
+            the environment and organisms. By using modified cyanobacteria (Synechocystis sp. PCC6803), our team aims in
+            developing a water purification system to help mercury contaminated ecosystems. The cyanobacteria is
+            modified
+            by
+            adding two genes, merA and merB, that can convert extremely toxic methylmercury into elemental mercury (Hg)
+            which
+            is much less harmful to organisms. Figure has been created with BioRender.
+          </figcaption>
+          <hr id="gap20">
+        </div>
+        <br>
+        <p>
+          Our project, MercuLess, is about utilizing cyanobacteria to bioremediate mercury-contaminated waters (Figure
+          1). Using the tools of synthetic biology, our team will enhance the ability of cyanobacteria Synechocystis sp.
+          PCC6803 to transform methylmercury into elemental mercury which is then gathered up. In the lab, our team
+          modifies cyanobacteria to express merA and merB genes that code for proteins called mercuric reductase and
+          organomercury lyase, respectively (Figure 2). Together, these proteins can decrease the toxicity of
+          methylmercury by first cleaving the bond between the mercury atom and the carbon atom in a methylmercury
+          molecule and then reducing the released mercury ion into elemental mercury. To create the gene construct
+          containing merA and merB we use a method called One-pot Golden Gate, where multiple DNA-fragments can be
+          assembled together in a single reaction and the construct can be optimized. The produced functional plasmids
+          are then transformed into Synechocystis whose function and mercury modifying ability we will study more in the
+          lab.
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/overview/overview-img-2.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            Figure 2. Cartoon visualization of the modification of methylmercury to elemental mercury by using the
+            proteins coded by the genes merA and merB.
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <p>
+          To implement our bioremediating cyanobacteria, our idea is to build an on-site photobioreactor in which the
+          modified cyanobacteria purify natural waters contaminated with toxic methylmercury (Figure 3). Since
+          cyanobacteria are autotrophic they can utilize light as their energy source and carbon dioxide as their carbon
+          source making them a sustainable and scalable solution. Hence the bioreactor is transparent to let light
+          through and includes air inputs to provide Synechocystis carbon dioxide. The external energy needed for our
+          system is provided by solar panels, ideally team Edinburgh's cyanobacteria powered solar panels, making our
+          system 100 % cyanobacteria powered. To secure the biosafety of our photobioreactor, the reactor contains
+          filters to ensure that no modified cyanobacteria are released to the environment and the purified water is
+          clean and safe for us and the environment.
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/description/figure3.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            Figure 3. Visualization of the implementation of MercuLess: a mobile bioreactor. The purification container
+            is transported on-site with a truck. The container will be open during the day to let sunlight in. The water
+            from the contaminated water will go through the bioreactor containing the bioremediating cyanobacteria and
+            the purified water returns back to the environment with pumps. You can read more about the implementation
+            <a href="https://2023.igem.wiki/aboa-turku/implementation">here</a>.
+          </figcaption>
+        </div>
       </div>
-      <br>
-      <p>
-        Our project, MercuLess, is about utilizing cyanobacteria to bioremediate mercury-contaminated waters (figure 1).
-        Using the tools of synthetic biology, our team will enhance the ability of cyanobacteria Synechocystis sp.
-        PCC6803 to transform methylmercury into elemental mercury which is then gathered up. In the lab, our team
-        modifies cyanobacteria to express merA and merB genes that code for proteins called mercuric reductase and
-        organomercury lyase, respectively. Together, these proteins can detoxify methylmercury by first cleaving the
-        bond between the mercury atom and the carbon atom in a methylmercury molecule and then reducing the released
-        mercury ion into elemental mercury. To create the gene construct containing merA and merB we use a method called
-        One-pot Golden Gate, where multiple DNA-fragments can be assembled together in a single reaction and the
-        construct can be optimized. The produced functional plasmids are then transformed into Synechocystis whose
-        function and mercury modifying ability we will study more in the lab.
-      </p>
-      <hr id="gap20">
-      <div class="image-w-caption">
-        <img src="https://static.igem.wiki/teams/4831/wiki/photos/overview/overview-img-2.png" style="width: 100%;">
-        <figcaption style="text-align: justify;">
-          Figure 2. Cartoon visualization of the modification of methylmercury to elemental mercury by using the
-          proteins coded by the genes merA and merB.
-        </figcaption>
+
+      <hr id="gap50">
+
+      <div class="row" id="problem">
+        <h1 class="center_text section-title">The problem of methylmercury</h1>
+        <p>
+          This year our ABOA team’s project is about cleaning methylmercury out of contaminated waters. Methylmercury is
+          hazardous for the environment and individual organisms in multiple ways. The toxicity of methylmercury is
+          caused by its high affinity for sulfhydryl groups. The sulfhydryl-methylmercury compound can bind into
+          proteins, disrupting their functions (Christakis et al., 2021). In ecosystems, methylmercury accumulates in
+          large carnivores such as large predator fish and mammals. The methylmercury distracts the normal development
+          of the fetus and young individuals, decreases fertility and causes nervous disorders (U.S. Environmental
+          Protection Agency, 2022). Many of these larger animals such as seals and large predator fish are used as food
+          for humans resulting that the methylmercury enriches also in us causing these same issues. These problems
+          endanger the balance of ecosystems and harm biodiversity.
+        </p>
+        <br>
+        <p>
+          The origin of the mercury is most often fossil fuels or other mercury containing material that is burned (U.S.
+          Environmental Protection Agency, 2023). The vaporized mercury then gets into the atmosphere and precipitates
+          down with rain into bodies of water. In bodies of water microbes methylate the mercury into methylmercury.
+        </p>
+        <br>
+        <p>
+          In the bodies of water with high concentrations of biomass, especially marshlands, the biomass accumulates the
+          hydrophobic methylmercury efficiently. These aged fenlands may contain decades worth of methylmercury. As they
+          are ditched for agriculture or forestry, the sulfates in the soil react with the oxygen in the atmosphere and
+          produce acids that dissolve the accumulated mercury. Hence the mercury that has been stored in the biomass for
+          years, spreads into the environment with the runoff water.
+        </p>
       </div>
-      <hr id="gap20">
-      <p>
-        To implement our bioremediating cyanobacteria, our idea is to build an on-site photobioreactor in which the
-        modified cyanobacteria purify natural waters contaminated with toxic methylmercury (figure 3). Since
-        cyanobacteria are autotrophic they can utilize light as their energy source and carbon dioxide as their carbon
-        source making them a sustainable and scalable solution. Hence the bioreactor is transparent to let light through
-        and includes air inputs to provide Synechocystis carbon dioxide. The external energy needed for our system is
-        provided by solar panels, ideally team Edinburgh's cyanobacteria powered solar panels, making our system 100 %
-        cyanobacteria powered. To secure the biosafety of our photobioreactor, the reactor contains filters to ensure
-        that no modified cyanobacteria are released to the environment and the purified water is clean and safe for us
-        and the environment.
-      </p>
 
       <hr id="gap50">
 
-      <h1 id="problem" class="center_text section-title">The problem of methylmercury</h1>
-      <p>
-        This year our ABOA team’s project is about cleaning methylmercury out of contaminated waters. Methylmercury is
-        hazardous for the environment and individual organisms in multiple ways. The toxicity of methylmercury is caused
-        by its high affinity for sulfhydryl groups. The sulfhydryl-methylmercury compound can bind into proteins,
-        disrupting their functions (Christakis et al., 2021). In ecosystems, methylmercury accumulates in large
-        carnivores such as large predator fish and mammals. The methylmercury distracts the normal development of the
-        fetus and young individuals, decreases fertility and causes nervous disorders (U.S. Environmental Protection
-        Agency, 2022). Many of these larger animals such as seals and large predator fish are used as food for humans
-        resulting that the methylmercury enriches also in us causing these same issues. These problems endanger the
-        balance of ecosystems and harm biodiversity.
-      </p>
-      <br>
-      <p>
-        The origin of the mercury is most often fossil fuels or other mercury containing material that is burned (U.S.
-        Environmental Protection Agency, 2023). The vaporized mercury then gets into the atmosphere and precipitates
-        down with rain into bodies of water. In bodies of water microbes methylate the mercury into methylmercury.
-      </p>
-      <br>
-      <p>
-        In the bodies of water with high concentrations of biomass, especially marshlands, the biomass accumulates the
-        hydrophobic methylmercury efficiently and gets it into the food chain. These aged marshlands may contain decades
-        worth of mercury. As they are ditched for agriculture or forestry, the sulfates in the soil react with the
-        oxygen in the atmosphere and produce acids that dissolve the accumulated mercury. Hence the mercury that has
-        been stored in the biomass for years, spreads into the environment with the runoff water.
-      </p>
+      <div class="row" id="background and inspiration">
+        <h1 class="center_text section-title">Background and inspiration</h1>
+        <p>
+          In the beginning of this project our team got inspired by our native marshlands and lakes. Indeed our country
+          is named after its many fens: fen + land = Finland, which also holds true in the Finnish language: suo + maa =
+          Suomi. After some research on the topic we came to realize our idea could be utilized in promoting the
+          wellbeing of our beloved Baltic Sea as well as purifying the waters of drained marshlands and mercury
+          contaminated lakes in Finland and the rest of the world to restore them.
+        </p>
+        <br>
+        <p>
+          The Finnish marshlands have been long used for commercial forestry and agriculture and hence have been
+          drained. As the drained waters flow downstream, the methylmercury released from the depths of the marshlands
+          ends up in one of the many isolated small lakes there are in Finland harming its ecosystem.
+        </p>
+        <br>
+        <p>
+          The Baltic Sea has been in a horrible condition for decades although many actions have been made in order to
+          make it a safer habitat for flora, fauna and inhabitants of its coasts. Yet, our solution could be the one
+          that makes a sustainable impact in her health.
+        </p>
+        <br>
+        <p>
+          All in all our project has a versatile impact on the wellbeing of nature. Developing a sustainable and
+          scalable solution for the remediation of the state of our national bodies of water will be all the more
+          important as fresh water becomes a more scarce resource globally. There are also rising threats to food
+          security therefore it’s important to ensure we can use fish and other sources of food safely and sustainably.
+          Also, by improving the state of these bodies of water and protecting these ecosystems we can maintain
+          biodiversity by providing safe habitats for species and decreasing fertility and development issues.
+        </p>
+        <br>
+        <p>
+          In addition, industries that handle heavy metals could benefit from our solution. There are for example
+          artisanal mines in which the people and the environment come into contact with heavy metals. The waters used
+          in these mines or some factories that produce heavy metal contaminated sewage could purify the water with a
+          on-site purification system.
+        </p>
+      </div>
 
       <hr id="gap50">
 
-      <h1 id="background and inspiration" class="center_text section-title">Background and inspiration</h1>
-      <p>
-        In the beginning of this project our team got inspired by our native marshlands and lakes. Indeed our country is
-        named after its many fens: fen + land = Finland, which also holds true in the Finnish language: suo + maa =
-        Suomi. After some research on the topic we came to realize our idea could be utilized in promoting the wellbeing
-        of our beloved Baltic Sea as well as purifying the waters of drained marshlands and mercury contaminated lakes
-        in Finland and the rest of the world to restore them.
-      </p>
-      <br>
-      <p>
-        The Finnish marshlands have been long used for commercial forestry and agriculture and hence have been drained.
-        As marshlands develop during long periods of time, they get enriched by many toxic compounds such as heavy
-        metals. As these swamps are ditched and drained, the toxic waters spread to nature and contaminate it. As the
-        drained waters flow downstream, the methylmercury released from the depths of the marshlands end up in one of
-        the many isolated small lakes there are in Finland harming its ecosystem.
-      </p>
-      <br>
-      <p>
-        The Baltic Sea has been in a horrible condition for decades although many actions have been made in order to
-        make it a safer habitat for flora, fauna and inhabitants of its coasts. Yet, our solution could be the one that
-        makes a sustainable impact in her health.
-      </p>
-      <br>
-      <p>
-        All in all our project has a versatile impact on the wellbeing of nature. Developing a sustainable and scalable
-        solution for the remediation of the state of our national bodies of water will be all the more important as
-        fresh water becomes a more scarce resource globally. There are also rising threats to food security therefore
-        it’s important to ensure we can use fish and other sources of food safely and sustainably.
-      </p>
-      <br>
-      <p>
-        Also, by improving the state of these bodies of water and protecting these ecosystems we can maintain
-        biodiversity by providing safe habitats for species and decreasing fertility and development issues.
-      </p>
-      <br>
-      <p>
-        In addition, industries that handle heavy metals could benefit from our solution. There are for example
-        artisanal mines in which the people and the environment come into contact with heavy metals. The waters used in
-        these mines or some factories that produce heavy metal contaminated sewage could purify the water with a on-site
-        purification system.
-      </p>
+      <div class="row" id="solution">
+        <h1 class="center_text section-title">Our solution to bioremediate methylmercury-contaminated waters
+        </h1>
+        <p>
+          Our project aims to use cyanobacteria to bioremediate mercury-contaminated waters. To achieve that, our team
+          will enhance the ability of cyanobacteria to transform toxic organic mercury into less harmful elemental
+          mercury as it is less hazardous to organisms and the environment. This conversion is significant as compared
+          to the conversion of other organomercurials into elemental mercury (Dash & Das, 2012).
+        </p>
+        <br>
+        <p>
+          To reach our goal our team will genetically modify cyanobacteria, specifically Synechocystis sp. PCC6803, by
+          overexpressing a merA- and incorporating a merB -gene into its genetic material with self-replicating
+          plasmids. Together, MerA and MerB work synergistically to enhance the bioremediation of mercury. MerA reduces
+          inorganic mercuric ions to elemental mercury, while MerB aids in the degradation of organic mercury compounds.
+          Detoxifying methylmercury begins when merB-gene codes for a protein called alkylmercury lyase whose function
+          is to cleave bonds between a mercury atom and a carbon atom in organic mercury compounds. The mercuric
+          reductase enzyme, coded by the merA-gene, reduces mercury ions into elemental mercury. The elemental mercury
+          can then be transported out of the cell with diffusion (Christakis et al., 2021).
+        </p>
+        <br>
+        <p>
+          Synechocystis PCC6803 has naturally a merA-gene. By transforming the cyanobacteria with a merB-gene and
+          overexpressing the merA-gene we try to develop the modified Synechocystis into an effective tool in
+          bioremediation of mercury. To create the construct, we are going to use the One-pot Golden Gate system, where
+          multiple DNA-fragments can be assembled together in a single reaction. The system utilizes BbsI enzyme which
+          generates compatible DNA overhangs that can be ligated into a plasmid. First we will transform the created
+          inserts into E. coli and after that into Synechocystis. After transforming the Synechocystis, we will study
+          the acclimation capacity to mercury induced stress and the mercury-modifying and removing abilities of the
+          modified strains.
+        </p>
+        <br>
+        <p>
+          The current solutions for removing mercury from the environment have disadvantages such as high energy
+          consumption and for that reason we are working on a solution that utilizes the tools of synthetic biology.
+          Synthetic biology has been used for mercury remediation before but our novelty is to use Synechocystis: an
+          organism that is capable of photosynthesis. Our solution would be sustainable and scalable as it utilizes
+          phototrophic cyanobacteria, which both is a carbon sink and uses free sunlight as energy. The system would be
+          cheap to use especially in areas with a stable source of light and heat like the Equator or regulated spaces.
+          Our primary natural targets, the marshlands, small lakes and the Baltic Sea are all isolated bodies of water
+          and the parameters can be set easily. As our organism would not be freed to the environment and the reactions
+          would be done in a closed system, it is possible to use our bioremediating cyanobacteria in various areas and
+          produce clean and safe water for all.
+        </p>
+        <br>
+        <p>
+          To read about the implementation of our solution in more detail, see our <a
+            href="https://2023.igem.wiki/aboa-turku/implementation">Implementation page</a>.
+        </p>
+      </div>
 
       <hr id="gap50">
 
-      <h1 id="solution" class="center_text section-title">Our solution to bioremediate methylmercury-contaminated waters</h1>
-      <p>
-        Our project aims to use cyanobacteria to bioremediate mercury-contaminated waters. To achieve that, our team
-        will enhance the ability of cyanobacteria to transform toxic organic mercury into less harmful elemental mercury
-        as it is less hazardous to organisms and the environment. This conversion is significant as compared to the
-        conversion of other organomercurials into elemental mercury (Dash & Das, 2012).
-      </p>
-      <br>
-      <p>
-        To reach our goal our team will genetically modify cyanobacteria, specifically Synechocystis sp. PCC6803, by
-        overexpressing a merA- and incorporating a merB -gene into its genetic material with self-replicating plasmids.
-        Together, MerA and MerB work synergistically to enhance the bioremediation of mercury. MerA reduces inorganic
-        mercuric ions to elemental mercury, while MerB aids in the degradation of organic mercury compounds. Detoxifying
-        methylmercury begins when merB-gene codes for a protein called alkylmercury lyase whose function is to cleave
-        bonds between a mercury atom and a carbon atom in organic mercury compounds. The mercuric reductase enzyme,
-        coded by the merA-gene, reduces mercury ions into elemental mercury. The elemental mercury can then be
-        transported out of the cell with diffusion (Christakis et al., 2021).
-      </p>
-      <br>
-      <p>
-        Synechocystis PCC6803 has naturally a merA-gene. By transforming the cyanobacteria with a merB-gene and
-        overexpressing the merA-gene we try to develop the modified Synechocystis into an effective tool in
-        bioremediation of mercury. To create the construct, we are going to use the One-pot Golden Gate system, where
-        multiple DNA-fragments can be assembled together in a single reaction. The system utilizes BbsI enzyme which
-        generates compatible DNA overhangs that can be ligated into a plasmid. First we will transform the created
-        inserts into E. coli and after that into Synechocystis. After transforming the Synechocystis, we will study the
-        acclimation capacity to mercury induced stress and the mercury-modifying and removing abilities of the modified
-        strains.
-      </p>
-      <br>
-      <p>
-        The current solutions for removing mercury from the environment have disadvantages such as high energy
-        consumption and for that reason we are working on a solution that utilizes the tools of synthetic biology.
-        Synthetic biology has been used for mercury remediation before but our novelty is to use Synechocystis: an
-        organism that is capable of photosynthesis. Our solution would be sustainable and scalable as it utilizes
-        phototrophic cyanobacteria, which both is a carbon sink and uses free sunlight as energy. The system would be
-        cheap to use especially in areas with a stable source of light and heat like the Equator or regulated spaces.
-        Our primary natural targets, the marshlands, small lakes and the Baltic Sea are all isolated bodies of water and
-        the parameters can be set easily. As our organism would not be freed to the environment and the reactions would
-        be done in a closed system, it is possible to use our bioremediating cyanobacteria in various areas and produce
-        clean and safe water for all.
-      </p>
-      <br>
-      <p>
-        To read about the implementation of our solution in more detail, see our Implementation page.
-      </p>
-
-      <hr id="gap50">
-
-      <div id="references">
+      <div class="row" id="references">
         <div class="accordion" id="Description">
           <div class="accordion-item" id="References">
             <h2 class="accordion-header" id="headingOne">
