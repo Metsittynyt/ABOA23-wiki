@@ -171,6 +171,14 @@ hr {
   font-weight: bold;
 }
 
+#cursive {
+  font-style: italic;
+}
+
+#non-cursive {
+  font-style: normal;
+}
+
 /*****************************************
                   Stickybar
    *****************************************/
