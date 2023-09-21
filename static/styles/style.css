@@ -165,6 +165,12 @@ hr {
   margin-right: auto;
 }
 
+#definition {
+  cursor: help;
+  color: var(--green);
+  font-weight: bold;
+}
+
 /*****************************************
                   Stickybar
    *****************************************/
