@@ -5,11 +5,816 @@
 {% block lead%} {%endblock %}
 {% block title_class %}implementation-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/implementation.css') }}" rel="stylesheet">
+{% endblock %}
 
 {% block page_content %}
-  
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+
+<div class="page-content">
+  <div class="row">
+    <div class="col-12" id="table-of-contents">
+      <div class="accordion" id="Implementation">
+        <div class="accordion-item" id="SWOT and PESTLE">
+          <h2 class="accordion-header" id="headingContents">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+              Table of contents
+            </button>
+          </h2>
+          <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+            data-bs-parent="#Implementation">
+            <div class="accordion-body">
+              <div class="row no_mar_or_pad" id="content-links">
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#what" onclick="toggleAccordion()">MERCULESS: WHAT IS IT</a></li>
+                  <li><a href="#how" onclick="toggleAccordion()">MERCULESS: HOW DOES IT WORK</a></li>
+                  <li><a href="#energy" onclick="toggleAccordion()">ENERGY PROVIDED BY THE SUN AND CARBON PROVIDED FROM
+                      CO2 EMISSIONS</a></li>
+                  <li><a href="#transportable" onclick="toggleAccordion()">TRANSPORTABLE AND OPTIMIZED DESIGN</a></li>
+                  <li><a href="#ensuring" onclick="toggleAccordion()">ENSURING BALANCED SYSTEM AND PREVENTING CELL
+                      CLUMPING</a></li>
+                  <li><a href="#collecting" onclick="toggleAccordion()">COLLECTING AND UPCYCLING THE MERCURY FOR NEW
+                      APPLIANCES</a></li>
+                  <li><a href="#confirming" onclick="toggleAccordion()">CONFIRMING A CLOSED SYSTEM AND BIOSAFETY</a>
+                  </li>
+                </div>
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#monitoring" onclick="toggleAccordion()">MONITORING THE PARAMETERS AND OPTIMIZING THEM
+                      WITH THE GATHERED DATA</a></li>
+                  <li><a href="#individuals" onclick="toggleAccordion()">INDIVIDUALS AND WHOLE INDUSTRIES AS POSSIBLE
+                      END USERS</a></li>
+                  <li><a href="#adaptable" onclick="toggleAccordion()">ADAPTABLE SOLUTION FOR VARIOUS CONDITIONS</a>
+                  </li>
+                  <li><a href="#safety" onclick="toggleAccordion()">SAFETY CONSIDERATIONS AND DUAL-USE</a></li>
+                  <li><a href="#promoting" onclick="toggleAccordion()">PROMOTING CIRCULAR BIOECONOMY IN MULTIPLE
+                      LEVELS</a></li>
+                  <li><a href="#next" onclick="toggleAccordion()">NEXT STEPS AND FUTURE PROSPECTS</a></li>
+                  <li><a href="#references" onclick="toggleAccordion()">REFERENCES</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" id="sections" style="text-align: justify;">
+      <div class="row" id="what">
+        <div class="col">
+          <h1 class="center_text section-title">MercuLess: What is it?</h1>
+          <p>
+            We need concrete ways to reduce the amount of heavy metals that are in our environment already as they
+            remain
+            in
+            nature for an extremely long time. (European Environment Agency., 2018) To answer this demand we created
+            MercuLess.
+          </p>
+          <br>
+          <p>
+            MercuLess aims to be a sustainable and industrial scale biotechnological solution to purify bodies of water
+            from
+            methylmercury which is the most toxic form of mercury. Our envisioned system can be transported onto the
+            contaminated site, where our engineered photosynthetic cyanobacteria remediate the mercury contaminated
+            water.
+          </p>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="how">
+        <h1 class="center_text section-title">MercuLess: How does it work?</h1>
+        <p>
+          Our solution is a transportable photobioreactor in which the cyanobacteria cells modify methylmercury from the
+          contaminated water into less toxic and collectable forms of mercury: ionic and elemental. Cyanobacteria are
+          photosynthetic microbes which means they can use energy from light and carbon dioxide making them an
+          affordable,
+          sustainable and scalable choice of host organism.
+        </p>
+        <hr id="gap20">
+        <div id="Synechocystis-line"></div>
+        <hr id="gap20">
+        <p>
+          We engineered a species of cyanobacteria called Synechocystis sp. PCC 6803 to convert methylmercury into
+          elemental
+          mercury by adding non-native merB gene and controlling the native merA gene expression with a operon-based
+          system.
+          The merB gene codes for the MerB protein that cuts the bond between the methyl group and mercury. The merA
+          gene
+          codes for the MerA protein that reduces the ionic form into elemental mercury. You can read more about our
+          construct design in the
+          <a href="https://2023.igem.wiki/aboa-turku/design">Design page</a>.
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/overview/overview-img-2.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            Figure 1. Methylmercury transforming into elemental mercury by MerB and MerA proteins
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <p>
+          In addition to the biochemical reaction of transforming methylmercury there are technical aspects to consider
+          in
+          our photobioreactor. We contacted Pihla Hasan who is a project manager working with CircLab which is a new
+          Research and Development environment project. We had the chance to meet Pihla and her colleague Kirsi Koivula
+          who
+          is working with the same project. We gained a lot of insights regarding photobioreactors and what to consider
+          when
+          designing and operating them. On this wiki page we examine the different topics that came up in the
+          conversation
+          and how the topics should be implemented in our project. You can read more about our conversation with them on
+          the
+          <a href="https://2023.igem.wiki/aboa-turku/human-practices">Human Practice page.</a>
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="energy">
+        <h1 class="center_text section-title">Energy provided by the sun and carbon provided from CO2 emissions</h1>
+        <div class="col-12 col-md-8  order-1 order-md-2">
+          <p>
+            Thanks to cyanobacteria, this system can use green sources of energy and carbon to operate. To provide the
+            cyanobacteria with their source of energy, light, the bioreactor is made out of transparent plexiglass.
+            Other
+            parts
+            of the system, such as filters and pumps, would also use light as their source of energy. Ideally, we would
+            capture
+            the energy from sunlight with the iGEM team Edinburgh’s cyanobacteria powered solar panels thus making our
+            system
+            100% cyanobacteria powered. To keep the system working throughout the night, batteries to power artificial
+            LED
+            lights would be charged during the day with sunlight to power our cyanobacteria and other required parts
+            when
+            the
+            sun has set.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-2 order-md-1">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/implementation/sun.png" width="100%">
+        </div>
+        <div class="col-12 col-md-4  order-4 order-md-4">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/implementation/co2.png" width="100%">
+        </div>
+        <div class="col-12 col-md-8  order-3 order-md-3">
+          <p>
+            The only other thing, in addition to light, this system needs to operate is carbon dioxide. It can be found
+            in
+            the
+            atmosphere or alternatively, to promote circular economy, from industrial point-sources from which the
+            harmful
+            CO2
+            emissions could be channeled to our solution. To ensure that the air input doesn’t cause any harm it would
+            go
+            through a particle filter and an ultraviolet radiation filter to provide non-contaminated air for the cells
+            (Team
+            UFAM-UEA Brazil., 2016). After the reaction the air, which contains less carbon dioxide and more oxygen due
+            to
+            the
+            photosynthesis of the cyanobacteria (Kihara et al., 2014), is filtered so it won’t possibly contaminate the
+            environment with GMOs or other unwanted material. With these green resources, the photosynthetic cells
+            purify
+            the
+            water without any addition of expensive energy or carbon sources. Sustainably cleaned water is then returned
+            to
+            nature.
+          </p>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="transportable">
+        <h1 class="center_text section-title">Transportable and optimized design</h1>
+        <p>
+          When deciding on the design of our photobioreactor, light availability was one of the most crucial things to
+          consider. After discussing different photobioreactors with both our PI Pauli Kallio and our external
+          contributors
+          Pihla Hasan and Kirsi Koivula, we decided that our system would be a tubular photobioreactor. Together we also
+          had
+          a
+          look of current solutions and images of them, which inspired our design decision.
+        </p>
+        <br>
+        <p>
+          Our solution would be transportable so we can reach the different contaminated areas efficiently and no water
+          would
+          have to be shipped. The photobioreactor and the additional necessary devices would be in the container. The
+          container roof would open during the day time to collect the energy from sunlight and close during the night
+          to
+          eliminate any light pollution therefore maintaining the natural conditions at the site.
+        </p>
+        <br>
+        <p>
+          When researching these transportable water treatment solutions different projects and commercial products
+          popped
+          up.
+          We contacted multiple of them and Evoqua answered us. We talked with them about their SeHAWK ® Mobile
+          Bioreactors
+          and learned that the biggest mobile bioreactors they have are ?? liter. In addition they do not use GMOs which
+          is
+          why it is quite different from our solution but it was great to hear that transportable water treatment
+          bioreactors
+          are feasible and in the markets already.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="ensuring">
+        <h1 class="center_text section-title">Ensuring balanced system and preventing cell clumping</h1>
+        <p>
+          Mixing is a major factor in bioreactors because it keeps the conditions even and prevents cell clumping and
+          the
+          cells attaching to the walls of the reactor. In our photobioreactor the mixing would happen due to the water
+          flow
+          and added CO2 gas bubbles. (Huang et al., 2017)
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="collecting">
+        <h1 class="center_text section-title">Collecting and upcycling the mercury for new appliances</h1>
+        <p>
+          The methylmercury entering the system would be transformed into elemental mercury by the cyanobacteria cells
+          before
+          it is captured. Elemental mercury is liquid at room temperature but it evaporates due to its high volatility.
+          The
+          higher the temperature the more vapors are released. (Gaffney & Marley, 2014) The temperature inside the
+          bioreactor
+          would be at least room temperature in order to secure the optimal circumstances for the cells. This means
+          elemental
+          mercury vapors are released inside the bioreactor. These mercury fumes could be recovered through adsorption
+          onto
+          activated carbon. The advantage of transforming the mercury into its elemental form is its high rate of
+          vaporization
+          and low solubility to water. These attributes make it efficient to gather as it easily volatilizes onto the
+          adsorbent. Collecting the elemental mercury in a concentrated form saves the economical and environmental
+          costs
+          concerning the final disposal. (Oehmen et al., 2014)
+        </p>
+        <br>
+        <p>
+          Mercury has been used for centuries in many daily appliances: electronics, dental amalgams and lighting for
+          instance
+          and is still needed as a raw material for electronic appliances such as observation, surveillance and
+          measurement
+          appliances, and some cosmetics where it cannot be replaced. The final product of our solution, elemental
+          mercury,
+          can thus be upcycled for components of new products. (Häkkinen et al., 2021)
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="confirming">
+        <h1 class="center_text section-title">Confirming a closed system and biosafety</h1>
+        <p>
+          Our team is persistent in creating a responsible solution to a global problem. While using genetically
+          modified
+          organisms in our solution, we have to be especially precise with biosafety. In MercuLess, we ensure that
+          neither
+          our
+          strain is contaminated nor our cells are released to the environment.
+        </p>
+        <br>
+        <p>
+          The mercury-contaminated water goes through a particle filter to ensure that external biomass and various
+          particles
+          do not enter and disturb the system. Biocontamination is a crucial part when working with genetically modified
+          organisms and it is the most common concern of our stakeholders surrounding our project in addition to the
+          overall
+          use of GMOs. There are physical, chemical and biological containment methods. In our system before releasing
+          the
+          clean water to the environment, it goes through a filter to keep our genetically modified cyanobacteria cells
+          in
+          the
+          reactor. In addition to this physical containment other appropriate safety measures would be used such as
+          ultraviolet radiation to chemically kill the cell. Possible biological containment methods that could be used
+          are
+          the kill switches, genetic circuit-based controls of cell viability. (Chan et al., 2016) Given the large
+          operating
+          scale, adding molecules to the bioreactor to control the kill switch is neither cost-effective nor practical.
+          Hence
+          our system would use only physical and chemical containment methods, to ensure that no cells would be released
+          to
+          the environment whilst being economically reasonable.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="monitoring">
+        <h1 class="center_text section-title">Monitoring the parameters and optimizing them with the gathered data</h1>
+        <p>
+          To monitor and optimize this system we need information about the current circumstances and changes happening
+          in
+          the
+          reactor. For this we need sensors. It is important to monitor the pH, the temperature, the levels of oxygen
+          and
+          carbon dioxide, the amount of mercury vapor, the pressure and the nutrient levels. The sensors would be
+          located
+          inside the reactor and near the filters. With the data gathered we can analyze the accuracy and the efficiency
+          of
+          the system and improve it further by doing more DBTL cycles. Improvements may be done to the construct as well
+          as
+          to
+          for example the promoter to achieve a stronger and continuously active expression.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="individuals">
+        <h1 class="center_text section-title">Individuals and whole industries as possible end users</h1>
+        <p>
+          Our primary end users are landowners who want to take care of their land and industries producing mercury
+          wastewater. Finland is known for its many lakes and one third of the land area is marshlands. Marshlands have
+          gathered harmful compounds over centuries and when they are ditched these compounds wash away with the runoff
+          water
+          to surrendering lakes and forests. When speaking with Arja Alikoivisto who is forest owner and bioeconomy
+          agrologist
+          in Silva ry which is the Finnish association for the continuous growth of the forest, we learned that forests
+          are
+          an
+          important livelihood in Finland and many are ready to protect them if it would bring them some kind of a
+          profit.
+          The
+          European Union restoration law 2022 states that at least 20% of land and water area in the EU region should be
+          restored by 2030. This increases the pressure for the governments and individual owners to remediate the bases
+          of
+          water. In the future, as knowledge about mercury and its presence in the environment increases, as does the
+          need
+          for
+          safe water and living habitats, the need to remediate bodies of water that are toxicated by methylmercury may
+          increase even more. Besides the legislation pressure when we talked with Risto Sulkava who is the chairperson
+          and
+          scientific director of Hiilipörssi, a peatland compensation company, we learned that there hasn’t been a
+          shortage
+          of
+          people willing to restore their peatlands. Nevertheless, there are also people willing to restorate their
+          lands
+          without any financial profit but they are scarce. You can read more about our conversation with Arja and Risto
+          in
+          the <a href="https://2023.igem.wiki/aboa-turku/human-practices">Human Practice page.</a>
+        </p>
+        <br>
+        <p>
+          Besides individual landowners, our possible end users would be several industries that cause mercury
+          pollution.
+          For
+          example non-ferrous metals production, cement production and by stationary combustion of coal produce large
+          amounts
+          of mercury emission every year. (Technical Background Report to the Global Mercury Assessment 2018, 2019) Laws
+          against mercury pollution have been introduced over the years globally by the Minamata Convention and locally
+          by
+          the
+          European Union. These new laws create a demand for mercury cleaning methods, which is why we believe our
+          continuous
+          cost-effective solution will interest several parties and different industries. Our solution to the mercury
+          problem
+          is more sustainable than alternative techniques and therefore we believe nature conservationist organizations
+          and
+          ministries would be interested in assisting with the initial infrastructure costs for this system to be spread
+          to
+          wider use.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="adaptable">
+        <h1 class="center_text section-title">Adaptable solution for various conditions</h1>
+        <p>
+          Our system can be used both in fresh and saline waters as cyanobacteria thrive in various environments.
+          (Chorus
+          &
+          Bartram, 1999) The water from the natural source is applicable because cyanobacteria need only light and
+          carbon
+          dioxide for their sources of energy and carbon. This means that no expensive sugars are needed and scalability
+          is
+          easily achieved.
+        </p>
+        <br>
+        <p>
+          Our solution could be transported next to the most mercury contaminated waters. An example site would be
+          Pyhäselkä,
+          a part of the large natural lake Saimaa, in Joensuu, which is mostly contaminated by a pulp mill. (Mononen et
+          al.,
+          2022) Another example site in Finland would be one near a mining site that produces sulfate rich sewage. The
+          sewage
+          can increase the methylation of mercury as a by-product of sulfate-reducing bacteria, therefore causing
+          enrichment
+          of methylmercury in the waters. (Jeremiason et al., 2006)
+        </p>
+        <br>
+        <p>
+          Some of the mines also use marshlands as a filter for their pollutants. As these marshlands are used for long
+          periods of time, the pollutants do not accumulate anymore but will be washed off and flow to other bodies of
+          water.
+          (Yaraghi et al., 2020)
+        </p>
+        <br>
+        <p>
+          Besides being used as filters, marshlands naturally gather harmful compounds. When speaking with Postdoctoral
+          Researcher of Marshland Ecology Elisa Männistö from the University of Eastern Finland, we understood that
+          mercury
+          is
+          not such a problem at marshlands in natural state. The mercury is bound into the natural biomass and is not an
+          issue
+          because it holds still and does not enter any food chain. Problems occur when this natural state is disturbed,
+          by
+          for example ditching, because the water flow can dissolve harmful compounds to nearby areas. Also, this risk
+          is
+          involved in restoration of marshlands because the returning water could have the same effect. Hence, one
+          application
+          of our solution is to use it as a part of the restoration process.
+        </p>
+        <br>
+        <p>
+          Mercury is also a problem on a global scale and the biggest sector causing mercury emissions is small-scale
+          mining.
+          (Technical Background Report to the Global Mercury Assessment 2018, 2019) For example in India, China and the
+          Democratic Republic of Congo, the most mercury polluted areas are connected to artisanal mining sites (Zandt,
+          2022).
+          Although we have focused our resources to research local problems, we believe our system could be used
+          globally
+          achieving a broader impact.
+        </p>
+        <br>
+        <p>
+          By monitoring, gathering data and analyzing the data we can modify both our organism and the gene construct to
+          fit
+          the circumstances and needs of various applications even better. Likewise the mechanical parts could be
+          modified
+          to
+          a system that purifies waters from factories that produce heavy metal sewage, for example. This decreases the
+          sewage
+          costs of factories and makes work at water treatment plants more safe, energy efficient and
+          environment-friendly.
+          When used indoors, the system would use artificial lighting that could be produced sustainably by using for
+          example
+          solar panels.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="safety">
+        <h1 class="center_text section-title">Safety considerations and dual-use</h1>
+        <p>
+          Responsible solutions are safe and well-thought of. To ensure that our project is responsible we considered
+          different safety aspects. Firstly we considered biosafety: our system would be a closed system to keep our
+          cells
+          in
+          control. The European Union legislation controls the use of GMOs and their release but even without the
+          legislation
+          pressure we understand that biosafety and the control of GMOs are a vital aspect of responsible synthetic
+          biology
+          projects. Risk assessment is a critical part of biosafety therefore a report must be written before piloting
+          and
+          starting our operations.
+        </p>
+        <br>
+        <p>
+          Secondly, to make our project whole we considered the upcycling of mercury. Our system would gather the
+          mercury
+          but
+          its journey doesn’t end there. Mercury can be upcycled for example for new surveillance and measurement
+          appliances.
+          This means that the collection process must be joined with the appropriate downstream technologies for
+          recycling.
+        </p>
+        <br>
+        <p>
+          Thirdly, because our project aims to clean large bodies of water a mobile purification system is the only
+          reasonable
+          choice. Our transportable truck would be brought to the contaminated site. Because our project is meant to
+          promote
+          nature’s wellbeing the system is to be designed to cause the least amount of disturbance to nature. Light,
+          noise
+          and
+          other pollutants would be taken into consideration.
+        </p>
+        <br>
+        <p>
+          Although all iGEM projects aim for good, they can be misused. Our intention is to not promote irresponsible
+          mining
+          but to create clean and safe water for us all. Yet, as we live during the time of electrification, mining
+          metals
+          for
+          electronics is vital. With our solution, mining could be more sustainable and reduce the current harmful
+          ecological
+          effect. Additionally, our system promotes the upcycling of mercury and hopefully in the future other metals.
+          Besides
+          mining, the solution we created could decrease the negative effects of marshland ditching, without justifying
+          the
+          increase of these practices. Ditching is known to decrease the carbon sequestration ability of the marshlands,
+          thus
+          enhancing climate change. It also causes a dramatic change to the ecosystem causing habitat loss and
+          threatening
+          biodiversity. MercuLess is meant for cleaning up the mess we have already made rather than making it worse.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="promoting">
+        <h1 class="center_text section-title">Promoting circular bioeconomy in multiple levels</h1>
+        <img src="https://static.igem.wiki/teams/4831/wiki/photos/implementation/circular.png"
+          style="max-width: 400px; margin-left: auto; margin-right: auto;">
+        <hr id="gap20">
+        <p>
+          Our solution follows the principles of circular economy. Although our host organism is photoautotrophic, it
+          needs
+          nutrients to reproduce and grow. Cyanobacteria may use eutrophicated waters from agriculture, such as sewage
+          water
+          of
+          greenhouses, while simultaneously purifying them, for example from nitrogen and phosphorus, and thus promoting
+          circular economy. An example of this kind of a solution can be found from Ruissalo, Turku where they purify
+          water
+          from
+          an aquaponic greenhouse of nitrogen and phosphorus by using cyanobacteria. (Salazar et al., 2023)
+        </p>
+        <br>
+        <p>
+          As our host organism is a photosynthetic microorganism it has the unique ability to use only carbon dioxide
+          and
+          light. These organisms are the greenest and the most sustainable solutions synthetic biology has to offer
+          because
+          there is no need for an external source of carbon or energy. Because cyanobacteria use carbon dioxide as their
+          carbon source, they function also as a carbon sink. Therefore, the carbon dioxide emissions of industrial
+          sites
+          can
+          be bound into biomass by locating our solution near to these point sources.
+        </p>
+        <br>
+        <p>
+          While the cells are working in our solution they gather energy from light and carbon dioxide into themselves.
+          When
+          they have done their part in our bioreactor the collected energy in the cell biomass can be upcycled for
+          industrial
+          use. Biofuels, fertilizers and secondary metabolites like pigments can be made by using cyanobacteria biomass
+          that
+          has been used for wastewater treatment. (Bolatkhan et al., 2020; Sharma & Sharma, 2017) This promotes a
+          circular
+          economy and makes our solution even more responsible.
+        </p>
+        <br>
+        <p>
+          The purified water coming out of our system could be used for both agriculture and industry in addition to
+          providing
+          a safe habitat. Clean and safe water will be a scarce resource in the future, as climate change increases the
+          need
+          for irrigation and makes waters more acidic and eutrophicated.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="next">
+        <h1 class="center_text section-title">Next steps and future prospects</h1>
+        <p>
+          Our project has immense potential to be continued beyond the iGEM competition by either one of the team
+          members
+          or
+          other students of the Turku region for example in their master’s thesis. For example the Faculty of Technology
+          in
+          the University of Turku offers a master’s programme in Molecular Plant Biology, which would be a perfect
+          programme
+          in which to both continue our iGEM project and gain more knowledge about the use of photoautotrophic
+          organisms.
+        </p>
+        <br>
+        <p>
+          The University of Turku, Åbo Akademi University and the Turku University of Applied Sciences have various
+          different
+          programs and collaborations with these would be ideal so that the project would continue and grow, for
+          example,
+          into
+          a concrete water treatment system with the help of the Department of Mechanical and Materials Engineering. In
+          addition, our project adds knowledge about the conditions, requirements and considerations that have to be
+          taken
+          into account when doing material or mechanical engineering with bacteria: to make better filters and other
+          parts
+          to
+          our system, mechanical and material engineering are needed to support synthetic biology.
+        </p>
+        <br>
+        <p>
+          We will share our project results with different foundations that work with our topics and could be interested
+          in
+          continuing our work with cyanobacteria and bioremediation of local on global bodies of water and wetlands. Our
+          work
+          will provide a lot of new data for the field studying Synechocystis sp. PCC 6803, other photoautotrophic
+          organisms
+          and enable development of sustainable alternatives for different processes. With our study, we will get
+          knowledge
+          on
+          how Synechocystis sp. PCC 6803 works heavy metals, the insertion of different constructs to Synechocystis sp.
+          PCC
+          6803 and how Synechocystis sp. PCC 6803 can be used to produce secondary metabolites.
+        </p>
+        <br>
+        <p>
+          With MercuLess we focused on the battle against mercury but our aim is that our system can be enhanced so it
+          could
+          be used in the fight against other heavy metals and harmful compounds in contaminated water. Cyanoremediation
+          is
+          a
+          growing field and therefore we are positive that this will be possible in the near future.
+        </p>
+        <br>
+        <p>
+          When our system would be ready to use in practice, we hope that the EU has taken more courageous steps towards
+          the
+          use of synthetic biology in commercial use. Despite the current strict legislation we have thought about the
+          opportunities and challenges our solution could face in the markets.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="accordion" id="Implementation">
+
+          <div class="accordion-item" id="SWOT and PESTLE">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                SWOT and PESTLE
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#Implementation">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img src="https://static.igem.wiki/teams/4831/wiki/photos/implementation/swot.png" width="100%">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <img src="https://static.igem.wiki/teams/4831/wiki/photos/implementation/pestle.png" width="100%">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="references">
+        <h1 class="center_text section-title">References</h1>
+        <p>
+          We took cues to our project from previous iGEM projects. Teams Minnesota 2014, Cornell 2014, Mit_mahe
+          2020,
+          UFAM-UEA Brazil 2016 and TU Darmstadt 2020 did their projects concerning bioremediation of mercury or
+          wastewater treatment. We delved into their wiki pages, contacted many of them and took inspiration from
+          their work to come up with a more efficient and sustainable solution of our own.
+        </p>
+
+        <div class="accordion" id="Implementation">
+
+          <div class="accordion-item" id="References">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Reference list
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#Implementation">
+              <div class="accordion-body">
+                <p>
+                  Benner, P., Meier, L., Pfeffer, A., Krüger, K., Oropeza Vargas, J. E., & Weuster-Botz, D. (2022).
+                  Lab-scale
+                  photobioreactor systems: Principles, applications, and scalability. Bioprocess and Biosystems
+                  Engineering,
+                  45(5), 791–813. https://doi.org/10.1007/s00449-022-02711-1
+                </p>
+                <br>
+                <p>
+                  Bolatkhan, K., Sadvakasova, A. K., Zayadan, B. K., Kakimova, A. B., Sarsekeyeva, F. K., Kossalbayev,
+                  B.
+                  D.,
+                  Bozieva, A. M., Alwasel, S., & Allakhverdiev, S. I. (2020). Prospects for the creation of a waste-free
+                  technology for wastewater treatment and utilization of carbon dioxide based on cyanobacteria for
+                  biodiesel
+                  production. Journal of Biotechnology, 324, 162–170. https://doi.org/10.1016/j.jbiotec.2020.10.010
+                </p>
+                <br>
+                <p>
+                  Chan, C. T. Y., Lee, J. W., Cameron, D. E., Bashor, C. J., & Collins, J. J. (2016). “Deadman” and
+                  “Passcode”
+                  microbial kill switches for bacterial containment. Nature Chemical Biology, 12(2), 82–86.
+                  https://doi.org/10.1038/nchembio.1979
+                </p>
+                <br>
+                <p>
+                  Chorus, I., & Bartram, J. (Eds.). (1999). Toxic cyanobacteria in water: A guide to their public health
+                  consequences, monitoring, and management. E & FN Spon.
+                </p>
+                <br>
+                <p>
+                  European Environment Agency. (2018). Mercury in Europe’s environment: A priority for European and
+                  global
+                  action. Publications Office. https://data.europa.eu/doi/10.2800/558803
+                </p>
+                <br>
+                <p>
+                  Gaffney, J., & Marley, N. (2014). In-depth review of atmospheric mercury: Sources, transformations,
+                  and
+                  potential sinks. Energy and Emission Control Technologies, 1. https://doi.org/10.2147/EECT.S37038
+                </p>
+                <br>
+                <p>
+                  Huang, Q., Jiang, F., Wang, L., & Yang, C. (2017). Design of Photobioreactors for Mass Cultivation of
+                  Photosynthetic Organisms. Engineering, 3(3), 318–329. https://doi.org/10.1016/J.ENG.2017.03.020
+                </p>
+                <br>
+                <p>
+                  Jeremiason, J. D., Engstrom, D. R., Swain, E. B., Nater, E. A., Johnson, B. M., Almendinger, J. E.,
+                  Monson,
+                  B. A., & Kolka, R. K. (2006). Sulfate Addition Increases Methylmercury Production in an Experimental
+                  Wetland. Environmental Science & Technology, 40(12), 3800–3806. https://doi.org/10.1021/es0524144
+                </p>
+                <br>
+                <p>
+                  Kihara, S., Hartzler, D. A., & Savikhin, S. (2014). Oxygen Concentration Inside a Functioning
+                  Photosynthetic
+                  Cell. Biophysical Journal, 106(9), 1882–1889. https://doi.org/10.1016/j.bpj.2014.03.031
+                </p>
+                <br>
+                <p>
+                  Mononen, P., Huttunen, M., Kukkonen, M., Haakana, H., Käki, T., Heikkinen, M., Rissanen, N. (2022).
+                  Pohjois-Karjalan vesienhoidon toimenpideohjelma vuosille 2022–2027. Elinkeino-, liikenne- ja
+                  ympäristökeskus. https://urn.fi/URN:ISBN:978-952-398-022-8
+                </p>
+                <br>
+                <p>
+                  Oehmen, A., Vergel, D., Fradinho, J., Reis, M. A. M., Crespo, J. G., & Velizarov, S. (2014). Mercury
+                  removal
+                  from water streams through the ion exchange membrane bioreactor concept. Journal of Hazardous
+                  Materials,
+                  264, 65–70. https://doi.org/10.1016/j.jhazmat.2013.10.067
+                </p>
+                <br>
+                <p>
+                  Salazar, J., Santana-Sánchez, A., Näkkilä, J., Sirin, S., & Allahverdiyeva, Y. (2023). Complete N and
+                  P
+                  removal from hydroponic greenhouse wastewater by Tetradesmus obliquus: A strategy for algal
+                  bioremediation
+                  and cultivation in Nordic countries. Algal Research, 70, 102988.
+                  https://doi.org/10.1016/j.algal.2023.102988
+                </p>
+                <br>
+                <p>
+                  Sharma, P., & Sharma, N. (2017). Industrial and Biotechnological Applications of Algae: A Review.
+                  Journal
+                  of
+                  Advances in Plant Biology, 1(1), 1–25. https://doi.org/10.14302/issn.2638-4469.japb-17-1534
+                </p>
+                <br>
+                <p>
+                  Team:UFAM-UEA Brazil/Project/ScaleUpBioreactor - 2016.igem.org. (n.d.).
+                  https://2016.igem.org/Team:UFAM-UEA_Brazil/Project/ScaleUpBioreactor
+                </p>
+                <br>
+                <p>
+                  Technical background report to the global mercury assessment 2018. (2019). AMAP/UNEP.
+                </p>
+                <br>
+                <p>
+                  Yaraghi, N., Ronkanen, A.-K., Torabi Haghighi, A., Aminikhah, M., Kujala, K., & Kløve, B. (2020).
+                  Impacts
+                  of
+                  gold mine effluent on water quality in a pristine sub-Arctic river. Journal of Hydrology, 589, 125170.
+                  https://doi.org/10.1016/j.jhydrol.2020.125170
+                </p>
+                <br>
+                <p>
+                  Zandt, F. (2022, February 1).
+                  Where small scale mining is most prevalent. Statista Daily Data.
+                  https://www.statista.com/chart/26741/countries-with-the-highest-estimated-number-of-people-working-in-artisanal-and-small-scale-mining/
+                </p>
+                <br>
+                <p>
+                  Häkkinen, E., Haavisto, T., Nurmi, E., Forsberg, T. & Mikkola-Pusa, J. (2021). Elohopea-asetuksen ja
+                  Minamatan yleissopimuksen toimeenpanoa tukeva selvitys. Suomen ympäristökeskus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-  
+
 {% endblock %}

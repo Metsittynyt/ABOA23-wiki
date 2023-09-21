@@ -1,0 +1,47 @@
+#Synechocystis-line {
+    height: 100px;
+    background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.section-title,
+.subtitle {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+#table-of-contents {
+    position: sticky;
+    top: 106px;
+    z-index: 1;
+    width: 100%;
+}
+
+#table-of-contents a {
+    color: var(--darkBlue);
+}
+
+#content-links {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#content-links li{
+    padding: 5px;
+}
+
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: var(--turquoise);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: var(--green);
+    width: 0%;
+}
