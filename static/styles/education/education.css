@@ -1,207 +1,169 @@
-/*****************************************
-                  Education
-   *****************************************/
-
-.timeline {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #00374e;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-}
-
-.timeline::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0px;
-}
-
-.tabs input {
-  visibility: hidden;
-  display: none;
-}
-
-.buttons {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-  right: 10px;
-  top: 120px;
-  bottom: 20px;
-  gap: 8%;
-}
- 
-.buttons button {
-  background: transparent;
-  border: none;
-}
-
-.buttons label {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  opacity: 0.5;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-/* Adjust opacity and width for vertical buttons */
-.tabs input:nth-child(1):checked~.buttons label:nth-child(1),
-.tabs input:nth-child(2):checked~.buttons label:nth-child(2),
-.tabs input:nth-child(3):checked~.buttons label:nth-child(3),
-.tabs input:nth-child(4):checked~.buttons label:nth-child(4),
-.tabs input:nth-child(5):checked~.buttons label:nth-child(5),
-.tabs input:nth-child(6):checked~.buttons label:nth-child(6),
-.tabs input:nth-child(7):checked~.buttons label:nth-child(7),
-.tabs input:nth-child(8):checked~.buttons label:nth-child(8),
-.tabs input:nth-child(9):checked~.buttons label:nth-child(9),
-.tabs input:nth-child(10):checked~.buttons label:nth-child(10) {
-  opacity: 1;
-  height: 50px;
-}
-
-.section {
-  position: relative;
-  width: 100%;
-  height: 1000vh;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s;
-}
-
-.section .box {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  user-select: none;
-  scroll-snap-align: start;
-}
-
-.box {
-  padding-top: 120px;
-  padding-left: 20px;
-  padding-right: calc(20px + 4vw);
-  padding-bottom: 20px;
-}
-
-.contentBox {
-  width: 100%;
-  height: 100%;
-}   
-
-/* Slide backgrounds */
-.section .box.slide2 {
-  background: var(--yellow);
-}
-
-.section .box.slide3 {
-  background: var(--turquoise);
-}
-
-.section .box.slide4 {
-  background: var(--violet);
-}
-
-.section .box.slide5 {
-  background: var(--green);
-}
-
-.section .box.slide6 {
-  background: var(--yellow);
-}
-
-.section .box.slide7 {
-  background: var(--turquoise);
-}
-
-.section .box.slide8 {
-  background: var(--violet);
-}
-
-.section .box.slide9 {
-  background: var(--green);
-}
-
-/* CSS selectors for slide transitions */
-.tabs input:nth-child(1):checked~.section {
-  top: 0;
-}
-
-.tabs input:nth-child(2):checked~.section {
-  top: -100vh;
-}
-
-.tabs input:nth-child(3):checked~.section {
-  top: -200vh;
-}
-
-.tabs input:nth-child(4):checked~.section {
-  top: -300vh;
-}
-
-.tabs input:nth-child(5):checked~.section {
-  top: -400vh;
-}
-
-.tabs input:nth-child(6):checked~.section {
-  top: -500vh;
-}
-
-.tabs input:nth-child(7):checked~.section {
-  top: -600vh;
-}
-
-.tabs input:nth-child(8):checked~.section {
-  top: -700vh;
-}
-
-.tabs input:nth-child(9):checked~.section {
-  top: -800vh;
-}
-
-.tabs input:nth-child(10):checked~.section {
-  top: -900vh;
-}
-
-#title {
-  margin: 0;
+.title {
+    text-align: center;
 }
 
 #linkGrid {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.quide_title {
+    grid-column: 1 / 4;
+}
+
+.quide_text {
+    grid-column: 1 / 4;
 }
 
 .imageLink {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 .card {
-  width: 150px;
-  height: 150px;
-  background-color: transparent;
-  border: none;
-  align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: none;
+    align-items: center;
 }
 
-@media (min-width: 425px){
-  #linkGrid {
-    grid-template-columns: repeat(3, auto);
-  }
+#text {
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width: 1024px){
-  #linkGrid {
-    grid-template-columns: repeat(6, auto);
-  }
+#exercise {
+    background-color: var(--yellow);
+    padding: 10px;
+}
+
+.exercise05 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+    place-content: center;
+}
+
+#labRules {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100vh;
+}
+
+#true-or-false {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    place-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 300px;
+}
+
+#flipImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+#flip-card-big {
+    width: 80%;
+    height: 80%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: transparent;
+}
+
+.flip-card-back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    #linkGrid {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    #labRules {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .exercise05 {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .exercise05_text {
+        grid-column: 1 / 3;
+    }
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    #linkGrid {
+        grid-template-columns: repeat(6, auto);
+    }
+
+    #labRules {
+        grid-template-columns: repeat(6, auto);
+        height: 25vh;
+    }
 }
