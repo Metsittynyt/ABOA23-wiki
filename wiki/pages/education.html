@@ -6,7 +6,7 @@
 {% block title_class %}education-title{% endblock %}
 
 {% block additional_css %}
-<link href="{{ url_for('static', filename = 'styles/education/education2.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'styles/education/education.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'styles/education/DNA_extraction.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'styles/education/DNA_RNA_amino.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'styles/education/imageGallery.css') }}" rel="stylesheet">
@@ -14,11 +14,13 @@
 
 {% block page_content %}
 
-<div class="container pt-5" style="text-align: justify;">
+<div class="page_content col-12 col-md-10 mx-auto" style="text-align: justify;">
   <div class="row">
     <div class="col">
-      <h3>Note! This page is still under construction.</h3>
-      <p>Usually when we think about the word education we start reminiscing about our school days. While schools and
+      <h3 class="center_text">Note! This page is still under construction.</h3>
+      <hr id="gap20">
+      <p>
+        Usually when we think about the word education we start reminiscing about our school days. While schools and
         universities are a major part of our education, we believe the journey shouldn’t stop there. Thus in our iGEM
         journey we wanted to include the full scale of ages: children, preschoolers, high schoolers, adults and elderly.
         We know that education is a lifelong journey and this is how we approached this special prize.
@@ -37,53 +39,80 @@
     </div>
   </div>
 
-  <div class="row" id="title" style="background-color: white; top: 100px;">
-    <h1 class="center_text section-title">Path of contents</h1>
-    <div id="linkGrid">
-      <div class="card">
-        <a href="#kindergarden"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/pre-school.jpg"
-            class="imageLink">
-        </a>Kindergarten
-      </div>
-      <div class="card">
-        <a href="#elementary"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/elementary.jpg"
-            class="imageLink">
-        </a>Elementary
-      </div>
-      <div class="card">
-        <a href="#upper secondary"><img
-            src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" class="imageLink">
-        </a>Upper secondary
-      </div>
-      <div class="card">
-        <a href="#young adults"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/young-adults.jpg"
-            class="imageLink">
-        </a>Young adults
-      </div>
-      <div class="card">
-        <a href="#working age"><img src="https://static.igem.wiki/teams/4831/wiki/photos/education/working-age.jpg"
-            class="imageLink">
-        </a>Working age
-      </div>
-      <div class="card">
-        <a href="#seniors"><img src="https://static.igem.wiki/teams/4831/wiki/photos/pallero.jpg" class="imageLink">
-        </a>Seniors
+  <hr id="gap50">
+
+  <div id="table-of-contents">
+    <div class="accordion" id="Description">
+      <div class="accordion-item" id="table of contents">
+        <h2 class="accordion-header" id="headingContents">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+            Table of contents
+          </button>
+        </h2>
+        <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+          data-bs-parent="#Description">
+          <div class="accordion-body">
+            <div class="row no_mar_or_pad" id="content-links">
+              <div id="linkGrid">
+                <div class="card">
+                  <a href="#kindergarden" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/education/pre-school.jpg" class="imageLink">
+                  </a>Kindergarten
+                </div>
+                <div class="card">
+                  <a href="#elementary" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/education/elementary.jpg" class="imageLink">
+                  </a>Elementary
+                </div>
+                <div class="card">
+                  <a href="#upper secondary" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg"
+                      class="imageLink">
+                  </a>Upper secondary
+                </div>
+                <div class="card">
+                  <a href="#young adults" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/education/young-adults.jpg"
+                      class="imageLink">
+                  </a>Young adults
+                </div>
+                <div class="card">
+                  <a href="#working age" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/education/working-age.jpg" class="imageLink">
+                  </a>Working age
+                </div>
+                <div class="card">
+                  <a href="#seniors" onclick="toggleAccordion()"><img
+                      src="https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png"
+                      class="imageLink">
+                  </a>Seniors
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress"></div>
+    </div>
   </div>
+
+  <hr id="gap50">
 
   <!-- Kindergarten -->
   <div class="row">
     <h1 class="center_text section-title" id="kindergarden">Kindergarten</h1>
     <h3 class="center_text subtitle">Ilpoinen kindergarten visit</h3>
-    <hr style="background-color: transparent; height: 50px;">
-    <p>We started our journey with 2 to 5 year olds. We met with Aino Kiviniemi, a local pre-school teacher, to discuss
-      children’s learning abilities and concentration skills. We learned that children are captivated more easily if a
-      story is included in the tasks they are doing. Also colors and working with their own hands helps them to
-      concentrate and understand different concepts.
-    </p>
-    <br>
     <div class="col-lg-7" id="text">
+      <p>We started our journey with 2 to 5 year olds. We met with Aino Kiviniemi, a local pre-school teacher, to
+        discuss
+        children’s learning abilities and concentration skills. We learned that children are captivated more easily if a
+        story is included in the tasks they are doing. Also colors and working with their own hands helps them to
+        concentrate and understand different concepts.
+      </p>
+      <br>
       <p>
         After we learned, it was the children's turn to learn. To introduce synthetic biology in simpler terms we
         organized a cell building workshop: the children got to decorate styrofoam balls, the cells, in order to learn
@@ -94,17 +123,7 @@
         and
         some live under the table.
       </p>
-    </div>
-    <div class="col-lg-5">
-      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-1.png" style="width: 100%;">
-    </div>
-    <hr style="background-color: transparent; height: 50px;">
-    <!-- Comic -->
-    <hr style="background-color: transparent; height: 50px;">
-    <div class="col-lg-5">
-      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-2.png" style="width: 100%;">
-    </div>
-    <div class="col-lg-7" id="text">
+      <br>
       <p>
         According to Aino the kids can be quite messy sometimes and that got us thinking about the importance of
         cleanliness in lab work. Therefore the second workshop we organized for the children was about lab safety and
@@ -113,14 +132,28 @@
         that was dyed with food dye.
       </p>
     </div>
-    <hr style="background-color: transparent; height: 50px;">
-    <hr>
+    <div class="col-lg-5" id="kindergarten_gallery">
+      <div class="slideshow-container">
+        <div class="kindergarten_photos fade">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-1.png" style="width:100%">
+        </div>
+        <div class="kindergarten_photos fade">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/kindergarden-2.png" style="width:100%">
+        </div>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <hr id="gap50">
 
     <div class="accordion" id="Education">
       <div class="accordion-item" id="LabRules">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="false" aria-controls="collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
             Rules in lab
           </button>
         </h2>
@@ -128,7 +161,7 @@
           data-bs-parent="#Education">
           <div class="accordion-body">
             <div id="exercise">
-              <h3 class="title">
+              <h3 class="center_text subtitle">
                 Do you know what you should do in the lab and what not?
               </h3>
               <p style="text-align: center;">
@@ -217,533 +250,552 @@
 
   </div>
 
-  <hr>
-
   <!-- Elementary -->
   <div class="row">
     <h1 class="center_text section-title" id="elementary">Elementary</h1>
     <h3 class="center_text subtitle">Turun tiedekoulu</h3>
-    <hr style="background-color: transparent; height: 20px;">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusantium numquam quibusdam earum, sunt a
-      distinctio eos cumque corrupti dolores eveniet alias! Fuga dolore nam molestiae voluptatem totam debitis
-      tempora!
-    </p>
-  </div>
-
-  <hr style="background-color: transparent; height: 50px;">
-
-  <!-- DNA extraction -->
-  <div class="accordion" id="Education">
-    <div class="accordion-item" id="DNA-extraction">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          DNA extraction with banana
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#Education">
-        <div class="accordion-body">
-          <div id="exercise02" class="row exercise02">
-            <h3 class="title">Can you put these different work steps in the right order?</h3>
-            <p style="text-align: center;">
-              Place steps to the right order and click check button to see how you did!
-            </p>
-            <hr style="background-color: transparent; height: 10px;">
-            <table id="DNA_extraction">
-              <thead>
-                <tr>
-                  <th>Work steps</th>
-                  <th></th>
-                  <th>Work order</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_6" width="88" height="31">
-                        Transport the mixture in to test tube and pour ethanol or isopropyl carefully along the edge of
-                        the
-                        tube.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">1.</td>
-                  <td>
-                    <div id="order_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_8" width="88" height="31">
-                        Clean up your working area and wash your hands.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">2.</td>
-                  <td>
-                    <div id="order_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_1" width="88" height="31">
-                        Peel the banana and place it into a sealable bag.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">3.</td>
-                  <td>
-                    <div id="order_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_3" width="88" height="31">
-                        Close the bag and squeeze the bag until banana is a mush. Try to avoid foam.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">4</td>
-                  <td>
-                    <div id="order_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_4" width="88" height="31">
-                        Prepare the filter system by placing a filter paper into a funnel under a glass.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">5.</td>
-                  <td>
-                    <div id="order_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_7" width="88" height="31">
-                        Admire the extracted banana's DNA that is between the filtered mix and alcohol.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">6.</td>
-                  <td>
-                    <div id="order_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_2" width="88" height="31">
-                        Add i decilitre of water and little bit of soap.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">7.</td>
-                  <td>
-                    <div id="order_7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
-                      <p draggable="true" ondragstart="drag(event)" id="step_5" width="88" height="31">
-                        Pour the banana mix into the filter system and lit it drop for 20 minutes.
-                      </p>
-                    </div>
-                  </td>
-                  <td id="number">8.</td>
-                  <td>
-                    <div id="order_8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <button id="resetButton">Reset</button>
-            <button id="checkButton">Check</button>
-
-          </div>
-        </div>
-      </div>
+    <hr id="gap20">
+    <div class="col-5">
+      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/elementary.jpg" width="100%">
     </div>
-  </div>
-
-  <hr>
-
-  <hr style="background-color: transparent; height: 50px;">
-
-  <!-- Heureka -->
-  <div class="row">
-    <h3 class="center_text section-title">Heureka</h3>
-    <hr style="background-color: transparent; height: 20px;">
-    <p>
-      DNA, RNA and protein. The power trio we biofield students have heard about countless of times. Although we have
-      heard about it, it does not mean everyone else has. This is why we organized a workshop in Heureka about this
-      central dogma of molecular biology. Heureka is a science center in Vantaa that has changing exhibitions about
-      various science subjects. To continue a tradition we did this event as a collaboration with the Aalto-Helsinki
-      team.
+    <div class="col-7">
+      <p>
+        The journey continues to Tiedekoulu which is a science school for children. They encourage kids to trust their
+        skills with problem-solving and when facing different obstacles by teaching science in various forms. They
+        organize <span id="definition"
+          title="STEAM derives from the letters Science, Technology, Engineering, Arts and Mathematics.">STEAM</span>
+        hobbies in over 20 regions in Finland and their learning paths are programming, natural science and
+        robotics. We visited their Turku location.
+      </p>
       <br>
-    </p>
-    <p>
-      In our workshop the visitors got to build DNA, RNA and amino acids. We taught them DNA, RNA and about the
-      base-pairing rule: adenine (A) binds to thymine (T) and guanine (G) binds to cytosine (C). RNA has the base pairs
-      except thymine which is replaced with uracil (C). To the younger ones we had a task to sort various objects
-      according to if they have DNA in them or not.
-    </p>
-
-    <hr style="background-color: transparent; height: 30px;">
-
-    <p>
-      Want to try the online version of our Heureka workshop? To reveal the answers click the picture. If you forgot
-      about the base-pairing rules click the “Help” button to reveal a helpful chart.
-    </p>
-    <br>
-    <p>
-      First the DNA strain needs its complementary strain. Can you build it according to the existing strain?
-    </p>
-
-    <!-- DNA -->
-    <div class="accordion" id="Education">
-      <div class="accordion-item" id="DNA-exercise">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-            aria-expanded="false" aria-controls="collapseThree">
-            DNA exercise
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#Education">
-          <div class="accordion-body">
-            <div id="exercise03" class="exercise03">
-              <div class="row">
-                <table id="DNA-match">
-                  <thead>
-                    <tr>
-                      <th colspan="2">DNA</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <p id="letter_C">C</p>
-                      </td>
-                      <td>
-                        <div id="DNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p id="letter_A">A</p>
-                      </td>
-                      <td>
-                        <div id="DNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p id="letter_G">G</p>
-                      </td>
-                      <td>
-                        <div id="DNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p id="letter_G">G</p>
-                      </td>
-                      <td>
-                        <div id="DNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p id="letter_T">T</p>
-                      </td>
-                      <td>
-                        <div id="DNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <p id="letter_A">A</p>
-                      </td>
-                      <td>
-                        <div id="DNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table id="DNA_letters">
-                  <thead>
-                    <tr>
-                      <th>Letters</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
-                            G
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="T" width="88" height="31">
-                            T
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
-                            C
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="C2" width="88" height="31">
-                            C
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
-                            A
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="T2" width="88" height="31">
-                            T
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <button id="checkDNAButton">Check DNA</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p>
+        Before the visit we talked with the development director of Tiedekoulu Nina Kainulainen and together we decided
+        to
+        hold a workshop about cells and DNA extraction for 4 to 12 year olds. We first talked with the children about
+        DNA,
+        different kinds of cells and then lab safety. After the introduction we extracted DNA from bananas and looked at
+        the results via microscope.
+      </p>
     </div>
-    <hr style="background-color: transparent;">
 
-    <p>
-      Now when our DNA is complete we need RNA. Can you build the RNA according to the DNA strain you just built?
-    </p>
+    <hr id="gap50">
 
-    <!-- RNA -->
+    <!-- DNA extraction -->
     <div class="accordion" id="Education">
-      <div class="accordion-item" id="RNA-exercise">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-            aria-expanded="false" aria-controls="collapseFour">
-            RNA exercise
+      <div class="accordion-item" id="DNA-extraction">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            DNA extraction with banana
           </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#Education">
           <div class="accordion-body">
-            <div id="exercise04" class="exercise03">
-              <div class="row">
-                <table id="RNA_letters">
-                  <thead>
-                    <tr>
-                      <th>Letters</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
-                            C
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
-                            A
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
-                            G
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="G2" width="88" height="31">
-                            G
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_U" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="U" width="88" height="31">
-                            U
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
-                          <p draggable="true" ondragstart="drag(event)" id="A2" width="88" height="31">
-                            A
-                          </p>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table id="RNA-match">
-                  <thead>
-                    <tr>
-                      <th colspan="2">RNA</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div id="RNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_G">G</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="RNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_T">T</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="RNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_C">C</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="RNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_C">C</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="RNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_A">A</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div id="RNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                      </td>
-                      <td>
-                        <p id="letter_T">T</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div id="exercise02" class="row exercise02">
+              <h3 class="center_text subtitle">Can you put these different work steps in the right order?</h3>
+              <p style="text-align: center;">
+                Place steps to the right order and click check button to see how you did!
+              </p>
+              <hr style="background-color: transparent; height: 10px;">
+              <table id="DNA_extraction">
+                <thead>
+                  <tr>
+                    <th>Work steps</th>
+                    <th></th>
+                    <th>Work order</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_6" width="88" height="31">
+                          Transport the mixture in to test tube and pour ethanol or isopropyl carefully along the edge
+                          of
+                          the
+                          tube.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">1.</td>
+                    <td>
+                      <div id="order_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_8" width="88" height="31">
+                          Clean up your working area and wash your hands.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">2.</td>
+                    <td>
+                      <div id="order_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-              </div>
-              <div class="row">
-                <button id="checkRNAButton">Check RNA</button>
-              </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_1" width="88" height="31">
+                          Peel the banana and place it into a sealable bag.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">3.</td>
+                    <td>
+                      <div id="order_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_3" width="88" height="31">
+                          Close the bag and squeeze the bag until banana is a mush. Try to avoid foam.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">4</td>
+                    <td>
+                      <div id="order_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_4" width="88" height="31">
+                          Prepare the filter system by placing a filter paper into a funnel under a glass.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">5.</td>
+                    <td>
+                      <div id="order_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_7" width="88" height="31">
+                          Admire the extracted banana's DNA that is between the filtered mix and alcohol.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">6.</td>
+                    <td>
+                      <div id="order_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_2" width="88" height="31">
+                          Add i decilitre of water and little bit of soap.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">7.</td>
+                    <td>
+                      <div id="order_7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div id="step" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <p draggable="true" ondragstart="drag(event)" id="step_5" width="88" height="31">
+                          Pour the banana mix into the filter system and lit it drop for 20 minutes.
+                        </p>
+                      </div>
+                    </td>
+                    <td id="number">8.</td>
+                    <td>
+                      <div id="order_8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <button id="resetButton">Reset</button>
+              <button id="checkButton">Check</button>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <hr id="gap50">
 
-    <hr style="background-color: transparent;">
+    <!-- Heureka -->
+    <div class="row">
+      <h3 class="center_text section-title">Heureka</h3>
+      <hr id="gap20">
+      <div class="col-7">
+        <p>
+          DNA, RNA and protein. The power trio we biofield students have heard about countless of times. Although we
+          have
+          heard about it, it does not mean everyone else has. This is why we organized a workshop in Heureka about this
+          central dogma of molecular biology. Heureka is a science center in Vantaa that has changing exhibitions about
+          various science subjects. To continue a tradition we did this event as a collaboration with the Aalto-Helsinki
+          team.
+        </p>
+        <br>
+        <p>
+          In our workshop the visitors got to build DNA, RNA and amino acids. We taught them DNA, RNA and about the
+          base-pairing rule: adenine (A) binds to thymine (T) and guanine (G) binds to cytosine (C). RNA has the base
+          pairs
+          except thymine which is replaced with uracil (C). To the younger ones we had a task to sort various objects
+          according to if they have DNA in them or not. Because this workshop was meant for all ages we had the chance
+          to
+          teach DNA with molecular terms and also by using terms for the children’s favorite TV-shows like Paw Patrol.
+        </p>
+      </div>
+      <div class="col-5">
+        <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/heureka.png" width="100%">
+      </div>
 
-    <p>
-      Finally it’s time to build the amino acid that is a building block for proteins. Can you figure out the
-      amino acid that the newly built RNA represents by the chart below? The chart is according to the base pairs in
-      DNA (NOTE: RNA has one different base pair).
-    </p>
+      <hr id="gap20">
 
-    <!-- Amino -->
-    <div class="accordion" id="Education">
-      <div class="accordion-item" id="Amino">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-            aria-expanded="flase" aria-controls="collapseFive">
-            Amino exercise
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-          data-bs-parent="#Education">
-          <div class="accordion-body">
-            <div class="row exercise05" id="exercise">
-              <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/helpful-chart.png"
-                style="width: 300px; border-radius: 50px;">
-              <div class="flip-card" style="width: 300px;">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/missing-amino-acid.png"
-                      alt="missing amino acid" id="flipImage">
-                  </div>
-                  <div class="flip-card-back">
-                    <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/correct-amino-acid-answer.png"
-                      alt="correct answer" id="flipImage">
+      <h3 style="color: var(--darkBlue);">
+        Want to try the online version of our Heureka workshop?
+      </h3>
+      <br>
+      <p>
+        First the DNA strain needs its complementary strain. Can you build it according to the existing strain?
+      </p>
+
+      <!-- DNA -->
+      <div class="accordion" id="Education">
+        <div class="accordion-item" id="DNA-exercise">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              DNA exercise
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#Education">
+            <div class="accordion-body">
+              <div id="exercise03" class="exercise03">
+                <div class="row">
+                  <table id="DNA-match">
+                    <thead>
+                      <tr>
+                        <th colspan="2">DNA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p id="letter_C">C</p>
+                        </td>
+                        <td>
+                          <div id="DNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p id="letter_A">A</p>
+                        </td>
+                        <td>
+                          <div id="DNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p id="letter_G">G</p>
+                        </td>
+                        <td>
+                          <div id="DNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p id="letter_G">G</p>
+                        </td>
+                        <td>
+                          <div id="DNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p id="letter_T">T</p>
+                        </td>
+                        <td>
+                          <div id="DNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p id="letter_A">A</p>
+                        </td>
+                        <td>
+                          <div id="DNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table id="DNA_letters">
+                    <thead>
+                      <tr>
+                        <th>Letters</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="T" width="88" height="31">
+                              T
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="C" width="88" height="31">
+                              C
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="G" width="88" height="31">
+                              G
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="A" width="88" height="31">
+                              A
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_T" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="T2" width="88" height="31">
+                              T
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="C2" width="88" height="31">
+                              C
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <button id="checkDNAButton">Check DNA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Now when our DNA is complete we need RNA. Can you build the RNA according to the DNA strain you just built?
+      </p>
+
+      <!-- RNA -->
+      <div class="accordion" id="Education">
+        <div class="accordion-item" id="RNA-exercise">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              RNA exercise
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#Education">
+            <div class="accordion-body">
+              <div id="exercise04" class="exercise03">
+                <div class="row">
+                  <table id="RNA_letters">
+                    <thead>
+                      <tr>
+                        <th>Letters</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="A3" width="88" height="31">
+                              A
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="G2" width="88" height="31">
+                              G
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td>
+                          <div id="letter_C" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="C3" width="88" height="31">
+                              C
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                        <td>
+                          <div id="letter_G" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="G2" width="88" height="31">
+                              G
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_A" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="A2" width="88" height="31">
+                              A
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="letter_U" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <p draggable="true" ondragstart="drag(event)" id="U" width="88" height="31">
+                              U
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table id="RNA-match">
+                    <thead>
+                      <tr>
+                        <th colspan="2">RNA</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div id="RNA_1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_G">G</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="RNA_2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_T">T</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="RNA_3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_C">C</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="RNA_4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_C">C</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="RNA_5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_A">A</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div id="RNA_6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </td>
+                        <td>
+                          <p id="letter_T">T</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <div class="row">
+                  <button id="checkRNAButton">Check RNA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        Finally it’s time to build the protein. Can you figure out the amino acid that the newly built RNA represents by
+        the chart below? The chart is according to the base pairs in DNA (NOTE: RNA has one different base pair). To
+        reveal the answer, click the chart!
+      </p>
+
+      <!-- Amino -->
+      <div class="accordion" id="Education">
+        <div class="accordion-item" id="Amino">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="flase" aria-controls="collapseFive">
+              Amino exercise
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#Education">
+            <div class="accordion-body">
+              <div class="row exercise05" id="exercise">
+                <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/helpful-chart.png"
+                  style="width: 300px; border-radius: 50px;">
+                <div class="flip-card" style="width: 300px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/missing-amino-acid.png"
+                        alt="missing amino acid" id="flipImage">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/correct-amino-acid-answer.png"
+                        alt="correct answer" id="flipImage">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -751,46 +803,42 @@
           </div>
         </div>
       </div>
+
     </div>
-
   </div>
-
-  <hr>
 
   <!-- Upper secondary -->
   <div class="row">
     <h1 class="center_text section-title" id="upper secondary">Upper secondary</h1>
     <h3 class="center_text subtitle">KSYK - Kulosaari upper secondary school</h3>
-    <hr style="background-color: transparent; height: 50px;">
-    <p>
-      Then our journey takes a turn down a memory lane: we visited Sara’s and Mariel’s old upper secondary school
-      called
-      Kulosaaren Yhteiskoulu.
-    </p>
-    <br>
-    <div class="col-lg-7" id="text">
-      <p>
-        The class we taught have their matriculation exams coming up in Autumn and part of the biology exam is about
-        the
-        applications of biology which includes gene modification, synthetic biology and the different techniques. To
-        help
-        the students we explained some gene modification terms and went over different techniques and requirements
-        they
-        hold. In addition we know how tiring it is to stare at the same text book images over and over again, so we
-        made
-        an educational comic for them about the basis of gene modification.
-      </p>
-    </div>
-    <div class="col-lg-5">
+    <hr id="gap50">
+    <div class="col-5">
       <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/upper-secondary.jpg" style="width: 100%;">
     </div>
-    <hr style="background-color: transparent; height: 50px;">
+    <div class="col-7" id="text">
+      <p>
+        Then our journey takes a turn down a memory lane: we visited Sara’s and Mariel’s old upper secondary school
+        called
+        Kulosaaren Yhteiskoulu.
+      </p>
+      <br>
+      <p>
+        The class we taught have their matriculation exams coming up in Autumn and part of the biology exam is about the
+        applications of biology which includes gene modification, synthetic biology and the different techniques. To
+        help the students we explained some gene modification terms and went over different techniques and requirements
+        they hold. In addition we know how tiring it is to stare at the same text book images over and over again, so we
+        made an educational comic for them about the basis of gene modification.
+      </p>
+    </div>
+
+    <hr id="gap20">
+
     <!-- Comic -->
     <div class="accordion" id="Education">
       <div class="accordion-item" id="Study-in-Turku">
         <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-            aria-expanded="false" aria-controls="collapseSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
             Supercell comic
           </button>
         </h2>
@@ -804,44 +852,39 @@
       </div>
     </div>
 
-    <hr style="background-color: transparent; height: 50px;">
+    <hr id="gap20">
 
     <p>
       Besides the exams and studying we wanted to encourage innovative thinking and together talk about the
-      possibilities that university, synthetic biology and iGEM brings. At the end of our presentation about our
-      project
+      possibilities that university, synthetic biology and iGEM brings. At the end of our presentation about our project
       and iGEM we asked the students to brainstorm their own iGEM project ideas in small groups. Various great project
-      ideas came up such as fighting malaria with synthetic biology tools, inventing a protein that detoxifies blood
-      and
+      ideas came up such as fighting malaria with synthetic biology tools, inventing a protein that detoxifies blood and
       many more. It was wonderful to see how the students really got to thinking and hear that some even talked about
       their idea when leaving the class to recess.
     </p>
   </div>
 
-  <hr>
-
   <!-- Young adults -->
   <div class="row">
     <h1 class="center_text section-title" id="young adults">Young adults</h1>
     <h3 class="center_text subtitle">Today in Synthetic Biology with ABOA- educational campaign</h3>
-    <hr style="background-color: transparent; height: 50px;">
+    <hr id="gap20">
     <p>
-      To reach young adults we knew to turn to the social media department. We made an educational campaign on
-      Instagram
+      To reach young adults we knew to turn to the social media department. We made an educational campaign on Instagram
       about synthetic biology, different terms regarding it and our project. Scientific communication is often quite
-      challenging because you have to keep things simple and interesting but at the same time have the facts correct.
-      To
+      challenging because you have to keep things simple and interesting but at the same time have the facts correct. To
       help with this we looked through what other iGEM teams have done in the past and tried to learn from them. We
       decided to go with a news inspired campaign which was called Today in Synthetic Biology with ABOA and we posted
       these on Instagram.
     </p>
-    <hr style="background-color: transparent; height: 20px;">
+    <hr id="gap20">
+
     <!-- Today in Synthetic Biology with ABOA -->
     <div class="accordion" id="Education">
       <div class="accordion-item" id="IG-grid">
         <h2 class="accordion-header" id="headingEight">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
-            aria-expanded="false" aria-controls="collapseEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
             Today in Synthetic Biology with ABOA
           </button>
         </h2>
@@ -849,8 +892,8 @@
           data-bs-parent="#Education">
           <div class="accordion-body">
             <div id="exercise" class="imageGridGallery">
-              <h3 class="title">Can you finish the different definitions? </h3>
-              <hr style="background-color: transparent; height: 50px;">
+              <h3 class="center_text subtitle">Can you finish the different definitions? </h3>
+              <hr id="gap20">
               <div class="imageGallery">
                 <div class="slideshow-container">
                   <div class="mySlides1">
@@ -943,6 +986,7 @@
                     <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-4.png"
                       style="width:100%">
                   </div>
+                  
                   <div class="mySlides3">
                     <img src="https://static.igem.wiki/teams/4831/wiki/photos/educationimagegallery/3-5.png"
                       style="width:100%">
@@ -1065,95 +1109,171 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <hr style="background-color: transparent; height: 50px;">
+    <hr id="gap50">
 
-  <!-- Study in Turku -->
-  <div class="row">
-    <h3 class="center_text subtitle">Study in Turku</h3>
-    <hr style="background-color: transparent; height: 20px;">
-    <div class="col-sm-12 colo-md-8 col-lg-8">
-      <p>
-        Study In Turku is a festival for all the new students of Turku every Autumn. To welcome the new students we
-        organized a workshop there. The goal was to teach basic lab skills like using pipettes and to give the first
-        taste
-        of synthetic biology for many students.
-      </p>
-      <br>
-      <p>
-        We are proudly a diverse team with students from outside biofields for example social studies, animation and
-        IT.
-        We know that this project and synthetic biology in general needs people from various backgrounds and skills.
-        That
-        is why we wanted to focus on teaching all the sides synthetic biology has to offer by emphasizing that the
-        synbio
-        community needs the know-how of other industries too and they are welcome to join us next year.
-      </p>
-      <br>
-      <p>
-        We remember how hectic the beginning of university and the information wave that hit us then. This is why we
-        wanted to hand out flyers to the new students so they could later read more about us and our project.
-      </p>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-4">
-      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/study-in-turku.jpg" alt="study in turku"
-        width="100%">
-    </div>
+    <!-- Study in Turku -->
+    <div class="row">
+      <h3 class="center_text subtitle">Study in Turku</h3>
+      <hr style="background-color: transparent; height: 20px;">
+      <div class="col-sm-12 colo-md-8 col-lg-8">
+        <p>
+          Study In Turku is a festival for all the new students of Turku every Autumn. To welcome the new students we
+          organized a workshop there. The goal was to teach basic lab skills like using pipettes and to give the first
+          taste
+          of synthetic biology for many students.
+        </p>
+        <br>
+        <p>
+          We are proudly a diverse team with students from outside biofields for example social studies, animation and
+          IT.
+          We know that this project and synthetic biology in general needs people from various backgrounds and skills.
+          That
+          is why we wanted to focus on teaching all the sides synthetic biology has to offer by emphasizing that the
+          synbio
+          community needs the know-how of other industries too and they are welcome to join us next year.
+        </p>
+        <br>
+        <p>
+          We remember how hectic the beginning of university and the information wave that hit us then. This is why we
+          wanted to hand out flyers to the new students so they could later read more about us and our project.
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/study-in-turku.jpg" alt="study in turku"
+          width="100%">
+      </div>
 
-    <hr style="background-color: transparent; height: 50px;">
+      <hr style="background-color: transparent; height: 50px;">
 
-    <div class="accordion" id="Education">
+      <div class="accordion" id="Education">
 
-      <div class="accordion-item" id="Study-in-Turku">
-        <h2 class="accordion-header" id="headingSeven">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-            aria-expanded="false" aria-controls="collapseSeven">
-            Study in Turku flyer
-          </button>
-        </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-          data-bs-parent="#Education">
-          <div class="accordion-body">
-            <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/study-in-turku-flyer.png"
-              style="width: 100%;">
+        <div class="accordion-item" id="Study-in-Turku">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Study in Turku flyer
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#Education">
+            <div class="accordion-body">
+              <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/study-in-turku-flyer.png"
+                style="width: 100%;">
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
-  <hr>
-
-  <hr style="background-color: transparent; height: 50px;">
+  <hr id="gap50">
 
   <!-- Working age -->
   <div class="row">
     <h1 class="center_text section-title" id="working age">Working age</h1>
     <h3 class="center_text subtitle">Bioindustries conference</h3>
-    <hr style="background-color: transparent; height: 50px;">
+    <hr id="gap20">
+
     <div class="col-lg-6">
       <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/bioforum.jpg" style="width: 100%;">
     </div>
     <div class="col-lg-6">
       <p>
         We were invited to the Bioindustries conference on the 19th of April. There experts from various organizations
-        and
-        companies held presentations. We learned a lot for example about the recent developments, struggles and
-        solutions
-        the bioindustry has right now. Although the experts have traveled a longer educational journey than we have, we
-        believe we taught them something too. We held a presentation about iGEM, our project and how we, young
-        scientists,
-        are entering this diverse field. After the presentations there was reserved time for casual conversations. We
-        got
-        to talk, ask and answer questions from these experts and also the 2022 Aalto-Helsinki team.
+        and companies held presentations. We learned a lot for example about the recent developments, struggles and
+        solutions the bioindustry has right now. Although the experts have traveled a longer educational journey than we
+        have, we believe we taught them something too. We held a presentation about iGEM, our project and how we, young
+        scientists, are entering this diverse field. After the presentations there was reserved time for casual
+        conversations. We got to talk, ask and answer questions from these experts and also the 2022 Aalto-Helsinki
+        team.
       </p>
     </div>
 
-    <hr style="background-color: transparent; height: 50px;">
+    <hr id="gap50">
 
+    <!-- True or false statements -->
+    <div class="accordion" id="Education">
+      <div class="accordion-item" id="TrueOrFalse">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            True or False?
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+          data-bs-parent="#Education">
+          <div class="accordion-body">
+            <div id="exercise">
+              <h3 class="subtitle">
+                Can you answer these True or False statements regarding recent developments in the bioindustries?
+              </h3>
+              <p style="text-align: center;">
+                Click the picture to reveal the right answer.
+              </p>
+              <div id="true-or-false">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/lab-meat-statement.png"
+                        alt="Israel was the first country to allow sales of lab-grown meat." id="flipImage">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/lab-meat-false.png"
+                        alt="false" id="flipImage">
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/egg-statement.png"
+                        alt="Egg white proteins can be produced without chickens" id="flipImage">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/egg-true.png" alt="true"
+                        id="flipImage">
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/dna-statement.png"
+                        alt="The fastest recording for sequensing the human genome is 1 day and 15 hours"
+                        id="flipImage">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/dna-false.png" alt="false"
+                        id="flipImage">
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/ai-statement.png"
+                        alt="Artificial intelligence can be used to predict protein folding" id="flipImage">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="https://static.igem.wiki/teams/4831/wiki/photos/education/ai-true.png" alt="true"
+                        id="flipImage">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr id="gap50">
+
+    <!-- Turku's comic festival -->
     <h3 class="center_text subtitle">Turku’s comic festival</h3>
-    <hr style="background-color: transparent; height: 20px;">
+    <hr id="gap20">
     <p>
       Although the wiki freeze is on the 14th of October, we do not want to stop our journey there. We have a planned
       visit to the Turku’s Comic Festival on the 14th of October. Organizing a synthetic biology comic workshop we try
@@ -1163,7 +1283,8 @@
     </p>
   </div>
 
-  <hr>
+  <hr id="gap50">
+
   <!-- Seniors -->
   <div class="row">
     <h1 class="center_text section-title" id="seniors">Seniors</h1>
@@ -1172,6 +1293,11 @@
       tempora!
     </p>
   </div>
+
+  <hr id="gap50">
+
+  <p class="center_text" style="color: var(--darkBlue);">The photos were created with Canva and the amino acid chart is
+    from Pixabay.</p>
 
 </div>
 
