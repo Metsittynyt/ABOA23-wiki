@@ -80,23 +80,19 @@ span {
   font-weight: 500;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 40px;
+.accordion-body p {
+  column-count: 1;
+  text-align: justify;
 }
 
-@media (min-width:300px) {
-  .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 0;
-  }
+.accordion-body .subtitle {
+  font-weight: bold;
 }
 
-@media (min-width:800px) {
-  .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) {
+  .accordion-body p {
+    column-count: 2;
+    column-gap: 50px;
+    text-align: justify;
   }
 }

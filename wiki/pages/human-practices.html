@@ -12,21 +12,62 @@ the world. Consider how the world affects your work and how your work affects th
 
 {% block page_content %}
 
-<div class="contaier-pt-5">
+<div class="page_content">
   <div class="row">
     <h3 style="text-align: center;">Note! This page is still under construction.</h3>
-    <hr style="height: 100px; background-color: transparent;">
 
-    <div class="col-lg-1"></div>
+    <hr id="gap100">
 
-    <div class="col-lg-10">
-      <h1>Who helped us?</h1>
+    <!-- Table of contents -->
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" id="table-of-contents">
+      <div class="accordion" id="Human Practices">
+        <div class="accordion-item" id="table of contents">
+          <h2 class="accordion-header" id="headingContents">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+              Table of contents
+            </button>
+          </h2>
+          <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+            data-bs-parent="#Human Practices">
+            <div class="accordion-body">
+              <div class="row no_mar_or_pad" id="content-links">
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#overview" onclick="toggleAccordion()">Overview</a></li>
+                  <li><a href="#stakeholders" onclick="toggleAccordion()">Stakeholders</a></li>
+                  <li><a href="#our-values" onclick="toggleAccordion()">Our values</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+    </div>
+
+    <hr id="gap50">
+
+    <!-- Overview -->
+    <div class="col-12 col-lg-10 mx-auto" id="overview">
+      <h1 class="center_text section-title">Overview</h1>
+      <hr id="gap20">
+    </div>
+
+    <hr id="gap50">
+
+    <!-- Stakeholders -->
+    <div class="col-12 col-lg-10 mx-auto" id="stakeholders">
+      <h1 class="center_text section-title">Stakeholders</h1>
+      <hr id="gap20">
+      <h3>Conversations with our stakeholders</h3>
 
       <div class="timeline">
         <div class="outer">
           <div class="accordion" id="Human-practices">
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Pauli Kallio">
               <h2 class="accordion-header" id="headingOne">
@@ -44,39 +85,23 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Pauli Kallio is our PI and official advisor. He has worked with cyanobacteria for a long
-                            time
-                            and understands the way the scientific community operates. Besides him being our PI we
-                            reached
-                            out to understand about cyanobacteria, circular economy and the challenges the scientific
-                            community has faced.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            He has given us professional view in our ideas when needed and helped us create a reasonable
-                            scientific project. We have had many meetings with him in which we have discussed our
-                            worries
-                            concerning the project. We of course have given him updates about our project progress in
-                            general too.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            He helped us understand that our project needs to be well-thought as a whole and taught us
-                            about the circular economy concept. With his help we could plan our project in a responsible
-                            way. In addition he has always been there to support us when things have felt hard and when
-                            we
-                            didn’t know how to proceed.
-                          </p>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to him?</span><br>
+                          Pauli Kallio is our PI and official advisor. He has worked with cyanobacteria for a long time
+                          and understands the way the scientific community operates. Besides him being our PI we reached
+                          out to understand about cyanobacteria, circular economy and the challenges the scientific
+                          community has faced.
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          He has given us professional view in our ideas when needed and helped us create a reasonable
+                          scientific project. We have had many meetings with him in which we have discussed our worries
+                          concerning the project. We of course have given him updates about our project progress in
+                          general too.
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          He helped us understand that our project needs to be well-thought as a whole and taught us
+                          about the circular economy concept. With his help we could plan our project in a responsible
+                          way. In addition he has always been there to support us when things have felt hard and when we
+                          didn’t know how to proceed.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -84,7 +109,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Juha Kurkela">
               <h2 class="accordion-header" id="headingTwo">
@@ -104,34 +129,27 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Juha Kurkela works at the molecular plant biology department at University of Turku. It’s
-                            the same department where our laboratories are at. He helped us get started with the labs by
-                            going through our plans with us and recommending some techniques to use in our laboratory
-                            work. He was happy to help us whenever needed, we didn’t always have a booked meeting.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            Juha has done a lot of similar lab work as we did in our project and we learned that we need
-                            to stay persistent. Sometimes things just don’t work out and there is no specific reason for
-                            that, trial and error is how you learn in genetic engineering.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            Juha has been a huge support for us through our project. Thanks to him and our official
-                            advisor Pauli Kallio we have been able to develop our techniques in the right way and
-                            achieve success in our lab work.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to him?</span><br>
+                          Juha Kurkela works at the molecular plant biology department at the University of Turku.
+                          It’s the same
+                          department where our laboratories are at. He helped us get started with the labs by going
+                          through our
+                          plans with us and recommending some techniques to use in our laboratory work. He was happy
+                          to help us
+                          whenever needed; we didn’t always have a booked meeting.
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          Juha has done a lot of similar lab work as we did in our project, and we learned that we
+                          need to stay
+                          persistent. Sometimes things just don’t work out, and there is no specific reason for that;
+                          trial and
+                          error is how you learn in genetic engineering.
+                          <br><br><span class="subtitle">What kind of impact did this have on our project?</span><br>
+                          Juha has been a huge support for us through our project. Thanks to him and our official
+                          advisor Pauli
+                          Kallio, we have been able to develop our techniques in the right way and achieve success in
+                          our lab work.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -139,7 +157,8 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+
+            <hr id="gap20">
 
             <div class="accordion-item" id="Celine Arzel">
               <h2 class="accordion-header" id="headingThree">
@@ -159,33 +178,22 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Celine Arzel works at the University of Turku, Finland. She has done research in wetland
-                            ecology which is highly related to our project. We wanted to hear her thoughts about our
-                            project and know if she has any new information for us.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            We had prepared some questions about mercury concentrations and its effects on nature. We
-                            got a lot of information about mercury’s harmful effects and some tips where to seek answers
-                            for our concentration questions.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            Expert’s knowledge about mercury and its effects in waterlands was needed so we could
-                            continue our project. With this knowledge we were able to understand who our stakeholders
-                            are and see the big picture of our project.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          Celine Arzel works at the University of Turku, Finland. She has done research in wetland
+                          ecology which is highly related to our project. We wanted to hear her thoughts about our
+                          project and know if she has any new information for us.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          We had prepared some questions about mercury concentrations and its effects on nature. We got
+                          a lot of information about mercury’s harmful effects and some tips where to seek answers for
+                          our concentration questions.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          Expert’s knowledge about mercury and its effects in waterlands was needed so we could continue
+                          our project. With this knowledge we were able to understand who our stakeholders are and see
+                          the big picture of our project.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -193,7 +201,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Arja Alikoivisto">
               <h2 class="accordion-header" id="headingFour">
@@ -213,35 +221,25 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Arja Alikoivisto works at Silva ry as a secretary. Silva ry is a Finnish association for the
-                            continuous growth of the forest. We decided to reach out to her as we realized that perhaps
-                            the harmful effects of mercury didn’t only concern the wetlands but the forests as well.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            We learned that many forest owners in Finland don’t even know about such issues as mercury
-                            or its harmful effects on nature. Also the forests are an important livelihood in Finland
-                            and many people would be ready to protect their forests if it would bring them some kind of
-                            profit in exchange. She also gave us excellent other contacts that could help us bring forth
-                            our project.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            We realized that we need to include more landowners to our project in order to really make a
-                            change. Landowners are one group of people who need to take action in a fight against
-                            mercury pollution and they may not even know about such a problem as mercury.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          Arja Alikoivisto works at Silva ry as a secretary. Silva ry is a Finnish association for the
+                          continuous growth of the forest. We decided to reach out to her as we realized that perhaps
+                          the harmful effects of mercury didn’t only concern the wetlands but the forests as well.
+
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          We learned that many forest owners in Finland don’t even know about such issues as mercury or
+                          its harmful effects on nature. Also the forests are an important livelihood in Finland and
+                          many people would be ready to protect their forests if it would bring them some kind of profit
+                          in exchange. She also gave us excellent other contacts that could help us bring forth our
+                          project.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          We realized that we need to include more landowners to our project in order to really make a
+                          change. Landowners are one group of people who need to take action in a fight against mercury
+                          pollution and they may not even know about such a problem as mercury.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -249,7 +247,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Antti Kaseva">
               <h2 class="accordion-header" id="headingFive">
@@ -269,32 +267,21 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Since Antti Kaseva is an expert in water technology, we thought that we could get some new
-                            views on our project.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            We learned a lot about process waters and got inspiration for a new possible implementation
-                            for our project. What if this is something we could use in wastewater treatment? Closed
-                            pools would guarantee the safe use of GMO bacteria.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            We got a few excellent development ideas to make your solution more reliable and versatile.
-                            With the knowledge gained from this meeting, we understood that our solution could be
-                            utilized in the purification of process waters in addition to natural waters.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to him?</span><br>
+                          Since Antti Kaseva is an expert in water technology, we thought that we could get some new
+                          views on our project.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          We learned a lot about process waters and got inspiration for a new possible implementation
+                          for our project. What if this is something we could use in wastewater treatment? Closed pools
+                          would guarantee the safe use of GMO bacteria.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          We got a few excellent development ideas to make your solution more reliable and versatile.
+                          With the knowledge gained from this meeting, we understood that our solution could be utilized
+                          in the purification of process waters in addition to natural waters.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -302,7 +289,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Riikka Vainio">
               <h2 class="accordion-header" id="headingSix">
@@ -322,36 +309,24 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Riikka Vainio has studied ecology at the University of Turku and now works at the Turku
-                            University of Applied Sciences. Her thesis was about mercury and its effects in different
-                            food chains. Since we had desperately tried to find more studies regarding mercury, we were
-                            eager to have a meeting with her.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            One important point was that even if the mercury concentration isn’t at a dangerous level,
-                            it can still be toxic combined with other harmful compounds in water. We also learned about
-                            regional effects of mercury. It is maybe an even bigger problem in developing countries
-                            since there is no legislation about mercury emissions. Also GMO legislation in the EU is
-                            really strict, so we need to plan our implementation carefully.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            This got us considering our project idea outside the Finland borders too but we still
-                            eventually decided that we need to focus mainly on Finland’s nature since the time is
-                            limited.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          Riikka Vainio has studied ecology at the University of Turku and now works at the Turku
+                          University of Applied Sciences. Her thesis was about mercury and its effects in different food
+                          chains. Since we had desperately tried to find more studies regarding mercury, we were eager
+                          to have a meeting with her.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          One important point was that even if the mercury concentration isn’t at a dangerous level, it
+                          can still be toxic combined with other harmful compounds in water. We also learned about
+                          regional effects of mercury. It is maybe an even bigger problem in developing countries since
+                          there is no legislation about mercury emissions. Also GMO legislation in the EU is really
+                          strict, so we need to plan our implementation carefully.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          This got us considering our project idea outside the Finland borders too but we still
+                          eventually decided that we need to focus mainly on Finland’s nature since the time is limited.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -359,7 +334,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Elisa Männistö">
               <h2 class="accordion-header" id="headingSeven">
@@ -379,33 +354,22 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Elisa Männistö is a post-doc researcher at the University of Eastern Finland. She does
-                            research on swamp ecology regarding the methane and other harmful gas compounds, the swamp
-                            fauna and its effect on carbon releases.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            Heavy metals aren’t really a problem in natural swamps but they might be at drained and
-                            restored ones. We learned that there isn’t much conversation about heavy metals when talking
-                            about restoration and Elisa said that this is something that should be studied more.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            We need to figure out what is the difference in mercury levels if the swamp is drained or
-                            restored. Also assured us that the restoration of marshlands is important in the combat
-                            against climate change and new restoration techniques are needed.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          Elisa Männistö is a post-doc researcher at the University of Eastern Finland. She does
+                          research on swamp ecology regarding the methane and other harmful gas compounds, the swamp
+                          fauna and its effect on carbon releases.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          Heavy metals aren’t really a problem in natural swamps but they might be at drained and
+                          restored ones. We learned that there isn’t much conversation about heavy metals when talking
+                          about restoration and Elisa said that this is something that should be studied more.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          We need to figure out what is the difference in mercury levels if the swamp is drained or
+                          restored. Also assured us that the restoration of marshlands is important in the combat
+                          against climate change and new restoration techniques are needed.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -413,8 +377,8 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
-<!-- 
+            <hr id="gap20">
+
             <div class="accordion-item" id="Laura Höijer">
               <h2 class="accordion-header" id="headingEight">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -423,7 +387,8 @@ the world. Consider how the world affects your work and how your work affects th
                     <span class="date">18.8.2023</span>
                     <br />
                     <span class="who">Laura Höijer</span>
-                    <span>, Managing Director and a solutions-oriented idealist at Baltic Sea Action Group</span>
+                    <span>, Managing Director and a solutions-oriented idealist at Baltic Sea Action Group (from
+                      1.9.2023 onwards research director at the Finnish Ministry of the Environment)</span>
                   </h3>
                 </button>
               </h2>
@@ -433,49 +398,42 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Laura Höijer has worked five years in the Baltic Sea Action Group organization. We wanted to
-                            understand more about the only sea that borders Finland: the Baltic Sea. We contacted Laura
-                            to learn more about what BSAG organization does and what to consider when being a part of
-                            environmental projects. She has also worked in the environmental ministry.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            Mercury and other harmful compounds haven’t been main priorities in Baltic Sea conservation
-                            for a while. Waste in the seas has been more relevant. She says that funding is a vital part
-                            of these types of projects and usually determines if the project can have a long-standing
-                            effect. She suggested that we also consider nature conservation, the climate, GMO risks and
-                            the economical endurance of our project when regarding the Baltic Sea. Also we learned that
-                            sometimes there is much work needed in order to shake the rooted opinions and approaching
-                            the topic with their point of views helps the conversation get somewhere.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            Laura impacted the way we look at these environmental projects because she helped us
-                            understand that bringing different stakeholders to the same table helps the wanted change to
-                            be wide and continuous. These conversations can have social effects such as finding
-                            confidence and motivation to choose the sustainable solution. Shame and guilt can discourage
-                            people from making responsible choices.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          Laura Höijer has worked five years in the Baltic Sea Action Group organization. We contacted
+                          her to learn more about what BSAG organization does and what to consider when being a part of
+                          environmental projects. She has extensive background in the environmental sector.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          Mercury and other harmful compounds haven’t been main priorities in Baltic Sea protection for
+                          a while. Nutrient emissions to the sea have been more relevant recently. She says that funding
+                          is a vital part of these types of projects and usually determines if the project can have a
+                          long-standing effect. She suggested we should consider the economical endurance of our
+                          project. Also we learned that sometimes there is much work needed in order to shake the rooted
+                          opinions of others and approaching the topic from their point of view helps the conversation
+                          get somewhere.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          Laura impacted the way we look at these environmental projects because she helped us
+                          understand that bringing different stakeholders to the same table helps the wanted change to
+                          be broad and continuous. These conversations with stakeholders can have social effects such as
+                          finding confidence and motivation to choose the more sustainable solution. Shame and guilt can
+                          discourage people from making responsible choices. Meeting with Laura changed the way we
+                          spread information about our project, how we approached our stakeholders and inspired us to
+                          focus more on the financial side thus we made a clear plan about our end users and even <span
+                            id="definition" title="Strengths, Weaknesses, Opportunities, Threats">SWOT</span>
+                          and <span id="definition"
+                            title="Political, Economic, Social, Technological, Legal and Environmental">PESTLE</span>
+                          analyses.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-             -->
-<!-- 
-            <hr style="height: 20px; background-color: transparent;">
+
+            <hr id="gap20">
 
             <div class="accordion-item" id="Fishers">
               <h2 class="accordion-header" id="headingNine">
@@ -495,51 +453,40 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Fishers are the first ones to experience the impact of our project. We wanted to talk with
-                            them to understand their insights and opinions.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            We learned that mercury and the dangers it poses are a known subject in the fisher
-                            community. Ari Savikko from Suomen Kalakirjasto (The Fishlibrary of Finland) told us that
-                            mercury was a big talking point around 70-80’s when fake lakes were built in Finland.
-                            Although mercury isn’t such a hot topic nowadays, every fisher we talked with said that we
-                            should still do something about it and information about harmful compounds should be spread.
-                            Jaakko Ikonen said that it is frustrating to stress about mercury and other harmful
-                            compounds fish may contain. We discussed the various threats fish are facing: climate
-                            change, eutrophication, the lack of management fishing and also overfishing. Although there
-                            are many threats, all of the fishers agree that fishing is valuable. Fishing means a lot for
-                            them: it is their lifeline, a way of connecting with nature, a way to relax and a source of
-                            physical and mental strength. Jyrki Haaraoja said that the cultural value is fading but it
-                            is still there and it should be protected to the next generations.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            The fisher helped us understand fishing and the impact our project has to the fisher
-                            community. We listened and took their insights into consideration: we decided that one of
-                            our goals is to protect the safe use of fish and fishing. We also heard their concerns about
-                            passing on the know-how to future generations and that is why we made education videos to
-                            our social media accounts to reach younger generations.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to them?</span><br>
+                          Fishers are the first ones to experience the impact of our project. We wanted to talk with
+                          them to understand their insights and opinions.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          We learned that mercury and the dangers it poses are a known subject in the fisher community.
+                          Ari Savikko from Suomen Kalakirjasto (The Fishlibrary of Finland) told us that mercury was a
+                          big talking point around 70-80’s when fake lakes were built in Finland. Although mercury isn’t
+                          such a hot topic nowadays, every fisher we talked with said that we should still do something
+                          about it and information about harmful compounds should be spread. Jaakko Ikonen said that it
+                          is frustrating to stress about mercury and other harmful compounds fish may contain. We
+                          discussed the various threats fish are facing: climate change, eutrophication, the lack of
+                          management fishing and also overfishing. Although there are many threats, all of the fishers
+                          agree that fishing is valuable. Fishing means a lot for them: it is their lifeline, a way of
+                          connecting with nature, a way to relax and a source of physical and mental strength. Jyrki
+                          Haaraoja said that the cultural value is fading but it is still there and it should be
+                          protected to the next generations.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          The fisher helped us understand fishing and the impact our project has to the fisher
+                          community. We listened and took their insights into consideration: we decided that one of our
+                          goals is to protect the safe use of fish and fishing. We also heard their concerns about
+                          passing on the know-how to future generations and that is why we made education videos to our
+                          social media accounts to reach younger generations.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Jouko Tuomi">
               <h2 class="accordion-header" id="headingTen">
@@ -549,7 +496,7 @@ the world. Consider how the world affects your work and how your work affects th
                     <span class="date">29.8.2023</span>
                     <br />
                     <span class="who">Jouko Tuomi</span>
-                    <span>, process engineer at wastewater treatment plant</span>
+                    <span>, Process engineer at Kakolanmäki Wastewater Treatment Plant</span>
                   </h3>
                 </button>
               </h2>
@@ -559,48 +506,36 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            Since we got the idea to utilize our project in waste water treatment, we needed to know
-                            more about how the wastewater is handled in Finland at the moment. We reached out to the
-                            local wastewater treatment plant (Kakolan jätevedenpuhdistamo) and got an invitation to a
-                            guided trip.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            The tour at the plant was amazing and we learned a lot about wastewater treatment. The water
-                            treatment plant collects water from the municipalities’, households and factories with the
-                            help of pump stations. When the water comes to the plant it may contain anything like trash,
-                            nitrogen, phosphorus, anything. After the water has been treated at the plant, it will be
-                            directed to the sea. The sludge will first go to a biogas factory and the outproducts from
-                            that process will be used for green infrastructure such as planting plants by roads. The
-                            sludge will first be hygienisized (living cells are killed). Any solids will be burned for
-                            energy. The water will be purified mechanically of solids and biologically from any
-                            dissolved waste such as nitrogen and phosphorus. The bacteria accumulate the dissolved
-                            waste. Any toxic substances that are accumulated by the bacteria will go to the environment
-                            with the sludge. The purification process and the use of the end products do not have a
-                            standard protocol in Finland. In the biological process there is no knowledge of the content
-                            of the water: it may contain anything. The main goal of the process is to get nitrogen out
-                            of the water. The main responsibility with the heavy metal emissions lie on the factories
-                            that produce that kind of emissions; they need to clear the water from those before it comes
-                            to the wastewater plant.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            We realized that there are many emissions that don’t need to be taken care of. New ways of
-                            water purification are needed and our project could be one of those. We need to make people
-                            realize how harmful heavy metal, especially mercury emissions are to the environment and
-                            then maybe someday Finnish legislation will tighten its emission parts.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to him?</span><br>
+                          Since we got the idea to utilize our project in waste water treatment, we needed to know more
+                          about how the wastewater is handled in Finland at the moment. We reached out to the local
+                          wastewater treatment plant (Kakolan jätevedenpuhdistamo) and got an invitation to a guided
+                          trip.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          The tour at the plant was amazing and we learned a lot about wastewater treatment. The water
+                          treatment plant collects water from the municipalities’, households and factories with the
+                          help of pump stations. When the water comes to the plant it may contain anything like trash,
+                          nitrogen, phosphorus, anything. After the water has been treated at the plant, it will be
+                          directed to the sea. The sludge will first go to a biogas factory and the outproducts from
+                          that process will be used for green infrastructure such as planting plants by roads. The
+                          sludge will first be hygienisized (living cells are killed). Any solids will be burned for
+                          energy. The water will be purified mechanically of solids and biologically from any dissolved
+                          waste such as nitrogen and phosphorus. The bacteria accumulate the dissolved waste. Any toxic
+                          substances that are accumulated by the bacteria will go to the environment with the sludge.
+                          The purification process and the use of the end products do not have a standard protocol in
+                          Finland. In the biological process there is no knowledge of the content of the water: it may
+                          contain anything. The main goal of the process is to get nitrogen out of the water. The main
+                          responsibility with the heavy metal emissions lie on the factories that produce that kind of
+                          emissions; they need to clear the water from those before it comes to the wastewater plant.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          We realized that there are many emissions that don’t need to be taken care of. New ways of
+                          water purification are needed and our project could be one of those. We need to make people
+                          realize how harmful heavy metal, especially mercury emissions are to the environment and then
+                          maybe someday Finnish legislation will tighten its emission parts.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -608,7 +543,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Pihla and Kirsi">
               <h2 class="accordion-header" id="headingEleven">
@@ -631,39 +566,28 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            When researching information regarding photobioreactors, CircLab appeared. CircLab is a new
-                            Research and Development environment located in Micropolis in Ii. Pihla and Kirsi are
-                            working in Micropolis regarding CircLab and Growth from the Circulation with Green
-                            Techniques project called KASKI. They have first hand experience of photobioreactors and
-                            growing algae thus we contacted them to talk about the experiences they have had and
-                            understand what we should consider.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            We learned that algae growing isn’t as simple as one might think. There are a lot of things
-                            to consider such as the design of the reactor, the aeration of the system and what are the
-                            optimal circumstances for the organism. In addition we learned that the growing process must
-                            be done gradually and there are contamination risks involved in every step. Before leaving
-                            the meeting they assured us that every unwanted result is an important result: because then
-                            we know if something doesn’t work.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            After the meeting with Pihla and Kirsi we started to research answers for all the questions
-                            and points they had. This conversation helped us to make our implementation plan even more
-                            whole and to consider aspects we haven’t thought of for example the aeration of the system.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to them?</span><br>
+                          When researching information regarding photobioreactors, CircLab appeared. CircLab is a new
+                          Research and Development environment located in Micropolis in Ii. Pihla and Kirsi are working
+                          in Micropolis regarding CircLab and Growth from the Circulation with Green Techniques project
+                          called KASKI. They have first hand experience of photobioreactors and growing algae thus we
+                          contacted them to talk about the experiences they have had and understand what we should
+                          consider.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          We learned that algae growing isn’t as simple as one might think. There are a lot of things to
+                          consider such as the design of the reactor, the aeration of the system and what are the
+                          optimal circumstances for the organism. In addition we learned that the growing process must
+                          be done gradually and there are contamination risks involved in every step. Before leaving the
+                          meeting they assured us that every unwanted result is an important result: because then we
+                          know if something doesn’t work.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          After the meeting with Pihla and Kirsi we started to research answers for all the questions
+                          and points they had. This conversation helped us to make our implementation plan even more
+                          whole and to consider aspects we haven’t thought of for example the aeration of the system.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -671,7 +595,7 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
             <div class="accordion-item" id="Katja Rytkönen">
               <h2 class="accordion-header" id="headingTwelve">
@@ -692,48 +616,37 @@ the world. Consider how the world affects your work and how your work affects th
                   <div class="card">
                     <div class="info">
                       <div class="content">
-                        <div>
-                          <h3 class="subtitle">Why did we reach out to him?</h3>
-                          <p>
-                            We reached out to Katja so we could understand more about the Baltic Sea, those who spend
-                            time there and how we should consider this community.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What did we learn from this?</h3>
-                          <p>
-                            Katja told us that there isn’t much talk regarding mercury but thinks it wouldn’t be just a
-                            bad idea if the community would know more about it and the possible dangers. Hot topic right
-                            now is plastic waste which can be seen in the other archipelago and this might be because
-                            the problem is visible unlike mercury. She said that she knows that there are safety
-                            recommendations for eating fish and suspects that the boating community knows this too. We
-                            talked about the toxic paints that are used to prevent barnacles from attaching to the boat
-                            bottoms. Katja said that although there is information regarding the downsides of this and
-                            even the yacht club offers a free washing of the boat, it is a habit and tradition to paint
-                            the boat and those rooted opinions are hard to shake. Even though it might be hard she
-                            believes change can happen through spreading information in a positive and not judgemental
-                            way. This she recommends for us too: spread information is a positive way to get people
-                            interested and motivated for the topic even though it is sometimes the harder route it is
-                            worth it in the long-run. In the end of the conversation we talked about the importance of
-                            the Baltic Sea to the boating community and personally to Katja. She said that sailing and
-                            the sea has always been part of her life and nature overall gives her a place to calm down
-                            and enjoy her time.
-                          </p>
-                          <br>
-                        </div>
-                        <div>
-                          <h3 class="subtitle">What kind of impact did this have to our project?</h3>
-                          <p>
-                            We can now take the boating community and the Baltic Sea into consideration even more in our
-                            project because we understand them and their point of views. What we took home from this
-                            enlightening conversation was to spread more information about mercury, the dangers it poses
-                            and how we can fight against it in a positive, encouraging and motivating way. In addition
-                            this conversation assured us that there is willingness to do something about this mercury
-                            problem and that the Baltic Sea is important for several people and whole communities.
-                          </p>
-                          <br>
-                        </div>
+                        <p>
+                          <span class="subtitle">Why did we reach out to her?</span><br>
+                          We reached out to Katja so we could understand more about the Baltic Sea, those who spend time
+                          there and how we should consider this community.
+
+                          <br><br><span class="subtitle">What did we learn from this?</span><br>
+                          Katja told us that there isn’t much talk regarding mercury but thinks it wouldn’t be just a
+                          bad idea if the community would know more about it and the possible dangers. Hot topic right
+                          now is plastic waste which can be seen in the other archipelago and this might be because the
+                          problem is visible unlike mercury. She said that she knows that there are safety
+                          recommendations for eating fish and suspects that the boating community knows this too. We
+                          talked about the toxic paints that are used to prevent barnacles from attaching to the boat
+                          bottoms. Katja said that although there is information regarding the downsides of this and
+                          even the yacht club offers a free washing of the boat, it is a habit and tradition to paint
+                          the boat and those rooted opinions are hard to shake. Even though it might be hard she
+                          believes change can happen through spreading information in a positive and not judgemental
+                          way. This she recommends for us too: spread information is a positive way to get people
+                          interested and motivated for the topic even though it is sometimes the harder route it is
+                          worth it in the long-run. In the end of the conversation we talked about the importance of the
+                          Baltic Sea to the boating community and personally to Katja. She said that sailing and the sea
+                          has always been part of her life and nature overall gives her a place to calm down and enjoy
+                          her time.
+
+                          <br><br><span class="subtitle">What kind of impact did this have to our project?</span><br>
+                          We can now take the boating community and the Baltic Sea into consideration even more in our
+                          project because we understand them and their point of views. What we took home from this
+                          enlightening conversation was to spread more information about mercury, the dangers it poses
+                          and how we can fight against it in a positive, encouraging and motivating way. In addition
+                          this conversation assured us that there is willingness to do something about this mercury
+                          problem and that the Baltic Sea is important for several people and whole communities.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -741,12 +654,22 @@ the world. Consider how the world affects your work and how your work affects th
               </div>
             </div>
 
-            <hr style="height: 20px; background-color: transparent;">
+            <hr id="gap20">
 
           </div>
         </div>
       </div>
+
     </div>
+
+    <hr id="gap50">
+
+    <!-- Our values -->
+    <div class="col-12 col-lg-10 mx-auto" id="our-values">
+      <h1 class="center_text section-title">Our values</h1>
+      <hr id="gap20">
+    </div>
+
   </div>
 </div>
 {% endblock %}
