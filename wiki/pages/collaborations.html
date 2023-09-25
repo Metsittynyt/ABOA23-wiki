@@ -6,7 +6,7 @@
 
 {% block page_content %}
 
-<div class="page_content">
+<div class="page_content col-12 col-md-10 mx-auto">
   <div class="row">
 
     <h3 style="text-align: center;">
@@ -14,31 +14,55 @@
       we didn’t want to let go of that part of the competition. One of our project values is unity and collaborations
       are one way of honoring it.
     </h3>
+
     <hr id="gap20">
+
     <h3 style="color: var(--green); text-align: center;">Note! - This page is still under construction.</h3>
 
     <hr id="gap100">
 
-    <div class="col-sm-12 col-md-3 col-lg-3">
-      <ul class="stickybar">
-        <h3>Contents</h3>
-        <br>
-        <li><a href="#Team Edinburgh">Team Edinburgh</a></li>
-        <br>
-        <li><a href="#Aalto-Helsinki">Aalto-Helsinki</a></li>
-        <br>
-        <li><a href="#NiC">Nordic iGem Conference</a></li>
-        <br>
-        <li><a href="#WED">World Environment Day</a></li>
-        <br>
-        <!-- <li><a href="#Sekvenssi">Sekvenssi</a></li>
-        <br> -->
-        <li><a href="#Social media">Social media</a></li>
-        <br>
-      </ul>
+    <div id="table-of-contents">
+      <div class="accordion" id="Description">
+        <div class="accordion-item" id="table of contents">
+          <h2 class="accordion-header" id="headingContents">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+              Table of contents
+            </button>
+          </h2>
+          <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+            data-bs-parent="#Description">
+            <div class="accordion-body">
+              <div class="row no_mar_or_pad" id="content-links">
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#Team Edinburgh">Team Edinburgh</a></li>
+                  <br>
+                  <li><a href="#Aalto-Helsinki">Aalto-Helsinki</a></li>
+                  <br>
+                  <li><a href="#NiC">Nordic iGem Conference</a></li>
+                  <br>
+                </div>
+                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                  <li><a href="#WED">World Environment Day</a></li>
+                  <br>
+                  <li><a href="#Sekvenssi">Sekvenssi</a></li>
+                  <br>
+                  <li><a href="#Social media">Social media</a></li>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+      </div>
     </div>
 
-    <div class="col-sm-12 col-md-9 col-lg-9" style="text-align: justify;">
+    <hr id="gap100">
+
+    <div style="text-align: justify;">
 
       <div id="Team Edinburgh">
         <h1 class="center_text section-title">Team Edinburgh - shared love of cyanobacteria</h1>
@@ -49,7 +73,7 @@
         <br>
       </div>
 
-      <hr id="gap100">
+      <hr id="gap50">
 
       <div id="Aalto-Helsinki">
         <h1 class="center_text section-title">Aalto-Helsinki - we Finns stick together</h1>
@@ -58,7 +82,7 @@
           To keep the Finnish teams strong and united we worked with Aalto-Helsinki in multiple ways this year.
         </h3>
         <br>
-        <div class="row no_mar_or_pad">
+        <div class="row">
           <div class="col-12 col-md-6">
             <p>
               We first met on the 9th of May on Zoom. We talked about our project topics, planned our possible
@@ -70,10 +94,15 @@
           </div>
           <div class="col-12 col-md-6 no_mar_or_pad">
             <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/1.png" width="100%">
+            <figcaption style="text-align: justify;">
+              <span id="cursive">
+                Figure 1. Zoom meeting with Aalto-Helsinki to discuss collaborations
+              </span>
+            </figcaption>
           </div>
         </div>
 
-        <hr id="gap50">
+        <hr id="gap20">
 
         <h3 class="center_text subtitle">
           Day in Turku - 24th of July
@@ -82,20 +111,23 @@
         <div class="row no_mar_or_pad">
           <div class="col-12 col-md-6 no_mar_or_pad">
             <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/2.png" width="100%">
+            <figcaption style="text-align: justify;">
+              <span id="cursive">
+                Figure 2. Together with Aalto-Helsinki we visited University of Turku campus
+              </span>
+            </figcaption>
           </div>
           <div class="col-12 col-md-6">
             <p>
               We invited Aalto-Helsinki to visit us and see Turku on the 24th of July. We visited our lab facilities,
-              walked
-              together along the Aura river and spent a lovely summer day getting to know each other. Also it was
-              wonderful
-              to talk about our projects, the struggles we have faced and to share ideas on how to overcome those
-              obstacles.
+              walked together along the Aura river and spent a lovely summer day getting to know each other. (Figure 2.)
+              Also it was wonderful to talk about our projects, the struggles we have faced and to share ideas on how to
+              overcome those obstacles.
             </p>
           </div>
         </div>
 
-        <hr id="gap50">
+        <hr id="gap20">
 
         <h3 class="center_text subtitle">
           Heureka - 2nd and 16th of September
@@ -104,16 +136,19 @@
         <div class="row no_mar_or_pad">
           <div class="col-12 col-md-6">
             <p>
-              We organized DNA, RNA & Protein education workshops on the 2nd of September and 16th of September.
-              Together
-              we
-              could teach the visitors about this power trio of molecular biology and also learn at the same time about
-              science communication to different age visitors. You can read more about it on the
+              We organized DNA, RNA & Protein education workshops on the 2nd of September and 16th of September. (Figure
+              3.) Together we could teach the visitors about this power trio of molecular biology and also learn at the
+              same time about science communication to different age visitors. You can read more about it on the
               <a href="https://2023.igem.wiki/aboa-turku/education">Education page</a>.
             </p>
           </div>
           <div class="col-12 col-md-6 no_mar_or_pad">
             <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/3.png" width="100%">
+            <figcaption style="text-align: justify;">
+              <span id="cursive">
+                Figure 3. Sara and Ida preparing the RNA models for the Heureka workshop
+              </span>
+            </figcaption>
           </div>
         </div>
 
@@ -126,11 +161,13 @@
         <p>
           Both of our projects are related to bioremediation and therefore we wanted to have a joint talk about it. We
           first introduced iGEM, our project and then went over what bioremediation is, what advantages and
-          disadvantages it has and some current solutions which use bioremediation.
+          disadvantages it has and some current solutions which use bioremediation. To prepare for the talk we had a
+          meeting with Aalto-Helsinki via Zoom to go over our presentation slides and in addition a training session for
+          presenting hosted by The Science Basement.
         </p>
       </div>
 
-      <hr id="gap100">
+      <hr id="gap50">
 
       <div id="NiC">
         <h1 class="section-title center_text">
@@ -140,29 +177,32 @@
         <div class="row no_mar_or_pad">
           <div class="col-12 col-md-6 no_mar_or_pad">
             <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/4.png" width="100%">
+            <figcaption style="text-align: justify;">
+              <span id="cursive">
+                Figure 4. Joakim holding the Golden Pipette trophy for winning this years Nordic iGEM Conference
+              </span>
+            </figcaption>
           </div>
           <div class="col-12 col-md-6">
             <p>
               Our team attended the Nordic iGEM Conference, NiC for short, and had the chance to deepen the unity of the
               Nordic and Baltic iGEM teams. This year’s NiC was hosted by the lovely iGEM SDU. We had inspirational
-              events
-              planned for the weekend: lectures about wiki writing and how to hold a presentation, a panel of iGEM
-              alumni
-              and even a Hackathon.On top of these we presented our projects and had time to get to know each other.
+              events planned for the weekend: lectures about wiki writing and how to hold a presentation, a panel of
+              iGEM alumni and even a Hackathon. On top of these we presented our projects and had time to get to know
+              each other.
             </p>
             <br>
             <p>
-              We won the conference and now the Golden Pipet and the honor to host next year has been passed onto us. We
-              will gladly continue this tradition and hope that we can make the conference as wonderful as it was this
-              year.
-              Thank you iGEM SDU for organizing this and to every team that attended for making this weekend so
-              memorable.
+              We won the conference and now the Golden Pipet (Figure 4.) and the honor to host next year has been passed
+              onto us. We will gladly continue this tradition and hope that we can make the conference as wonderful as
+              it was this year. Thank you iGEM SDU for organizing this and to every team that attended for making this
+              weekend so memorable.
             </p>
           </div>
         </div>
       </div>
 
-      <hr id="gap100">
+      <hr id="gap50">
 
       <div id="WED">
         <h1 class="section-title center_text">
@@ -173,20 +213,22 @@
           <div class="col-12 col-md-6">
             <p>
               To contribute to the iGEM community and to celebrate World Environment Day on the 5th of June we organized
-              a
-              collaboration video to our social media account. We contacted several iGEM teams from all over the world
-              to
-              join us in this celebration. We sent instructions for the videos and edited them together.
+              a collaboration video to our social media account. We contacted several iGEM teams from all over the world
+              to join us in this celebration. We sent instructions for the videos and edited them together.
             </p>
             <br>
             <p>
               Also we signed up for being an official event for the UN World Environment Day on their website. Our event
-              was
-              on a map on their website and we got an official event card.
+              was on a map on their website and we got an official event card. (Figure 5.)
             </p>
           </div>
           <div class="col-12 col-md-6 no_mar_or_pad">
             <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/5.png" width="100%">
+            <figcaption style="text-align: justify;">
+              <span id="cursive">
+                Figure 5. Official World Environment Day event card granted to us
+              </span>
+            </figcaption>
           </div>
         </div>
         <p>
@@ -195,8 +237,8 @@
         </p>
       </div>
 
-      <hr id="gap100">
-<!-- 
+      <hr id="gap50">
+
       <div id="Sekvenssi">
         <h1 class="section-title center_text">
           Tampere Sekvenssi ry - helping with the first steps
@@ -217,7 +259,7 @@
         </div>
       </div>
 
-      <hr id="gap100"> -->
+      <hr id="gap50">
 
       <div id="Social media">
         <h1 class="center_text subtitle">
@@ -244,9 +286,19 @@
                   The Patras-Med team approached us at the beginning of our iGEM journey. They had a great idea about
                   doing a World Health Day collaboration. We of course wanted to participate and join the collaboration
                   by choosing a from Joyce Meyer: “I believe that the greatest gift you can give your family and the
-                  world is healthy you”.
+                  world is healthy you”. (Figure 6.)
+                </p>
+                <br>
+                <p>
+                  <a href="https://www.instagram.com/p/CquzLlLNPLF/?img_index=1">Here</a> is a link to their instagram
+                  post!
                 </p>
                 <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/col-1.png" width="100%">
+                <figcaption style="text-align: justify;">
+                  <span id="cursive">
+                    Figure 6. Sara, Ami and Tiia with the Joyce Meyer quote sign
+                  </span>
+                </figcaption>
               </div>
             </div>
           </div>
@@ -269,7 +321,18 @@
                   organized. We cleaned a sidewalk in front of our university spaces together as a team and encouraged
                   others to do the same.
                 </p>
+                <br>
+                <p>
+                  <a href="https://www.instagram.com/p/CrVCXfwNsHk/?img_index=1">Here</a> is a link to their instagram
+                  post!
+                </p>
                 <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/col-2.png" width="100%">
+                <figcaption style="text-align: justify;">
+                  <span id="cursive">
+                    Figure 7. Saana, Satu, Sara, Ida, Tiia and Ami holding up a sign that says “Stop littering the
+                    environment”.
+                  </span>
+                </figcaption>
               </div>
             </div>
           </div>
@@ -295,7 +358,11 @@
                   teams across the world told what iGEM means to them and we are glad to be part of this wonderful
                   collaboration.
                 </p>
-                <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/col-3.png" width="100%">
+                <br>
+                <p>
+                  You can go watch the collaboration video on iGEM Thrace's instagram
+                  <a href="https://www.instagram.com/p/CrwCjDIIglS/">here!</a>
+                </p>
               </div>
             </div>
           </div>
@@ -318,6 +385,17 @@
                   it for the collaboration. Did you know that there are over 200 names for the brown bear in the Finnish
                   language? And also a beer has been named after it!
                 </p>
+                <br>
+                <p>
+                  <a href="https://www.instagram.com/p/Csjbr98NNH5/?img_index=1">Here</a> is a link to their instagram
+                  post!
+                </p>
+                <img src="https://static.igem.wiki/teams/4831/wiki/photos/collaboration/col-3.png" width="100%">
+                <figcaption style="text-align: justify;">
+                  <span id="cursive">
+                    Figure 8. Tiia, Sara, Satu, Ville and Ida acting like brown bears for the collaboration picture
+                  </span>
+                </figcaption>
               </div>
             </div>
           </div>
@@ -337,6 +415,11 @@
                 <p>
                   The IISER-TVM team approached us with a Yoga Day collaboration idea and we wanted to be part of
                   spreading the message about this powerful tool for well-being.
+                </p>
+                <br>
+                <p>
+                  <a href="https://www.instagram.com/p/CvNcPpsxTN1/?img_index=1">Here</a> is a link to see the video on
+                  iGEM IISER's instagram!
                 </p>
               </div>
             </div>
@@ -361,14 +444,17 @@
                   helped us enhance our presentation and scientific communication. Thank you Calgary and every team that
                   participated in this wonderful event.
                 </p>
+                <br>
+                <p>
+                  You can see their instagram post
+                  <a href="https://www.instagram.com/p/CvNcPpsxTN1/?img_index=1">here</a>!
+                </p>
               </div>
             </div>
           </div>
 
           <hr id="gap20">
 
-          <!-- Not public yet -->
-          <!--           
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingSeven">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -380,15 +466,29 @@
               data-bs-parent="#Collaboration">
               <div class="accordion-body">
                 <p>
-                  Our little green mascot Synechocystis got some friends! We sent a picture of our mascot to the INSA
-                  ENS Lyon 1 team and they combined several team mascots into one cute Instagram post.
+                  Our little green mascot Synechocystis got some friends! We sent a picture of our mascot (Figure 9.) to
+                  the INSA ENS Lyon 1 team and they combined several team mascots into one cute Instagram post.
                 </p>
+                <br>
+                <p>
+                  <a href="https://www.instagram.com/p/CxI25wMNa2N/?img_index=1">Here</a> is a link to their instagram
+                  post!
+                </p>
+                <br>
+                <img src="https://static.igem.wiki/teams/4831/wiki/photos/characters/maskot-collab.png" width="100%">
+                <figcaption style="text-align: justify;">
+                  <span id="cursive">
+                    Figure 9. Our mascot Synechocystis made by Jesse
+                  </span>
+                </figcaption>
               </div>
             </div>
           </div>
 
           <hr id="gap20">
 
+          <!-- Not public yet -->
+          <!--           
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingEight">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
