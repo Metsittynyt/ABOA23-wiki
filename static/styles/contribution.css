@@ -1,55 +1,55 @@
-.accordion {
+#Contribution-rounded .accordion {
     border-radius: 30px;
     background-color: transparent;
 }
 
-.accordion-item {
+#Contribution-rounded .accordion-item {
     background-color: transparent;
     border-radius: 30px;
 }
 
-.accordion-item:first-of-type {
+#Contribution-rounded .accordion-item:first-of-type {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
 
-.accordion-item:last-of-type {
+#Contribution-rounded .accordion-item:last-of-type {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-.accordion-header {
+#Contribution-rounded .accordion-header {
     border-radius: 30px;
     background-color: transparent;
 }
 
-.accordion-button {
+#Contribution-rounded .accordion-button {
     color: var(--darkBlue);
     font-size: x-large;
     background-color: transparent;
     border-radius: 30px;
 }
 
-.accordion-button:not(.collapsed) {
+#Contribution-rounded .accordion-button:not(.collapsed) {
     background-color: var(--yellow);
     color: var(--darkBlue);
 }
 
-.accordion-item:first-of-type .accordion-button {
+#Contribution-rounded .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
 
-.accordion-item .accordion-button:not(.collapsed) {
+#Contribution-rounded .accordion-item .accordion-button:not(.collapsed) {
     border-bottom-right-radius:.25rem;
     border-bottom-left-radius:.25rem
 }
 
-.accordion-item:last-of-type .accordion-button:is(.collapsed) {
+#Contribution-rounded .accordion-item:last-of-type .accordion-button:is(.collapsed) {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
-#Contribution h4 {
+#Contribution-rounded #Contribution h4 {
     color: var(--green);
 }
