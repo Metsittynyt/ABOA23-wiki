@@ -13,71 +13,73 @@
 
 {% block page_content %}
 <div id="page_content">
-  <div id="sky">
-    <!-- Sun -->
-    ​<div class="theSun"></div>
-    <!-- Sun end -->
-
-    <!-- Cloud 1 -->
-    <div class="cloud c2"></div>
-    <!-- Cloud 1 end -->
-
-    <!-- Birds -->
-    <div class="bird-container bird-container-one">
-      <div class="bird bird-one"></div>
-    </div>
-    <div class="bird-container bird-container-two">
-      <div class="bird bird-two"></div>
-    </div>
-    <div class="bird-container bird-container-three">
-      <div class="bird bird-three"></div>
-    </div>
-    <div class="bird-container bird-container-four">
-      <div class="bird bird-four"></div>
-    </div>
-    <!-- Birds end -->
-
-    <!-- Cloud 2 -->
-    <div class="cloud c2"></div>
-    <!-- Cloud 2 end -->
-  </div>
-
-  <!--Content before waves-->
-  <div class="inner-header flex">
-    <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png">
-  </div>
-  <div id="forest">
-    <div id="trees"></div>
-  </div>
-  <div class="forest_floor"></div>
-  <!--Content before waves end-->
-  <!--Waves Container-->
   <div>
-    <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(185, 255, 255,0.9" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(185, 255, 255,0.7)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 255, 255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)" />
-      </g>
-    </svg>
-    <div class="fish_jump">
-      <div class="fish">
-        <div class="body"></div>
-        <div class="tail"></div>
-        <div class="fin-upper-front"></div>
-        <div class="fin-upper-back"></div>
-        <div class="fin-bottom-front"></div>
-        <div class="fin-bottom-back"></div>
-        <div class="eye"></div>
+    <div id="sky">
+      <!-- Sun -->
+      ​<div class="theSun"></div>
+      <!-- Sun end -->
+
+      <!-- Cloud 1 -->
+      <div class="cloud c2"></div>
+      <!-- Cloud 1 end -->
+
+      <!-- Birds -->
+      <div class="bird-container bird-container-one">
+        <div class="bird bird-one"></div>
+      </div>
+      <div class="bird-container bird-container-two">
+        <div class="bird bird-two"></div>
+      </div>
+      <div class="bird-container bird-container-three">
+        <div class="bird bird-three"></div>
+      </div>
+      <div class="bird-container bird-container-four">
+        <div class="bird bird-four"></div>
+      </div>
+      <!-- Birds end -->
+
+      <!-- Cloud 2 -->
+      <div class="cloud c2"></div>
+      <!-- Cloud 2 end -->
+    </div>
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+      <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png">
+    </div>
+    <div id="forest">
+      <div id="trees"></div>
+    </div>
+    <div class="forest_floor"></div>
+    <!--Content before waves end-->
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(185, 255, 255,0.9" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(185, 255, 255,0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(185, 255, 255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(185, 255, 255,0.3)" />
+        </g>
+      </svg>
+      <div class="fish_jump">
+        <div class="fish">
+          <div class="body"></div>
+          <div class="tail"></div>
+          <div class="fin-upper-front"></div>
+          <div class="fin-upper-back"></div>
+          <div class="fin-bottom-front"></div>
+          <div class="fin-bottom-back"></div>
+          <div class="eye"></div>
+        </div>
       </div>
     </div>
+    <!--Waves end-->
   </div>
 
-  <!--Waves end-->
   <div id="sea">
     <div id="orkki_line"></div>
 
@@ -102,12 +104,10 @@
           bioaccumulated to the biomass for centuries, is released to nearby water bodies in the runoff water and then
           the Baltic Sea.
         </p>
-      </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
         <h3 class="text-center section-title" style="color: var(--darkBlue);">Why is mercury toxic?</h3>
         <div class="row no_mar_or_pad">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-8 order-1 order-md-1">
             <p>
               Mercury is a toxic heavy metal that damages lungs, kidneys, skin and eyes. It causes individuals to have
               weakened immune system, problems with their digestive system and damaged nervous system. It also harms the
@@ -115,6 +115,10 @@
               <a href="https://www.who.int/news-room/fact-sheets/detail/mercury-and-health">(Mercury and Health. World
                 Health Organization. 2017)</a>
               <br><br>
+            </p>
+          </div>
+          <div class="col-12 order-3 order-md-3">
+            <p>
               Mercury can be found naturally from the atmosphere, bodies of water and soil. The most toxic form of
               mercury
               is methylmercury. It binds into organic substances and enriches in the food chains. Methylmercury has a
@@ -125,14 +129,12 @@
               methylmercury.
             </p>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 order-2 order-md-2">
             <img id="characterImage"
               src="https://static.igem.wiki/teams/4831/wiki/photos/characters/character-1-colored2.png">
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
         <h3 class="text-center section-title" style="color: var(--darkBlue);">Numbers about mercury</h3>
         <div class="row" id="infoRow">
           <div id="info_1">
@@ -157,9 +159,7 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
         <h3 class="text-center section-title" style="color: var(--darkBlue);">Current solutions</h3>
         <p>
           The current solution to remove mercury from water is to filter it. There are various methods to filter mercury
@@ -173,103 +173,112 @@
           require
           energy and raw materials to be produced and they create waste.
         </p>
-      </div>
 
-      <hr style="height: 50vh; background-color: transparent;">
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto to-fade-in-fast">
-        <h3 style="text-align: center; color: var(--darkBlue);">
-          Yet, <span id="bold">none of these solutions filter methylmercury</span>. The bond between the ionic mercury
-          and the methyl molecule <span id="bold">has to be</span> broken in order to collect the mercury. We need a
-          sustainable, inexpensive and efficient solution to purify toxic methylmercury from our contaminated waters.
-        </h3>
-      </div>
+        <hr style="height: 50vh; background-color: transparent;">
 
-      <hr style="height: 50vh; background-color: transparent;">
+        <div class="to-fade-in-fast">
+          <h3 style="text-align: center; color: var(--darkBlue);">
+            Yet, <span id="bold">none of these solutions filter methylmercury</span>. The bond between the ionic mercury
+            and the methyl molecule <span id="bold">has to be</span> broken in order to collect the mercury. We need a
+            sustainable, inexpensive and efficient solution to purify toxic methylmercury from our contaminated waters.
+          </h3>
+        </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto to-fade-in-fast">
-        <h3 style="text-align: center; color: var(--darkBlue);">
-          To battle this challenge, we have come up with a practically <span id="bold">free-of-charge</span> -solution
-          that is also a
-          <span id="bold">carbon sink</span>!
-        </h3>
-      </div>
+        <hr style="height: 50vh; background-color: transparent;">
 
-      <hr style="height: 50vh; background-color: transparent;">
+        <div class="to-fade-in-fast">
+          <h3 style="text-align: center; color: var(--darkBlue);">
+            To battle this challenge, we have come up with a practically <span id="bold">free-of-charge</span> -solution
+            that is also a
+            <span id="bold">carbon sink</span>!
+          </h3>
+        </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto to-fade-in-fast">
-        <h3 style="text-align: center; color: var(--darkBlue);">
-          As our host organism, we use photoautotrophic microorganisms called cyanobacteria. These microbes use only
-          light and carbon dioxide to function, which makes our solution sustainable and scalable.
-        </h3>
-      </div>
+        <hr style="height: 50vh; background-color: transparent;">
 
-      <hr style="height: 50vh; background-color: transparent;">
+        <div class="to-fade-in-fast">
+          <h3 style="text-align: center; color: var(--darkBlue);">
+            As our host organism, we use photoautotrophic microorganisms called cyanobacteria. These microbes use only
+            light and carbon dioxide to function, which makes our solution sustainable and scalable.
+          </h3>
+        </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto to-fade-in-fast">
-        <h1 style="color: var(--darkBlue); text-align: center;">Let us introduce our solution</h1>
-      </div>
+        <hr style="height: 50vh; background-color: transparent;">
 
-      <hr style="height: 50vh; background-color: transparent;">
+        <div class="to-fade-in-fast">
+          <h1 style="color: var(--darkBlue); text-align: center;">Let us introduce our solution</h1>
+        </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto to-fade-in-fast">
-        <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png"
-          style="filter: drop-shadow(4px 4px 4px var(--darkBlue));">
-      </div>
+        <hr style="height: 50vh; background-color: transparent;">
 
-      <hr style="height: 50vh; background-color: transparent;">
+        <div class="to-fade-in-fast" style="display: grid; place-content: center;">
+          <img id="merculessLogo" src="https://static.igem.wiki/teams/4831/wiki/logos/merculess-logo-white.png"
+            style="filter: drop-shadow(4px 4px 4px var(--darkBlue));">
+        </div>
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
+        <hr style="height: 50vh; background-color: transparent;">
+
+
         <p id="big" style="color: white; text-align: center;">
           In our solution, MercuLess, water is purified from methylmercury pollution with the means of synthetic
           biology.
         </p>
         <hr id="gap50">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6 order-2 order-md-1">
             <img id="characterImage"
               src="https://static.igem.wiki/teams/4831/wiki/photos/characters/character-45-colored2.png">
-            <figcaption style="text-align: center; font-size: large; color: white;">
-              We break the bond between the methyl group and the mercury with a merA protein.
-            </figcaption>
           </div>
-          <div class="col-6">
-            <img id="characterImage"
-              src="https://static.igem.wiki/teams/4831/wiki/photos/characters/character-56-colored2.png">
-            <figcaption style="text-align: center; font-size: large; color: white;">
+          <div class="col-12 col-md-6 order-2 order-md-2">
+            <p style="color: white;"><br><br><br>
+              We break the bond between the methyl group and the mercury with a merA protein.
+            </p>
+          </div>
+          <hr id="gap50">
+          <div class="col-12 col-md-6 order-4 order-md-3">
+            <p style="color: white;"><br>
               Then using a merB protein, the remaining ionic mercury is transformed into less toxic elemental mercury,
               which can be collected from the bioreactor and then upcycled for new appliances.
-            </figcaption>
+            </p>
+          </div>
+          <div class="col-12 col-md-6 order-3 order-md-4">
+            <img id="characterImage"
+              src="https://static.igem.wiki/teams/4831/wiki/photos/characters/character-56-colored2.png">
           </div>
         </div>
-      </div>
 
-      <hr id="gap100">
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
+        <hr id="gap100">
+
+
         <h2 class="text-center section-title">Cyanobacteria</h2>
         <div class="row" id="sectionRow">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 order-2 order-md-1">
             <img id="characterImage" src="https://static.igem.wiki/teams/4831/wiki/photos/characters/character-10.png">
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-6 order-1 order-md-2">
             <p style="color: white;">
               As these photoautotrophic bacteria use only light as their energy and carbon dioxide as their source of
               carbon
               to function, they hold endless possibilities for sustainable solutions in all sectors of industry. For
-              industrial scale use, there are still multiple technical details to be solved. Nevertheless the strength
-              of
-              the cyanobacteria is that no biological carbon sources or energy have to be added, which offers economic
+              industrial scale use, there are still multiple technical details to be solved.
+            </p>
+          </div>
+          <div class="col-12 order-3">
+            <p style="color: white;">
+              Nevertheless the strength of the cyanobacteria is that no biological carbon sources or energy have to be
+              added, which offers economic
               scalability. Neither complex mediums are needed as they naturally can grow in both saline or freshwater.
               Finally cyanobacteria are carbon sinks therefore contributing in the fight against climate change.
             </p>
           </div>
         </div>
-      </div>
 
-      <hr id="gap100">
 
-      <div class="col-12 col-md-10 col-lg-8 mx-auto">
+        <hr id="gap100">
+
+
         <h1 style="color: var(--green);" class="text-center section-title">Our Goals</h1>
         <p style="color: white;">
           Our goal is to purify natural and processed waters from methylmercury pollution by using genetically modified
@@ -279,7 +288,7 @@
           industrial companies to nature conservationist organizations and individual forest owners may use MercuLess
           and make our water safer.
         </p>
-        <div>
+        <div id="goals-grid">
           <div class="flip">
             <div class="front"
               style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/safe-habitat-1.png'); background-size: contain;">
@@ -301,7 +310,7 @@
                 ecosystems we preserve biodiversity.</p>
             </div>
           </div>
-          <div class="flip">
+          <div class="flip last_flip">
             <div class="front"
               style="background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/food-security-1.png');">
             </div>
