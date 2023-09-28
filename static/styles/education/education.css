@@ -7,6 +7,8 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    text-align: center;
+    place-content: start space evenly;
 }
 
 .quide_title {
@@ -24,11 +26,15 @@
 }
 
 .card {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 50px;
     background-color: transparent;
     border: none;
     align-items: center;
+}
+
+.card img {
+    display: none;
 }
 
 #text {
@@ -141,6 +147,21 @@
         grid-template-columns: repeat(3, auto);
     }
 
+    .card {
+        width: 100px;
+        height: 150px;
+    }
+
+    .card img {
+        display: block;
+    }
+
+    #impact1,
+    #impact2 {
+        columns: 1;
+        width: 100px;
+    }
+
     #labRules {
         grid-template-columns: repeat(3, auto);
     }
@@ -152,6 +173,7 @@
     .exercise05_text {
         grid-column: 1 / 3;
     }
+
     #true-or-false {
         grid-template-columns: repeat(4, auto);
     }
