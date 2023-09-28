@@ -2,16 +2,47 @@
                   Human Practices
    *****************************************/
 
-:root {
-  --background: #00374e;
-  --green: #009372;
-  --turquoise: #91e9d0;
-  --darkBlue: #00374e;
-  --yellow: #f1d490;
-  --violet: #a672ab;
-  --text: white;
-  --text-inverted: black;
-  --font: sans-serif;
+.page-menu {
+  background-color: var(--darkBlue);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+
+.page-menu-item {
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+  margin: 1%;
+  transition: all .25s ease-in-out;
+  width: 30%;
+}
+
+.page-menu-item:not(.active) .page-menu-icon {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-menu-item.active {
+  background-color: var(--turquoise);
+  transition: all .25s ease-in-out;
+}
+
+.page-menu-icon {
+  border-radius: 5px;
+  color: var(--darkBlue);
+  font-weight: 500;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+  width: fit-content;
+}
+
+.page-menu-content {
+  display: none;
 }
 
 /* Timeline Container */
@@ -94,5 +125,23 @@ span {
     column-count: 2;
     column-gap: 50px;
     text-align: justify;
+  }
+
+  .page-menu {
+    position: sticky;
+    top: 110px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-menu-item {
+    width: 90%;
+    margin: 2%;
   }
 }
