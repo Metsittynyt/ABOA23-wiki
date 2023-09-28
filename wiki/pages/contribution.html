@@ -12,55 +12,55 @@ endblock %}
 
 {% block page_content %}
 
-<div class="page_content" style="text-align: justify;">
+<div class="page_content">
   <div class="row">
-    <div class="col-12 col-md-10 col-lg-8 mx-auto">
-      <h3 style="color: var(--green);">
-        Our team has made contributions to the iGEM community in three following areas: Lab, Human practices and
-        Fundraising
-      </h3>
-    </div>
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
 
-    <hr id="gap100">
+      <div>
+        <h3 style="color: var(--green);">
+          Our team has made contributions to the iGEM community in three following areas: Lab, Human practices and
+          Fundraising
+        </h3>
+      </div>
 
+      <hr id="gap100">
 
-    <div class="col-12 col-md-10 col-lg-8 mx-auto" id="table-of-contents">
-      <div class="accordion" id="Contribution">
-        <div class="accordion-item" id="table of contents">
-          <h2 class="accordion-header" id="headingContents">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
-              Table of contents
-            </button>
-          </h2>
-          <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
-            data-bs-parent="#Contribution">
-            <div class="accordion-body">
-              <div class="row no_mar_or_pad" id="content-links">
-                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
-                  <li><a href="#intro" onclick="toggleAccordion()">Introduction</a></li>
-                  <li><a href="#lab" onclick="toggleAccordion()">Lab</a></li>
-                  <li><a href="#hp" onclick="toggleAccordion()">Human practices</a></li>
-                </div>
-                <div class="col-12 col-md-6" style="border-left: 1px solid black;">
-                  <li><a href="#education" onclick="toggleAccordion()">Education</a></li>
-                  <li><a href="#fundraising" onclick="toggleAccordion()">Fundraising</a></li>
+      <div id="table-of-contents">
+        <div class="accordion" id="Contribution">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Contribution">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#intro" onclick="toggleAccordion()">Introduction</a></li>
+                    <li><a href="#lab" onclick="toggleAccordion()">Lab</a></li>
+                    <li><a href="#hp" onclick="toggleAccordion()">Human practices</a></li>
+                  </div>
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#education" onclick="toggleAccordion()">Education</a></li>
+                    <li><a href="#fundraising" onclick="toggleAccordion()">Fundraising</a></li>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
       </div>
-      <div class="progress-container">
-        <div class="progress-bar" id="progress"></div>
-      </div>
-    </div>
 
-    <hr id="gap100">
+      <hr id="gap100">
 
-    <div class="col-12 col-md-10 col-lg-8 mx-auto">
       <div class="row" id="intro">
-        <h3>Introduction</h3>
+        <h1 class="text-center section-title">Introduction</h1>
         <br>
         <p>
           On this page we have gathered all the contributions we have made for the iGEM community. This journey has
@@ -74,9 +74,8 @@ endblock %}
         </p>
       </div>
 
-      <hr id="gap50">
-
       <div class="row" id="lab">
+        <hr id="gap50">
         <div class="accordion" id="Contribution-rounded">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -93,7 +92,8 @@ endblock %}
                   Our team has added 4 new genes to the iGEM Registry of Standard Biological Parts. The codons of the
                   genes are optimized specially for Synechocystis. In addition to these, 10 basic parts and
                   were added to the iGEM Registry. Our parts can be used by future iGEM teams for mercury
-                  bioremediation. Hopefully, the parts will take our project even further or apply them to something new
+                  bioremediation. Hopefully, the parts will take our project even further or apply them to something
+                  new
                   in the hands of future iGEM teams!
                 </p>
                 <br>
@@ -117,9 +117,8 @@ endblock %}
         </div>
       </div>
 
-      <hr id="gap20">
-
       <div class="row" id="hp">
+        <hr id="gap50">
         <div class="accordion" id="Contribution-rounded">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
@@ -135,11 +134,14 @@ endblock %}
                 <h4>Turku iGEM community</h4>
                 <p>
                   Team ABOA 2023 managed to do something new. It united students and different universities in Turku.
-                  Starting off with mostly bio-students we soon realized there should be more diversity in know-how. New
-                  team members were added to the team and so the complete ABOA 2023 team was finally formed. This year’s
+                  Starting off with mostly bio-students we soon realized there should be more diversity in know-how.
+                  New
+                  team members were added to the team and so the complete ABOA 2023 team was finally formed. This
+                  year’s
                   team was not only formed by students from the University of Turku but also students from Åbo Akademi
                   and
-                  Turku University of applied sciences (UAS). Because diversity and unity are two of our team values, we
+                  Turku University of applied sciences (UAS). Because diversity and unity are two of our team values,
+                  we
                   want to continue the unity between the universities also in the future and will reach out to new
                   faculties when possible. We will assist the new team ABOA 2024 to a great start when passing on the
                   baton and helping them in every possible way.
@@ -147,17 +149,20 @@ endblock %}
                 <br>
                 <h4>Finnish iGEM community</h4>
                 <p>
-                  Being a young team we did not yet have a wide network to support us. We have reached out to different
+                  Being a young team we did not yet have a wide network to support us. We have reached out to
+                  different
                   companies, the press, institutions and different communities thereby making iGEM better known to the
                   wider public in Finland.
                 </p>
                 <br>
                 <p>
-                  Our team has also been working closely with the other Finnish team Aalto-Helsinki. We hope to maintain
+                  Our team has also been working closely with the other Finnish team Aalto-Helsinki. We hope to
+                  maintain
                   a
                   good relationship between the Finnish teams and encourage other universities across Finland to
                   establish
-                  their own iGEM teams. We have been discussing with Sekvenssi ry, the Club of Synthetic Biology, board
+                  their own iGEM teams. We have been discussing with Sekvenssi ry, the Club of Synthetic Biology,
+                  board
                   of
                   having their members from Tampere join team ABOA next year. This will spread the iGEM community to
                   Tampere and the start of a possible new team in Finland.
@@ -168,7 +173,8 @@ endblock %}
                 <p>
                   Thus far there are only two iGEM teams in Finland. For this reason maintaining a good relationship
                   with
-                  the wider Nordic iGEM community is important because of the joined support and unity. By winning this
+                  the wider Nordic iGEM community is important because of the joined support and unity. By winning
+                  this
                   year’s Nordic iGEM Conference (NiC) we got the great honor to host NiC 2024 and pass on the “golden
                   pipette” to the next year’s winner.
                 </p>
@@ -178,9 +184,8 @@ endblock %}
         </div>
       </div>
 
-      <hr id="gap20">
-
       <div class="row" id="education">
+        <hr id="gap50">
         <div class="accordion" id="Contribution-rounded">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTree">
@@ -193,14 +198,17 @@ endblock %}
               data-bs-parent="#Contribution">
               <div class="accordion-body">
                 <p>
-                  As said on our <a href="https://2023.igem.wiki/aboa-turku/education">education page</a>, education is
+                  As said on our <a href="https://2023.igem.wiki/aboa-turku/education">education page</a>, education
+                  is
                   a
                   lifelong journey that does not end at graduation. We took
-                  all age groups into consideration when working on our project’s educational section. It took a lot of
+                  all age groups into consideration when working on our project’s educational section. It took a lot
+                  of
                   time, work and planning to come up with materials suitable for each particular age group. By sharing
                   our
                   educational materials we hope future teams will make good use of them and all age groups could be
-                  included in synthetic biology in the future as well. All materials are collected in the following PDF
+                  included in synthetic biology in the future as well. All materials are collected in the following
+                  PDF
                   file.
                 </p>
                 <br>
@@ -217,9 +225,8 @@ endblock %}
         </div>
       </div>
 
-      <hr id="gap20">
-
       <div class="row" id="fundraising">
+        <hr id="gap50">
         <div class="accordion" id="Contribution-rounded">
 
           <div class="accordion-item">
@@ -235,7 +242,8 @@ endblock %}
                 <p>
                   ABOA is a fairly new team in the iGEM community. This comes with its own challenges, one being
                   finances.
-                  Companies have been hesitant to sponsor our team’s iGEM journey as it is new and not widely known. In
+                  Companies have been hesitant to sponsor our team’s iGEM journey as it is new and not widely known.
+                  In
                   addition to contacting companies we came up with new innovative ways of raising money: crowdfunding
                   and
                   workshops.
@@ -243,7 +251,8 @@ endblock %}
                 <br>
                 <h3>Crowdfunding</h3>
                 <p>
-                  We set up our crowdfunding through Kulttuurilahja platform. Being accepted to Kulttuurilahja required
+                  We set up our crowdfunding through Kulttuurilahja platform. Being accepted to Kulttuurilahja
+                  required
                   us
                   to write an overview of our project, marketing strategy and advertisement pictures. Kansan
                   Sivistysrahasto supported the project by donating an additional 20 % to all donations made.
@@ -271,15 +280,20 @@ endblock %}
                 <br>
                 <h3>Marketing</h3>
                 <p>
-                  As said previously, marketing has a key role in fundraising. It is important to understand your target
+                  As said previously, marketing has a key role in fundraising. It is important to understand your
+                  target
                   audience and make content suitable for them. Crowdfunding was advertised on social media (Instagram,
-                  LinkedIn, Facebook, ABOA website) on both personal and team accounts. This helped us to reach family,
+                  LinkedIn, Facebook, ABOA website) on both personal and team accounts. This helped us to reach
+                  family,
                   friends and acquaintances.
                   Taking part in events gave visibility and a way to make iGEM better known to the wider public and
                   raise
-                  funds. We took part in the Study in Turku event that gave us a change to make iGEM better known to the
-                  wider public, especially students. Our workshop and crowdfunding flyers were on display at the event.
-                  For the workshop we needed to target a whole new audience. We contacted local influencers who would be
+                  funds. We took part in the Study in Turku event that gave us a change to make iGEM better known to
+                  the
+                  wider public, especially students. Our workshop and crowdfunding flyers were on display at the
+                  event.
+                  For the workshop we needed to target a whole new audience. We contacted local influencers who would
+                  be
                   interested in doing a collaboration. They got to attend our workshop for free in exchange for
                   advertising our workshop on their social media. This collaboration reached many viewers that we
                   otherwise would not have reached. Marketing coming directly from a better known person makes people
@@ -293,9 +307,10 @@ endblock %}
       </div>
 
     </div>
-  </div>
-  <hr id="gap50">
 
+    <hr id="gap50">
+
+  </div>
 </div>
 
 {% endblock %}
