@@ -129,7 +129,7 @@ span {
 
   .page-menu {
     position: sticky;
-    top: 110px;
+    top: 85px;
     z-index: 10;
   }
 }

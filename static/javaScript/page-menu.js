@@ -43,7 +43,7 @@ function scrollToTop() {
     var pageMenu = document.querySelector('.scroll-here');
 
     // Calculate the scroll position to align the "page-menu" with top: 120px
-    var scrollPosition = pageMenu.getBoundingClientRect().top + window.scrollY - 120;
+    var scrollPosition = pageMenu.getBoundingClientRect().top + window.scrollY - 90;
 
     // Scroll to the calculated position with smooth behavior
     window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
