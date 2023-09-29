@@ -1,0 +1,8 @@
+
+.page-menu-item#button2.active {
+    background-color: var(--yellow);
+}
+
+.page-menu-item#button3.active {
+    background-color: var(--violet);
+}

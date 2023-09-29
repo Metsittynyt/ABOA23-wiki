@@ -5,6 +5,10 @@
 
 {% block title_class %}safety-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/safety.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
 <div class="page-content">
@@ -23,13 +27,13 @@
       <hr id="gap50" class="scroll-here">
 
       <div class="page-menu">
-        <button class="page-menu-item active" onclick="showContent(1)" data-content="1">
+        <button class="page-menu-item active" onclick="showContent(1)" id="button1" data-content="1">
           <p class="page-menu-icon">Personal safety</p>
         </button>
-        <button class="page-menu-item" onclick="showContent(2)" data-content="2">
+        <button class="page-menu-item" onclick="showContent(2)" id="button2" data-content="2">
           <p class="page-menu-icon">Biosafety</p>
         </button>
-        <button class="page-menu-item" onclick="showContent(3)" data-content="3">
+        <button class="page-menu-item" onclick="showContent(3)" id="button3" data-content="3">
           <p class="page-menu-icon">Hazardous chemicals</p>
         </button>
       </div>
