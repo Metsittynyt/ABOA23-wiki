@@ -233,7 +233,7 @@ li {
   overflow-y: auto;
 }
 
-#content-links li{
+#content-links li {
   padding: 5px;
 }
 
@@ -470,6 +470,16 @@ li {
 /*****************************************
                 Navigation
    *****************************************/
+
+.navbar {
+  padding: 0px;
+}
+
+.navbar-brand {
+  padding: 0px;
+  margin: 0px;
+}
+
 
 .dropdown-menu {
   background-color: var(--turquoise);
