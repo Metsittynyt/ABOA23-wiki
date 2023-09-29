@@ -7,136 +7,163 @@
 
 {% block page_content %}
 
-<div class="row">
+<div class="page-content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
 
-  <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: justify;">
-    <h3>Safety is of utmost importance in a laboratory work setting. Our main safety priorities include ensuring
-      personal safety, biosafety, and proper management of hazardous chemicals. We follow closely all rules and
-      regulations regarding the use of genetically engineered organisms in Finland and other guidelines set by the
-      University of Turku.
-    </h3>
-  </div>
+      <div>
+        <p>
+          Safety is of utmost importance in a laboratory work setting. Our main safety priorities include ensuring
+          personal safety, biosafety, and proper management of hazardous chemicals. We follow closely all rules and
+          regulations regarding the use of genetically engineered organisms in Finland and other guidelines set by the
+          University of Turku.
+        </p>
+      </div>
 
-  <hr style="height: 50px; background-color: transparent;">
+      <hr id="gap50" class="scroll-here">
 
-  <div class="col-xs-12 col-md-3 col-lg-2">
-    <ul class="stickybar">
-      <h3>Content</h3>
-      <br>
-      <li><a href="#personal safety">Personal safety</a></li>
-      <br>
-      <li><a href="#biosafety">Biosafety</a></li>
-      <br>
-      <li><a href="#hazardous chemicals">Hazardous chemicals</a></li>
-      <br>
-      <li><a href="#references">References</a></li>
-    </ul>
-  </div>
+      <div class="page-menu">
+        <button class="page-menu-item active" onclick="showContent(1)" data-content="1">
+          <p class="page-menu-icon">Personal safety</p>
+        </button>
+        <button class="page-menu-item" onclick="showContent(2)" data-content="2">
+          <p class="page-menu-icon">Biosafety</p>
+        </button>
+        <button class="page-menu-item" onclick="showContent(3)" data-content="3">
+          <p class="page-menu-icon">Hazardous chemicals</p>
+        </button>
+      </div>
 
-  <div class="col-xs-12 col-md-9 col-lg-10" style="text-align: justify;">
-    <h1 style="text-align: center;" id="personal safety">Personal safety</h1>
-    <br>
-    <p>We follow all general laboratory practices and precautions. We use appropriate personal protective gear,
-      which
-      includes nitrile gloves, lab coats, and safety goggles depending on the task. Eating, drinking, or applying
-      cosmetics is not allowed in the lab space. Long hair should be tied in a ponytail or a bun and we wash our
-      hands
-      regularly. Our laboratory has a waste management system that we must use. All bacterial waste and everything
-      that has been in contact with bacteria or antibiotics (growth medium, pipette tips, etc.) will be disposed of
-      following PharmaCity laboratory guidelines and national GMO legislation.
-    </p>
-    <br>
-    <p>
-      The orientation and safety training given by the Senior Laboratory Technician Anniina Lepistö at Molecular
-      Plant
-      Biology before the beginning of the laboratory work, and the information acquired during our studies,
-      minimizes
-      the occurrence of lab injuries and common accidents. We consulted the laboratory supervisor Ph.D Mika Keränen
-      about waste handling and proper safety measures working with methylmercury and mercury(II)chloride. Our lab
-      space has been equipped with the essential first-aid kit, fire extinguisher, eyewash station and emergency
-      shower.
-    </p>
-    <br>
-    <img src="https://static.igem.wiki/teams/4831/wiki/photos/safety/safety.png" width="100%">
-    <br>
-    <h1 style="text-align: center;" id="biosafety">Biosafety</h1>
-    <br>
-    <p>
-      All institutions in Finland that are doing GMO work have to have a GMO permit. This includes comprehensive
-      safety and emergency plans. For the cloning of our genetic constructs, we are using only non-pathogenic E.
-      coli
-      and cyanobacterial strains normally used in laboratory settings. The inactivation of all biological material
-      is
-      ensured by autoclaving all S1 waste and consequent safe disposal. All hazardous chemicals and organisms used
-      in
-      the project are disposed of properly.
-    </p>
-    <br>
-    <p>
-      There may be biosafety concerns associated with the release of genetically modified organisms (GMOs) into the
-      environment. The overexpression of the merA gene, which encodes for a mercury reductase enzyme, may enhance
-      the
-      ability of the organism to resist the toxic effects of mercury. The introduction of the heterologous merB
-      gene,
-      which encodes for a mercury-detoxifying enzyme, may alter the metabolic pathways of the organism. However,
-      these
-      changes are not expected to cause any significant hazards.
-    </p>
-    <br>
-    <p>
-      To minimize the risks of environmental impact on the surrounding ecosystem. We are not planning to release our
-      modified Synechocystis into the environment but envisioned a pump system that will cycle the contaminated
-      water
-      through a bioreactor, in which the engineered Synechocystis cells convert mercury into a less toxic form, that
-      is then collected from the medium. The culture itself is a closed system and uses either natural sunlight or
-      artificial LED lights as energy.
-    </p>
-    <br>
-    <p>
-      Before conducting any activities outside of laboratory containment, institutional approval processes, such as
-      biosafety committee review and permits, would need to be followed, along with compliance with national
-      regulations regarding the handling, transport, and release of GMOs and hazardous substances. More testing
-      would
-      have to be done on mercury removal efficiency and genetic stability of the modified strains. There also should
-      be a toxicity evaluation and an environmental impact assessment to establish correct monitoring protocols.
-    </p>
-    <br>
-    <h1 style="text-align: center;" id="hazardous chemicals">Hazardous chemicals</h1>
-    <br>
-    <p>
-      If hazardous chemicals are not handled properly using the correct safety guidelines there is a risk of one
-      being
-      exposed to these harmful substances. We have printed safety data sheets for all the harmful chemicals we are
-      using to be readily available on a short notice.
-    </p>
-    <br>
-    <h3 style="text-align: center;">Methylmercury and mercuric chloride</h3>
-    <br>
-    <p>
-      Both methylmercury and mercury chloride are highly toxic substances. They can cause severe health effects if
-      not
-      handled properly, including neurological damage and organ dysfunction. There is a risk of contamination if
-      proper aseptic techniques are not followed during handling and culturing of the organisms. Some individuals
-      may
-      have allergies or sensitivities to certain organisms.
-    </p>
-    <br>
-    <p>
-      We consulted the iGEM committee and the laboratory supervisor Ph. D Mika Keränen to inquire about the specific
-      safety measures we need to take regarding the use of methylmercury and mercury(II)chloride. We submitted a
-      check-in form and in addition to the normal safety measures related to the use of mercury, we have a
-      commercial
-      mercury spill kit in case of accidents during the handling of these chemicals.
-    </p>
-    <br>
-    <h3 style="text-align: center;">Other hazardous chemicals</h3>
-    <br>
-    <p>This section is still under work and will be added later. Be free to check back later!</p>
-    <br>
-    <h1 style="text-align: center;" id="references">References and sources</h1>
-    <br>
-    <p>This section is still under work and will be added later. Be free to check back later!</p>
-    <br>
+      <hr id="gap50">
+
+      <div class="page-menu-content" id="content1">
+        <h1 class="text-center section-title">Personal safety</h1>
+        <br>
+        <div class="row no_mar_or_pad">
+          <div class="col-12 col-md-8 no_mar_or_pad">
+            <p>
+              We follow all general laboratory practices and precautions. We use appropriate personal protective gear,
+              which
+              includes nitrile gloves, lab coats, and safety goggles depending on the task. Eating or drinking is not
+              allowed in the lab space. Long hair should be tied in a ponytail or a bun. We wash our hands regularly.
+              Contact lenses are not allowed in the laboratory to minimize further damage in case of eye exposure to a
+              harmful chemical. Everyone who visited our lab space was also made to follow these safety protocols.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/safety/safety-1.png" width="100%">
+          </div>
+        </div>
+        <br>
+        <p>
+          No one is allowed to work in the lab without going through an orientation and safety training which was given
+          to us by the Senior Laboratory Technician Anniina Lepistö at the department of Molecular Plant Biology before
+          the beginning of the laboratory work. This, as well as information acquired during our studies, minimizes the
+          occurrence of lab injuries and common accidents. Our lab space has been equipped with the essential first-aid
+          kit, fire extinguisher, eyewash station and an emergency shower. All work with sensitive and hazardous
+          chemicals has to be done in a fume hood or a laminar hood to maintain a sterile and controlled environment.
+          (Fig.1).
+        </p>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/safety/safety.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 1. Safety elements in our lab space.
+            </span>
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <p>
+          Our laboratory has a waste management system that we must use. All bacterial waste and everything that has
+          been in contact with bacteria or antibiotics (growth medium, pipette tips, etc.) will be disposed of following
+          PharmaCity laboratory guidelines and national GMO legislation. We consulted the laboratory supervisor Ph. D
+          Mika Keränen about waste handling and proper safety measures as well as about working with methylmercury and
+          mercuric(II)chloride.
+        </p>
+      </div>
+
+      <div class="page-menu-content" id="content2">
+        <h1 class="text-center section-title">Biosafety</h1>
+        <br>
+        <div class="row no_mar_or_pad">
+          <div class="col-12 col-md-8 no_mar_or_pad">
+            <p>
+              All institutions in Finland working with Genetically Modified Organisms (GMOs) have to have a GMO permit
+              which includes comprehensive safety and emergency plans. For the cloning of our genetic constructs, we are
+              using only non-pathogenic <span id="cursive">Escherichia coli (E. coli)</span> and cyanobacterial strains
+              normally used in laboratory
+              settings. The inactivation of all biological material is ensured by autoclaving all S1 waste and
+              consequent
+              safe disposal. All hazardous chemicals and organisms used in the project are disposed of properly
+              following
+              the waste handling guidelines set by the Department of Technology.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/safety/safety-2.png" width="100%">
+          </div>
+        </div>
+        <br>
+        <p>
+          The release of GMOs into the environment raises substantial biosafety concerns and discussions amongst
+          stakeholders. For example GMOs can disrupt ecosystems by outcompeting the native species or altering the
+          genetic makeup by spreading to non-GMO populations. This can lead to unforeseen consequences due to genetic
+          modifications which can have far-reaching consequences for biodiversity and ecological stability. The
+          long-term effects of GMO releases remain uncertain, making responsible deployment and monitoring vital.
+          <br><br>
+          Our project prioritizes the responsible use of GMOs which is why we are not releasing our modified
+          <span id="cursive">Synechocystis</span> strains into the environment. The system we envisioned is a
+          photobioreactor in a closed and
+          controlled environment. We recognise the importance of considering physical, chemical and biological
+          biocontamination methods.
+          <br><br>
+          You can learn more on <a href="https://2023.igem.wiki/aboa-turku/implementation">Implementation page</a>!
+          <br><br>
+          Before conducting any activities outside of laboratory containment an approval from the biosafety committee
+          is needed. We would need to be informed and closely follow all national rules regarding the handling,
+          transport, and release of GMOs. More testing would have to be done on mercury removal efficiency and genetic
+          stability of the modified strains. There also should be a toxicity evaluation and an environmental impact
+          assessment to establish correct monitoring protocols.
+        </p>
+      </div>
+
+      <div class="page-menu-content" id="content3">
+        <h1 class="text-center section-title">Hazardous chemicals: Dealing with methylmercury and mercuric(II)chloride</h1>
+        <div class="row no_mar_or_pad">
+          <div class="col-12 col-md-8 no_mar_or_pad">
+            <p>
+              If hazardous chemicals are not handled properly using the correct safety guidelines there is a risk of one
+              being exposed to these harmful substances. We have printed out safety data sheets (SDS) for all the
+              harmful chemicals we are using to be readily available on a short notice. Both methylmercury and
+              mercuric(II)chloride are highly toxic substances. They can cause severe health effects if not handled
+              properly, including neurological damage and organ dysfunction. There is a risk of contamination if proper
+              aseptic techniques are not followed during handling and culturing of the organisms
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/safety/safety-3.png" width="100%">
+          </div>
+        </div>
+        <br>
+        <p>
+          We consulted the iGEM committee and the laboratory supervisor Ph. D Mika Keränen to inquire about the specific
+          safety measures we need to take regarding the use of methylmercury and mercuric(II)chloride. We have a
+          Spilfyter™ Mercury Spill Cleanup Kit in case of accidents during the handling of mercury. Since these
+          chemicals are extremely toxic, contact with it must be avoided by wearing tough protective gloves, safety
+          glasses and a lab coat. The amount used is small so exposure is quite unlikely when working in a fume hood
+          with appropriate protective clothing. We have arranged a fume hood to only be used in our experiments.
+          <br><br>
+          Methylmercury and mercuric(II)chloride will only be used in the smallest amounts possible to carry out the
+          analyses. Every group member will be informed about the risks and told how to avoid them. We will also make
+          sure that everyone working in the department is aware of when and what experiments we are conducting. If
+          methylmercury or mercuric(II)chloride is swallowed, on skin or inhaled, the poison center or a doctor must be
+          called. We have printed out important contacts and other safety protocols that might be needed. In case of
+          skin contact, all contaminated clothing has to be taken off and skin must be rinsed with water. If the
+          chemical gets into the eyes, they have to be rinsed carefully with water for several minutes
+        </p>
+      </div>
+
+    </div>
   </div>
 </div>
 
