@@ -35,25 +35,18 @@ Yellow - #f1d490  (241, 212, 144)
   font-style: normal;
 }
 
-
-/* On Small to Medium sceens */
-@media (min-width: 768px) {
-  .dotext {
-    font-size: 2rem;
-  }
-}
-
 /* Headings */
 
 p {
   color: var(--text-inverted);
-  font-size: larger;
+  font-size: medium;
 }
 
 h1 {
   color: var(--darkBlue);
   font-family: 'hammersmith_oneregular';
   text-transform: uppercase;
+  font-size: x-large;
 }
 
 h2 {
@@ -63,6 +56,7 @@ h2 {
 
 h3 {
   color: var(--violet);
+  font-size: x-large;
 }
 
 h4 {
@@ -202,7 +196,7 @@ li {
   color: var(--darkBlue);
   text-decoration: none;
   font-family: 'hammersmith_oneregular';
-  font-size: 1.2rem;
+  font-size: medium;
 }
 
 .stickybar a:hover {
