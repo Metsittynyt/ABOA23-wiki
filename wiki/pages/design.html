@@ -5,11 +5,456 @@
 {% block title_class %}design-title{% endblock %}
 
 {% block page_content %}
-  
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+
+      <div id="table-of-contents">
+        <div class="accordion" id="Design">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Design">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#overview" onclick="toggleAccordion()">Overview</a></li>
+                    <li><a href="#Literature" onclick="toggleAccordion()">Literature research on mercury detoxification
+                        pathways in <span id="cursive">Synechocystis</span> sp. PCC6803</a></li>
+                    <li><a href="#Reaction" onclick="toggleAccordion()">Reaction mechanisms of mercury degrading
+                        enzymes: MerA and MerB</a>
+                    </li>
+                    <li><a href="#Homologous" onclick="toggleAccordion()">Designing the homologous <span
+                          id="cursive">merA</span> and <span id="cursive">merB</span> genes for enhanced efficiency</a>
+                    </li>
+                    <li><a href="#Plasmid" onclick="toggleAccordion()">Designing the plasmid construct for efficient
+                        gene integration </a></li>
+                    <li><a href="#DNA" onclick="toggleAccordion()">DNA assembly and validation methods for RBS
+                        optimization</a></li>
+                    <li><a href="#Testing" onclick="toggleAccordion()">Testing our modified <span
+                          id="cursive">Synechocystis</span> strains </a></li>
+                    <li><a href="#References" onclick="toggleAccordion()">References</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="overview">
+        <h1 class="text-center section-title">Overview</h1>
+        <br>
+        <p>
+          Our host organism, <span id="cursive">Synechocystis</span> sp. PCC6803, is a photoautotrophic species of
+          cyanobacteria with natural mercury detoxification pathways that inhabits aquatic environments. In this project
+          we designed a new improved methylmercury detoxification system in <span id="cursive">Synechocystis</span>
+          using two mercury degrading enzymes: Mercuric reductase (MerA) and Alkylmercury lyase (MerB). To achieve this,
+          a 7-fragment construct will be assembled with the two genes of interest (<span id="cursive">merA</span> and
+          <span id="cursive">merB</span>) regulated by the same lac-based inducible promoter with a “leaky
+          transcription”. Since there are currently no valid <span id="cursive">in silico</span> tools for selecting
+          RBS’s (ribosomal binding sites) in <span id="cursive">Synechocystis</span> we aim to optimize this system by
+          testing three different RBS’s and also two homologs for each of our genes.
+          <br><br>
+          The different variations of constructs will be assembled with a new Golden Gate based assembly system which
+          offers an efficient way of changing the RBS’s in a simple one-pot reaction. The success of the assembly is
+          confirmed by multiplying the insert in <span id="cursive">E. coli</span> with colony-PCR and separating them
+          by size with gel-electrophoresis. We will then transform our constructs to <span
+            id="cursive">Synechocystis</span> and verify the result with the same method as in <span id="cursive">E.
+            coli</span> before moving on to further mercury experiments. The most promising approach to test our
+          modified constructs with mercury is an experimental setup inspired by team Minnesota 2014 which is based on a
+          qualitative assay on mercury resistance.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="Literature">
+        <h1 class="text-center section-title">Literature research on mercury detoxification pathways in <span
+            id="cursive">Synechocystis</span> sp. PCC6803</h1>
+        <br>
+        <p>
+          The design of our project is supported by thorough and extensive literature research as well as contacting
+          experts around this topic. We chose <span id="cursive">Synechocystis</span> sp. PCC6803, a genus of
+          cyanobacteria, as our model organism for its photosynthetic abilities which makes it self-sustaining and
+          cost-effective. As a photoautotrophic organism it uses light as an energy source and is able to convert carbon
+          dioxide into organic material. Both light and carbon dioxide are readily available for large scale systems.
+          <span id="cursive">Synechocystis</span> naturally inhabits aquatic environments which makes it a well-suited
+          candidate for bioremediation of mercury-contaminated waste water (Franco et al., 2018). Genetic modifications
+          can be engineered to its naturally existing mercury detoxification pathways. In the University of Turku (UTU)
+          there has been a lot of research and experiments using <span id="cursive">Synechocystis</span> so we had a lot
+          of resources and data available for us.
+          <br><br>
+          <span id="cursive">Synechocystis</span> possesses native genes that encode mercury reducing and degrading
+          enzymes, such as MerA. The <span id="cursive">merA</span> -gene codes for mercuric reductase (EC 1.16.1.1)
+          that catalyzes the reduction of toxic ionic mercury (Hg2+) to less volatile and toxic elemental mercury (Hg0).
+          The <span id="cursive">merB</span> -gene is found in Escherichia coli (E. coli) and it codes for alkylmercury
+          lyase (EC 4.99.1.2) that plays a vital role in the degradation of complex organic mercury compounds, such as
+          methylmercury (CH3Hg) (Priyadarshanee et al., 2022). The combined enzyme activities of MerA and MerB and the
+          unique metabolic abilities of <span id="cursive">Synechocystis</span> offer a promising approach to tackling
+          the issue of mercury pollution in waters (Fig. 1). Methylmercury is one of the most commonly occurring forms
+          of mercury bioaccumulation within the aquatic food web (Carrasco et al., 2011).
+        </p>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-1.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 1. Degradation of methylmercury (CH3Hg+) with combined enzyme activities of MerB and MerA.
+            </span>
+          </figcaption>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="Reaction">
+        <h1 class="text-center section-title">Reaction mechanisms of mercury degrading enzymes: MerA and MerB</h1>
+        <br>
+        <p>
+          MerB mediates the first steps of degradation in various organomercurial salts. It catalyzes the protonolysis
+          reaction where a proton (H+) attacks the organic mercury compound, breaks the carbon-mercury bond and leads to
+          the formation of ionic mercury (Hg2+) as well as a respective organic compound. In the case of methylmercury
+          the addition of carbon-mercury bond breaking protons (H+) leads to the formation of methane and ionic mercury
+          (Hg2+). MerA subsequently detoxifies ionic mercury (Hg2+) with the help of a NADPH substrate. (Fig. 2)
+          (Priyadarshanee et al., 2022). With many reactions in heterotrophic organisms, NADPH is often a limiting
+          factor, making the autotrophic <span id="cursive">Synechocystis</span> an optimal candidate to catalyze this
+          reaction.
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-2.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 2. The reaction formulas of MerB (1) and MerA (2).
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          Detailed MerB and MerA enzyme mechanisms may require further research and validation. Based on experimental
+          data and computational calculations, the enzyme mechanism of MerB has been proposed to follow a two-step
+          process where a cysteine residue gives a proton to Asp99. This allows two sulfur-containing groups to interact
+          with the organic mercury compound while Asp99 helps to break the carbon-mercury bond releasing the end
+          product. (Parks et al.,2009).
+          <br><br>
+          MerA is a homodimer with each subunit composed of two domains: nMerA and an active site. nMerA contains two
+          N-terminal cysteine residues (Cys11/Cys14) in charge of receiving and transporting Hg2+ into the active site.
+          The active site contains buried Cys136/Cys141 which form the site of catalysis. On the surface there are two
+          cysteine residues in charge of transporting electrons. The electron transfer happens through NADPH substrate
+          from cytoplasm and FAD cofactor embedded in the active site. (Fig. 3) (Peng et al., 2014) .
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-3.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 3. Enzyme mechanism of the active site of mercuric(II)reductase (MerA, EC 1.16.1.1).
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          1) MerA binds Hg2+ and transports it to the active site by forming different mercury-cysteine adducts.
+          <br><br>
+          2) NADPH transfers a hydride to FAD producing FADH−, which subsequently interacts with Hg2+ in the
+          mercury-cysteine adducts.
+          <br><br>
+          3) Hg0 is released from the cell.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="Homologous">
+        <h1 class="text-center section-title">Designing the homologous <span id="cursive">merA</span> and <span
+            id="cursive">merB</span> genes for enhanced efficiency</h1>
+        <br>
+        <p>
+          Optimizing the most efficient mercury degradation system included finding and testing different homologs for
+          <span id="cursive">merA</span> and <span id="cursive">merB</span> . Homologous genes from different species,
+          despite similarities in their gene sequences, can affect the efficiency in many different ways. Subtle
+          variations can influence gene expression, function, regulation and compatibility with different engineered
+          systems etc.
+          <br><br>
+          The first <span id="cursive">merA</span> was chosen to be from <span id="cursive">Synechocystis</span> and the
+          first <span id="cursive">merB</span> was chosen to be from <span id="cursive">E. coli</span> since they are
+          both native genes in their respective organisms. They offer a secure option for testing our system in both of
+          these host organisms. Genes from <span id="cursive">E. coli</span> are also often compatible with <span
+            id="cursive">Synechocystis</span> and tend to offer reliable results. The other alternatives for both genes
+          were chosen from <span id="cursive">Pseudomonas aeruginosa</span> (<span id="cursive">P. aeruginosa</span>)
+          based on evidence of its potency we found from literature (Hirak et al., 2017). The genes were harmonized
+          using a codon optimization tool “CodonWizard” to enhance the translation of the genes.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="Plasmid">
+        <h1 class="text-center section-title">Designing the plasmid construct for efficient gene integration</h1>
+        <br>
+        <p>
+          Introducing new genes into cyanobacteria requires the assembly of a plasmid construct that serves as a vector
+          transporting and controlling the genes of interest. Plasmids are small circular pieces of DNA acting
+          independently from the chromosomal DNA of the bacterium and they are autonomously replicated during cell
+          division. By modifying the plasmid to carry the genes of interest, we can produce the desired proteins within
+          bacterial cells without the need for integration into the chromosome.
+          <br><br>
+          For the two genes of interest, <span id="cursive">merA</span> and <span id="cursive">merB</span> , we designed
+          a 7-fragment plasmid construct model with the basic components of P0 Plasmid backbone, P1 Promoter, P2 RBS, P3
+          <span id="cursive">merA</span> , P4 RBS, P5 <span id="cursive">merB</span> and P6 Transcription terminator.
+          The plasmid backbone is the main structure of the construct and contains all the necessary elements for
+          replication and maintenance within the host cell. The first phase of protein synthesis, transcription, is
+          initiated by the promoter and it ends with a signal from the terminator. The promoter has an important role of
+          regulating gene expression and in turn the terminator ensures the proper processing and releasing of mRNA.
+          There are two RBS’s separately located before each gene of interest in charge of facilitating translation by
+          allowing the binding of ribosomes to mRNAs. (Fig. 4).
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-4.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 4. The basic model of our 7-fragment construct.
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          The gene elements used in our model are supported by literature research and contacting professionals. We used
+          the same principle and assembly system described by Thiel et al 2019. Apart from the genes of interest, all
+          the gene fragments were chosen from the plasmid library compiled and validated at UTU. The final position of
+          each fragment is determined by their cohesive ends. In our model we used RSF1010 -derived pDF as a plasmid
+          backbone (Nagy et al 2021) and PA1lac0-1/Riboj as a promoter which was located upstream of both <span
+            id="cursive">merA</span> and merB.
+          <br><br>
+          PA1lac0-1/Riboj is a lac-based inducible promoter which means it is not continuously active but it can be
+          turned on with the presence of a specific inducer. The promoter has a “leaky transcription” and is passively
+          around 50% active even without an inducer. IPTG is an efficient non-toxic inducer that has been widely used in
+          <span id="cursive">Synechocystis</span> . In bacteria IPTG mimics a sugar molecule, lactose, binding and
+          preventing Lacl repressor protein from inhibiting the lac-based promoter which initiates the transcription of
+          downstream genes. With this promoter, the bioremediation process can be controlled and induced if needed with
+          the addition of IPTG (Guerrero et al., 2012).
+          <br><br>
+          Unlike with <span id="cursive">E. coli</span>, there are currently no valid <span id="cursive">in
+            silico</span> tools for selecting the most efficient RBS’s for our genes of interest in <span
+            id="cursive">Synechocystis</span> . Therefore, one phase of our experimental work includes testing the
+          constructs with three different RBS’s for each position (P2 and P4): RBS S3, RBS S4 and RBS S5. With these
+          RBS’s we found the most promising evidence of their compatibility and efficiency (Thiel et al 2018). The goal
+          of this experimentation is to optimize the most efficient RBS compatible with this system.
+          <br><br>
+          For optimization, we decided to make different variations of constructs changing between the RBS’s and the
+          gene homologs. We will also make one-gene constructs with a reporter protein like sYFP2 or EFE to see the
+          function and mechanism of each gene separately. (Fig. 5).
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-5.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 5. A simplified model of the different constructs we can assemble. We aim to optimize the best
+              RBS’s and gene homologs using these models. A) two-gene construct with <span id="non-cursive">merA</span>
+              /<span id="non-cursive">merB</span> B) control with sYFP2/EFE C) one-gene construct with sYFP2/<span
+                id="non-cursive">merB</span> D) one-gene construct with merA/EFE.
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          Here you can learn more about the parts we used: <a href="https://2023.igem.wiki/aboa-turku/parts">Parts
+            page</a>
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="DNA">
+        <h1 class="text-center section-title">DNA assembly and validation methods for RBS optimization</h1>
+        <br>
+        <p>
+          After compiling all the necessary DNA fragments in the library, the constructs will be assembled using a
+          Golden Gate based assembly system for RBS optimization. It is an advanced operon-based assembly system that
+          uses type IIs restriction enzymes. With this particular method we have an efficient way of changing the RBS’s
+          separately from the promoter for RBS optimization. We are able to make operons with two genes regulated by the
+          same promoter in a one-pot reaction which allows a simultaneous assembly of multiple gene fragments. We also
+          have a great opportunity to work with professionals who have directly participated in the development of this
+          assembly system. (Fig. 6).
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-6.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 6. Simplified concept of the Golden Gate based assembly system for RBS optimization
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          In <span id="cursive">Synechocystis</span> , the growth and selection period takes around 10-30 days. To
+          maximize efficiency, we decided to first transform the assembled constructs in the bacterial model species
+          <span id="cursive">E. coli</span> DH5α. It has a growth and selection period of only around 12 hours and in
+          which we can more easily amplify the plasmids. The success of the assembly would be confirmed by amplifying
+          the 6-fragment insert in the plasmid backbone with colony-PCR and separating them by size using agarose gel
+          electrophoresis. We would then transform the modified plasmids into <span id="cursive">Synechocystis</span>
+          with antibiotic selection and verify the results again with the same colony PCR and electrophoresis used in
+          <span id="cursive">E. coli</span> before moving on to further testing. (Fig. 7).
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-7.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 7. Design of our lab work from <span id="non-cursive">in silico</span> sequence design to modified
+              <span id="non-cursive">Synechocystis</span> strains.
+            </span>
+          </figcaption>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="Testing">
+        <h1 class="text-center section-title">Testing our modified <span id="cursive">Synechocystis</span> strains </h1>
+        <br>
+        <p>
+          The final test for our modified cyanobacteria is using methylmercury and mercuric (II) chloride to confirm the
+          function of the expressed MerA and MerB enzymes <span id="cursive">in vivo</span>. By adding methylmercury to
+          our modified cyanobacteria we could test the function of the whole system and by adding mercuric chloride we
+          could measure the function of MerA separately. With the one-gene constructs we can also conduct separate
+          experiments with only one gene in mind. The goal is to evaluate the capacity of the generated strains to
+          detoxify organic mercury present in the external medium.
+          <br><br>
+          Our first approach is to contact and collaborate with agencies that have the ability to conduct mercury
+          measurements in Finland. Depending on the measurement method employed, we may need to precipitate specific
+          mercury forms to prevent interference with our analysis. One of the most promising institutions we have
+          engaged with is Suomen ympäristökeskus (SYKE), a renowned Finnish research and expert institution. They
+          perform mercury measurements using CV-ICP-MS (Continuous-Flow Inductively Coupled Plasma Mass Spectrometer)
+          which would be able to give us quantitative results by measuring the concentration of mercury in our modified
+          samples and a wild type control.
+          <br><br>
+          The second approach involves experimenting with mercury resistance in our modified strains. We were inspired
+          by the experimental setup of team Minnesota 2014 (Tarnowski Jessica, 2014) which we modified to work with
+          <span id="cursive">Synechocystis</span> . The experiment in question is a qualitative assay utilizing filter
+          disks containing a controlled amount of methylmercury or mercuric(II)chloride. We anticipate that the growth
+          of our genetically modified <span id="cursive">Synechocystis</span> strains around the disks will outperform
+          that of the control plates based on the hypothesis that enhanced detoxification capabilities should lead to an
+          improved overall growth and survival. (Fig. 8). This method requires careful consideration of the safety risks
+          involved but might not be as time-consuming as working out a collaboration with an external source and it
+          offers more chances for modifications.
+        </p>
+        <br>
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/design/figure-8.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 8. Qualitative mercury resistance disk assay for our modified <span
+                id="non-cursive">Synechocystis</span> strains.
+            </span>
+          </figcaption>
+        </div>
+        <br>
+        <p>
+          One way we can also approach measuring the function of our constructs is to test the protein expression in the
+          modified <span id="cursive">E. coli</span> strains with SDS-PAGE (Sodium Dodecyl Sulfate Polyacrylamide Gel
+          Electrophoresis). SDS-PAGE separates different proteins based on their size so we could analyze the expression
+          of MerA and MerB enzymes compared to the control.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="references">
+        <div class="accordion" id="Design">
+          <div class="accordion-item" id="References">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                References and sources
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#Design">
+              <div class="accordion-body">
+                <p>
+                  Franco, M.W., Mendes, L.A., Windmöller, C.C. et al. Mercury Methylation Capacity and Removal of Hg
+                  Species from Aqueous Medium by Cyanobacteria. Water Air Soil Pollut 229, 127 (2018).
+                  https://doi.org/10.1007/s11270-018-3782-5
+                  <br><br>
+                  Monika Priyadarshanee, Shreosi Chatterjee, Sonalin Rath, Hirak R. Dash, Surajit Das. Cellular and
+                  genetic mechanism of bacterial mercury resistance and their role in biogeochemistry and
+                  bioremediation, Journal of Hazardous Materials, Volume 423, Part A, 2022, 126985, ISSN 0304-3894.
+                  <a
+                    href="https://doi.org/10.1016/j.jhazmat.2021.126985">https://doi.org/10.1016/j.jhazmat.2021.126985</a>.
+                  <br><br>
+                  Carrasco Cabrera, Luis & Benejam, Lluís & Benito, Josep & Bayona, Josep & Díez, Sergi. (2011).
+                  Methylmercury levels and bioaccumulation in the aquatic food web of a highly mercury-contaminated
+                  reservoir. Environment international. 37. 1213-8. 10.1016/j.envint.2011.05.004.
+                  <br><br>
+                  Parks JM, Guo H, Momany C, Liang L, Miller SM, Summers AO, Smith JC. Mechanism of Hg-C protonolysis in
+                  the organomercurial lyase MerB. J Am Chem Soc. 2009 Sep 23;131(37):13278-85. doi: 10.1021/ja9016123.
+                  PMID: 19719173.
+                  <br><br>
+                  Peng Lian, Hao-Bo Guo, Demian Riccardi, Aiping Dong, Jerry M. Parks, Qin Xu, Emil F. Pai, Susan M.
+                  Miller, Dong-Qing Wei, Jeremy C. Smith, and Hong Guo, X-ray Structure of a Hg2+ Complex of Mercuric
+                  Reductase (MerA) and Quantum Mechanical/Molecular Mechanical Study of Hg2+ Transfer between the
+                  C-Terminal and Buried Catalytic Site Cysteine Pairs, Biochemistry 2014 53 (46), 7211-7222
+                  DOI: 10.1021/bi500608u
+                  <br><br>
+                  Hirak R. Dash, Mousumi Sahu, Bibekanand Mallick, Surajit Das, Functional efficiency of MerA protein
+                  among diverse mercury resistant bacteria for efficient use in bioremediation of inorganic mercury,
+                  Biochimie, Volume 142, 2017, Pages 207-215, ISSN 0300-9084,
+                  <a
+                    href="https://doi.org/10.1016/j.biochi.2017.09.016">https://doi.org/10.1016/j.biochi.2017.09.016</a>.
+                  <br><br>
+                  Guerrero, F., Carbonell, V., Cossu, M., Correddu, D. and Jones. P. R. (2012) Ethylene synthesis and
+                  regulated expression of recombinant protein in Synechocystis sp. PCC 6803. PLoS ONE
+                  7(11):e50470. <a
+                    href="http://dx.doi.org/10.1371/journal.pone.0050470">http://dx.doi.org/10.1371/journal.pone.0050470</a>
+                  <br><br>
+                  Thiel, K., Mulaku, E., Dandapani, H., Nagy, C., Aro, E-M., Kallio, P. (2018) Translation efficiency of
+                  heterologous proteins is significantly affected by the genetic context of RBS sequences in engineered
+                  cyanobacterium Synechocystis sp. PCC 6803. Microbial Cell Factories 17(1):34.
+                  <a href="https://doi.org/10.1186/s12934-018-0882-2">https://doi.org/10.1186/s12934-018-0882-2</a>
+                  <br><br>
+                  Thiel K, Patrikainen P, Nagy C, Fitzpatrick D, Pope N, Aro EM, Kallio P. (2019) Redirecting
+                  photosynthetic electron flux in the cyanobacterium Synechocystis sp. PCC 6803 by the deletion of
+                  flavodiiron protein Flv3. Microbial Cell Factories, 18: 189. <a
+                    href="https://doi.org/10.1186/s12934-019-1238-2">https://doi.org/10.1186/s12934-019-1238-2</a>
+                  <br><br>
+                  Nagy, C., Thiel, K., Mulaku, E., Mustila, H., Tamagnini, P., Aro, E-M, Pacheco, C. C., Kallio, P.
+                  (2021) Comparison of alternative integration sites in the chromosome and the native plasmids of the
+                  cyanobacterium Synechocystis sp. PCC 6803 in respect to expression efficiency and copy number.
+                  Microbial Cell Factories 20, 130. <a
+                    href="https://doi.org/10.1186/s12934-021-01622-2">https://doi.org/10.1186/s12934-021-01622-2</a>
+                  <br><br>
+                  Tarnowski Jessica, iGEM Registry of standard biological parts, Part:BBa_K1420000, Mer operon,
+                  biological system found to detoxify organic and inorganic forms of mercury,
+                  iGEM14_Minnesota(2014-10-08), <a
+                    href="http://parts.igem.org/Part:BBa_K1420000">http://parts.igem.org/Part:BBa_K1420000</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+    </div>
+  </div>
 </div>
-  
+
 {% endblock %}
 
 <!-- https://www.tutorialspoint.com/how-to-display-the-chemistry-formula-in-the-html-input -->
