@@ -434,6 +434,7 @@ li {
 /* Header images for every page */
 .title {
   background-repeat: repeat-x;
+  background-position-x: -50px;
   background-size: contain;
   min-height: 200px;
 }
@@ -490,7 +491,7 @@ li {
 }
 
 .safety-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/safety.png');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/safety-2.png');
 }
 
 .experiments-title {
