@@ -219,7 +219,7 @@ li {
 
 #table-of-contents {
   position: sticky;
-  top: 106px;
+  top: 80px;
   z-index: 1;
   width: 100%;
 }
