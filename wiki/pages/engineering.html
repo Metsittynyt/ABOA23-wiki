@@ -6,6 +6,10 @@ engineering design cycle.{% endblock %}
 
 {% block title_class %}engineering-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/engineering.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
 <div class="page_content">
@@ -211,22 +215,23 @@ engineering design cycle.{% endblock %}
           correct. If the bands are not what we were looking for, we get back to the design phase and make another
           iteration of the engineering cycle to get a properly functioning assembly.
         </p>
-        <hr id="gap20">
         <div>
+          <div class="scroll-here"></div>
+        <hr id="gap20">
           <div class="page-menu">
             <button class="page-menu-item active" onclick="showContent(1)" data-content="1">
               <p class="page-menu-icon">1. iteration</p>
             </button>
-            <button class="page-menu-item" onclick="showContent(2)" data-content="2">
+            <button class="page-menu-item" onclick="showContent(2)" data-content="2" id="button2">
               <p class="page-menu-icon">2. iteration</p>
             </button>
-            <button class="page-menu-item" onclick="showContent(3)" data-content="3">
+            <button class="page-menu-item" onclick="showContent(3)" data-content="3" id="button3">
               <p class="page-menu-icon">3. iteration</p>
             </button>
-            <button class="page-menu-item" onclick="showContent(4)" data-content="4">
+            <button class="page-menu-item" onclick="showContent(4)" data-content="4" id="button4">
               <p class="page-menu-icon">4. iteration</p>
             </button>
-            <button class="page-menu-item" onclick="showContent(5)" data-content="5">
+            <button class="page-menu-item" onclick="showContent(5)" data-content="5" id="button5">
               <p class="page-menu-icon">5. iteration</p>
             </button>
           </div>
