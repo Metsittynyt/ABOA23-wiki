@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block title %} New Composite Part {% endblock %}
+{% block lead%} {%endblock %}
+{% block title_class %}composite-title{% endblock %}
+
+{% block page_content %}
+
+<div class="page_content col-12 col-md-10 mx-auto">
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+
+            <div>
+                <p>
+                    As our General Biological Engineering Special Prize our team wanted to choose the New Composite
+                    Part. The decision was driven upon our team’s urge to have an impact on the world around us in
+                    addition to having an impact on the synbio community. Our project MercuLess has a heavy emphasis on
+                    real-life implementation. With whole constructs that can be utilized in real-life applications as
+                    they are, our team can have a practical impact to answer the United Nations’ Sustainable Development
+                    Goals. In the creation of MercuLess, our team created a new composite part using <span
+                        id="cursive">Synechocystis</span> as a host organism to make a sustainable way of methylmercury
+                    bioremediation (Figure 1).
+                    <br><br>
+                    We designed a composition of many new parts for the iGEM community. In all our constructs we built
+                    on a pDF backbone. As our host organism does not yet have <span id="cursive">in silico</span> tools
+                    to optimize the Ribosomal Binding Sites (RBS) for efficient protein translation, we used different
+                    combinations of RBSs ( RBS S3, RBS S4 and RBS S5) in our composite parts to find the most optimal
+                    one (Thiel et al., 2018).
+                    <br><br>
+                    The first RBS of the construct was followed by our gene of interest – <span
+                        id="cursive">merA</span>. One of our genes was a native <span id="cursive">Synechocystis</span>
+                    gene and the other was a homolog from <span id="cursive">Pseudomonas Aeruginosa</span>. In some
+                    composite parts the <span id="cursive">merA</span> gene was replaced by a reporter gene <span
+                        id="cursive">sYFP2</span>. This allowed us to experiment with our genes of interest individually
+                    and also gain some important data of translation efficacy.
+                    <br><br>
+                    To start the translation of our other gene of interest, <span id="cursive">merB</span>, a second RBS
+                    was needed to the composite. These RBS were the same as the previous ones, except they had different
+                    restriction sites. Because <span id="cursive">merB</span> is not a native gene for <span
+                        id="cursive">Synechocystis</span>, the homologs are either from <span id="cursive">Escherichia
+                        coli</span> or <span id="cursive">Pseudomonas Aeruginosa</span>. The <span
+                        id="cursive">merB</span> homolog was followed by a transcription terminator sequence. Just like
+                    for <span id="cursive">merA</span>, we also designed composite parts where the <span
+                        id="cursive">merB</span> gene was replaced by a reporter gene <span
+                        id="cursive">EFE</span>(Ethylene forming enzyme).
+                </p>
+                <br>
+                <div class="image-w-caption" style="width: 100%;">
+                    <img src="https://static.igem.wiki/teams/4831/wiki/photos/composite.png" style="width: 100%;">
+                    <figcaption style="text-align: justify;">
+                        <span id="cursive">
+                            Figure 1. <span id="non-cursive">In silico</span> Golden Gate assembly of our Composite in
+                            SnapGene.
+                            This figure shows one example of our composite assembled <span id="non-cursive">in
+                                silico</span> using SnapGene. From the figure you can spot the overhangs of each
+                            individual part after they have been digested by BbsI and ligated by T7 ligase. From these
+                            parts, fragment 3 and fragment 5 were our genes of interest meaning <span
+                                id="non-cursive">merA</span> and <span id="non-cursive">merB</span>. The pDF backbone
+                            has been cut out of the picture, but it would attached to fragment 1 and fragment 6.
+                            Fragment 1 = PA1lacO-1-RiboJ, Fragment 2 = RBS -S3/ -S4/ -S5, Fragment 3 = <span
+                                id="non-cursive">merA Synechocystis / Pseudomonas Aeruginosa</span>, Fragment 4 = RBS
+                            -S3/ -S4/ -S5, Fragment 5 = <span id="non-cursive">merB Escherichia coli/ Pseudomonas
+                                Aeruginosa</span>, Fragment 6 = Transcription terminator
+                        </span>
+                    </figcaption>
+                </div>
+                <br>
+                <p>
+                    Our composite parts can be seen in its entirety on our 
+                    <a href="https://2023.igem.wiki/aboa-turku/parts">Parts page</a>. To see how these composite parts
+                    were designed, go check our 
+                    <a href="https://2023.igem.wiki/aboa-turku/design">Design page</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
