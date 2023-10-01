@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Plant Synthetic Biology{% endblock %}
 {% block lead %}This award is designed to celebrate exemplary work done in plant synthetic biology.{% endblock %}
 
@@ -7,8 +7,210 @@
 
 {% block page_content %}
 
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+
+      <div id="intro">
+        <p>
+          The most used, sugar requiring chassis in iGEM and molecular biology, <span id="cursive">Escherichia
+            coli</span>, is one of the tools our project, Merculess, used to build constructs. But for our primary
+          chassis we wanted the CO2 utilizing photosynthetic model organism <span id="cursive">Synechocystis</span> sp.
+          PCC 6803. The model organism’s genome is known and many molecular engineering tools have been developed for
+          it, but there is still a lot of research needed. We wanted to promote the research done on it because of the
+          potential this light-driven chassis shows for different renewable applications that utilize CO2 as the primary
+          carbon source. There is a global need for new sustainable biotechnologies and with <span
+            id="cursive">Synechocystis</span> we can fill this need and apply it to many industries.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div id="table-of-contents">
+        <div class="accordion" id="Plant">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Plant">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#special" onclick="toggleAccordion()">Special attributes of <span
+                          id="cursive">Synechocystis</span></a></li>
+                    <li><a href="#engineering" onclick="toggleAccordion()">Engineering the Plant</a></li>
+                  </div>
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#future" onclick="toggleAccordion()">Future of <span
+                          id="cursive">Synechocystis</span></a></li>
+                    <li><a href="#references" onclick="toggleAccordion()">References</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="special">
+        <h1 class="text-center section-title">Special attributes of <span id="cursive">Synechocystis</span></h1>
+        <br>
+        <div class="row no_mar_or_pad">
+          <div class="col-12 col-md-8">
+            <p>
+              <span id="cursive">Synechocystis</span> has many special attributes, most importantly its photosynthetic
+              qualities. This means all the energy needed for growth and metabolism it gets from light and carbon
+              dioxide
+              (CO2). This is a huge advantage because there are plenty of the required primary sources.
+              <br><br>
+              <span id="cursive">Synechocystis</span> has been compared to <span id="cursive">E.Coli</span> as being the
+              model organism of photosynthesis. Therefore, there has been plenty of research done around the chassis.
+              The
+              research has given us the proper tools and protocols to work with. In addition to this, the Department of
+              Molecular Biology at the University of Turku has been doing research on <span
+                id="cursive">Synechocystis</span> for years, so we had the proper infrastructure and knowhow at our
+              hands
+              for this project.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/home-page/synechocystis.png" width="100%">
+          </div>
+          <br><br>
+          <p>
+            Our most important tools when working with <span id="cursive">Synechocystis</span> are knowledge and
+            experience of building constructs with this organism. We had the required knowhow on genetic regulation
+            elements that allowed us to make reasoned decisions and well working constructs. On top of this <span
+              id="cursive">Synechocystis</span> is naturally competent so it has the inherent ability to take up and
+            incorporate foreign DNA into its genome without any special treatment that is usually required.
+            <br><br>
+            In our project, Merculess, we wanted to use <span id="cursive">Synechocystis</span> as our chassis for many
+            reasons. One reason was research done around mercury metabolism in the organism. It is known that <span
+              id="cursive">Synechocystis</span> has a native <span id="cursive">merA</span> gene and mercury-regulators
+            which we utilize (Singh et al., 2019). And most importantly because of its photosynthetic abilities it was
+            the
+            right chassis for us.
+          </p>
+        </div>
+
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="engineering">
+        <h1 class="text-center section-title">Engineering the Plant</h1>
+        <br>
+        <p>
+          Our aim was to modify <span id="cursive">Synechocystis</span> to convert extremely toxic methylmercury into
+          its less toxic elemental form. This would be accomplished by the overexpression of two enzymes closely related
+          to the conversion of methylmercury. We decided to achieve our aim by designing and optimizing a construct for
+          overexpressing both mercuric reductase (MerA) and alkylmercury lyase (MerB). Our genes of interest originated
+          from several different organisms (<span id="cursive">E. Coli</span>, <span id="cursive">Synechocystis</span>
+          and <span id="cursive">Pseudomonas Aeruginosa</span>). The chosen genes could be expressed either individually
+          or together in an operon so that a single construct will express both genes. This allows us the possibility of
+          determining which genes work the most efficiently.
+          <br><br>
+          We built our constructs using a Golden Gate based assembly system that had recently been developed by the
+          Department of Molecular Biology at the University of Turku and already had a library for us to use. This
+          particular system enables the construction of expression plasmids in a single step assembly reaction. The
+          assembly system has been developed specifically for the expression of heterologous genes and its purpose is to
+          make it possible to easily optimize the translation of genes by allowing flexible variation of RBSs, which
+          makes it the right choice for our needs of modularity. This approach enables the building of an efficient
+          expression system of <span id="cursive">merA</span> and <span id="cursive">merB</span> genes with optimized
+          RBSs. There are currently no <span id="cursive">in silico</span> models for the selection of the most
+          efficient RBSs for Synechocystis so we had to find one by trial and error and with help from literature. For
+          our experiments we chose three different RBS sequences that had been found promising. By choosing an inducible
+          promoter, the transcription of the genes and thus the bioremediation process are controllable.
+          <br><br>
+          The goal of our engineering is to give information and tools regarding mercury metabolism of <span
+            id="cursive">Synechocystis</span> and its use as a motor for converting methylmercury into elemental
+          mercury. In addition, the work we did on the Golden Gate based assembly system gives valuable information
+          about its function. This approach creates the possibility of efficient <span id="cursive">merA</span> and
+          <span id="cursive">merB</span> gene expression in <span id="cursive">Synechocystis</span> but in addition lays
+          groundwork for research regarding mercury metabolism.
+          <br><br>
+          More information can be found on our
+          <a href="https://2023.igem.wiki/aboa-turku/engineering">Engineering</a>,
+          <a href="https://2023.igem.wiki/aboa-turku/design">Design</a> and
+          <a href="https://2023.igem.wiki/aboa-turku/parts">Parts pages</a>.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="future">
+        <h1 class="text-center section-title">Future of <span id="cursive">Synechocystis</span></h1>
+        <br>
+        <p>
+          <span id="cursive">Synechocystis</span> is an important photoautotrophic chassis for testing and learning, and
+          will be an important one in the future as well. The special attributes of <span
+            id="cursive">Synechocystis</span> make it a great platform for new renewable solutions, and work as a
+          stepping stone for widening the usage of cyanobacteria. The research done on <span
+            id="cursive">Synechocystis</span> can help expand the host range as the tools developed for it could be used
+          for biotechnological applications that need other cyano strains with more suitable qualities.
+          <br><br>
+          <span id="cursive">Synechocystis sp. PCC 6803</span> strain has been used in previous iGEM projects as well.
+          We collaborated with the iGEM team of
+          <a href="https://2023.igem.wiki/edinburgh/index.html">Edinburgh</a>
+          about using <span id="cursive">Synechocystis</span>. We
+          discussed the potential of our photoautotrophic chassis and in addition for example the time restrictions that
+          the slower growth pace of the autotrophic <span id="cursive">Synechocystis</span> has compared to the
+          heterotrophic E. Coli. With good design <span id="cursive">Synechocystis</span> is a very potential organism
+          for future light-driven projects, also in the scope of iGEM.
+          <br><br>
+          You can read more about our collaboration with Edinburgh team on our
+          <a href="https://2023.igem.wiki/aboa-turku/collaborations">collaborations page</a>.
+          <br><br>
+          New biotechnologies using photoautotrophic microbes are and will be developed for diverse applications. For
+          instance, with our MercuLess truck, we can take part in ensuring clean habitats, ecological balances and the
+          safe use of fish by remediating the mercury contaminated bodies of water with <span
+            id="cursive">Synechocystis</span> whilst using easily available energy sources, light and carbon dioxide.
+          The development from the current situation into a future with different photoautotrophic organism based
+          applications requires wider research, development of infrastructure, time and investments. Still our research,
+          as each one in this field, takes us toward a light-driven future.
+          <br><br>
+          You can read more about our MercuLess truck on our
+          <a href="https://2023.igem.wiki/aboa-turku/implementation">Implementation page</a>.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="references">
+        <div class="accordion" id="Plant">
+          <div class="accordion-item" id="References">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                References and sources
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#Plant">
+              <div class="accordion-body">
+                <p>
+                  Singh, D. K., Lingaswamy, B., Koduru, T. N., Nagu, P. P., & Jogadhenu, P. S. S. (2019). A putative
+                  merR family transcription factor Slr0701 regulates mercury inducible expression of MerA in the
+                  cyanobacterium Synechocystis sp. PCC6803. MicrobiologyOpen, 8(9), e00838.
+                  <a href="https://doi.org/10.1002/mbo3.838https://doi.org/10.1002/mbo3.838">https://doi.org/10.1002/mbo3.838https://doi.org/10.1002/mbo3.838</a>  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 {% endblock %}
