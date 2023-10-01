@@ -496,7 +496,8 @@ li {
 .notebook-title,
 
 .results-title,
-.parts-title {
+.parts-title,
+.composite-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/notebook.png');
 }
 

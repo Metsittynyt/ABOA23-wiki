@@ -1,14 +1,276 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Engineering Success{% endblock %}
-{% block lead %}Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle.{% endblock %}
+{% block lead %}Demonstrate engineering success in a part of your project by going through at least one iteration of the
+engineering design cycle.{% endblock %}
 
 {% block title_class %}engineering-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/engineering.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+
+      <div id="intro">
+        <p>
+          In iGEM, the engineering mindset is in a spotlight to turn scientific research into innovations that promote
+          bioindustry, sustainable solutions and creating something unforeseen. To create optimized and the most
+          efficient
+          solutions the engineering cycle – Design, Build, Test and Learn (DBTL) – is often used as a guideline. To
+          create
+          the most optimized strain of <span id="cursive">Synechocystis</span>, our host organism, there were nested
+          engineering cycles (Figure 1).
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/d-3.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 1. A visualization of the Engineering Process our team went through in the laboratory work process.
+              Within our primary engineering cycle to genetically modify our host organism, the <span
+                id="non-cursive">Synechocystis</span>, we achieved multiple engineering cycles whilst aiming to create
+              optimized constructs in the host.
+            </span>
+          </figcaption>
+        </div>
+      </div>
+
+      <hr id="gap20">
+
+      <div id="table-of-contents">
+        <div class="accordion" id="Engineering">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Engineering">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#intro" onclick="toggleAccordion()">Intro</a></li>
+                    <li><a href="#design" onclick="toggleAccordion()">Design</a></li>
+                    <li><a href="#build" onclick="toggleAccordion()">Build</a></li>
+                  </div>
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#test" onclick="toggleAccordion()">Test</a></li>
+                    <li><a href="#learn" onclick="toggleAccordion()">Learn</a></li>
+                    <li><a href="#DBTL" onclick="toggleAccordion()">DBTL within building our constructs</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="design">
+        <h1 class="text-center section-title">Design</h1>
+        <br>
+        <p>
+          MercuLess in about remediating waters from the toxic methylmercury with the means of synthetic biology. To
+          achieve this we had to find effective genes <span id="cursive">merA</span> and <span id="cursive">merB</span>
+          of the proteins MerA and MerB, respectively, which would work in our host organism <span
+            id="cursive">Synechocystis</span> sp. PCC 6803. The MerB protein is an alkylmercury lyase that separates the
+          mercury from the methyl group creating ionic mercury. The MerA is a mercuric reductase that reduces the ionic
+          mercury into its elemental form. We also had to choose the right ribosomal binding sites (RBS) for our genes
+          of interest but this was not simple. Although <span id="cursive">Synechocystis</span> is a model organism, it
+          is much less known about than for example <span id="cursive">Escherichia coli</span> and required more effort
+          and creativity from our team to find the best choice. Because there are no standard <span id="cursive">in
+            silico</span> models for choosing the right RBSs in <span id="cursive">Synechocystis</span> we had to go
+          with the old trial and error way of engineering. We were also not certain how well the genes would work. Here
+          we saw the possibility for testing two different <span id="cursive">merA</span> and <span
+            id="cursive">merB</span> homologs to find the most suitable one.
+          <br><br>
+          While deciding which homologs to use we had to make sure the genes of interest were compatible to be
+          translated efficiently in <span id="cursive">Synechocystis</span> . This issue was especially relevant since
+          half our genes are from <span id="cursive">Pseudomonas Aeruginosa</span> , a Gram-negative aerobic bacteria,
+          which has a really high guanine-cytosine concentration unlike <span id="cursive">Synechocystis</span> and a
+          whole different codon usage. To tackle this problem, we decided to try codon harmonizing software
+          “CodonWizard”
+          <a href="https://www.sciencedirect.com/science/article/pii/S1046592819301214">(Rehbein et al., 2019)</a>,
+          which matches the codons by their corresponding rarity.
+          <br><br>
+          To measure the performance of our constructs and to help us select the best candidate for the future, we had
+          to design a suitable measuring protocol. Because not much work is done with methylmercury and its measurement,
+          there are no standard protocols for measuring it, especially for <span id="cursive">Synechocystis</span>. Due
+          to this we had to also engineer our measurement system to suit our purposes. We decided to take inspiration
+          from team Minnesota's 2014 project with <span id="cursive">merA</span> and <span id="cursive">merB</span> and
+          their experimental setup to study the activity of our genes of interest, and modified it for our needs. More
+          information on the modification process can be found from our
+          <a href="https://2023.igem.wiki/aboa-turku/design">Design page</a>.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="build">
+        <h1 class="text-center section-title">Build</h1>
+        <br>
+        <p>
+          Because of the need for modularity in our construct design we were stirred into the way of Golden Gate
+          assembly. Fortunately for our team the Department of Molecular Plant Biology at the University of Turku had
+          just finished their new Golden Gate Cloning based assembly system for RBS optimization. This means they
+          already had a library of parts for the assembly, so we only had to design our genes of interest to fit the
+          assembly. We got the opportunity to use their cloning system, which was great because it allowed us to
+          conveniently make multiple different constructs with different RBSs and genes of interest. This assembly
+          system also allowed us to speed up the engineering cycle by studying multiple variables of the same construct
+          simultaneously.
+          <br><br>
+          To find out more about our part design and our final construct with optimized RBS go check our
+          <a href="https://2023.igem.wiki/aboa-turku/parts">Parts page</a>.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="test">
+        <h1 class="text-center section-title">Test</h1>
+        <br>
+        <p>
+          To test the performance of our genetically modified <span id="cursive">Synechocystis</span> the object is to
+          test their efficiency in catalyzing methylmercury into elemental mercury. This is to be done by treating our
+          cells with methylmercury and then measuring the concentration afterwards.
+          <a href="https://2023.igem.wiki/aboa-turku/experiments">(Click here for a more detailed protocol)</a>.
+          To get better certainty of our constructs’ toxicity to the cells, we also measure the oxygen usage
+          of the cells. To get the most optimal result,, the aim is to test different variations of the same construct.
+          <br><br>
+          To get certainty of the proper function of our measurement system the objective is to use a
+          <span id="definition"
+            title="A controlling method that gives us the information of the success when it does not work in given conditions.">negative
+            control</span>.
+          To save time we decided to go for a setup that was fast, affordable and did not require a collaboration with a
+          third party. This was an essential decision, since shipping samples requires a lot of extra time and effort
+          especially because our samples contain methylmercury and are extremely dangerous.
+          <br><br>
+          Our experimental setup needed to prove to us that both of our genes of interest, <span
+            id="cursive">merA</span> and <span id="cursive">merB</span> , had activity. Because our genes are operating
+          under the same promoter, we had to somehow separately measure which changes are caused by <span
+            id="cursive">merA</span> and which by <span id="cursive">merB</span>. To achieve this, we made single gene
+          constructs, where the other gene of interest was replaced with a reporter gene, either <span
+            id="cursive">sYFP2</span> or <span id="cursive">EFE</span> . This way even though we know that <span
+            id="cursive">merA</span> catalyzes the reduction of the ionic mercury and <span id="cursive">merB</span> the
+          cleavage of the methyl group, we can with certainty know what causes what. We will also be treating the cells
+          with methylmercury and mercury chloride separately, to be sure.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="learn">
+        <h1 class="text-center section-title">Learn</h1>
+        <br>
+        <p>
+          To get the most optimal construct to transform methylmercury into elemental mercury in <span
+            id="cursive">Synechocystis</span>, we would iterate the process and learn from all results. In the next
+          iterations the aim is to try other RBSs to see if more efficient dissociation of methylmercury and reduction
+          of the ionic mercury would be achieved. The objective is also to multiply the number of <span
+            id="cursive">merA</span> genes to find out if that would make the reaction more efficient. Also, since there
+          are multiple varieties of <span id="cursive">merA</span> homologs we would test them out and see if any of
+          them would be better than the one we are currently using. On top of these iteration cycles the aim is to test
+          the effects of adding
+          <span id="definition" title="Isopropyl β-D-1-thiogalactopyranoside, a molecular biology reagent">IPTG</span>
+          in our system and studying the effects of different promoters.
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+      <div class="row no_mar_or_pad" id="DBTL">
+        <h1 class="text-center section-title">DBTL within building our constructs</h1>
+        <br>
+        <p>
+          Our laboratory work faced some trouble when trying to assemble our constructs. Although this slowed down our
+          process of measuring the process of turning methylmercury into elemental mercury we got valuable experience of
+          iterating the engineering cycle (Figure 2 a-e).
+          <br><br>
+          <span id="bold">Designing the construct:</span>
+          we designed as good a construct as we were able to with our current knowhow by using the
+          <span id="definition" title="The base of the plasmid, where our genes of interest are added.">pDF
+            backbone</span>.
+          <br><br>
+          <span id="bold">Building the construct:</span>
+          we built the construct carefully with the new Golden Gate inspired assembly method.
+          <br><br>
+          <span id="bold">Testing the construct:</span>
+          we tested if the constructs are transformed into our host organism with antibiotic resistance using an
+          antibiotic, Spectinomycin. We also see that the constructs are correct by amplifying the constructs with PCR
+          and by running an electrophoresis.
+          <br><br>
+          <span id="bold">Learning of the results:</span>
+          when getting the results of the antibiotic selection and the electrophoresis we see if the resulting bands are
+          correct. If the bands are not what we were looking for, we get back to the design phase and make another
+          iteration of the engineering cycle to get a properly functioning assembly.
+        </p>
+        <div>
+          <div class="scroll-here"></div>
+        <hr id="gap20">
+          <div class="page-menu">
+            <button class="page-menu-item active" onclick="showContent(1)" data-content="1">
+              <p class="page-menu-icon">1. iteration</p>
+            </button>
+            <button class="page-menu-item" onclick="showContent(2)" data-content="2" id="button2">
+              <p class="page-menu-icon">2. iteration</p>
+            </button>
+            <button class="page-menu-item" onclick="showContent(3)" data-content="3" id="button3">
+              <p class="page-menu-icon">3. iteration</p>
+            </button>
+            <button class="page-menu-item" onclick="showContent(4)" data-content="4" id="button4">
+              <p class="page-menu-icon">4. iteration</p>
+            </button>
+            <button class="page-menu-item" onclick="showContent(5)" data-content="5" id="button5">
+              <p class="page-menu-icon">5. iteration</p>
+            </button>
+          </div>
+          <hr id="gap20">
+          <div class="page-menu-content" id="content1">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/iteration-1.png" width="100%">
+          </div>
+          <div class="page-menu-content" id="content2">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/iteration-2.png" width="100%">
+          </div>
+          <div class="page-menu-content" id="content3">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/iteration-3.png" width="100%">
+          </div>
+          <div class="page-menu-content" id="content4">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/iteration-4.png" width="100%">
+          </div>
+          <div class="page-menu-content" id="content5">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/engineering/iteration-5.png" width="100%">
+          </div>
+        </div>
+        <p>
+          <span id="cursive">
+            Figure 2. Our engineering cycles on creating the optimized construct visualized. A) The first iteration of
+            our engineering cycle. The goal was to create a seven-part construct including our genes of interest with
+            linear fragments with the new assembly method based on the Golden Gate. B) The second iteration of our
+            engineering cycle. The first cycle was modified by having higher concentrations of the linear fragment to
+            enhance the reaction. C) The third iteration of our engineering cycle. The objective was to achieve creating
+            optimal constructs by using circular fragments subcloned from the linear fragments used in the previous
+            cycle. D) The fourth iteration of our engineering cycle. The goal was to build the constructs by using the
+            modified Golden Gate assembly method but using commercial fragments. E) The fifth iteration of our
+            engineering cycle. Repeating and modifying the previous cycle with new knowledge.
+          </span>
+        </p>
+      </div>
+
+      <hr id="gap20">
+
+    </div>
+  </div>
 </div>
 
 {% endblock %}
