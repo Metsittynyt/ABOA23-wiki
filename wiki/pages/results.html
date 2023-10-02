@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Results{% endblock %}
 {% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
 
@@ -7,8 +7,248 @@
 
 {% block page_content %}
 
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-8 mx-auto" style="text-align: justify;">
+
+      <div id="results">
+        <p>
+          Our project aimed to create a bioremediation tool to purify mercury-contaminated waters using cyanobacteria.
+          The design of our detoxification system is based on two genes, <span id="cursive">merA</span> and <span
+            id="cursive">merB</span>, which code for mercury degrading enzymes. First we aimed to assemble plasmid
+          constructs with these genes of interest that we could then transform to <span id="cursive">Escherichia coli
+            (E. coli)</span>. After confirming the success of the assembly, we would transform them to a naturally
+          competent genus of cyanobacteria, <span id="cursive">Synechocystis</span> sp. PCC 6803. The modified <span
+            id="cursive">Synechocystis</span> sp. PCC 6803 strains would then be tested for their ability to resist and
+          detoxify organic mercury compounds. This text will discuss our lab results and achievements.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Submitting the Project safety form</h3>
+        <br>
+        <p>
+          After careful evaluation of the safety protocols needed for our project and that our activities were
+          compatible with iGEM regulations, we filled the Project safety form which was submitted by our Principal
+          Investigator.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Acquiring a lab space</h3>
+        <br>
+        <p>
+          Our team acquired a lab space from the Department of Life Technologies in the University of Turku. We went
+          through an orientation and safety training arranged by the department before beginning lab work.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Selecting the target genes for the project</h3>
+        <br>
+        <p>
+          As candidate expression targets for the project, we chose to use two <span id="cursive">merA</span> genes: one
+          native gene from <span id="cursive">Synechocystis</span> and the other from <span id="cursive">Pseudomonas
+            aeruginosa</span>. As <span id="cursive">merB</span> genes we chose to use gene homologs from <span
+            id="cursive">E. coli</span> and <span id="cursive">P. aeruginosa</span>.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Choosing the expression host</h3>
+        <br>
+        <p>
+          We selected the photoautotrophic model organism, a genus of cyanobacteria, <span
+            id="cursive">Synechocystis</span> sp. PCC 6803 as the expression host for our project since we wanted to
+          create a sustainable bioremediation tool that can produce its own organic compounds using light and carbon
+          dioxide readily available for large-scale systems.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Selecting the construct assembly platform</h3>
+        <br>
+        <p>
+          An experimental Golden Gate based assembly system developed specifically for translation-level optimization of
+          heterologous genes and operons in <span id="cursive">Synechocystis</span> sp. PCC 6803 was selected for
+          building the expression constructs.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Designing the expression system</h3>
+        <br>
+        <p>
+          An autonomous replicative expression vector pDF with an IPTG-inducible lac-promoter variant was selected as
+          the expression construct. The specific translational control elements, ribosomal binding sites (RBS), to be
+          fused with <span id="cursive">merA</span> and <span id="cursive">merB</span> were selected based on the
+          article by Thiel et al. (2018). We used three different RBS’s (RBS S3, RBS S4 and RBS S5) for P2 and P4
+          positions in our plasmids. We designed a plasmid construct containing seven fragments: P0 pDF backbone, P1
+          promoter, P2 RBS, P3 <span id="cursive">merA</span>, P4 RBS, P5 <span id="cursive">merB</span> and P6
+          transcription terminator (Fig. 1). In the control assemblies, we used reporter genes <span
+            id="cursive">EFE</span> and <span id="cursive">sYFP2</span> instead of the <span id="cursive">merA</span>
+          and <span id="cursive">merB</span> genes and we also made some assemblies with <span id="cursive">merA</span>
+          or <span id="cursive">merB</span> with <span id="cursive">EFE</span> or id="cursive">sYFP2</span>.
+        </p>
+        <br>
+        <!-- Figure 1. -->
+        <br>
+        <h3 class="text-center section-title">Modifying the target genes for the assembly</h3>
+        <br>
+        <p>
+          The target gene sequences were codon harmonized for <span id="cursive">Synechocystis</span> sp. PCC 6803. We
+          also modified the gene sequences to be compatible with the modified Golden Gate assembly system by removing
+          internal BbsI restriction sites and introducing site-specific flanks.The sequences were also checked for no
+          BsaI or SapI restriction sites to be compatible with iGEM systems.
+        </p>
+        <br>
+        <h3 class="text-center section-title"></h3>
+        <br>
+        <p>
+
+        </p>
+        <br>
+        <h3 class="text-center section-title">Confirming the design by <span id="cursive">in silico</span> assembly</h3>
+        <br>
+        <p>
+          The intercompatibility of the designed genetic fragments was verified <span id="cursive">in silico</span> by
+          assembling the fragments into expression plasmids in different combinations (Fig. 2). The assembly was tested
+          with the different RBS elements in one-gene and two-gene constructs using <span id="cursive">merA</span>,
+          <span id="cursive">merB</span>, and a control reporter gene id="cursive">sYFP2</span>.
+        </p>
+        <br>
+        <!-- Figure 2. -->
+        <br>
+        <h3 class="text-center section-title">Preparing the genetic element library</h3>
+        <br>
+        <p>
+          We completed a part library consisting of all the genetic elements (apart from <span id="cursive">merA</span>
+          and <span id="cursive">merB</span>) needed for the assembly by amplifying the respective pre-existing
+          constructs in <span id="cursive">E. coli</span>. The plasmid minipreps and the respective <span
+            id="cursive">E. coli</span> glycerol preps were indexed in an electronic library designated for our team,
+          and stored at -80 °C for later use.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Ordering <span id="cursive">merA</span> and <span id="cursive">merB</span>
+          as synthetic fragments</h3>
+        <br>
+        <p>
+          The designed <span id="cursive">merA</span> genes (<span id="cursive">Synechocystis</span> and <span
+            id="cursive">P. aeruginosa</span>) and <span id="cursive">merB</span> genes (<span id="cursive">E.
+            coli</span> and <span id="cursive">P. aeruginosa</span>) were first ordered as synthetic linear gene
+          fragments.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Testing the assembly system using the ordered linear gene fragments</h3>
+        <br>
+        <p>
+          We first evaluated the construct assembly for <span id="cursive">merA-merB</span> operons using ordered linear
+          <span id="cursive">merA</span> and <span id="cursive">merB</span> fragments. Control reactions with
+          plasmid-based reporter genes id="cursive">sYFP2</span> and <span id="cursive">EFE</span> were successful, but
+          the <span id="cursive">merA-merB</span> reactions did not yield positive clones. (Fig. 3).
+        </p>
+        <br>
+        <!-- Figure 3. -->
+        <br>
+        <h3 class="text-center section-title">Testing the assembly system using PCR-amplified linear gene fragments</h3>
+        <br>
+        <p>
+          To increase the concentration of the <span id="cursive">merA</span> and <span id="cursive">merB</span>
+          fragments in the assembly, we amplified the genes with PCR using primers designed for this specific purpose.
+          Both the control reactions with plasmid-based reporter genes and the <span id="cursive">merA-merB</span>
+          plasmid constructs were unsuccessful (Fig. 4).
+        </p>
+        <br>
+        <!-- Figure 4. -->
+        <br>
+        <h3 class="text-center section-title">Ordering <span id="cursive">merA</span> and <span id="cursive">merB</span>
+          as plasmid-based gene fragments</h3>
+        <br>
+        <p>
+          Since we could not produce the designed <span id="cursive">merA-merB</span> plasmid constructs using linear
+          gene fragments, we ordered the genes in plasmid vectors.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Testing the assembly with plasmid-based gene fragments </h3>
+        <br>
+        <p>
+          We performed the assembly reaction with different combinations of the ordered <span id="cursive">merA</span>
+          and <span id="cursive">merB</span> genes that were already in plasmids. We did not get positive PCR results
+          for the <span id="cursive">merA</span> and <span id="cursive">merB</span> containing plasmid clones although
+          the transformation results were promising (Fig. 6, 7).
+        </p>
+        <br>
+        <!-- Figure 6, 7 -->
+      </div>
+
+      <hr id="gap50">
+
+      <div id="future">
+        <h1 class="text-center section-title">Planning future experiments</h1>
+        <h3 class="text-center section-title">Confirming successful assembly of plasmid constructs</h3>
+        <br>
+        <p>
+          Although we did not have time to assemble working <span id="cursive">merA-merB</span> plasmid constructs, we
+          planned out our next experiments which we would have performed after successful assembly. First, we would have
+          confirmed the obtained <span id="cursive">E. coli</span> clones using colony PCR and SDS-PAGE analysis.
+          Successful assembly of <span id="cursive">sYFP2-merA</span> reporter constructs would have been verified by
+          fluorescence analysis. After that, we would have deposited the verified <span id="cursive">E. coli</span>
+          clones in our library.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Transforming the verified expression constructs in <span
+            id="cursive">Synechocystis</span> sp. PCC 6803</h3>
+        <br>
+        <p>
+          After extracting the assembled plasmids from the <span id="cursive">E. coli</span> clones, we would have
+          transformed <span id="cursive">Synechocystis</span> sp. PCC 6803 with the assembled plasmids containing the
+          <span id="cursive">merA</span> and/or <span id="cursive">merB</span> genes. Using antibiotic selection, we
+          would have chosen antibiotic-resistant colonies and later also confirmed that they contain the desired plasmid
+          constructs. After the confirmation, we would have deposited the verified cyanobacteria expression strains in
+          our library.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Analysis of the cyanobacterial expression strains</h3>
+        <br>
+        <p>
+          To test the function of the <span id="cursive">Synechocystis</span> sp. PCC 6803 cell strains that had been
+          transformed with <span id="cursive">merA</span> and <span id="cursive">merB</span> genes, our goal was to
+          perform qualitative and quantitative analysis on the expression strains. We would have compared <span
+            id="cursive">merA-merB</span> constructs and constructs with only <span id="cursive">merA</span> or <span
+            id="cursive">merB</span>. Different gene homologs and RBS would also have been compared. First, we would
+          have performed methylmercury and mercury(II) chloride resistance experiments on the modified cyanobacteria to
+          indirectly get information about the function of MerA and MerB proteins. We could also have used proteomics to
+          show that the MerA and MerB proteins are present in the expression strains.
+          <br><br>
+          We also contacted SYKE (FInnish Environment Institute) and Ruokavirasto (Finnish Food Authority) to determine
+          if quantitative mercury analysis using ICP-MS would be possible. With ICP-MS, we would have measured the
+          changes in methylmercury and mercury ion concentrations in different cell cultures. This would have required
+          preprocessing of the samples since ICP-MS only can detect the total concentration of mercury.
+          <br><br>
+          Later, the constructs could additionally be tested with real contaminated water to see how the expression
+          strains function in a biologically relevant environment. After the analytical steps and comparison, the
+          expression strains could have been optimized and then analyzed again. Our final implementation plan is to
+          build a MercuLess-truck but before it is possible, many additional steps are needed after creating a
+          functioning cyanobacteria expression strain.
+        </p>
+        <br>
+        <h3 class="text-center section-title">Discussion</h3>
+        <br>
+        <p>
+          Despite careful construct design, the construct assembly turned out to be difficult to implement. Our
+          transformation and antibiotic selection results of the last assembly indicated that the transformed colonies
+          had plasmid constructs inside them but our colony-PCR results were inconclusive. Therefore, it is impossible
+          to draw reliable conclusions of the last, and also most promising, assembly results. More time would be needed
+          to perform the assembly reactions again and proceed to analytical steps in making a <span
+            id="cursive">merA-merB</span> expression strain of <span id="cursive">Synechocystis</span> sp PCC 6803.
+          <br><br>
+          Since our transformation and antibiotic selection, as seen in the plates (Fig.6), were successful, we can
+          safely presume that leading up to the colony-pcr all the reagents and conditions were accurate. We can see
+          from the lack of colonies in the control plate B that the antibiotic selection worked and a couple colonies in
+          the backbone plate A indicates that there is only little background. All of our agarose gel-electrophoresis
+          results had a successful positive control which shows that our reaction setup and the reagents used were
+          correct. Therefore the issue may be specific to e.g primers used in the colony-PCR or a part of the construct
+          we were trying to assemble. More experimentation is needed before we can pinpoint the exact issue.
+          <br><br>
+          Since we did not have enough time to assemble and test the function of the desired <span
+            id="cursive">merA-merB</span> constructs, there are good opportunities for future research and iGEM teams to
+          continue studying the opportunities of the use of mercury modifying genes in cyanobacteria. We believe that
+          our cyanobacteria-based system is promising and since cyanobacteria are photoautotrophic, the system has
+          potential to become a sustainable bioremediation tool needed for environmental protection.
+        </p>
+        <br>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 {% endblock %}
