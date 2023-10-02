@@ -5,6 +5,10 @@
 
 {% block title_class %}results-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/results.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
 
 <div class="page_content">
@@ -23,6 +27,7 @@
           detoxify organic mercury compounds. This text will discuss our lab results and achievements.
         </p>
         <br>
+
         <h3 class="text-center section-title">Submitting the Project safety form</h3>
         <br>
         <p>
@@ -31,6 +36,7 @@
           Investigator.
         </p>
         <br>
+
         <h3 class="text-center section-title">Acquiring a lab space</h3>
         <br>
         <p>
@@ -38,6 +44,7 @@
           through an orientation and safety training arranged by the department before beginning lab work.
         </p>
         <br>
+
         <h3 class="text-center section-title">Selecting the target genes for the project</h3>
         <br>
         <p>
@@ -47,6 +54,7 @@
             id="cursive">E. coli</span> and <span id="cursive">P. aeruginosa</span>.
         </p>
         <br>
+
         <h3 class="text-center section-title">Choosing the expression host</h3>
         <br>
         <p>
@@ -56,6 +64,7 @@
           dioxide readily available for large-scale systems.
         </p>
         <br>
+
         <h3 class="text-center section-title">Selecting the construct assembly platform</h3>
         <br>
         <p>
@@ -64,6 +73,7 @@
           building the expression constructs.
         </p>
         <br>
+
         <h3 class="text-center section-title">Designing the expression system</h3>
         <br>
         <p>
@@ -80,7 +90,22 @@
         </p>
         <br>
         <!-- Figure 1. -->
+        <div class="image-w-caption" style="width: 100%;">
+          <div class="image-grid">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure1-a.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure1-b.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure1-c.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure1-d.jpg" style="width: 100%;">
+          </div>
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 1. Plasmid maps for our constructs using P2 RBS S3 and P4 RBS S5 for our RBS’s: A) sYFP2/EFE B)
+              merA/EFE C) sYFP2/merB D) merA/merB
+            </span>
+          </figcaption>
+        </div>
         <br>
+
         <h3 class="text-center section-title">Modifying the target genes for the assembly</h3>
         <br>
         <p>
@@ -90,12 +115,7 @@
           BsaI or SapI restriction sites to be compatible with iGEM systems.
         </p>
         <br>
-        <h3 class="text-center section-title"></h3>
-        <br>
-        <p>
 
-        </p>
-        <br>
         <h3 class="text-center section-title">Confirming the design by <span id="cursive">in silico</span> assembly</h3>
         <br>
         <p>
@@ -106,7 +126,19 @@
         </p>
         <br>
         <!-- Figure 2. -->
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure2.jpg" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 2. The expression plasmid was assembled <span id="non-cursive">in silico</span> using SnapGene. The
+              backbone (pDF) is cut out of the figure. Our target genes were designed to fit into positions 3 and 5,
+              with the promoter in position 1, RBS’s in positions 2 and 4, and the transcription terminator in position
+              6.
+            </span>
+          </figcaption>
+        </div>
         <br>
+
         <h3 class="text-center section-title">Preparing the genetic element library</h3>
         <br>
         <p>
@@ -117,6 +149,7 @@
           and stored at -80 °C for later use.
         </p>
         <br>
+
         <h3 class="text-center section-title">Ordering <span id="cursive">merA</span> and <span id="cursive">merB</span>
           as synthetic fragments</h3>
         <br>
@@ -127,6 +160,7 @@
           fragments.
         </p>
         <br>
+
         <h3 class="text-center section-title">Testing the assembly system using the ordered linear gene fragments</h3>
         <br>
         <p>
@@ -137,7 +171,26 @@
         </p>
         <br>
         <!-- Figure 3. -->
+        <div class="image-w-caption" style="width: 100%;">
+          <div class="image-grid">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure3-a.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure3-b.jpg" style="width: 100%;">
+          </div>
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 3. 1% standard agarose-gel analysis of the <span id="cursive">sYFP2/EFE</span>, backbone and <span
+                id="non-cursive">merA-merB</span> constructs using linear gene fragments. Quick-Load 1 kb Extend DNA
+              Ladder was used as a marker (sample M). For the RBS’s we used P2 RBS S3 and P4 RBS S5. A) Sample 1
+              contains a positive control with <span id="cursive">YFP/EFE</span>, sample 2 contains only the backbone
+              and sample 3 contains the negative control with water. Samples 4-14 are the <span
+                id="cursive">sYFP2/EFE</span> constructs and samples 15-22 are backbone samples. B) Sample 1 contains
+              only backbone and sample 2 the negative control. Samples 3-19 are the <span
+                id="non-cursive">merA-merB</span> constructs and samples 20-23 the backbone.
+            </span>
+          </figcaption>
+        </div>
         <br>
+
         <h3 class="text-center section-title">Testing the assembly system using PCR-amplified linear gene fragments</h3>
         <br>
         <p>
@@ -148,7 +201,24 @@
         </p>
         <br>
         <!-- Figure 4. -->
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure4.jpg" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 4. 1% standard agarose-gel analysis of the <span id="non-cursive">merA-merB</span> constructs with
+              PCR-amplified linear genes. NEB Quick-Load 1 kb Extend DNA Ladder was used as a marker (sample M) in the A
+              and B gels and NEB Quick-Load 1 kb Plus DNA Ladder in the C and D gels (sample M). A) Sample 1 was the
+              positive control with <span id="cursive">YFP/EFE</span>, sample 2 only the backbone and sample 3 a
+              negative control with water. C) Sample 1 was a negative control with water, sample 2 only the backbone and
+              sample 3 the positive control with <span id="cursive">YFP/EFE</span>. Samples in the A and B gels are
+              PCR-amplified linear genes and in the C and D gels samples were more concentrated before PCR. All of the
+              samples except the controls contain <span id="non-cursive">merA-merB</span> constructs with P2 RBS S3 and
+              P4 RBS S5.
+            </span>
+          </figcaption>
+        </div>
         <br>
+
         <h3 class="text-center section-title">Ordering <span id="cursive">merA</span> and <span id="cursive">merB</span>
           as plasmid-based gene fragments</h3>
         <br>
@@ -157,6 +227,7 @@
           gene fragments, we ordered the genes in plasmid vectors.
         </p>
         <br>
+
         <h3 class="text-center section-title">Testing the assembly with plasmid-based gene fragments </h3>
         <br>
         <p>
@@ -167,6 +238,53 @@
         </p>
         <br>
         <!-- Figure 6, 7 -->
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure6.jpg" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 6. Transformation results of construct assemblies. The constructs contained: A) the pDF backgone B)
+              the part of expression plasmids that do not contain the pDF backbone but an insert consisting of 9
+              fragments C) <span id="non-cursive">merA</span> from <span id="non-cursive">Synechocystis</span> and <span
+                id="non-cursive">merB</span> from <span id="non-cursive">E. coli</span> D) <span
+                id="non-cursive">merA</span> from <span id="non-cursive">Synechocystis</span> and <span
+                id="non-cursive">EFE</span> E) <span id="non-cursive">merB</span> from <span id="non-cursive">E.
+                coli</span> and id="non-cursive">sYFP2</span> F) id="non-cursive">sYFP2</span> and <span
+              id="non-cursive">EFE</span>.
+            </span>
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <div class="image-grid">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure7-a.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure7-b.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure7-c.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure7-d.jpg" style="width: 100%;">
+            <img src="https://static.igem.wiki/teams/4831/wiki/photos/results/figure7-e.jpg" style="width: 100%;">
+          </div>
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 7. 1% standard agarose gel with plasmid-based gene fragments. NEB Quick-Load 1 kb Plus DNA Ladder
+              was used as a marker (sample M). A) sample 1 was the positive control (<span id="cursive">YFP/EFE</span>),
+              sample 2 only the backbone and sample 3 the negative control with water. Samples 4-7 were <span
+                id="cursive">merA(P)/EFE</span> constructs with P2 RBS S3 and P4 RBS S4, samples 8-15 <span
+                id="cursive">merA(S)/merB(P)</span> constructs with P2 RBS S3 and P4 RBS S4 and samples 16-24 <span
+                id="cursive">merA(S)/merB(P)</span> constructs with P2 RBS S3 and P4 RBS S4. B) Samples 1-8 were <span
+                id="cursive">merA(P)/merB(P)</span> constructs with P2 RBS S3 and P4 RBS S4, samples 9-16 were <span
+                id="cursive">merA(P)/merB(P)</span> constructs with P2 RBS S4 and P4 RBS S3 and samples 17-24 were <span
+                id="cursive">sYFP2/merB</span> constructs with P2 RBS S3 and P4 RBS S3. C) Samples 1-8 were <span
+                id="cursive">sYFP2/merB(P)</span> constructs with P2 RBS S3 and P4 RBS S4, samples 9-16 were <span
+                id="cursive">merA(S)/EFE</span> constructs with P2 RBS S3 and P4 RBS S5 and samples 17-24 <span
+                id="cursive">sYFP2/merB(P)</span> constructs with P2 RBS S3 and P4 RBS S3. D) Sample 1 was only
+              backbone, sample 2 a negative control with water and sample 3 the positive control with a 9-fragment
+              construct. For the RBS’s we used P2 RBS S3 and P4 RBS S5. Samples 4-15 were <span
+                id="cursive">merA(S)/merB(E)</span> constructs and samples were 16-24 <span
+                id="cursive">merA(S)/EFE</span>. E) For the RBS’s we used P2 RBS S3 and P4 RBS S5. Samples 1-3 were
+              <span id="cursive">merA(S)/merB(E)</span> constructs, samples 4-14 were <span
+                id="cursive">sYFP2/merB(E)</span> and samples 15-24 were <span id="cursive">sYFP2/EFE</span> constructs.
+            </span>
+          </figcaption>
+        </div>
       </div>
 
       <hr id="gap50">
