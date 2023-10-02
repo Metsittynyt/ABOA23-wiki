@@ -1,0 +1,20 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.image-grid#figure7 {
+    grid-template-columns: repeat(4, auto);
+    
+}
+
+.image-grid#figure7 img {
+    grid-column: span 2;
+}
+
+
+.image-grid#figure7 img.last {
+    grid-column: 2 / span 2;
+}
