@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Experiments{% endblock %}
 {% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
 
@@ -7,8 +7,285 @@
 
 {% block page_content %}
 
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto" style="text-align: justify;">
+
+      <div id="intro">
+        <p>
+          No scientific progress can be achieved without experimenting. We have begun the experiments on the first days
+          of June 2023 by using protocols we have received from different sources e.g. professors and the internet. Well
+          planned is half done, so we seek to plan and execute our plans with care every step of the way. All
+          experiments are carried out taking different safety aspects into account.
+          <br><br>
+          In our lab experiments, our goal was to assemble plasmid constructs with <span id="cursive">merA</span> and
+          <span id="cursive">merB</span> genes using a Golden Gate inspired method. The plasmid construct that we
+          designed included the following fragments: P0 pDF backbone, P1 promoter, P2 RBS, P3 <span
+            id="cursive">merA</span> , P4 RBS, P5 <span id="cursive">merB</span> and P6 terminator. The construct parts,
+          except from <span id="cursive">merA</span> and <span id="cursive">merB</span> genes, were extracted from
+          existing <span id="cursive">Eschericia coli</span> cultures. After successful assembly we will transform the
+          constructs firstly to <span id="cursive">E. coli</span> and then to <span id="cursive">Synechocystis</span>
+          sp. PCC 6803 cells.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="table-of-contents">
+        <div class="accordion" id="Experiments">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Experiments">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#construct part" onclick="toggleAccordion()">Construct part extraction from <span
+                          id="cursive">E. coli</span> cultures</a></li>
+                    <li><a href="#preparing" onclick="toggleAccordion()">Preparing the construct assembly</a></li>
+                    <li><a href="#construct assemblies" onclick="toggleAccordion()">Construct assemblies and
+                        screening</a>
+                    </li>
+                    <li><a href="#growing" onclick="toggleAccordion()">Growing <span
+                          id="cursive">Synechocystis</span></a>
+                    </li>
+                    <li><a href="#transformation" onclick="toggleAccordion()"><span id="cursive">Synechocystis</span>
+                        transformation and screening (future experiments)</a></li>
+                    <li><a href="#mercury" onclick="toggleAccordion()">Mercury experiments (future experiments)</a></li>
+                    <li><a href="#references" onclick="toggleAccordion()">References</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="construct part">
+        <h1 class="text-center section-title">Construct part extraction from <span id="cursive">E. coli</span> cultures
+        </h1>
+        <h3 class="text-center subtitle">Growing <span id="cursive">E. coli</span> cultures for extracting construct
+          parts</h3>
+        <p>
+          Cultures for all gene fragments from the library were made: P0 backbone, P1 promoter, P2 RBS S3, P2 RBS S4, P3
+          sYFP2, P4 RBS S3, P4 RBS S4, P4 RBS S5, P5 EFE and P6 terminator. Antibiotic selection was conducted with
+          spectinomycin and ampicillin.
+        </p>
+        <h3 class="text-center subtitle">Preparing glycerol samples of construct part <span id="cursive">E. coli</span>
+          strains</h3>
+        <p>
+          Glycerol preps were made from the <span id="cursive">E. coli</span> cultures. The samples were placed in the
+          freezer (-80°C) for later use.
+        </p>
+        <h3 class="text-center subtitle">Making plasmid preparations of <span id="cursive">E. coli</span> cultures </h3>
+        <p>
+          Plasmid preparations were made from <span id="cursive">E. coli</span> cultures using either the Monarch
+          Plasmid Miniprep Kit (NEB) or Qiagen Midiprep kit (pDF and promoter) following the protocols provided by the
+          manufacturers.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="preparing">
+        <h1 class="text-center section-title">Preparing the construct assembly</h1>
+        <h3 class="text-center subtitle">Preparing competent <span id="cursive">E. coli</span> cells for transformation
+        </h3>
+        <p>
+          Competent cells were prepared for transformation by making a culture with inoculated DH5α <span
+            id="cursive">E. coli</span> cells. The culture was centrifuged, the pellet resuspended with CaCl₂ and stored
+          in the freezer (-80°C) for later use.
+        </p>
+        <h3 class="text-center subtitle">Preparing commercial genes</h3>
+        <p>
+          We ordered the <span id="cursive">merA</span> (from <span id="cursive">Synechocystis</span> and <span
+            id="cursive">Pseudomonas aeruginosa</span>) and <span id="cursive">merB</span> genes (<span id="cursive">E.
+            coli</span> and <span id="cursive">Pseudomonas aeruginosa</span>) from IDT and Twist. The genes were
+          prepared following the instructions provided by the manufacturers.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="construct assemblies">
+        <h1 class="text-center section-title">Construct assemblies and screening</h1>
+        <h3 class="text-center subtitle">Modified Golden Gate assembly </h3>
+        <p>
+          In our experiments we used a modified Golden Gate assembly to create plasmid constructs with different
+          combinations of our <span id="cursive">merA</span> and <span id="cursive">merB</span> genes and different
+          ribosome binding sites (RBS). We made several assemblies with this one-pot Golden Gate reaction with all the
+          fragments in a single tube in order to construct several complete plasmids simultaneously. The general
+          structure of our plasmids was as follows: starting with a plasmid backbone, then a promoter at position 1, RBS
+          at position 2, one of our merA homologs at position 3, another RBS at position 4, one of our merB homologs at
+          position 5 and a transcription terminator at position 6.
+          <br><br>
+          For each assembly, we also prepared positive controls by replacing our genes of interest with <span
+            id="cursive">sYFP2</span> and <span id="cursive">EFE</span>. Negative controls were also prepared by using
+          only the plasmid backbone. Later we also tried creating assemblies with only one gene of interest, while the
+          other was replaced with either <span id="cursive">sYFP2</span> or <span id="cursive">EFE</span> depending on
+          the position of the replaced gene.
+          <br><br>
+          For the assembly reaction, two mastermixes were prepared: a reagent mastermix with all the necessary PCR
+          reagents and a fragment mastermix. The fragment mastermix was prepared with our genes of interest, RBSs,
+          promoter, transcription terminator and plasmid backbone. The genes and ribosome binding sites were different
+          in each assembly reaction and the amount of each varied between assemblies due to different concentrations. A
+          digestion ligation cycle (RecBCD) was run on the samples.
+        </p>
+        <h3 class="text-center subtitle">Heat-shock transformation (<span id="cursive">E. coli</span> )</h3>
+        <p>
+          PCR samples were transformed into the competent DH5α <span id="cursive">E. coli</span> cells using heat-shock.
+          DNA-cell samples are briefly exposed to a high-temperature and then immediately placed back on ice. This
+          method is based on the principle of thermal stress which makes the bacteria more likely to accept foreign DNA.
+          The control included a plate with only the backbone as well as a plate with everything else except backbone
+          verifying the success of transformation.
+        </p>
+        <h3 class="text-center subtitle">Colony screening by PCR (<span id="cursive">E. coli</span> )</h3>
+        <p>
+          After a successful transformation the possibility of positive results were high. To verify that our assembly
+          had worked and that we had successfully constructed modified plasmids, we did colony screening by PCR. The
+          forward primer in the PCR binds towards the end of the promoter and the reverse primer to the other end of the
+          pDF vector. This means the PCR covers the entire length of all inserts as well as a small portion of the
+          promoter and pDF backbone. <span id="cursive">E. coli</span> samples were randomly selected colonies from our
+          LBA plates. The amount of samples varied between transformations, but the PCR master mix was always prepared
+          15% more than our sample size.
+        </p>
+        <h3 class="text-center subtitle">Agarose gel electrophoresis (<span id="cursive">E. coli</span> )</h3>
+        <p>
+          The PCR results were studied with 1% agarose gel electrophoresis with positive and negative controls.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="growing">
+        <h1 class="text-center section-title">Growing <span id="cursive">Synechocystis</span></h1>
+        <h3 class="text-center subtitle">Making a liquid culture of cyanobacteria</h3>
+        <p>
+          Liquid culture was made from <span id="cursive">Synechocystis</span> sp. PCC 6803. The cyanobacteria were
+          flushed from a growth plate with BG-11 medium. The culture was put in a growth chamber where the main liquid
+          cultures were made from the previous one with a starting OD750 of 0,1A
+        </p>
+        <h3 class="text-center subtitle">Making <span id="cursive">Synechocystis</span> sp. PCC803 storage cells</h3>
+        <p>
+          Once the absorbance of the liquid culture had reached 0,597 A at 750 nm. Glycerol preps were made from the
+          Synechocystis culture. The samples were frozen with liquid nitrogen and put in the freezer at -70 °C for later
+          use.
+        </p>
+        <h3 class="text-center subtitle">Making <span id="cursive">Synechocystis</span> sp. PCC6803 BG-11 growth plates
+          without antibiotics</h3>
+        <p>
+          BG-11 growth plates were prepared with bacto-agar. Samples were then plated with no antibiotics and put to
+          grow in a growth chamber.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="transformation">
+        <h1 class="text-center section-title"><span id="cursive">Synechocystis</span> transformation and screening
+          (future experiments)</h1>
+        <h3 class="text-center subtitle"><span id="cursive">Synechocystis</span> sp. PCC6803 transformation</h3>
+        <p>
+          We have a modified transformation protocol based on the findings of Zang et al., and Lauri Nikkanen’s
+          modifications. In this protocol EDTA was added to the liquid main <span id="cursive">Synechocystis</span> sp.
+          PCC6803 before the culture reached a mid logarithmic growth phase. The cells were plated on BG-11 plates first
+          with no antibiotics. After a green film forms the antibiotics are added underneath the agar. Then the plates
+          are covered with a paper sheet to reduce light intensity. The goal of all of these modifications are to add
+          efficiency and reduce the growth and selection period of <span id="cursive">Synechocystis</span>.
+        </p>
+        <h3 class="text-center subtitle">Colony screening by PCR and gel electrophoresis (<span
+            id="cursive">Synechocystis</span>)</h3>
+        <p>
+          The colony screening with <span id="cursive">Synechocystis</span> includes freeze-thaw cycles.
+          <br><br>
+          The protocol for gel electrophoresis is the same as above with <span id="cursive">E. coli</span> DNA samples.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="mercury">
+        <h1 class="text-center section-title">Mercury experiments (future experiments)</h1>
+        <p>
+          To test the function of the <span id="cursive">Synechocystis</span> sp. PCC 6803 cell strains that have been
+          transformed with <span id="cursive">merA</span> and <span id="cursive">merB</span> genes, our idea was to
+          perform mercuric resistance experiments on the modified cyanobacteria. The ability of the modified cells to
+          grow in the presence of mercury compounds can be used as an indicator of the function of the <span
+            id="cursive">merA</span> and <span id="cursive">merB</span> genes. Our team did not have time to perform
+          these experiments with offers a unique opportunity for further research. The protocols for mercury resistance
+          experiments would have been based on the protocols by iGEM team Minnesota 2014 (Mercury(II) Chloride Plate
+          test protocol - parts.igem.org, n.d.). The protocols would have been slightly modified and adapted to our
+          cyanobacteria-based system.
+          <br><br>
+          Our plan was to make two different assays to test the function of <span id="cursive">merA</span> and <span
+            id="cursive">merB</span> genes separately. In the experiments, we would have prepared agar plates with a
+          filter disk spotted with methylmercury or mercury(II) chloride in the middle of the plates. In one assay, we
+          would make agar plates with 10µL of 0.1M methylmercury on a filter disk to screen the function of the <span
+            id="cursive">merB</span> gene. The diameter of the area where the cells can not grow would have been
+          measured and compared between different cell strains. The plates would have contained cells with constructs
+          that either include the <span id="cursive">merB</span> gene alone or both <span id="cursive">merB</span> and
+          overexpressed <span id="cursive">merA</span>. The mercury resistance of modified cyanobacteria would have been
+          compared to unmodified cyanobacteria. Because the assembly was performed in <span id="cursive">E. coli</span>
+          , we would also have tested and compared the function of the constructs in <span id="cursive">E. coli</span>
+          versus <span id="cursive">Synechocystis</span> sp. PCC 6803.
+          <br><br>
+          In the other assay, we would have made agar plates containing 10µL of 0.1M mercury(II) chloride on a filter
+          disk to test the function of the <span id="cursive">merA</span> gene. The mercury(II) chloride resistance of
+          <span id="cursive">Synechocystis</span> with overexpressed <span id="cursive">merA</span> would have been
+          compared to unmodified <span id="cursive">Synechocystis</span> that has a natural <span
+            id="cursive">merA</span> gene. The results would also have been compared with <span id="cursive">E.
+            coli</span> cells with the <span id="cursive">merA</span> containing plasmid construct.
+          <br><br>
+          Later, had the constructs been qualitatively shown to function in the resistance assays, we would also have
+          wanted to test the constructs quantitatively using ICP-MS to measure the changes in methylmercury and mercury
+          ion concentrations. This would have required preprocessing of the samples since ICP-MS only can detect the
+          total concentration of mercury.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="references">
+        <div class="accordion" id="Description">
+          <div class="accordion-item" id="References">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                References and sources
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#Description">
+              <div class="accordion-body">
+                <p>
+                  Mercury(II) Chloride Plate test protocol—Parts.igem.org. (n.d.). Retrieved from
+                  <a href="https://parts.igem.org/Mercury(II)_Chloride_Plate_test_protocol">https://parts.igem.org/Mercury(II)_Chloride_Plate_test_protocol</a>
+                  <br><br>
+                  Rippka, R., Deruelles, J., Waterbury, J. B., Herdman, M., & Stanier, R. Y. (1979). Generic
+                  Assignments, Strain Histories and Properties of Pure Cultures of Cyanobacteria. Microbiology, 111(1),
+                  1–61. <a href="https://doi.org/10.1099/00221287-111-1-1">https://doi.org/10.1099/00221287-111-1-1</a>
+                  <br><br>
+                  Zang, X., Liu, S., Arunakumara, K. K. I. U., & Zhang, X. (2007). Optimum conditions for transformation
+                  of Synechocystis sp
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 {% endblock %}
