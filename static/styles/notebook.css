@@ -33,7 +33,7 @@ caption {
 }
 
 .notes {
-  background-color: rgba(145, 233, 208, 0.8);
+  background-image: linear-gradient(to bottom right, rgba(145, 233, 208, 0.8), rgba(0, 147, 114, 0.8));
 }
 
 .labday {
