@@ -1,0 +1,13 @@
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+
+table {width: 100%;}
+
+#table-1,
+#table-2 {
+    overflow-x: auto;
+}
