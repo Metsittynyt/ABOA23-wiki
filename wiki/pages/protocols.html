@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %} Protocols {% endblock %}
+{% block lead%} {%endblock %}
+{% block title_class %} protocols-title {% endblock %}
+
+{% block page_content %}
+
+<div class="page_content">
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto">
+
+            <p class="text-center">
+                For our work in the laboratory we gathered and came up with multiple different protocols. For
+                repeatability of our work and for future iGEM teams working on similar projects, we have gathered all
+                the protocols together. You can check these protocols in the following 
+                <a href="https://static.igem.wiki/teams/4831/wiki/documents/protocols.pdf">pdf file</a>.
+            </p>
+            <hr id="gap50">
+            <iframe src="https://static.igem.wiki/teams/4831/wiki/documents/protocols.pdf" 
+            title="Protocols" style="width: 100%; height: 400px;">
+            </iframe>
+            <hr id="gap50">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

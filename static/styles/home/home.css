@@ -96,6 +96,7 @@
 #characterImage {
   max-width: 100%;
   max-height: 300px;
+  margin: 5px;
 }
 
 #sea a {
@@ -190,7 +191,7 @@
   transform: rotateY(-180deg);
   text-align: center;
   background: var(--turquoise);
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 .flip>.front,
