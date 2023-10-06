@@ -4,10 +4,480 @@
 {% block lead%} {%endblock %}
 {% block title_class %}parts-title{% endblock %}
 
+{% block additional_css %}
+<link href="{{ url_for('static', filename = 'styles/parts.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block page_content %}
-  
-<div class="row mt-8">
-  <img src="https://static.igem.wiki/teams/4831/wiki/photos/under-construction.png" alt="Construction">
+
+<div class="page_content">
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto" style="text-align: justify;">
+
+      <div id="intro">
+        <p>
+          Our plasmid construct was assembled with a Golden Gate -inspired assembly method developed at our Department
+          of Life Technologies, Molecular plant Biology unit. This assembly method was chosen because it has been
+          specifically designed for expressing proteins in <span id="cursive">Synechocystis</span> sp PCC6803, and
+          allows us to make many variations of the same operon-based construct with relative ease. The system is now
+          under testing, and is derived from corresponding expression constructs previously assembled using BioBrick
+          –inspired subcloning (Thiel et al 2018; Nagy et al 2021). We didn't have to order all of the parts for the
+          assembly ourselves but instead we were able to utilize our department's gene library, consisting of
+          characterized parts previously analyzed and validated in cyanobacteria. We only had to design and order our
+          <span id="cursive">merA</span> and <span id="cursive">merB</span> genes ourselves.
+          <br><br>
+          Our DNA elements were stored and amplified in commercial <span id="cursive">Escherichia coli</span> plasmid
+          backbones (such as.) pEZclone-NRS-Amp-Blunt-HC plasmid [PK1] , and used for the Golden Gate assembly of a
+          cyanobacterial expression construct pDF. Our genes of interest ( <span id="cursive">merA Synechocystis</span>
+          sp. PCC6803, <span id="cursive">merA Pseudomonas aeruginosa, merB Escherichia coli</span> and <span
+            id="cursive">merB Pseudomona aeruginosa</span>) were deposited in the library in <span id="cursive">E.
+            coli</span> plasmid backbones (Twist high copy AMP cloning vector with pMB1 origin of replicon).
+          <br><br>
+          The genetic elements used in the expression plasmid assembly, including the IPTG-inducible promoter PA1lacO-1
+          and the alternative RBS elements have been successfully used in cyanobacteria earlier (Thiel et al 2018; Thiel
+          et al 2019; Nagy et al 2021). Based on the previous information, these elements were expected to enable
+          high-level expression of the target proteins in <span id="cursive">Synechocystis</span>.
+        </p>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="col-12 col-md-10 col-lg-8 mx-auto" id="table-of-contents">
+        <div class="accordion" id="Parts">
+          <div class="accordion-item" id="table of contents">
+            <h2 class="accordion-header" id="headingContents">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseContents" aria-expanded="false" aria-controls="collapseContents">
+                Table of contents
+              </button>
+            </h2>
+            <div id="collapseContents" class="accordion-collapse collapse" aria-labelledby="headingContents"
+              data-bs-parent="#Parts">
+              <div class="accordion-body">
+                <div class="row no_mar_or_pad" id="content-links">
+                  <div class="col-12 col-md-6" style="border-left: 1px solid black;">
+                    <li><a href="#intro" onclick="toggleAccordion()">Intro</a></li>
+                    <li><a href="#in silico" onclick="toggleAccordion()">In Silico assembly </a></li>
+                    <li><a href="#harmonization" onclick="toggleAccordion()">Harmonization</a></li>
+                    <li><a href="#table-1" onclick="toggleAccordion()">Table 1. A list of all Basic parts used in our project. </a></li>
+                    <li><a href="#table-2" onclick="toggleAccordion()">Table 2. A list of our designed Composite parts.</a></li>
+                    <li><a href="#references" onclick="toggleAccordion()">References</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress"></div>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="in silico">
+        <h1 class="text-center section-title">In Silico assembly </h1>
+        <br>
+        <p>
+          We simulated the Golden Gate assembly with our parts in SnapGene [Figure 1] and made an example construct with
+          <span id="cursive">merA Synechocystis</span> (BBa_K4831000) and <span id="cursive">merB E.coli</span>
+          (BBa_K4831002) [Figure 2], to make sure that our designed sequences were correct for our golden gate assembly.
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/parts/figure-1.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              [Figure 1.] We confirmed our part design by doing a <span id="non-cursive">in silico</span> assembly in
+              SnapGene. The backbone (pDF) was cut out of the figure. Our parts were designed to fit in the positions 3
+              and 5 so those were the critical points where we could have countered an error.
+            </span>
+          </figcaption>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="harmonization">
+        <h1 class="text-center section-title">Harmonization</h1>
+        <br>
+        <p>
+          The target genes which were not native to <span id="cursive">Synechocystis</span> sp. PCC6803 were
+          codon-optimized to ensure proper translation in the host cell, as supported by literature (Rehbein et al.
+          2019). The optimization was done using CodonWizard (Rehbein et al. 2019) and was based on harmonizing the
+          codon usage based on the relative presence in the genome. In the procedure, rare codons were not exclusively
+          replaced by common ones to prevent changes in translation speed that could affect folding into the native
+          active conformation. The harmonized codons in <span id="cursive">merA P. aeruginosa </span> [Figure 3] <span
+            id="cursive">merB E. coli</span> [Figure 4] and <span id="cursive">merB. P. aeruginosa</span> [Figure 5] ,
+          and] are shown in green, while the red and blue represent the codon usage in the donor organism, and in <span
+            id="cursive">Synechocystis</span>, respectively. The difference between the input and the output is not
+          substantial in the codon usage between <span id="cursive">E. coli</span> and <span
+            id="cursive">Synechocystis</span> [Figure 3], but is more pronounced in the case of <span
+            id="cursive">merA</span> [Figure 4] and <span id="cursive">merB</span> [Figure 5] from <span
+            id="cursive">Pseudomonas aeruginosa</span>.
+        </p>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/parts/figure-2.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 2. An example of our construct design with <span id="non-cursive">merA</span> from <span
+                id="non-cursive">Synechocystis</span> marked green and <span id="non-cursive">merB</span> from <span
+                id="non-cursive">E. coli</span> marked with turquoise. Between them we have the first RBS S3 in red and
+              RBS S5 in yellow. Our backbone for the constructs was pDF (Guerrero et al 2013), which is a RSF1010-
+              derived plasmid without a promoter.
+            </span>
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/parts/figure-3.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 3. Codon harmonization results of <span id="non-cursive">merB</span> from <span
+                id="cursive">Escherichia coli</span>. The figure shows the harmonized codons in green, while the red and
+              blue represent the codon usage in the donor organism and in <span id="cursive">Synechocystis</span>. You
+              can see that the red line doesn’t substantially deviate from the blue line, meaning that the relative
+              presence of the codons is similar.
+            </span>
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/parts/figure-4.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 4. Codon harmonization results of <span id="non-cursive">merB</span> from <span
+                id="cursive">Pseudomonas aeruginosa</span>. The figure shows the harmonized codons in green, while the
+              red and blue represent the codon usage in the donor organism and in <span
+                id="cursive">Synechocystis</span>. The results show us that the red line deviates noticeably from the
+              blue line, meaning that the relative presence of the codons is different and emphasizes the importance of
+              harmonizing.
+            </span>
+          </figcaption>
+        </div>
+        <hr id="gap20">
+        <div class="image-w-caption" style="width: 100%;">
+          <img src="https://static.igem.wiki/teams/4831/wiki/photos/parts/figure-5.png" style="width: 100%;">
+          <figcaption style="text-align: justify;">
+            <span id="cursive">
+              Figure 5. Codon harmonization results of <span id="cursive">non-merA</span> from <span
+                id="cursive">Pseudomonas aeruginosa</span> The figure shows the harmonized codons in green, while the
+              red and blue represent the codon usage in the donor organism and in <span
+                id="cursive">Synechocystis</span>. The results show us that the red line deviates substantially from the
+              blue line, meaning that the relative presence of the codons is different and emphasizes the importance of
+              harmonizing.
+            </span>
+          </figcaption>
+        </div>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="table-1">
+        <h1 class="text-center section-title">Table 1. A list of all Basic parts used in our project.</h1>
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Part Number</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831007</td>
+            <td>P1_P<span style="font-size: x-small;">A1lacO-1</span>-RiboJ</td>
+            <td>IPTG-inducible lac promoter variant containing a self-cleaving ribonuclease sequence for mRNA 5’UTR
+              trimming.</td>
+            <td>1785 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831004</td>
+            <td>RBS_S3</td>
+            <td>Translational control element RBS S3, containing the ribosome binding site and the start codon ATG.</td>
+            <td>54 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831008</td>
+            <td>RBS_S4</td>
+            <td>Translational control element RBS S4, containing the ribosome binding site and the start codon ATG.</td>
+            <td>54 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831005</td>
+            <td>RBS_S5</td>
+            <td>Translational control element RBS S5, containing the ribosome binding site and the start codon ATG.</td>
+            <td>54 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831000</td>
+            <td><span id="cursive">merA_Synechocystis</span></td>
+            <td>Gene coding for MerA, which is a mercuric reductase. The sequence is from <span
+                id="cursive">Synechocystis</span>.</td>
+            <td>1557 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831001</td>
+            <td><span id="cursive">merA_P. aeruginosa</span></td>
+            <td>Gene coding for MerA, which is a mercuric reductase. The sequence is from <span id="cursive">P.
+                aeruginosa</span> but codon optimized for <span id="cursive">Synechocystis</span></td>
+            <td>1686 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K2308003</td>
+            <td><span id="cursive">sYFP2</span></td>
+            <td>Gene coding for Yellow fluorescent protein, which can be utilized as a reporter gene.</td>
+            <td> 720 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831003</td>
+            <td><span id="cursive">merB_P. aeruginosa</span></td>
+            <td>Gene coding for MerB, which is alkylmercury lyase. The sequence is from <span id="cursive">P.
+                aeruginosa</span> but codon optimized for <span id="cursive">Synechocystis</span></td>
+            <td>639 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831002</td>
+            <td><span id="cursive">merB_E. coli</span></td>
+            <td>Gene coding for MerB, which is alkylmercury lyase. The sequence is from <span id="cursive">E.
+                coli</span>
+              but codon optimized for <span id="cursive">Synechocystis</span></td>
+            <td>639 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K4831012</td>
+            <td><span id="cursive">EFE</span></td>
+            <td>Gene coding for Ethylene forming enzyme, which enables the conversion of intracellular 2-oxoglutarate
+              into
+              ethylene, and can thus be utilized as a reporter gene.</td>
+            <td>1053 bp</td>
+          </tr>
+          <tr>
+            <td>Basic</td>
+            <td>BBa_K3257020</td>
+            <td>Transcription Terminator</td>
+            <td>Sequence responsible for stopping the transcription of the gene.</td>
+            <td>87 bp</td>
+          </tr>
+        </table>
+      </div>
+
+      <hr id="gap50">
+
+      <div id="table-2">
+        <h1 class="text-center section-title">Table 2. A list of our designed Composite parts.</h1>
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Part Number</th>
+            <th>Name</th>
+            <th>Basic parts in this composite part</th>
+            <th>Description</th>
+            <th>Length</th>
+          </tr>
+          <tr>
+            <td>Composite</td>
+            <td>BBa_K4831014</td>
+            <td>Construct containing <span id="cursive">merA</span> from <span id="cursive">Synechocystis</span>and
+              <span id="cursive">merB</span> from <span id="cursive">E. coli</span>.
+            </td>
+            <td>
+              P1: BBa_K4831007
+              <br>
+              P2: BBa_K4831004
+              <br>
+              P3: BBa_K4831000
+              <br>
+              P4: BBa_K4831005
+              <br>
+              P5: BBa_K4831002
+              <br>
+              P6: BBa_K3257020
+            </td>
+            <td>Composite for expressing MerA and MerB. The construct contains an IPTG induceable lac promoter variant,
+              a
+              RBS S3 followed by the <span id="cursive">merA</span> (from <span id="cursive">Synechocystis</span>), a
+              RBS
+              S5 followed by the <span id="cursive">merB</span> (from <span id="cursive">E. coli</span>) and a
+              transcription terminator sequence.</td>
+            <td>4196 bp</td>
+          </tr>
+          <tr>
+            <td>Composite</td>
+            <td>BBa_K4831013</td>
+            <td>
+              Construct containing <span id="cursive">merA</span> from <span id="cursive">P. aeruginosa</span> and <span
+                id="cursive">merB</span> from <span id="cursive">P. aeruginosa</span>
+            </td>
+            <td>
+              P1: BBa_K4831007
+              <br>
+              P2: BBa_K4831004
+              <br>
+              P3: BBa_K4831001
+              <br>
+              P4: BBa_K4831005
+              <br>
+              P5: BBa_K4831003
+              <br>
+              P6: BBa_K3257020
+            </td>
+            <td>Composite for expressing MerA and MerB. The construct contains an IPTG induceable lac promoter variant,
+              a
+              RBS S3 followed by the <span id="cursive">merA</span> (from <span id="cursive">P. aeruginosa</span>), a
+              RBS
+              S5 followed by the <span id="cursive">merB</span> (from <span id="cursive">P. aeruginosa</span>) and a
+              transcription terminator sequence.</td>
+            <td>4325 bp</td>
+          </tr>
+          <tr>
+            <td>Composite</td>
+            <td>BBa_K4831015</td>
+            <td>Construct containing <span id="cursive">merA</span> from <span id="cursive">Synechocystis</span> and
+              <span id="cursive">EFE</span>.
+            </td>
+            <td>
+              P1: BBa_K4831007
+              <br>
+              P2: BBa_K4831004
+              <br>
+              P3: BBa_K4831000
+              <br>
+              P4: BBa_K4831005
+              <br>
+              P5: BBa_K4831012
+              <br>
+              P6: BBa_K3257020
+            </td>
+            <td>Composite for expressing MerA and EFE. The construct contains an IPTG induceable lac promoter variant, a
+              RBS S3 followed by the <span id="cursive">merA</span> (from <span id="cursive">Synechocystis</span>), a
+              RBS
+              S5 followed by the <span id="cursive">EFE</span> and a transcription terminator sequence.</td>
+            <td>4610 bp</td>
+          </tr>
+          <tr>
+            <td>Composite</td>
+            <td>BBa_K4831016</td>
+            <td>Construct containing <span id="cursive">sYFP2</span> and <span id="cursive">merB</span> from <span
+                id="cursive">E. coli</span>.</td>
+            <td>
+              P1: BBa_K4831007
+              <br>
+              P2: BBa_K4831004
+              <br>
+              P3: BBa_K2308003
+              <br>
+              P4: BBa_K4831005
+              <br>
+              P5: BBa_K4831002
+              <br>
+              P6: BBa_K3257020
+            </td>
+            <td>Composite for expressing MerB and sYFP2. The construct contains an IPTG induceable lac promoter variant,
+              a
+              RBS S3 followed by the <span id="cursive">sYFP2</span>, a RBS S5 followed by the <span
+                id="cursive">merB</span> (from <span id="cursive">E. coli</span>) and a transcription terminator
+              sequence.
+            </td>
+            <td>3359 bp</td>
+          </tr>
+        </table>
+      </div>
+
+      <hr id="gap50">
+
+      <div class="row" id="references">
+        <h1 class="text-center section-title">References</h1>
+        <br>
+        <p>
+          Literature references on the expression plasmid and genetic elements used for expressing MerA and MerB in
+          <span id="cursive">Synechocystis</span> sp. PCC6803 in the Aboa iGEM project 2023. Comments on why we used
+          these references have been added.
+        </p>
+        <hr id="gap20">
+        <div class="accordion" id="Parts">
+          <div class="accordion-item" id="References">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                References and sources
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#Parts">
+              <div class="accordion-body">
+                <p>
+                  Guerrero et al. 2012 is our original paper on the development of pDF and the comparison of various
+                  promoters (including PA1lacO-1) in <span id="cursive">Synechocystis</span>. This version of pDF has
+                  been later used as a basis for developing pDF-CC used in the CyanoConstruct cloning system under
+                  development. Most of our published studies base on variants of this plasmid, and the use of the
+                  promoter PA1lacO-1.
+                  Guerrero, F., Carbonell, V., Cossu, M., Correddu, D. and Jones. P. R. (2012) Ethylene synthesis and
+                  regulated expression of recombinant protein in Synechocystis sp. PCC 6803. PLoS ONE
+                  7(11):e50470.
+                  <a href="http://dx.doi.org/10.1371/journal.pone.0050470">http://dx.doi.org/10.1371/journal.pone.0050470</a>
+                  <br><br>
+                  -----------------
+                  <br><br>
+                  Thiel et al. 2018 is our main reference to translational tuning; the generation and characterization
+                  of the RBS library in <span id="cursive">Synechocystis</span>; Rationalization for the need for
+                  translational optimization; Uses pDF and PA1lacO-1, although the assembly system is based on a
+                  BioBrick-inspired subcloning strategy that differs from the construct assembly Guerrero et al 2012, as
+                  well as the Golden Gate cloning used in CyanoConstruct.
+                  Thiel, K., Mulaku, E., Dandapani, H., Nagy, C., Aro, E-M., Kallio, P. (2018) Translation efficiency of
+                  heterologous proteins is significantly affected by the genetic context of RBS sequences in engineered
+                  cyanobacterium <span id="cursive">Synechocystis</span> sp. PCC 6803. Microbial Cell Factories
+                  17(1):34. 
+                  <a href="https://doi.org/10.1186/s12934-018-0882-2">https://doi.org/10.1186/s12934-018-0882-2</a>
+                  <br><br>
+                  -----------------
+                  <br><br>
+                  Thiel et al. 2019 is an example of generating operon-based multi-gene expression constructs in <span
+                    id="cursive">Synechocystis</span>. Uses the same principle, pDF, PA1lacO-1 and selected RBSs (as
+                  well as the assembly method) as described in Thiel et al 2018.
+                  Thiel K, Patrikainen P, Nagy C, Fitzpatrick D, Pope N, Aro EM, Kallio P. (2019) Redirecting
+                  photosynthetic electron flux in the cyanobacterium <span id="cursive">Synechocystis</span> sp. PCC
+                  6803 by the deletion of flavodiiron protein Flv3. Microbial Cell Factories, 18: 189.
+                  <a href="https://doi.org/10.1186/s12934-019-1238-2">https://doi.org/10.1186/s12934-019-1238-2</a>
+                  <br><br>
+                  -----------------
+                  <br><br>
+                  Nagy et al. 2021 is a comparison of the replicative pDF to genome-integrated constructs in protein
+                  expression in <span id="cursive">Synechocystis</span>. Expands the discussion on the use and benefits
+                  of the pDF plasmid.
+                  Nagy, C., Thiel, K., Mulaku, E., Mustila, H., Tamagnini, P., Aro, E-M, Pacheco, C. C., Kallio, P.
+                  (2021) Comparison of alternative integration sites in the chromosome and the native plasmids of the
+                  cyanobacterium <span id="cursive">Synechocystis</span> sp. PCC 6803 in respect to expression
+                  efficiency and copy number. Microbial Cell Factories 20, 130.
+                  <a href="https://doi.org/10.1186/s12934-021-01622-2">https://doi.org/10.1186/s12934-021-01622-2</a>
+                  <br><br>
+                  -----------------
+                  <br><br>
+                  Rehbein et al. 2019 is our main reference to codon harmonizing; how to change codons for efficient
+                  translation without disturbing the kinetics of protein biosynthesis. Expands on our decision to
+                  harmonize our genes from <span id="cursive">Pseudomonas aeruginosa</span> and <span
+                    id="cursive">Escherichia coli</span>.
+                  Rehbein, P., Berz, J., Kreisel, P., & Schwalbe, H. (2019). "CodonWizard" - An intuitive software tool
+                  with graphical user interface for customizable codon optimization in protein expression efforts.
+                  Protein expression and purification, 160, 84–93. 
+                  <a href="https://doi.org/10.1016/j.pep.2019.03.018">https://doi.org/10.1016/j.pep.2019.03.018</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-  
 {% endblock %}
