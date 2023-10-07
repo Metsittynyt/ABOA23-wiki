@@ -1,4 +1,4 @@
 function myFunction() {
-    var definition = document.getElementById("myPopup");
+    var definition = document.getElementById("definition");
     definition.classList.toggle("show");
   }
