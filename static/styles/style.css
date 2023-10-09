@@ -40,6 +40,7 @@ Yellow - #f1d490  (241, 212, 144)
 p {
   color: var(--text-inverted);
   font-size: medium;
+  word-wrap: break-word;
 }
 
 h1 {
