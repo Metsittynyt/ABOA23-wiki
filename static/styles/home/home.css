@@ -162,7 +162,7 @@
 /**************** Goal banners ****************/
 #goals-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   place-content: center;
 }
 
@@ -227,6 +227,11 @@
 
 .flip.flip-vertical:hover>.back {
   transform: rotateX(0deg);
+}
+
+.video {
+  display: grid;
+  place-content: center;
 }
 
 /**************** Goal banners end ****************/

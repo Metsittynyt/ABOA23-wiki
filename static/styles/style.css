@@ -40,6 +40,7 @@ Yellow - #f1d490  (241, 212, 144)
 p {
   color: var(--text-inverted);
   font-size: medium;
+  word-wrap: break-word;
 }
 
 h1 {
@@ -70,6 +71,7 @@ b {
 a {
   color: var(--darkBlue);
   text-decoration: underline;
+  word-wrap: break-word;
 }
 
 a:visited {
@@ -307,7 +309,7 @@ li {
 #table-of-contents {
   position: sticky;
   top: 80px;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 
