@@ -307,7 +307,7 @@ li {
 #table-of-contents {
   position: sticky;
   top: 80px;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 
