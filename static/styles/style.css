@@ -70,6 +70,7 @@ b {
 a {
   color: var(--darkBlue);
   text-decoration: underline;
+  word-wrap: break-word;
 }
 
 a:visited {
