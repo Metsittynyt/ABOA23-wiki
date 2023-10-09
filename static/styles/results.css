@@ -1,20 +1,34 @@
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    row-gap: 10px;
+    row-gap: 30px;
     column-gap: 10px;
 }
 
 .image-grid#figure7 {
     grid-template-columns: repeat(4, auto);
-    
+
 }
 
-.image-grid#figure7 img {
+.image-grid#figure7 .img-w-text {
     grid-column: span 2;
 }
 
 
-.image-grid#figure7 img.last {
+.image-grid#figure7 .img-w-text.last {
     grid-column: 2 / span 2;
+}
+
+.top-left-corner {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.img-w-text {
+    position: relative;
+    text-align: center;
+    color: var(--green);
+    font-size: large;
+    font-weight: 600
 }
