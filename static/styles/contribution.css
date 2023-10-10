@@ -1,3 +1,9 @@
+h4 {
+    color: var(--green);
+    font-size: large;
+}
+
+
 #Contribution-rounded .accordion {
     border-radius: 30px;
     background-color: transparent;

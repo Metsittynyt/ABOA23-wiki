@@ -144,14 +144,15 @@ engineering design cycle.{% endblock %}
           To test the performance of our genetically modified <span id="cursive">Synechocystis</span> the object is to
           test their efficiency in catalyzing methylmercury into elemental mercury. This is to be done by treating our
           cells with methylmercury and then measuring the concentration afterwards.
-          <a href="https://2023.igem.wiki/aboa-turku/experiments">(Click here for a more detailed protocol)</a>.
+          <a href="https://2023.igem.wiki/aboa-turku/protocols">(Click here for a more detailed protocol)</a>.
           To get better certainty of our constructs’ toxicity to the cells, we also measure the oxygen usage
           of the cells. To get the most optimal result,, the aim is to test different variations of the same construct.
           <br><br>
           To get certainty of the proper function of our measurement system the objective is to use a
-          <span id="definition"
-            title="A controlling method that gives us the information of the success when it does not work in given conditions.">negative
-            control</span>.
+          <span class="definition" onclick="pop_up_definition()">negative control
+            <span class="popuptext" id="definition">A controlling method that gives us the information of the success when it does not work in given conditions</span>
+          </span>
+          .
           To save time we decided to go for a setup that was fast, affordable and did not require a collaboration with a
           third party. This was an essential decision, since shipping samples requires a lot of extra time and effort
           especially because our samples contain methylmercury and are extremely dangerous.
@@ -182,7 +183,9 @@ engineering design cycle.{% endblock %}
           are multiple varieties of <span id="cursive">merA</span> homologs we would test them out and see if any of
           them would be better than the one we are currently using. On top of these iteration cycles the aim is to test
           the effects of adding
-          <span id="definition" title="Isopropyl β-D-1-thiogalactopyranoside, a molecular biology reagent">IPTG</span>
+          <span class="definition" onclick="pop_up_definition()">IPTG
+            <span class="popuptext" id="definition">Isopropyl β-D-1-thiogalactopyranoside, a molecular biology reagent</span>
+          </span>
           in our system and studying the effects of different promoters.
         </p>
       </div>
@@ -199,25 +202,27 @@ engineering design cycle.{% endblock %}
           <br><br>
           <span id="bold">Designing the construct:</span>
           we designed as good a construct as we were able to with our current knowhow by using the
-          <span id="definition" title="The base of the plasmid, where our genes of interest are added.">pDF
-            backbone</span>.
-          <br><br>
-          <span id="bold">Building the construct:</span>
-          we built the construct carefully with the new Golden Gate inspired assembly method.
-          <br><br>
-          <span id="bold">Testing the construct:</span>
-          we tested if the constructs are transformed into our host organism with antibiotic resistance using an
-          antibiotic, Spectinomycin. We also see that the constructs are correct by amplifying the constructs with PCR
-          and by running an electrophoresis.
-          <br><br>
-          <span id="bold">Learning of the results:</span>
-          when getting the results of the antibiotic selection and the electrophoresis we see if the resulting bands are
-          correct. If the bands are not what we were looking for, we get back to the design phase and make another
-          iteration of the engineering cycle to get a properly functioning assembly.
+
+        <span class="definition" onclick="pop_up_definition()">pDF backbone
+          <span class="popuptext" id="definition">The base of the plasmid, where our genes of interest are added</span>
+        </span>.
+        <br><br>
+        <span id="bold">Building the construct:</span>
+        we built the construct carefully with the new Golden Gate inspired assembly method.
+        <br><br>
+        <span id="bold">Testing the construct:</span>
+        we tested if the constructs are transformed into our host organism with antibiotic resistance using an
+        antibiotic, Spectinomycin. We also see that the constructs are correct by amplifying the constructs with PCR
+        and by running an electrophoresis.
+        <br><br>
+        <span id="bold">Learning of the results:</span>
+        when getting the results of the antibiotic selection and the electrophoresis we see if the resulting bands are
+        correct. If the bands are not what we were looking for, we get back to the design phase and make another
+        iteration of the engineering cycle to get a properly functioning assembly.
         </p>
         <div>
           <div class="scroll-here"></div>
-        <hr id="gap20">
+          <hr id="gap20">
           <div class="page-menu">
             <button class="page-menu-item active" onclick="showContent(1)" data-content="1">
               <p class="page-menu-icon">1. iteration</p>

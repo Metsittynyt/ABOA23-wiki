@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %} Lab notebook {% endblock %}
+{% block lead%} {%endblock %}
+{% block title_class %}lab-notebook-title{% endblock %}
+
+{% block page_content %}
+
+<div class="page_content">
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto">
+
+            <p class="text-center">
+                During our laboratory work we have documented our process precisely. For repeatability and scientific
+                transparency we have provided our lab notebook to the public. To see how we executed all steps in the
+                lab and the results we got, go and see the following 
+                <a href="https://static.igem.wiki/teams/4831/wiki/documents/lab-notebook.pdf">pdf file</a>.
+            </p>
+            <hr id="gap50">
+            <iframe src="https://static.igem.wiki/teams/4831/wiki/documents/lab-notebook.pdf" title="Lab notebook"
+                style="width: 100%; height: 400px;">
+            </iframe>
+            <hr id="gap50">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

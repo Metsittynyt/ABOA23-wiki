@@ -46,7 +46,7 @@ def generate_note_cell(note_data, colNum):
     cell_html = '<td'
     
     # Check if any sub-navigation title contains "Labday"
-    if any("Labday" in subnav_item["title"] for subnav_item in note_data["subnav"]):
+    if any("Lab day" in subnav_item["title"] for subnav_item in note_data["subnav"]):
         cell_html += ' class="note labday"'
     else : cell_html += ' class="note notes"'
 

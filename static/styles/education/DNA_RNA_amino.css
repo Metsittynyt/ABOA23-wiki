@@ -3,18 +3,20 @@
     min-height: 500px;
 }
 
+#drag-drop {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-content: center;
+}
+
 #DNA-match {
     border-left: 10px solid var(--turquoise);
     border-right: 10px solid var(--green);
-    margin-left: auto;
-    margin-right: 50px;
 }
 
 #RNA-match {
     border-left: 10px solid var(--violet);
     border-right: 10px solid var(--green);
-    margin-left: 50px;
-    margin-right: auto;
 }
 
 #DNA-match, #RNA-match th{
@@ -28,14 +30,6 @@
 #DNA_letters, #RNA_letters {
     text-align: center;
     width: 50px;
-}
-
-#DNA_letters {
-    margin-right: auto;
-}
-
-#RNA_letters {
-    margin-left: auto;
 }
 
 #letter_A, #letter_C, #letter_G, #letter_T, #letter_U {

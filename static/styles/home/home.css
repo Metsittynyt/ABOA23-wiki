@@ -96,6 +96,7 @@
 #characterImage {
   max-width: 100%;
   max-height: 300px;
+  margin: 5px;
 }
 
 #sea a {
@@ -161,7 +162,7 @@
 /**************** Goal banners ****************/
 #goals-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   place-content: center;
 }
 
@@ -190,7 +191,7 @@
   transform: rotateY(-180deg);
   text-align: center;
   background: var(--turquoise);
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 .flip>.front,
@@ -226,6 +227,11 @@
 
 .flip.flip-vertical:hover>.back {
   transform: rotateX(0deg);
+}
+
+.video {
+  display: grid;
+  place-content: center;
 }
 
 /**************** Goal banners end ****************/
