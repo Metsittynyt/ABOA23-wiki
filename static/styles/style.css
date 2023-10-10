@@ -176,46 +176,46 @@ hr {
 /*****************************************
                   Definition
    *****************************************/
-   .definition {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    width: fit-content;
-    color: var(--green);
-    font-weight: bold;
-  }
-  
-  .popuptext {
-    font-weight: normal;
-    visibility: hidden;
-    width: 160px;
-    background-color: var(--darkBlue);
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-    transition: visibility 0.3s;
-  }
-  
-  .definition:hover .popuptext {
-    visibility: visible;
-  }
-  
-  .definition .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--darkBlue) transparent transparent transparent;
-  }
+.definition {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: fit-content;
+  color: var(--green);
+  font-weight: bold;
+}
+
+.popuptext {
+  font-weight: normal;
+  visibility: hidden;
+  width: 160px;
+  background-color: var(--darkBlue);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  transition: visibility 0.3s;
+}
+
+.definition:hover .popuptext {
+  visibility: visible;
+}
+
+.definition .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--darkBlue) transparent transparent transparent;
+}
 
 /*****************************************
                   Stickybar
@@ -533,30 +533,57 @@ li {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/experiments.png');
 }
 
-.notebook-title,
+.results-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/results.png');
+}
 
-.results-title,
-.parts-title,
-.composite-title {
+.notebook-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/notebook.png');
 }
 
-.human-practices-title,
-.collaborations-title,
-.communication-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
+.protocols-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/protocols.png');
 }
 
-.education-title,
-.plant-title,
+.lab-notebook-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/lab-notebook.png');
+}
+
 .medals-title {
-  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/overview.png');
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/medals.png');
+}
+
+.parts-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/parts.png');
+}
+
+.communication-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/communication.png');
+}
+
+.composite-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/combosite.png');
+}
+
+.collaborations-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/collaborations.png');
+}
+
+.human-practices-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/human-practice.png');
+}
+
+.education-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/characters/characters-9.png');
+}
+
+.plant-title {
+  background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/plant.png');
 }
 
 .sustainable-title {
   background-image: url('https://static.igem.wiki/teams/4831/wiki/photos/header-photos/sdg.png')
 }
-
 
 
 /*****************************************
