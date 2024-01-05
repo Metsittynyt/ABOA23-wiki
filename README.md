@@ -2,4 +2,4 @@
 
 Team ABOA-Turku 2023 wiki: https://2023.igem.wiki/aboa-turku
 
-This repository is a copy of original repository hosted on igem gitlab.
+This repository is a copy of original repository hosted on igem gitlab at https://gitlab.igem.org/2023/aboa-turku
